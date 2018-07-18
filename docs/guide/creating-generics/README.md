@@ -9,9 +9,9 @@ data types on its pins, making your patch node generic is the way to go.
 Otherwise, you’d have to provide users with a repetitive set of nodes which
 differ only in pin types but act in the same way:
 
-* `foobar-number`
-* `foobar-boolean`
-* `foobar-string`
+- `foobar-number`
+- `foobar-boolean`
+- `foobar-string`
 
 To follow the guide you have to know
 [patch node creation](../nodes-for-xod-in-xod/) basics. Also, make sure you’re
@@ -24,12 +24,12 @@ The process of creating a generic patch itself is almost the same as creating a
 regular patch. The difference is that in case of a generic patch node, instead
 of placing terminals of specific types, you use:
 
-* `xod/patch-nodes/input-t1`
-* `xod/patch-nodes/input-t2`
-* `xod/patch-nodes/input-t3`
-* `xod/patch-nodes/output-t1`
-* `xod/patch-nodes/output-t2`
-* `xod/patch-nodes/output-t3`
+- `xod/patch-nodes/input-t1`
+- `xod/patch-nodes/input-t2`
+- `xod/patch-nodes/input-t3`
+- `xod/patch-nodes/output-t1`
+- `xod/patch-nodes/output-t2`
+- `xod/patch-nodes/output-t3`
 
 Your patch may contain generic terminals only or mix regular and generic
 terminals.
@@ -87,22 +87,22 @@ work by making missing or optimized implementations.
 To let XOD resolve generic nodes properly, you have to follow some rules while
 creating generic patch nodes and their specializations:
 
-1. If a patch contains generic _output_ terminal, a generic _input_ terminal of
-   the same generic type should present. In other words, if you use `output-t2`,
-   then `input-t2` should appear as well.
-2. There should be no more than a single specialization patch for a particular
-   generic patch. Otherwise, the choice will be ambiguous, and an error will be
-   shown. A xoder will be forced to resolve manually, that is choose
-   specialization by hand.
+1.  If a patch contains generic _output_ terminal, a generic _input_ terminal of
+    the same generic type should present. In other words, if you use
+    `output-t2`, then `input-t2` should appear as well.
+2.  There should be no more than a single specialization patch for a particular
+    generic patch. Otherwise, the choice will be ambiguous, and an error will be
+    shown. A xoder will be forced to resolve manually, that is choose
+    specialization by hand.
 
 ## Summary
 
 If you’re creating a generic patch node, you have a few options:
 
-* Create a single generic patch node and implement it as a composition of other
+- Create a single generic patch node and implement it as a composition of other
   nodes.
-* Create the base generic patch node and mark it abstract. Then create
+- Create the base generic patch node and mark it abstract. Then create
   specialization patches for each supported type combination which in their turn
   are implemented in XOD or C++.
-* Create the base generic patch node as a composition, and add a few
+- Create the base generic patch node as a composition, and add a few
   specialization patches for better performance or wider type support.

@@ -36,8 +36,7 @@ h2.icon.header {
 }
 </style>
 
-XOD Documentation
-=================
+# XOD Documentation
 
 <div class="ui three column doubling stackable horizontally padded grid">
 
@@ -54,8 +53,8 @@ XOD Documentation
 
 <h3 class="ui header">Official</h3>
 
-* [Get started](./tutorial/install/)
-* [Full index](./tutorial/) (28 chapters)
+- [Get started](./tutorial/install/)
+- [Full index](./tutorial/) (28 chapters)
 
 <h3>For video lovers</h3>
 
@@ -85,16 +84,16 @@ XOD Documentation
   </div>
 </h2>
 
-[Concepts](./guide/#concepts) — XOD language objects and processes
-described in detail.
+[Concepts](./guide/#concepts) — XOD language objects and processes described in
+detail.
 
 [Making your own nodes](./guide/#making-your-own-nodes) — the most
 straightforward way to extend XOD and add support for new hardware.
 
 [Case studies](./guide/#case-studies) — how-to’s for common scenarios.
 
-[Projects and libraries](./guide/#projects-and-libraries) —
-creating, managing, and sharing your works.
+[Projects and libraries](./guide/#projects-and-libraries) — creating, managing,
+and sharing your works.
 
 </div><!-- column -->
 
@@ -110,24 +109,26 @@ creating, managing, and sharing your works.
 </h2>
 <div><!-- A div to force the following list to be the first-child and suppress margins -->
 
-* [Supported hardware](./reference/supported-hardware/) <i class="ui large green microchip icon"></i>
-* [Mouse and keyboard shortcuts](./reference/shortcuts/)
-* [Data types reference](./reference/data-types/)
-* [C++ node API reference](./reference/node-cpp-api/)
+- [Supported hardware](./reference/supported-hardware/)
+  <i class="ui large green microchip icon"></i>
+- [Mouse and keyboard shortcuts](./reference/shortcuts/)
+- [Data types reference](./reference/data-types/)
+- [C++ node API reference](./reference/node-cpp-api/)
 
 </div>
 <h3 class="ui header">Standard library nodes</h3>
 
-* [`xod/bits`](https://xod.io/libs/xod/bits/)
-* [`xod/common-hardware`](https://xod.io/libs/xod/common-hardware/)
-* [`xod/core`](https://xod.io/libs/xod/core/) <i class="ui small yellow star outline icon"></i>
-* [`xod/gpio`](https://xod.io/libs/xod/gpio/)
-* [`xod/i2c`](https://xod.io/libs/xod/i2c/)
-* [`xod/math`](https://xod.io/libs/xod/math/)
-* [`xod/net`](https://xod.io/libs/xod/net/)
-* [`xod/stream`](https://xod.io/libs/xod/stream/)
-* [`xod/uart`](https://xod.io/libs/xod/uart/)
-* [`xod/units`](https://xod.io/libs/xod/units/)
+- [`xod/bits`](https://xod.io/libs/xod/bits/)
+- [`xod/common-hardware`](https://xod.io/libs/xod/common-hardware/)
+- [`xod/core`](https://xod.io/libs/xod/core/)
+  <i class="ui small yellow star outline icon"></i>
+- [`xod/gpio`](https://xod.io/libs/xod/gpio/)
+- [`xod/i2c`](https://xod.io/libs/xod/i2c/)
+- [`xod/math`](https://xod.io/libs/xod/math/)
+- [`xod/net`](https://xod.io/libs/xod/net/)
+- [`xod/stream`](https://xod.io/libs/xod/stream/)
+- [`xod/uart`](https://xod.io/libs/xod/uart/)
+- [`xod/units`](https://xod.io/libs/xod/units/)
 
 </div><!-- column -->
 
@@ -161,5 +162,5 @@ creating, managing, and sharing your works.
 <h2 id="contributing" class="ui header"><a href="./contributing/">Contributing</a></h2>
 
 Looking for the ways to improve the documentation, XOD language, or the
-ecosystem? There are many opportunities and we’re happy to accept any help.
-Read the summary in the [Contributor’s guide](./contributing/).
+ecosystem? There are many opportunities and we’re happy to accept any help. Read
+the summary in the [Contributor’s guide](./contributing/).

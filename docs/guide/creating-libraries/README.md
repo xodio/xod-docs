@@ -89,8 +89,8 @@ When ready, hit “File → Publish Library.” Review the proposed effects and 
 ![Publish screenshot](./publish.png)
 
 A few seconds later, your new library will be available at the
-[Libraries](/libs/) section on the XOD site. Feel free to announce your
-treasure to [XOD community](https://forum.xod.io).
+[Libraries](/libs/) section on the XOD site. Feel free to announce your treasure
+to [XOD community](https://forum.xod.io).
 
 ## Using own library
 
@@ -104,22 +104,22 @@ anyone else would do.
 If you have published a larger-than-trivial library, you will likely want to
 release an update for it sooner or later. To do so:
 
-1. Open the library project.
-2. Make the required changes.
-3. Update the metadata.
-4. Publish again.
+1.  Open the library project.
+2.  Make the required changes.
+3.  Update the metadata.
+4.  Publish again.
 
 A special note on updating the version field: You are not allowed to re-publish
 the same version as any you have posted before. The version number must be
 _bumped_. The best practice is to follow the [semver](https://semver.org/)
 convention:
 
-* increment the last number (1.3.1 → 1.3.2) if you're just fixing bugs or
+- increment the last number (1.3.1 → 1.3.2) if you're just fixing bugs or
   improving the documentation;
-* increment the middle number (1.3.1 → 1.4.0) if you're releasing new features
+- increment the middle number (1.3.1 → 1.4.0) if you're releasing new features
   preserving backward compatibility – i.e., you are adding new features, not
   changing existing ones; and
-* increment the first number (1.3.1 → 2.0.0) if you have made breaking changes.
+- increment the first number (1.3.1 → 2.0.0) if you have made breaking changes.
 
 Once the new version is published, to make it visible to your other projects,
 update the local installation of your own library by hitting “File → Add

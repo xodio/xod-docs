@@ -18,10 +18,10 @@ Let's imagine that you need to turn the servo to a certain angle, for instance
 to 45° when you receive true, and to 135° when you receive false. How can we
 make that work?
 
-There is an `if-else` node in `xod/core`. The `COND` pin of this node checks
-the boolean input value. If `COND` receives true, the node sets the value
-from the `T` pin to the `R` pin. When it receives false, it sets the value
-from the `F` pin to the `R` pin.
+There is an `if-else` node in `xod/core`. The `COND` pin of this node checks the
+boolean input value. If `COND` receives true, the node sets the value from the
+`T` pin to the `R` pin. When it receives false, it sets the value from the `F`
+pin to the `R` pin.
 
 ![Patch](./patch.png)
 
@@ -35,7 +35,7 @@ work.
 [↓ Download as a Fritzing project](./circuit.fzz)
 
 Now, if the comparison condition is true, the servo will turn to the angle from
-the `T` pin of the `if-else` node or, otherwise, to the angle set in the `F`
-pin of the same node.
+the `T` pin of the `if-else` node or, otherwise, to the angle set in the `F` pin
+of the same node.
 
 [Next lesson →](../20-fade/)

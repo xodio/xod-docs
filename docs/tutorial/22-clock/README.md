@@ -15,8 +15,8 @@ To get a better learning experience we recommend to install the
 Many tasks require you to set a specific frequency for the pulse generation.
 
 For this, we need a new node `clock`. It can produce pulse signals at time
-intervals specified by the `IVAL` pin. This way, we can control the frequency
-of data collection from our sensors.
+intervals specified by the `IVAL` pin. This way, we can control the frequency of
+data collection from our sensors.
 
 ![Patch](./patch.png)
 

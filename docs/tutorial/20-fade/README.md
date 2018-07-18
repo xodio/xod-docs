@@ -16,8 +16,8 @@ In the previous examples our servo turns to the set angle at its maximum speed.
 High speed is not always necessary and can damage the servo itself if the shaft
 hits an obstacle.
 
-Let’s improve our patch by making the servo move more smoothly. To achieve
-that, we’ll need to set the `VAL` pin value along with a series of transitional
+Let’s improve our patch by making the servo move more smoothly. To achieve that,
+we’ll need to set the `VAL` pin value along with a series of transitional
 values. There’s a node for that, and it's called `fade`.
 
 ![Patch](./patch.png)
@@ -25,9 +25,9 @@ values. There’s a node for that, and it's called `fade`.
 The `fade` node is in `xod/core`. This node returns a smooth series of
 transitional values, so it will smoothen our servo motion.
 
-* The `TARG` pin waits for a target value.
-* The `RATE` pin is a number that defines amount of change for the transitional
-values per each second.
+- The `TARG` pin waits for a target value.
+- The `RATE` pin is a number that defines amount of change for the transitional
+  values per each second.
 
 The output pin returns 0 at the start of the program. Then, it starts to move
 toward the `TARG` value by the `RATE` steps. The value of the output pin is

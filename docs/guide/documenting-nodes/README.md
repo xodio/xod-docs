@@ -63,11 +63,11 @@ Ctrl+Enter or click outside the comment to commit.
 Use [Markdown](https://en.wikipedia.org/wiki/Markdown) formatting if plain text
 is not enough. In particular:
 
-* \*stars\* to *emphasize*
-* \`backticks\` to refer to `pin`, `node`, `file` names
-* Blank line to start a new paragraph
-* Start a line with “\* ” for bullet list items
-* Start a line with “1. ” for ordered list items
+- \*stars\* to _emphasize_
+- \`backticks\` to refer to `pin`, `node`, `file` names
+- Blank line to start a new paragraph
+- Start a line with “\* ” for bullet list items
+- Start a line with “1. ” for ordered list items
 
 <div class="ui segment note">
 <span class="ui ribbon label">Note</span>

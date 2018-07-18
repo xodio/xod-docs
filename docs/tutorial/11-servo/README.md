@@ -36,9 +36,9 @@ lessons. The same is true for any “disappearing” parts in next chapters.
 
 ## How-to
 
-1. Add a `servo` node to the patch
-2. Set its `PORT` pin value
-3. Link the `VAL` input to an output which provides value in range 0–1.
+1.  Add a `servo` node to the patch
+2.  Set its `PORT` pin value
+3.  Link the `VAL` input to an output which provides value in range 0–1.
 
 ![Screencast](./screencast.gif)
 

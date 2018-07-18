@@ -13,8 +13,8 @@ To get a better learning experience we recommend to install the
 </div>
 
 There are many nodes in XOD. You can figure out which node does what by
-yourself; you just need to read the help page. There you would also
-details about pin value ranges.
+yourself; you just need to read the help page. There you would also details
+about pin value ranges.
 
 ![The helpbar](./helpbar.png)
 
@@ -22,10 +22,10 @@ details about pin value ranges.
 
 There are several ways to access a node help page.
 
-* Select a node you’re interested in. Open the Helpbar either by clicking main
+- Select a node you’re interested in. Open the Helpbar either by clicking main
   menu item “View → Toggle Helpbar” or pressing the “H” key.
-* Click the book icon in the Inspector or Project Browser to open the same
-  help article in a web browser.
+- Click the book icon in the Inspector or Project Browser to open the same help
+  article in a web browser.
 
 ![Screencast](./screencast.gif)
 

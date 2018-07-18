@@ -12,11 +12,11 @@ To get a better learning experience we recommend to install the
 <a href="/ide/">browser-based IDE</a>, and you’ll see the same tutorial there.
 </div>
 
-XOD uses fractional numbers (also known as floats) extensively. For example,
-the `LUM` pin on the `led` node can take values from 0 to 1.
-0 means absolute minimum of LED brightness. Basically, it means that LED is
-off. 1 means full brightness. You can control LED brightness by setting
-fractional values on `LUM` pin.
+XOD uses fractional numbers (also known as floats) extensively. For example, the
+`LUM` pin on the `led` node can take values from 0 to 1. 0 means absolute
+minimum of LED brightness. Basically, it means that LED is off. 1 means full
+brightness. You can control LED brightness by setting fractional values on `LUM`
+pin.
 
 ## Test circuit
 
@@ -31,12 +31,12 @@ The circuit is the same as for the previous lesson.
 
 ## How-to
 
-Use Inspector to enter a value with floating point. The following notations
-are supported:
+Use Inspector to enter a value with floating point. The following notations are
+supported:
 
-* 0.4
-* .4 (same as 0.4)
-* 4e-6 (scientific, 4×10<sup>-6</sup> = 0.000004)
+- 0.4
+- .4 (same as 0.4)
+- 4e-6 (scientific, 4×10<sup>-6</sup> = 0.000004)
 
 ![Inspector](./inspector.gif)
 

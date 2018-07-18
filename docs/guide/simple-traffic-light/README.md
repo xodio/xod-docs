@@ -9,12 +9,12 @@ title: Simple Traffic Light Example
 A traffic light is a good example of a device which does its job sequentially.
 In its simplest form a traffic light has three states:
 
-1. Green — go
-2. Yellow — stop if you can
-3. Red — stop!
+1.  Green — go
+2.  Yellow — stop if you can
+3.  Red — stop!
 
-Each state is active for some time interval and when done everything starts
-from the beginning and repeats again and again.
+Each state is active for some time interval and when done everything starts from
+the beginning and repeats again and again.
 
 Let’s make a traffic light device model with few electronic parts and XOD.
 
@@ -27,10 +27,10 @@ Let’s make a traffic light device model with few electronic parts and XOD.
 Create a new project in XOD and name it something like `my-traffic-light`. Now
 you have a program with a single patch `main`. What’s next?
 
-We have a state machine that we’re going to implement. There are several ways
-to do the job. Let's consider one of them. The basic idea is to have one patch
-node per state and a joining patch that will wire the state patch nodes
-together. In our case:
+We have a state machine that we’re going to implement. There are several ways to
+do the job. Let's consider one of them. The basic idea is to have one patch node
+per state and a joining patch that will wire the state patch nodes together. In
+our case:
 
 - `state-green`
 - `state-yellow`
@@ -61,8 +61,8 @@ to each state patch:
 ![State patch 1](./state-1.patch.png)
 
 Now each of our states has an input and output. We can wire them in a daisy
-chain so that when one state completes its job, it gives the control to the
-next state. Let’s do it on `main`:
+chain so that when one state completes its job, it gives the control to the next
+state. Let’s do it on `main`:
 
 ![Main patch 1](./main-1.patch.png)
 
@@ -80,9 +80,9 @@ answer few questions before doing that.
 - When should it exit?
 - What should it do right before exit?
 
-In our case, when we enter a state it should turn on the corresponding LED.
-Then it should wait few seconds, turn the LED off and then exit. Pretty simple.
-Do it for the `state-green`:
+In our case, when we enter a state it should turn on the corresponding LED. Then
+it should wait few seconds, turn the LED off and then exit. Pretty simple. Do it
+for the `state-green`:
 
 ![State patch 2](./state-2.patch.png)
 
@@ -103,14 +103,14 @@ the guide brevity, we violate the best practice.
 
 ## Running the sequence
 
-We are almost done. The only thing left is triggering the execution. Look at
-the `main` again:
+We are almost done. The only thing left is triggering the execution. Look at the
+`main` again:
 
 ![Main patch 1](./main-1.patch.png)
 
 Although the states are correctly chained, nothing would trigger entering the
-first state (i.e. the `state-green`). We want our traffic light to start its
-job right when the device is powered up. So a pulse from the
+first state (i.e. the `state-green`). We want our traffic light to start its job
+right when the device is powered up. So a pulse from the
 [`boot`](/libs/xod/core/boot/) node is the best choice:
 
 ![Main patch 2](./main-2.patch.png)
@@ -165,8 +165,9 @@ form a complementing traffic light. Have fun!
     <source src="./result.mp4" type="video/mp4">
 </video>
 
-If you have got problems trying to repeat the guide, [download the prepared
-project](./traffic-light-simple.xodball) and open it in the IDE.
+If you have got problems trying to repeat the guide,
+[download the prepared project](./traffic-light-simple.xodball) and open it in
+the IDE.
 
 ## Conclusion
 
@@ -174,9 +175,9 @@ Doing things sequentially in XOD could appear hard at first sight. Yes, it’s a
 bit harder than in traditional imperative languages, but not so complicated if
 you would remember the pattern:
 
-1. Understand your sequence states
-2. For each state make a patch node
-3. On each state patch, use pulse inputs and outputs to enter and exit the
-   state
-4. Make a joining patch which wires all states together
-5. Define an entry pulse for the first state
+1.  Understand your sequence states
+2.  For each state make a patch node
+3.  On each state patch, use pulse inputs and outputs to enter and exit the
+    state
+4.  Make a joining patch which wires all states together
+5.  Define an entry pulse for the first state

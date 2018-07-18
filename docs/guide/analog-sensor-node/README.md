@@ -5,8 +5,8 @@ title: Creating Analog Sensor Driver Nodes
 # Creating Analog Sensor Driver Nodes
 
 Many sensors provide measured values as voltage levels. A board can read the
-voltage level and perform some calculations to convert the voltage to
-reasonable units.
+voltage level and perform some calculations to convert the voltage to reasonable
+units.
 
 This article guides you through a process of adding support for such sensor. To
 do this, we’re going to create a new patch node. It is implied that you already
@@ -50,8 +50,8 @@ units space removes many ambiguities, simplifies node replacement, and data
 interchange.
 </div>
 
-So, in XOD we need to read analog values from the sensor, do the math, and
-we’ll get desired distance value in meters. While testing, use the
+So, in XOD we need to read analog values from the sensor, do the math, and we’ll
+get desired distance value in meters. While testing, use the
 [`watch`](/libs/xod/core/watch/) nodes to observe the results and verify
 correctness. Here is our patch:
 
@@ -65,8 +65,8 @@ realistic? Cool! We have a “body” for our new node.
 ## Wrap the reading into a node
 
 The current program works but has the `PORT` value hard-coded and contains the
-`watch` node not everyone would be interested in. Let’s move from the draft to
-a complete solution.
+`watch` node not everyone would be interested in. Let’s move from the draft to a
+complete solution.
 
 Create a new patch and name it like `gp2y0a02-range-meter`.
 
@@ -77,9 +77,9 @@ simplifies further node search and identification on a patch.
 </div>
 
 As you did before, cut/paste all nodes except the `watch` from the `main` patch
-to the `gp2y0a02-range-meter`. Again, we need few terminals to interact with
-the node. At the very least they are `PORT` value and the result. Don’t forget
-to give them sensible labels.
+to the `gp2y0a02-range-meter`. Again, we need few terminals to interact with the
+node. At the very least they are `PORT` value and the result. Don’t forget to
+give them sensible labels.
 
 ![Range meter patch node](./step2a.patch.png)
 

@@ -14,7 +14,7 @@ To get a better learning experience we recommend to install the
 
 You probably noticed that pins have different colors.
 
-The pin’s color indicates the *type* of data that this pin is compatible with.
+The pin’s color indicates the _type_ of data that this pin is compatible with.
 Green pins can take and return numerical values. Blue pins work with pulses, a
 special data type that we will return to later.
 
@@ -42,9 +42,9 @@ The circuit is the same as for the previous lesson.
 
 ## How-to
 
-1. Add a new `multiply` or another math node to the patch.
-2. Link its left input to the first value provider.
-3. Set the right input value with the Inspector or link it to an output too.
+1.  Add a new `multiply` or another math node to the patch.
+2.  Link its left input to the first value provider.
+3.  Set the right input value with the Inspector or link it to an output too.
 
 ![Screencast](./screencast.gif)
 

@@ -31,15 +31,15 @@ on the `MEM` pin from `false` to `true` and vice versa.
 
 ## How-to
 
-1. Assemble the circuit with the LED. Do not forget to specify the desired port
-   in the `PORT` pin.
-2. Set the flashing frequency in seconds using `IVAL`.
-3. Upload the patch to the Arduino.
+1.  Assemble the circuit with the LED. Do not forget to specify the desired port
+    in the `PORT` pin.
+2.  Set the flashing frequency in seconds using `IVAL`.
+3.  Upload the patch to the Arduino.
 
-The LED will turn on and off at the frequency you've chosen. Try to control
-the flashing speed of the LED with a potentiometer. To do this, connect the
-output of a pot node to the `IVAL` pin. Each time a pulse arrives at the `TGL`
-pin, the node toggles the boolean value on the `MEM` pin from `false` to `true`
-and vice versa.
+The LED will turn on and off at the frequency you've chosen. Try to control the
+flashing speed of the LED with a potentiometer. To do this, connect the output
+of a pot node to the `IVAL` pin. Each time a pulse arrives at the `TGL` pin, the
+node toggles the boolean value on the `MEM` pin from `false` to `true` and vice
+versa.
 
 [Next lesson →](../25-multiple-timelines/)

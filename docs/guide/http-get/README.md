@@ -34,7 +34,7 @@ The server responds back with an IP address of a requester (you) as it seemed
 from the outside world.
 
 ```json
-{"origin":"185.36.157.186"}
+{ "origin": "185.36.157.186" }
 ```
 
 The response is not so aesthetically pleasing, but it would be easy for a
@@ -136,7 +136,7 @@ data is processed on the fly as it goes in.
 Take a look at a sample response again:
 
 ```json
-{"origin":"185.36.157.186"}
+{ "origin": "185.36.157.186" }
 ```
 
 We are interested in the “185.36.157.186” part. The rest can be safely ignored.

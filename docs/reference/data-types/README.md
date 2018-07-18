@@ -2,17 +2,16 @@
 title: Data Types Reference
 ---
 
-Data Types Reference
-====================
+# Data Types Reference
 
 This reference briefly describes properties of built-in XOD types. To learn
 about the types see [Data types guide](/docs/guide/data-types/).
 
 ## Casting rules
 
-The following table shows *implicit* casts possible. That is, when a direct
-link between two various data types is valid. Even if the direct link is
-forbidden, there are nodes that help to convert between types explicitly.
+The following table shows _implicit_ casts possible. That is, when a direct link
+between two various data types is valid. Even if the direct link is forbidden,
+there are nodes that help to convert between types explicitly.
 
 <table class="ui definition single line table">
   <thead>
@@ -84,7 +83,8 @@ forbidden, there are nodes that help to convert between types explicitly.
   </tbody>
 </table>
 
-Here are details on how the data is transformed exactly when an implicit cast takes place.
+Here are details on how the data is transformed exactly when an implicit cast
+takes place.
 
 <table class="ui table">
   <thead>
@@ -170,7 +170,6 @@ This section summarizes valid text input (i.e., grammar) for various data types.
 It matters, for example, when you enter values in IDE with Inspector.
 
 ### Number literals
-
 
 <table class="ui compact table">
   <thead>
@@ -316,9 +315,9 @@ programmers), `3` (implied decimal 3), however the canonical form is as shown.
 </table>
 
 Note that analog port values can be converted to digital port values, but not
-vice versa.  So, in cases when an analog channel and a digital port share the
-same physical board pin (e.g., A6 and D4 on Arduino Leonardo) you must choose
-A6 for ADC reading, albeit for digital operations either will be suitable: `A6`
+vice versa. So, in cases when an analog channel and a digital port share the
+same physical board pin (e.g., A6 and D4 on Arduino Leonardo) you must choose A6
+for ADC reading, albeit for digital operations either will be suitable: `A6`
 will be coerced to `D4` by the runtime engine.
 
 ### String literals

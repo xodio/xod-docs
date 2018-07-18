@@ -17,8 +17,8 @@ Now, let's learn how to work with conditionals in XOD.
 We will measure a lightness level, and if the values exceed or are below the
 threshold, we will turn an LED on or off.
 
-XOD has `greater`-than and `less`-than nodes to do simple
-mathematical comparisons. They are in `xod/core`.
+XOD has `greater`-than and `less`-than nodes to do simple mathematical
+comparisons. They are in `xod/core`.
 
 ![Patch](./patch.png)
 
@@ -39,12 +39,12 @@ The circuit is the same as for the previous lesson.
 
 ## How-to
 
-* Place a `xod/core/less` (or `greater`) node to trigger an action when
-  a measured parameter goes under (or over) a threshold value.
-* Use the left pin to link the value measured.
-* Set the threshold as the right pin value.
-* In cases where figuring out the proper threshold is tricky use a value
-  from a potentiometer to adjust it dynamically.
+- Place a `xod/core/less` (or `greater`) node to trigger an action when a
+  measured parameter goes under (or over) a threshold value.
+- Use the left pin to link the value measured.
+- Set the threshold as the right pin value.
+- In cases where figuring out the proper threshold is tricky use a value from a
+  potentiometer to adjust it dynamically.
 
 ![Screencast](./screencast.gif)
 

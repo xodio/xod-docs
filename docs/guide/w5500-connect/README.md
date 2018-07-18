@@ -61,8 +61,8 @@ an LCD or a watch node to see the result:
 ![LAN IP output](./lan-ip-output.patch.png)
 
 For demonstration purposes we also use a `format-progress` node here which
-outputs a string “...”, “OK” or “ERR” to the second line of the display
-showing the connection progress.
+outputs a string “...”, “OK” or “ERR” to the second line of the display showing
+the connection progress.
 
 Upload the patch to your board. In an ordinary network it will show:
 
@@ -82,6 +82,6 @@ Beware, the quick way described here has some drawbacks:
   resources if compared to the static configuration.
 
 If you are OK with the basic connection, you can start network communication.
-For example, [fetch some data from the web with HTTP GET](../http-get/).
-Or you can make your connection more robust by using a [unique MAC and static
-IP setup](../w5500-advanced/).
+For example, [fetch some data from the web with HTTP GET](../http-get/). Or you
+can make your connection more robust by using a
+[unique MAC and static IP setup](../w5500-advanced/).

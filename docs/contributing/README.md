@@ -14,8 +14,8 @@ Show your attitude to planned changes, feature requests, ideas, and critics with
 a single click. Explore [issues](https://github.com/xodio/xod/issues) in the
 GitHub repo and [posts on the XOD forum](https://forum.xod.io), add 👍👎❤️ as
 you go to let us know a topic is significant. If we see a proposal is important
-to the community, we can raise its priority and deliver it quicker. Don’t be
-shy to use negative reactions: they help to make us correct decisions.
+to the community, we can raise its priority and deliver it quicker. Don’t be shy
+to use negative reactions: they help to make us correct decisions.
 
 The love powers XOD team. So, if you want to give us a bit of motivation, star
 the [XOD repository](https://github.com/xodio/xod) on GitHub.
@@ -39,8 +39,8 @@ reporting the exact steps so that anyone can reproduce the problem.
 Try to narrow down your scenario to a minimal working/failing example. That is,
 if you have a big program causing a problem, start with deleting parts not
 relevant to the issue and observing the result: is the problem still there?
-Repeat until you get the most straightforward sequence of steps to reproduce
-the problem without any noise surrounding it.
+Repeat until you get the most straightforward sequence of steps to reproduce the
+problem without any noise surrounding it.
 
 You may report the bug on the forum or as a
 [GitHub issue](https://github.com/xodio/xod/issues/new). The latter is much more
@@ -56,18 +56,18 @@ possible.
 ## Fix the grammar
 
 XOD core developers are not native English speakers. So, we commit grammar
-mistakes, typos, and sometimes have poor wording. Hey, grammar nazi, help XOD
-to fulfill your expectations.
+mistakes, typos, and sometimes have poor wording. Hey, grammar nazi, help XOD to
+fulfill your expectations.
 
 Phrases you see in the XOD IDE are embedded somewhere in the XOD source code
 which is open and [available on GitHub](https://github.com/xodio/xod). You can
 edit a file and send us a pull request within GitHub web interface without
 installing anything:
 
-* Enter the term you would like to change in the
+- Enter the term you would like to change in the
   [GitHub repository search](https://github.com/xodio/xod/search?utf8=%E2%9C%93&q=typozz&type=)
   to find and open a file with the mistake.
-* [Edit, commit, pull request](https://help.github.com/articles/editing-files-in-another-user-s-repository/).
+- [Edit, commit, pull request](https://help.github.com/articles/editing-files-in-another-user-s-repository/).
 
 If you’d like to review a bunch of UI phrases at once, many of them are spread
 over
@@ -89,6 +89,7 @@ language a stronger foundation.
 <a href="https://twitter.com/intent/tweet?text=Visual%20programming%20for%20Arduino!%20https://xod.io"
   target="_blank"><img src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social"
   height="24" /></a>
+
 <!-- counter _blank underscore ↑ -->
 
 If you have completed some device, project, video, or article using XOD, wow!
@@ -139,9 +140,9 @@ the GitHub repo and choose one of the issues to work on.
 
 The best candidates to start with are:
 
-* [Issues tagged with “help wanted”](https://github.com/xodio/xod/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
-* [Tweaks](https://github.com/xodio/xod/issues?q=is%3Aissue+is%3Aopen+label%3At%3Atweak)
-* [Bugs](https://github.com/xodio/xod/issues?q=is%3Aissue+is%3Aopen+label%3At%3Abug)
+- [Issues tagged with “help wanted”](https://github.com/xodio/xod/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
+- [Tweaks](https://github.com/xodio/xod/issues?q=is%3Aissue+is%3Aopen+label%3At%3Atweak)
+- [Bugs](https://github.com/xodio/xod/issues?q=is%3Aissue+is%3Aopen+label%3At%3Abug)
 
 Post a comment to an issue thread if you would like to take it on. We can
 provide more details and respond to technical questions. Others will see the

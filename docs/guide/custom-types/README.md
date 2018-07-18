@@ -19,9 +19,9 @@ creating a new project.
 
 In XOD custom types, as everything, are made out of patches. In
 `xod/patch-nodes` you’ll find an `output-self` marker node which acts like a
-regular output terminal, but rather than provide a value of a particular existing
-type, it _defines a new type_ with the name of that patch. Such patch then is
-called a _constructor_ of the type.
+regular output terminal, but rather than provide a value of a particular
+existing type, it _defines a new type_ with the name of that patch. Such patch
+then is called a _constructor_ of the type.
 
 We’ll define a new type `time`. To do so, create a new patch `time` and place an
 `output-self` node on it.

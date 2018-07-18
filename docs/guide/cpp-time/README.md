@@ -144,10 +144,10 @@ That’s all. Our node is ready. Test it with two buttons connected to `SET` and
 XOD provides quite a basic API to manage time. Although it is simple, you get
 all tools you need to control lengthy processes. Main principles are:
 
-* Use `setTimeout` to schedule re-evaluation of self. Remember, the timeout is
+- Use `setTimeout` to schedule re-evaluation of self. Remember, the timeout is
   expressed in milliseconds.
-* Always use `isTimedOut` to be sure you’re evaluating because the time has
+- Always use `isTimedOut` to be sure you’re evaluating because the time has
   passed.
-* If you want to run a task periodically, call `setTimeout` again manually when
+- If you want to run a task periodically, call `setTimeout` again manually when
   `isTimedOut`.
-* Use `clearTimeout` to ensure no timeout countdown is in progress.
+- Use `clearTimeout` to ensure no timeout countdown is in progress.

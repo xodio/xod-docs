@@ -33,9 +33,10 @@ That's it! You're ready to use nodes from the newly installed library.
 <div class="ui segment note">
 <span class="ui ribbon label">Note</span>
 
-There are libraries by someone called “xod”: `xod/bits`, `xod/units`,
-and so on. They are regular libraries although installed automatically along
-with XOD. Together they form the XOD _standard library_.
+There are libraries by someone called “xod”: `xod/bits`, `xod/units`, and so on.
+They are regular libraries although installed automatically along with XOD.
+Together they form the XOD _standard library_.
+
 </div>
 
 ## Upgrading and downgrading
@@ -77,14 +78,13 @@ installed again. So, to delete a library from the browser-based IDE, reload the
 IDE.
 
 The desktop version is different. When you add a library, its copy is stored
-locally at `<workspace>/__lib__`, where `<workspace>` is a current XOD
-workspace path (defaults to `<user-home-directory>/xod`). All libraries from
-this directory show up in the project browser when IDE starts. To delete a
-library:
+locally at `<workspace>/__lib__`, where `<workspace>` is a current XOD workspace
+path (defaults to `<user-home-directory>/xod`). All libraries from this
+directory show up in the project browser when IDE starts. To delete a library:
 
-1. close IDE;
-2. remove the corresponding library subdirectory with your file manager;
-3. start IDE.
+1.  close IDE;
+2.  remove the corresponding library subdirectory with your file manager;
+3.  start IDE.
 
 If you accidentally deleted a library your project depends on, it will be
 installed again automatically when you open the project, recovering the problem.

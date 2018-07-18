@@ -10,9 +10,8 @@ device using only such pure nodes is not realistic. Someone needs to keep state
 along program run time.
 
 A node can define state data that will persist for the time the program
-executes. In other words, a node can put some value to the state in
-`evaluate` call and retrieve that value in any of subsequent `evaluate`
-invocations.
+executes. In other words, a node can put some value to the state in `evaluate`
+call and retrieve that value in any of subsequent `evaluate` invocations.
 
 ## The task
 
@@ -34,8 +33,8 @@ new patch, add required terminals, and the `not-implemented-in-xod` node.
 
 ![Patch outline](./outline.patch.png)
 
-It’s a good idea to provide a resonable default value for `STEP`. We’ll set
-it to 1.
+It’s a good idea to provide a resonable default value for `STEP`. We’ll set it
+to 1.
 
 Double-click on `not-implemented-in-xod` node to open the code editor.
 

@@ -12,8 +12,8 @@ To get a better learning experience we recommend to install the
 <a href="/ide/">browser-based IDE</a>, and you’ll see the same tutorial there.
 </div>
 
-Brace yourself, because we are about to learn about the `text-lcd-16x2` node!
-If you haven’t already guessed, this node is used to control 16x2 LCD screens.
+Brace yourself, because we are about to learn about the `text-lcd-16x2` node! If
+you haven’t already guessed, this node is used to control 16x2 LCD screens.
 
 Now, let’s concentrate on the two `constant-string` nodes. These nodes contain
 and transmit data of type _string_. Yellow is used to indicate string type pins
@@ -39,7 +39,7 @@ to adjust contrast.
 
 ![Screencast](./screencast.gif)
 
-You should now see “Hello world!” displayed on the screen. Cool? Try to
-display your own message on the screen.
+You should now see “Hello world!” displayed on the screen. Cool? Try to display
+your own message on the screen.
 
 [Next lesson →](../27-lcd-data/)

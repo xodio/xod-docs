@@ -14,8 +14,8 @@ To get a better learning experience we recommend to install the
 
 Let’s make a funky watch hand. Now we have everything to do this.
 
-The clock will be the servo. Using the `count` node, we will change its
-rotation from 0° to 180° in one minute.
+The clock will be the servo. Using the `count` node, we will change its rotation
+from 0° to 180° in one minute.
 
 ![Patch](./patch.png)
 
@@ -30,12 +30,12 @@ increases the number that it gives out, in increments of the `STEP` pin.
 
 ## How-to
 
-1. In the `clock` node, set the value of `IVAL` to `1` second.
-2. In the `count` node, set `STEP` to `0.017`. This means that every time the
-   pulse arrives on the `INC` pin (in our case, once per second), the node will
-   increase the number on the output by 0.017. For the servo node, this is
-   approximately 3°.
-3. Upload the patch to the Arduino.
+1.  In the `clock` node, set the value of `IVAL` to `1` second.
+2.  In the `count` node, set `STEP` to `0.017`. This means that every time the
+    pulse arrives on the `INC` pin (in our case, once per second), the node will
+    increase the number on the output by 0.017. For the servo node, this is
+    approximately 3°.
+3.  Upload the patch to the Arduino.
 
 You will see that the servo is “ticking” every second. In one minute, it will
 reach 180°. The `count` node works as a simple counter. Each time it receives a

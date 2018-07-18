@@ -12,14 +12,14 @@ To get a better learning experience we recommend to install the
 <a href="/ide/">browser-based IDE</a>, and you’ll see the same tutorial there.
 </div>
 
-By using multiple independent pulse signals, we can create complex
-programs to control our devices. Here, we use two clock nodes to rotate the
-servo in one direction and then the other.
+By using multiple independent pulse signals, we can create complex programs to
+control our devices. Here, we use two clock nodes to rotate the servo in one
+direction and then the other.
 
 The patch for this chapter is little bigger than what we've seen so far. A good
-rule of thumb in XOD is to *read the patch from the bottom up*. That way you
-can see the cause and effect relationship created by the flow of the patch.
-First, you see the result and then what caused it!
+rule of thumb in XOD is to _read the patch from the bottom up_. That way you can
+see the cause and effect relationship created by the flow of the patch. First,
+you see the result and then what caused it!
 
 ![Patch](./patch.png)
 

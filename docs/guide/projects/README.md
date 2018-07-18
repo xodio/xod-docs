@@ -157,14 +157,14 @@ open the project in IDE.
 In an ideal world, it should work as described. But XOD is not
 complete yet and so has two flaws that you should eventually note.
 
-* If a project is open and references a library that you haven't installed yet,
+- If a project is open and references a library that you haven't installed yet,
   you'll see red nodes, links, and dead reference cautions. It will switch back
   to normal after few seconds when XOD auto installs required libraries from the
   cloud.
 
-* It could happen that a library that the project depends on has introduced some
+- It could happen that a library that the project depends on has introduced some
   backward-incompatible changes recently, and you'll be left with some dead
   references. In that case, you'll have to
   [downgrade problem libraries](../using-libraries/#upgrading-and-downgrading)
   manually.
-</div>
+  </div>

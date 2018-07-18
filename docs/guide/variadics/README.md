@@ -5,18 +5,18 @@ title: Variadic Nodes
 # Variadic Nodes
 
 There are operations which can be applied to an arbitrary number of input
-values. For example, consider the addition operation. Sure, intuitively you
-know how it works for two values, three values, or 42 values:
+values. For example, consider the addition operation. Sure, intuitively you know
+how it works for two values, three values, or 42 values:
 
-* 1 + 6 = 7
-* 1 + 6 + 3 = 10
-* 1 + 6 + 3 + …more summands… = someNumber
+- 1 + 6 = 7
+- 1 + 6 + 3 = 10
+- 1 + 6 + 3 + …more summands… = someNumber
 
 Other examples of such functions include number multiplication, string
 concatenation or joining, booleans AND’ing or OR’ing, n-th element choice, and
 so on.
 
-To natively support such operations, XOD offers a mechanism called *variadic*
+To natively support such operations, XOD offers a mechanism called _variadic_
 nodes. The variadic nodes can scale the number of their input pins to accept
 more or fewer values.
 
@@ -26,18 +26,18 @@ border of the node to add as many groups of variadic pins as you need.
 
 ![Overview](./overview.patch.png)
 
-The variadic pins replication count is called *arity level*. By default, the
+The variadic pins replication count is called _arity level_. By default, the
 arity level for a node is 1. When you add a pin to, for example, the `multiply`
 node, the arity level becomes 2, etc.
 
 ## Expansion
 
-A variadic node developer is responsible only for creating a node
-implementation for the first arity level. All subsequent arity level
-implementations are induced automatically by XOD. To achieve it, when
-transpiling the program each particular variadic node passes an *expansion*
-stage in which the system replaces it with a cascade of primitive level-1
-nodes. The replacement principle is better illustrated with an example.
+A variadic node developer is responsible only for creating a node implementation
+for the first arity level. All subsequent arity level implementations are
+induced automatically by XOD. To achieve it, when transpiling the program each
+particular variadic node passes an _expansion_ stage in which the system
+replaces it with a cascade of primitive level-1 nodes. The replacement principle
+is better illustrated with an example.
 
 ![Expansion](./expansion.patch.png)
 
@@ -57,8 +57,8 @@ arity level of the `select` node it gets two additional input pins.
 
 ![Select node with arity step 2](./select-a2.patch.png)
 
-Formally speaking, the number of variadic input pins which replicate together
-in a group is called *arity step*.
+Formally speaking, the number of variadic input pins which replicate together in
+a group is called _arity step_.
 
 Expansion process for the nodes with an arity step greater than one looks
 similar.
@@ -86,5 +86,5 @@ As a node user, you’ll rarely meditate on which pins are shared, and which are
 not. The usage pattern should be pretty apparent from the node designation.
 
 Arranging pins properly is a puzzle for the node creator. Read about all rules
-and nuances if you want to [create a new variadic
-node](../creating-variadics/) by yourself.
+and nuances if you want to [create a new variadic node](../creating-variadics/)
+by yourself.

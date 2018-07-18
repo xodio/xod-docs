@@ -2,21 +2,20 @@
 title: Tutorial
 ---
 
-Tutorial
-========
+# Tutorial
 
-* [Installing and running XOD](./install/)
-* [Required hardware](./required-hardware/)
+- [Installing and running XOD](./install/)
+- [Required hardware](./required-hardware/)
 
-1. [Hello](./01-hello/)
-2. [Upload to Arduino](./02-deploy/)
-3. [Pins, data, and the Inspector](./03-inspector/)
-4. [Fractional numbers and PWM](./04-pwm/)
-5. [Wiring configuration](./05-wiring/)
-6. [Adding nodes](./06-adding-nodes/)
-7. [Node labels](./07-labels/)
-8. [Constant nodes](./08-constants/)
-9. [Input from a potentiometer](./09-pot/)
+1.  [Hello](./01-hello/)
+2.  [Upload to Arduino](./02-deploy/)
+3.  [Pins, data, and the Inspector](./03-inspector/)
+4.  [Fractional numbers and PWM](./04-pwm/)
+5.  [Wiring configuration](./05-wiring/)
+6.  [Adding nodes](./06-adding-nodes/)
+7.  [Node labels](./07-labels/)
+8.  [Constant nodes](./08-constants/)
+9.  [Input from a potentiometer](./09-pot/)
 10. [Doing math](./10-math/)
 11. [Controlling servos](./11-servo/)
 12. [Accessing help](./12-help/)
@@ -37,4 +36,4 @@ Tutorial
 27. [Displaying sensor values on LCD](./27-lcd-data/)
 28. [String concatenation](./28-string-concat/)
 
-* [Complex projects?](./complex-projects/)
+- [Complex projects?](./complex-projects/)

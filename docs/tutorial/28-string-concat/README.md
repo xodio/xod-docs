@@ -4,8 +4,8 @@ title: String Concatenation
 
 # #28. String Concatenation
 
-We have already learned how to display readings from our sensors. But if we
-have more than one sensor, we'll need a way to tell the readings apart.
+We have already learned how to display readings from our sensors. But if we have
+more than one sensor, we'll need a way to tell the readings apart.
 
 The `concat` node will help us solve this problem.
 
@@ -23,17 +23,17 @@ placed at the end.
 
 ## How-to
 
-1. Find the `constant-string` node in the library. Add one per string that
-   never change. Alternatively, bind the desired value directly to a `concat`
-   pin via Inspector.
-2. Assign string values to each node using the Inspector. Try something like
-   “Temp: ” and “Light: ” to keep things short. Put a space at the end
-   so that when we combine it with another string they won't bunch up.
-3. Link the `VAL` pins of the `constant-string` nodes to the left pins of the
-   `concat` nodes. The `IN1` is the beginning of the line, it’s the first part.
-4. Link the outputs of the thermometer and photoresistor to the right pins on
-   the `concat` nodes. They will be the second part of the generated string.
-5. Upload the patch to the Arduino.
+1.  Find the `constant-string` node in the library. Add one per string that
+    never change. Alternatively, bind the desired value directly to a `concat`
+    pin via Inspector.
+2.  Assign string values to each node using the Inspector. Try something like
+    “Temp: ” and “Light: ” to keep things short. Put a space at the end so that
+    when we combine it with another string they won't bunch up.
+3.  Link the `VAL` pins of the `constant-string` nodes to the left pins of the
+    `concat` nodes. The `IN1` is the beginning of the line, it’s the first part.
+4.  Link the outputs of the thermometer and photoresistor to the right pins on
+    the `concat` nodes. They will be the second part of the generated string.
+5.  Upload the patch to the Arduino.
 
 ![Screencast](./screencast.gif)
 

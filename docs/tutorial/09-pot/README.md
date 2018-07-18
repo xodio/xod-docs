@@ -15,8 +15,8 @@ To get a better learning experience we recommend to install the
 Another ubiquitous source of values is a potentiometer (or simply “pot” for
 short). It is very handy to adjust some parameters smoothly.
 
-There is a special node `pot` to read values from a potentiometer. You will
-find it in the `xod/common-hardware` library.
+There is a special node `pot` to read values from a potentiometer. You will find
+it in the `xod/common-hardware` library.
 
 ![Patch](./patch.png)
 
@@ -28,10 +28,10 @@ find it in the `xod/common-hardware` library.
 
 ## How-to
 
-1. Add the `pot` node to your patch.
-2. Set the `PORT` pin value on the `pot` node to A0 if you have connected
-   the potentiometer to Arduino port A0 as shown above.
-3. Link the `pot` node `VAL` pin to input pins of nodes to control.
+1.  Add the `pot` node to your patch.
+2.  Set the `PORT` pin value on the `pot` node to A0 if you have connected the
+    potentiometer to Arduino port A0 as shown above.
+3.  Link the `pot` node `VAL` pin to input pins of nodes to control.
 
 ![Screencast](./screencast.gif)
 

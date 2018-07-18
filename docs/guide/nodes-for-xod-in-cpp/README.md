@@ -5,15 +5,15 @@ title: Creating Nodes for XOD in C++
 # Creating Nodes for XOD in C++
 
 When you need a new node that cannot be easily expressed as a
-[patch node](../nodes-for-xod-in-xod), you may implement it in C\++. Another case
-to choose C\++ is when performance matters much.
+[patch node](../nodes-for-xod-in-xod), you may implement it in C\++. Another
+case to choose C\++ is when performance matters much.
 
 The process outline is:
 
-1. Create a new patch.
-2. Place input/output terminals the same way you do when making patch nodes.
-3. Add a `xod/patch-nodes/not-implemented-in-xod` marker node.
-4. Double click the marker and write down C\++ code.
+1.  Create a new patch.
+2.  Place input/output terminals the same way you do when making patch nodes.
+3.  Add a `xod/patch-nodes/not-implemented-in-xod` marker node.
+4.  Double click the marker and write down C\++ code.
 
 ## The task
 
@@ -125,8 +125,8 @@ When the node works as expected, it is a good idea to complete the task by
 adding a description for the `cos` node and its pins. Describing C\++ nodes
 doesn’t differ anyhow from [documenting any other node](../documenting-nodes/):
 
-* Select nothing and put patch description in the Inspector.
-* Select terminal nodes one by one and fill the description in the Inspector.
+- Select nothing and put patch description in the Inspector.
+- Select terminal nodes one by one and fill the description in the Inspector.
 
 ## What’s next
 

@@ -5,10 +5,10 @@ title: Advanced Setup of W5500 Ethernet Shield for Internet and LAN
 # Advanced Setup of W5500 Ethernet Shield for Internet
 
 If you have an Ethernet Shield extension board based on a W5500 chip, it might
-be enough to place a single node for establishing an internet connection.
-Start with [Quick setup](../w5500-connect/) guide to see if it fits your needs.
-In cases when more control is required you have to build a chain of several
-nodes which is described in this guide.
+be enough to place a single node for establishing an internet connection. Start
+with [Quick setup](../w5500-connect/) guide to see if it fits your needs. In
+cases when more control is required you have to build a chain of several nodes
+which is described in this guide.
 
 ## Adding device node
 
@@ -63,12 +63,12 @@ Place it and link to the device node:
 ![Connect node](./connect-dhcp.patch.png)
 
 The `connect` node has a `DEV` input expecting a configured device. The rest
-works in the same way as described in the [Quick setup](../w5500-connect/)
-guide for the `ethernet-shield` node:
+works in the same way as described in the [Quick setup](../w5500-connect/) guide
+for the `ethernet-shield` node:
 
-* `CONN` initiates the connection process with the DHCP negotiation
-* `INET` represents the resulting internet connection
-* `OK` or `ERR` pulse on success or failure
+- `CONN` initiates the connection process with the DHCP negotiation
+- `INET` represents the resulting internet connection
+- `OK` or `ERR` pulse on success or failure
 
 To check the connection you can use `lan-ip`, `format-ip`, and `format-progress`
 nodes:

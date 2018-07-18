@@ -60,8 +60,8 @@ Let’s elaborate on each of concepts mentioned.
 
 A specialization is a regular patch having a distinctive name like:
 
-* `if-else(number)`
-* `if-else(string)`
+- `if-else(number)`
+- `if-else(string)`
 
 The name is made up of the abstraction patch name (`if-else` in this case) and
 type specialization for `t1` enclosed in parentheses.
@@ -77,12 +77,12 @@ However, sometimes you will want to be specific and use a specialization
 directly, like a regular node. That’s called _manual resolution_. To access a
 particular specialization, use one of the following methods:
 
-1. Find the specialization in the Project Browser and drag-n-drop it on your
-   patch as you would do with any regular node.
-2. Double-click your patch, type a part of the node name and add a left
-   parenthesis to see the specializations (e.g., type `if-el(`).
-3. Select a generic node to resolve manually, then in the inspector choose the
-   desired specialization in the drop-down below the node name.
+1.  Find the specialization in the Project Browser and drag-n-drop it on your
+    patch as you would do with any regular node.
+2.  Double-click your patch, type a part of the node name and add a left
+    parenthesis to see the specializations (e.g., type `if-el(`).
+3.  Select a generic node to resolve manually, then in the inspector choose the
+    desired specialization in the drop-down below the node name.
 
 ![Screencast](./screencast.gif)
 
@@ -95,17 +95,17 @@ The deduction is done based on actual types of links and values bound to the
 generic pins. XOD will show an error if types can’t be deduced unambiguously,
 for example when one pin of type `t1` pretend to be number and another `t1` pin
 wants to be a string. In such cases you can place cast nodes like
-[`format-number`](https://xod.io/libs/xod/core/format-number/) before the
-inputs explicitly.
+[`format-number`](https://xod.io/libs/xod/core/format-number/) before the inputs
+explicitly.
 
 A slightly more complicated process takes place when multiple generic nodes link
 in a chain with their generic pins. In such cases two subsequent passes of type
 deduction are performed:
 
-1. _weak_: a bottom-up pass in which generic inputs infer their types from
-   corresponding outputs;
-2. _strong_: a top-down pass while which generic outputs infer types from
-   corresponding inputs.
+1.  _weak_: a bottom-up pass in which generic inputs infer their types from
+    corresponding outputs;
+2.  _strong_: a top-down pass while which generic outputs infer types from
+    corresponding inputs.
 
 The strong pass overrides any results produced by the weak pass.
 
@@ -132,8 +132,8 @@ installed locally. For example, if the system is about to resolve an abstract
 `if-else` node with `t1` deduced to `number`, the following patches will be
 found:
 
-* `xod/core/if-else(number)`
-* `bob/stuff/if-else(number)`
+- `xod/core/if-else(number)`
+- `bob/stuff/if-else(number)`
 
 Now, if no specialization patches found XOD will show an error about unresolved
 abstract node. You have to create the specialization by yourself or install a

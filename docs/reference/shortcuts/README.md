@@ -6,10 +6,10 @@ title: Mouse and Keyboard Shortcuts
 
 For shortcuts the following convention is used:
 
-* <span class="ui label">C</span> — platform-neutral keyboard input;
-* <span class="ui blue label">Ctrl+C</span> — PC-only keyboard input;
-* <span class="ui grey label">⌘ C</span> — Mac-only keyboard input;
-* <span class="ui olive label">Click</span> — mouse input.
+- <span class="ui label">C</span> — platform-neutral keyboard input;
+- <span class="ui blue label">Ctrl+C</span> — PC-only keyboard input;
+- <span class="ui grey label">⌘ C</span> — Mac-only keyboard input;
+- <span class="ui olive label">Click</span> — mouse input.
 
 ## Project management
 

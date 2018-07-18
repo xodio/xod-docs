@@ -13,8 +13,8 @@ To get a better learning experience we recommend to install the
 </div>
 
 Let's learn how to upload your patch with the node to Arduino! For an example
-we’re going to use the `welcome-to-xod/02-deploy` patch. Although the process
-is the same for any patch.
+we’re going to use the `welcome-to-xod/02-deploy` patch. Although the process is
+the same for any patch.
 
 ![Patch](./patch.png)
 
@@ -26,26 +26,25 @@ is the same for any patch.
 
 ## Instructions for the desktop IDE
 
-1. Connect an Arduino to your computer.
-2. Hit “Deploy → Upload to Arduino” from the main menu.
-3. Select your board model and the port it is connected to, then click
-   “Upload”.
+1.  Connect an Arduino to your computer.
+2.  Hit “Deploy → Upload to Arduino” from the main menu.
+3.  Select your board model and the port it is connected to, then click
+    “Upload”.
 
 ![Upload to Arduino](./upload-desktop.gif)
 
 ## Instructions for the browser IDE
 
 The browser version does not have permissions to access USB-ports. So you can’t
-upload directly. However, you can use an existing Arduino IDE installation to
-do this.
+upload directly. However, you can use an existing Arduino IDE installation to do
+this.
 
-1. Assemble the circuit according to the picture above.
-2. Generate Arduino source code of your first program. To do this, hit
-   “Deploy → Show Code for Arduino”. Select all code and copy it to the
-   clipboard.
-3. Launch Arduino IDE and paste the code copied as is.
-4. Select a proper port and board in the “Tools” menu.
-5. Click the “Upload” button on the toolbar.
+1.  Assemble the circuit according to the picture above.
+2.  Generate Arduino source code of your first program. To do this, hit “Deploy
+    → Show Code for Arduino”. Select all code and copy it to the clipboard.
+3.  Launch Arduino IDE and paste the code copied as is.
+4.  Select a proper port and board in the “Tools” menu.
+5.  Click the “Upload” button on the toolbar.
 
 <div class="ui segment note">
 <span class="ui ribbon label">Note</span>
