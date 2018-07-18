@@ -1,0 +1,32 @@
+{
+  "name": "xod-docs",
+  "version": "0.22.0",
+  "description": "XOD documentation",
+  "scripts": {
+    "prettier": "prettier --write '**/*.md'",
+    "prettier-check": "prettier-check '**/*.md'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xodio/xod-docs.git"
+  },
+  "keywords": [
+    "xod",
+    "xodlang",
+    "documentation"
+  ],
+  "author": "XOD Developers",
+  "license": "CC BY-SA 4.0",
+  "bugs": {
+    "url": "https://github.com/xodio/xod-docs/issues"
+  },
+  "homepage": "https://github.com/xodio/xod-docs#readme",
+  "prettier": {
+    "parser": "markdown",
+    "proseWrap": "always"
+  },
+  "devDependencies": {
+    "prettier": "^1.13.7",
+    "prettier-check": "^2.0.0"
+  }
+}
