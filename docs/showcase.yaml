@@ -1,3 +1,15 @@
+- title: XOD powered mBot
+  image: ./__img__/mbot-pid.jpg
+  url: "https://medium.com/xodlang/how-to-program-mbot-with-xod-pid-controller-c3e310f8eceb"
+  author: Max Danilin
+  description: |
+    Article series (
+    <a
+      href="https://medium.com/xodlang/how-to-program-mbot-with-xod-pid-controller-c3e310f8eceb">Hand follower,</a><a
+      href="https://medium.com/xodlang/xod-powered-line-follower-mbot-2ae4a4862a9e">Line follower,</a><a
+      href="https://medium.com/xodlang/xod-and-pid-powered-self-balancing-mbot-6c420600271e">Self-balancer</a>
+    )
+
 - title: Automatic Trash Bin
   image: ./__img__/trash-bin.jpg
   url: "https://www.youtube.com/watch?v=KHysNei2bq8"
@@ -28,3 +40,4 @@
   url: "http://www.instructables.com/id/XOD-powered-Rechargeable-Solar-Lamp/"
   author: Victorian DeLorean
   description: Instructables article
+
