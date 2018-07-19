@@ -3,8 +3,10 @@
   "version": "0.22.0",
   "description": "XOD documentation",
   "scripts": {
-    "prettier": "prettier --write '**/*.md'",
-    "prettier-check": "prettier-check '**/*.md'"
+    "prettier": "prettier --write",
+    "prettier-check": "prettier-check",
+    "prettier:all": "prettier --write '**/*.md'",
+    "prettier-check:all": "prettier-check '**/*.md'"
   },
   "repository": {
     "type": "git",
@@ -16,7 +18,7 @@
     "documentation"
   ],
   "author": "XOD Developers",
-  "license": "CC BY-SA 4.0",
+  "license": "CC-BY-SA-4.0",
   "bugs": {
     "url": "https://github.com/xodio/xod-docs/issues"
   },
