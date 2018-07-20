@@ -2,7 +2,7 @@
 title: Наименование нод
 ---
 
-#07. Наименование нод
+# #07. Наименование нод
 
 <div class="ui segment note">
 <span class="ui ribbon label">Примечание</span>
