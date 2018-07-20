@@ -1,11 +1,16 @@
 ---
 title: Data Types Reference
+version: 1.1.0
 ---
 
 # Data Types Reference
 
 This reference briefly describes properties of built-in XOD types. To learn
 about the types see [Data types guide](/docs/guide/data-types/).
+
+## Color code
+
+![Color code](./color-code.patch.png)
 
 ## Casting rules
 
