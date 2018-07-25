@@ -21,7 +21,7 @@ title: Нода времени
 Попробуйте установить пин`IVAL` в `clock` ноде на `2`. Это значит что она будет
 посылать импульс каждые две секунды.
 
-## Test circuit
+## Схема
 
 <div class="ui segment note">
 <span class="ui ribbon label">Примечание</span>
