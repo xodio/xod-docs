@@ -1,8 +1,8 @@
 ---
-title: функция Flip-flop 
+title: Функция Flip-flop 
 ---
 
-# #24. функция Flip-flop 
+# #24. Функция Flip-flop 
 
 <div class="ui segment note">
 <span class="ui ribbon label">Примечание</span>
