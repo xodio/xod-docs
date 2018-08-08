@@ -1,3 +1,9 @@
+- title: IoT Split-flap weather forecast 
+  image: ./__img__/split-flip-display.jpg
+  url: "https://www.instructables.com/id/IoT-Split-flap-Weather-Forecast-Powered-by-XOD/"
+  author: Max Danilin
+  description: Instructables article
+
 - title: XOD powered mBot
   image: ./__img__/mbot-pid.jpg
   url: "https://medium.com/xodlang/how-to-program-mbot-with-xod-pid-controller-c3e310f8eceb"
