@@ -37,8 +37,7 @@ _min ≤ значение ≤ max_
 если тест пройден. Комбинация из 
 [`xod/core/less`](/libs/xod/core/less/),
 [`xod/core/greater`](/libs/xod/core/greater/), и
-[`xod/core/nor`](/libs/xod/core/nor/)  сделать это:
-![All on main](./step1.patch.png)
+[`xod/core/nor`](/libs/xod/core/nor/) cделает это:![All on main](./step1.patch.png)
 
 Загрузите программу, поверните ручку потенциометра, чтобы убедиться, что все работает так, как ожидалось.
 
