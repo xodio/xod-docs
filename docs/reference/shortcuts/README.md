@@ -1,5 +1,6 @@
 ---
 title: Mouse and Keyboard Shortcuts
+version: 1.1.0
 ---
 
 # Mouse and Keyboard Shortcuts
@@ -173,6 +174,13 @@ The shortcuts in the table below are active when the patch board is in focus.
       <td><span class="ui label" style="font-family: monospace">I</span> | <span class="ui olive label">Double-click</span></td>
       <td>
         Insert a node (invoke the quick search)
+      </td>
+    </tr>
+    <tr>
+      <td><span class="ui label" style="font-family: monospace">B</span>
+      <td>
+        Convert selected links to buses<br />
+        Or quickly create a new bus node at the cursor position while linking
       </td>
     </tr>
   </tbody>
