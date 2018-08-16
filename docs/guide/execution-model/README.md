@@ -1,5 +1,6 @@
 ---
 title: Execution Model in Detail
+version: 1.1.0
 ---
 
 # Execution Model in Detail
@@ -73,15 +74,15 @@ over time.
 
 ### Feedback loops handling
 
-In XOD, link cycles are not allowed. They would lead to deadlocks and hangs.
+A link that goes back to a direct or indirect upstream node creates a loop
+also known as graph cycle. Such links break the rules because having them
+makes evaluation order ambiguous: each node in the cycle depends on itself
+in the final turn.
 
-<div class="ui segment">
-<p><span class="ui ribbon label">XOD T0D0</span>
-Eventually XOD will support cycles through nodes that could break the
-deadlocks. It would allow to make feedback loops.  If you would like to give
-the feature more priority, we welcome you to <a href="//forum.xod.io">share
-your opinion on our forum</a>.</p>
-</div>
+To solve the problem a special `defer` node exists. It breaks the deadlock
+and passes a received value through the outgoing link on the next transaction.
+In other words, XOD supports the feedback loops, but the cycle path must
+have at least one `defer` node in it to clarify the correct evaluation order.
 
 ## Summary
 
