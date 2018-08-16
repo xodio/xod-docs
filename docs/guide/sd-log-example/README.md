@@ -1,8 +1,9 @@
 ---
-title: Temperature log example
+title: Temperature Log Example
+version: 1.0.1
 ---
 
-# Temperature log example
+# Temperature Log Example
 
 ![Temperature log example](./temperature-log-1.jpg)
 
