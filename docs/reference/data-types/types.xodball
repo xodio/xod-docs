@@ -1,0 +1,152 @@
+{
+  "name": "",
+  "patches": {
+    "@/color-code": {
+      "comments": {
+        "B1RiiKJNX": {
+          "content": "#\nCustom",
+          "id": "B1RiiKJNX",
+          "position": {
+            "x": 170,
+            "y": -204
+          },
+          "size": {
+            "height": 51,
+            "width": 170
+          }
+        },
+        "B1kFcYyE7": {
+          "content": "#\nNumber",
+          "id": "B1kFcYyE7",
+          "position": {
+            "x": -204,
+            "y": -306
+          },
+          "size": {
+            "height": 51,
+            "width": 170
+          }
+        },
+        "ByTLotyE7": {
+          "content": "#\nPort",
+          "id": "ByTLotyE7",
+          "position": {
+            "x": 170,
+            "y": -408
+          },
+          "size": {
+            "height": 51,
+            "width": 170
+          }
+        },
+        "Byurst1N7": {
+          "content": "#\nByte",
+          "id": "Byurst1N7",
+          "position": {
+            "x": 170,
+            "y": -306
+          },
+          "size": {
+            "height": 51,
+            "width": 170
+          }
+        },
+        "HyUbiKyE7": {
+          "content": "#\nBoolean",
+          "id": "HyUbiKyE7",
+          "position": {
+            "x": -204,
+            "y": -408
+          },
+          "size": {
+            "height": 51,
+            "width": 170
+          }
+        },
+        "SJqQiKk4X": {
+          "content": "#\nString",
+          "id": "SJqQiKk4X",
+          "position": {
+            "x": -204,
+            "y": -204
+          },
+          "size": {
+            "height": 51,
+            "width": 170
+          }
+        },
+        "rJgRwiKJV7": {
+          "content": "#\nPulse",
+          "id": "rJgRwiKJV7",
+          "position": {
+            "x": -204,
+            "y": -510
+          },
+          "size": {
+            "height": 51,
+            "width": 170
+          }
+        }
+      },
+      "nodes": {
+        "B1mWjKk4Q": {
+          "id": "B1mWjKk4Q",
+          "position": {
+            "x": -272,
+            "y": -408
+          },
+          "type": "xod/patch-nodes/input-boolean"
+        },
+        "BJwQoY1Nm": {
+          "id": "BJwQoY1Nm",
+          "position": {
+            "x": -272,
+            "y": -204
+          },
+          "type": "xod/patch-nodes/input-string"
+        },
+        "HJBSoY1Vm": {
+          "id": "HJBSoY1Vm",
+          "position": {
+            "x": 102,
+            "y": -306
+          },
+          "type": "xod/patch-nodes/input-byte"
+        },
+        "Hyt_qYJNQ": {
+          "id": "Hyt_qYJNQ",
+          "position": {
+            "x": -272,
+            "y": -306
+          },
+          "type": "xod/patch-nodes/input-number"
+        },
+        "S1cOitJ4Q": {
+          "id": "S1cOitJ4Q",
+          "position": {
+            "x": -272,
+            "y": -510
+          },
+          "type": "xod/patch-nodes/input-pulse"
+        },
+        "r1oUjtkVX": {
+          "id": "r1oUjtkVX",
+          "position": {
+            "x": 102,
+            "y": -408
+          },
+          "type": "xod/patch-nodes/input-port"
+        },
+        "rJnsoKyEQ": {
+          "id": "rJnsoKyEQ",
+          "position": {
+            "x": 102,
+            "y": -204
+          },
+          "type": "xod/i2c/input-i2c"
+        }
+      },
+      "path": "@/color-code"
+    }
+  }
+}

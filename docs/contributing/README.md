@@ -1,5 +1,6 @@
 ---
 title: Contributing to XOD
+version: 1.0.0
 ---
 
 # Contributing to XOD
@@ -125,11 +126,11 @@ Not everyone is comfortable with English. You can help international users by
 providing translated versions for documentation articles.
 
 Any original article is contained in a `README.md` file somewhere under the
-[`/docs/` directory](https://github.com/xodio/xod/tree/master/docs) in the
-repository. To provide a translation, create a new file next to the `README.md`
-with the name reflecting the target language (`DE.md`, `IT.md`, `PT.md`,
-`FR.md`, `ES.md`, `RU.md`, `JA.md`, `KO.md`, `CN.md`) and send us a pull
-request.
+[`/docs/` directory](https://github.com/xodio/xod-docs/tree/master/docs) in the
+[xod-docs](https://github.com/xodio/xod-docs) repository. To provide a
+translation, create a new file next to the `README.md` with the name reflecting
+the target language (`DE.md`, `IT.md`, `PT.md`, `FR.md`, `ES.md`, `RU.md`,
+`JA.md`, `KO.md`, `CN.md`) and send us a pull request.
 
 ## Contribute to code
 

@@ -1,0 +1,87 @@
+# People are listed in alphabetical order
+#
+# For valid activities see the last commented out fake item.
+# If you want to add another activity, add a renderer (an icon + title)
+# in the README.md
+
+- username: awgrover
+  activities:
+    libs: 1
+    ideas: 1
+
+- username: beragumbo
+  activities:
+    videos: 1
+
+- username: brusher
+  activities:
+    onsite: 1
+
+- username: bitrex
+  activities:
+    articles: 1
+
+- username: dox
+  activities:
+    replying: 1
+
+- username: erlit
+  activities:
+    onsite: 1
+
+- username: faberge
+  activities:
+    libs: 1
+
+- username: dronebotworkshop
+  activities:
+    videos: 1
+
+- username: e
+  activities:
+    onsite: 1
+
+- username: gabbapeople
+  activities:
+    onsite: 1
+
+- username: gweimer
+  activities:
+    libs: 1
+    ideas: 1
+    replying: 1
+
+- username: knopki
+  activities:
+    onsite: 1
+
+- username: moi-yashik2
+  activities:
+    translation: 1
+
+- username: nick
+  activities:
+    videos: 1
+
+- username: nkrkv
+  activities:
+    onsite: 1
+
+- username: warner
+  activities:
+    articles: 1
+
+# Uncomment to see all badges at once
+#- username: __test__
+  #activities:
+    #onsite: 1
+    #videos: 1
+    #articles: 1
+    #events: 1
+    #code: 1
+    #libs: 1
+    #translation: 1
+    #textfix: 1
+    #replying: 1
+    #ideas: 1
+    #bugs: 1

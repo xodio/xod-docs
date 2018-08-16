@@ -1,0 +1,402 @@
+{
+  "name": "",
+  "patches": {
+    "@/sdcard-temp-1-screenshot": {
+      "nodes": {
+        "HyW8V_tB7": {
+          "boundLiterals": {
+            "SkUjZA_L-": "On Boot"
+          },
+          "id": "HyW8V_tB7",
+          "position": {
+            "x": 102,
+            "y": 204
+          },
+          "type": "xod/core/count"
+        },
+        "SkZ-UN_KBX": {
+          "id": "SkZ-UN_KBX",
+          "position": {
+            "x": 306,
+            "y": 204
+          },
+          "type": "xod/common-hardware/thermometer-tmp36"
+        },
+        "r1gbUVdFSX": {
+          "id": "r1gbUVdFSX",
+          "position": {
+            "x": 238,
+            "y": 204
+          },
+          "type": "xod/core/system-time"
+        }
+      },
+      "path": "@/sdcard-temp-1-screenshot"
+    },
+    "@/sdcard-temp-2-screenshot": {
+      "links": {
+        "BJUWVFuYB7": {
+          "id": "BJUWVFuYB7",
+          "input": {
+            "nodeId": "ByG-4YdYSQ",
+            "pinKey": "Hk_1fUaMW"
+          },
+          "output": {
+            "nodeId": "ByX-NFdtBQ",
+            "pinKey": "HJU8CE2lW"
+          }
+        },
+        "BkOWNF_FB7": {
+          "id": "BkOWNF_FB7",
+          "input": {
+            "nodeId": "rk-b4K_Yrm",
+            "pinKey": "Bk74I0_SPyb"
+          },
+          "output": {
+            "nodeId": "ByX-NFdtBQ",
+            "pinKey": "HJU8CE2lW"
+          }
+        },
+        "SJrbNFOtrX": {
+          "id": "SJrbNFOtrX",
+          "input": {
+            "nodeId": "BJZNYuFSX",
+            "pinKey": "HJAq-A_8-"
+          },
+          "output": {
+            "nodeId": "ByX-NFdtBQ",
+            "pinKey": "HJU8CE2lW"
+          }
+        }
+      },
+      "nodes": {
+        "BJZNYuFSX": {
+          "boundLiterals": {
+            "SkUjZA_L-": "On Boot"
+          },
+          "id": "BJZNYuFSX",
+          "position": {
+            "x": -1,
+            "y": 101
+          },
+          "type": "xod/core/count"
+        },
+        "ByG-4YdYSQ": {
+          "id": "ByG-4YdYSQ",
+          "position": {
+            "x": 203,
+            "y": 101
+          },
+          "type": "xod/common-hardware/thermometer-tmp36"
+        },
+        "ByX-NFdtBQ": {
+          "boundLiterals": {
+            "B13SCNhl-": "0.25",
+            "BJJICN2lW": "On Boot"
+          },
+          "id": "ByX-NFdtBQ",
+          "position": {
+            "x": 135,
+            "y": -1
+          },
+          "type": "xod/core/clock"
+        },
+        "rk-b4K_Yrm": {
+          "id": "rk-b4K_Yrm",
+          "position": {
+            "x": 135,
+            "y": 101
+          },
+          "type": "xod/core/system-time"
+        }
+      },
+      "path": "@/sdcard-temp-2-screenshot"
+    },
+    "@/sdcard-temp-3-screenshot": {
+      "links": {
+        "BJSWrFuFHQ": {
+          "id": "BJSWrFuFHQ",
+          "input": {
+            "nodeId": "B1gbSKdYSm",
+            "pinKey": "HynENHNOz"
+          },
+          "output": {
+            "nodeId": "HyWSYdKrQ",
+            "pinKey": "r1yhZRd8W"
+          }
+        },
+        "Bk2bBtuFr7": {
+          "id": "Bk2bBtuFr7",
+          "input": {
+            "nodeId": "B1gbSKdYSm",
+            "pinKey": "rJJHNrVuM"
+          },
+          "output": {
+            "nodeId": "BkfZHKOtHm",
+            "pinKey": "BkEVI0uHwJb"
+          }
+        },
+        "Bk8-Ht_tBQ": {
+          "id": "Bk8-Ht_tBQ",
+          "input": {
+            "nodeId": "HyWSYdKrQ",
+            "pinKey": "HJAq-A_8-"
+          },
+          "output": {
+            "nodeId": "S1EbHY_YS7",
+            "pinKey": "HJU8CE2lW"
+          }
+        },
+        "HyDWSF_YSX": {
+          "id": "HyDWSF_YSX",
+          "input": {
+            "nodeId": "r1QbStOtSm",
+            "pinKey": "Hk_1fUaMW"
+          },
+          "output": {
+            "nodeId": "S1EbHY_YS7",
+            "pinKey": "HJU8CE2lW"
+          }
+        },
+        "SJcZHtuFB7": {
+          "id": "SJcZHtuFB7",
+          "input": {
+            "nodeId": "B1gbSKdYSm",
+            "pinKey": "rJJHNrVuM-$1"
+          },
+          "output": {
+            "nodeId": "r1QbStOtSm",
+            "pinKey": "rkFgMITM-"
+          }
+        },
+        "ryj-SY_FrX": {
+          "id": "ryj-SY_FrX",
+          "input": {
+            "nodeId": "BkfZHKOtHm",
+            "pinKey": "Bk74I0_SPyb"
+          },
+          "output": {
+            "nodeId": "S1EbHY_YS7",
+            "pinKey": "HJU8CE2lW"
+          }
+        }
+      },
+      "nodes": {
+        "B1gbSKdYSm": {
+          "arityLevel": 2,
+          "boundLiterals": {
+            "HynENHNOz": "\"\"",
+            "rJGQNB4df": "\"\\t \"",
+            "rJJHNrVuM-$1": "\"\""
+          },
+          "id": "B1gbSKdYSm",
+          "position": {
+            "x": 101,
+            "y": 203
+          },
+          "type": "xod/core/join"
+        },
+        "BkfZHKOtHm": {
+          "id": "BkfZHKOtHm",
+          "position": {
+            "x": 135,
+            "y": 101
+          },
+          "type": "xod/core/system-time"
+        },
+        "HyWSYdKrQ": {
+          "boundLiterals": {
+            "SkUjZA_L-": "On Boot"
+          },
+          "id": "HyWSYdKrQ",
+          "position": {
+            "x": -1,
+            "y": 101
+          },
+          "type": "xod/core/count"
+        },
+        "S1EbHY_YS7": {
+          "boundLiterals": {
+            "B13SCNhl-": "0.25",
+            "BJJICN2lW": "On Boot"
+          },
+          "id": "S1EbHY_YS7",
+          "position": {
+            "x": 135,
+            "y": -1
+          },
+          "type": "xod/core/clock"
+        },
+        "r1QbStOtSm": {
+          "id": "r1QbStOtSm",
+          "position": {
+            "x": 203,
+            "y": 101
+          },
+          "type": "xod/common-hardware/thermometer-tmp36"
+        }
+      },
+      "path": "@/sdcard-temp-3-screenshot"
+    },
+    "@/sdcard-temp-screenshot": {
+      "links": {
+        "B1uEbV_BX": {
+          "id": "B1uEbV_BX",
+          "input": {
+            "nodeId": "HkI6gEOrX",
+            "pinKey": "HynENHNOz"
+          },
+          "output": {
+            "nodeId": "B1HCK7uS7",
+            "pinKey": "r1yhZRd8W"
+          }
+        },
+        "BJVD57_rm": {
+          "id": "BJVD57_rm",
+          "input": {
+            "nodeId": "B1HCK7uS7",
+            "pinKey": "HJAq-A_8-"
+          },
+          "output": {
+            "nodeId": "rklr9XuHQ",
+            "pinKey": "HJU8CE2lW"
+          }
+        },
+        "ByWv9QdHQ": {
+          "id": "ByWv9QdHQ",
+          "input": {
+            "nodeId": "rJ3UKQ_Bm",
+            "pinKey": "Hk_1fUaMW"
+          },
+          "output": {
+            "nodeId": "rklr9XuHQ",
+            "pinKey": "HJU8CE2lW"
+          }
+        },
+        "H11wcm_SX": {
+          "id": "H11wcm_SX",
+          "input": {
+            "nodeId": "HkyBF7_S7",
+            "pinKey": "BJK0yEglf"
+          },
+          "output": {
+            "nodeId": "rJ3UKQ_Bm",
+            "pinKey": "rkoSQYUxm"
+          }
+        },
+        "HJg5-VOSX": {
+          "id": "HJg5-VOSX",
+          "input": {
+            "nodeId": "HkyBF7_S7",
+            "pinKey": "SJ1CkNggf"
+          },
+          "output": {
+            "nodeId": "HkI6gEOrX",
+            "pinKey": "HJrBNr4dG"
+          }
+        },
+        "SyiV-EdHX": {
+          "id": "SyiV-EdHX",
+          "input": {
+            "nodeId": "HkI6gEOrX",
+            "pinKey": "rJJHNrVuM-$1"
+          },
+          "output": {
+            "nodeId": "rJ3UKQ_Bm",
+            "pinKey": "rkFgMITM-"
+          }
+        },
+        "Symwc7_HQ": {
+          "id": "Symwc7_HQ",
+          "input": {
+            "nodeId": "SkzKtmdBQ",
+            "pinKey": "Bk74I0_SPyb"
+          },
+          "output": {
+            "nodeId": "rklr9XuHQ",
+            "pinKey": "HJU8CE2lW"
+          }
+        },
+        "ryF4ZEdB7": {
+          "id": "ryF4ZEdB7",
+          "input": {
+            "nodeId": "HkI6gEOrX",
+            "pinKey": "rJJHNrVuM"
+          },
+          "output": {
+            "nodeId": "SkzKtmdBQ",
+            "pinKey": "BkEVI0uHwJb"
+          }
+        }
+      },
+      "nodes": {
+        "B1HCK7uS7": {
+          "boundLiterals": {
+            "SkUjZA_L-": "On Boot"
+          },
+          "id": "B1HCK7uS7",
+          "position": {
+            "x": -170,
+            "y": 102
+          },
+          "type": "xod/core/count"
+        },
+        "HkI6gEOrX": {
+          "arityLevel": 2,
+          "boundLiterals": {
+            "HynENHNOz": "\"\"",
+            "rJGQNB4df": "\"\\t \"",
+            "rJJHNrVuM-$1": "\"\""
+          },
+          "id": "HkI6gEOrX",
+          "position": {
+            "x": -68,
+            "y": 204
+          },
+          "type": "xod/core/join"
+        },
+        "HkyBF7_S7": {
+          "boundLiterals": {
+            "BJGhy4lgG": "D10",
+            "rJbTJVxxM": "\"temp-log.txt\""
+          },
+          "id": "HkyBF7_S7",
+          "position": {
+            "x": -34,
+            "y": 306
+          },
+          "type": "xod/common-hardware/sd-log"
+        },
+        "SkzKtmdBQ": {
+          "id": "SkzKtmdBQ",
+          "position": {
+            "x": -34,
+            "y": 102
+          },
+          "type": "xod/core/system-time"
+        },
+        "rJ3UKQ_Bm": {
+          "id": "rJ3UKQ_Bm",
+          "position": {
+            "x": 34,
+            "y": 102
+          },
+          "type": "xod/common-hardware/thermometer-tmp36"
+        },
+        "rklr9XuHQ": {
+          "boundLiterals": {
+            "B13SCNhl-": "0.25",
+            "BJJICN2lW": "On Boot"
+          },
+          "id": "rklr9XuHQ",
+          "position": {
+            "x": -34,
+            "y": 0
+          },
+          "type": "xod/core/clock"
+        }
+      },
+      "path": "@/sdcard-temp-screenshot"
+    }
+  }
+}
