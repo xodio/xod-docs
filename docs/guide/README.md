@@ -1,5 +1,6 @@
 ---
 title: User Guide
+version: 1.1.0
 ---
 
 # User Guide
@@ -14,6 +15,7 @@ XOD language objects and processes described in detail.
 - [Execution model](./execution-model/)
 - [Variadic nodes](./variadics/)
 - [Generic nodes](./generics/)
+- [Buses](./buses/)
 
 ## Making your own nodes
 
