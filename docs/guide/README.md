@@ -30,6 +30,7 @@ The most straightforward way to extend XOD and add support for new hardware.
 - [Creating variadic patch nodes](./creating-variadics/)
 - [Creating generic patch nodes](./creating-generics/)
 - [Defining custom types](./custom-types/)
+- [Wrapping class-based Arduino libraries](./wrapping-arduino-libraries/)
 
 ## Case studies
 
