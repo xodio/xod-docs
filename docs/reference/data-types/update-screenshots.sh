@@ -1,5 +1,5 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 SRC=types.xodball
 
-$SHOT $SRC color-code ./color-code.patch.png 450
+"$SHOT" "$SRC" color-code ./color-code.patch.png 450
