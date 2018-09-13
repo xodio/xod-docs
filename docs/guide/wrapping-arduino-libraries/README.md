@@ -100,9 +100,9 @@ create an instance of the class:
 #pragma XOD require "https://github.com/adafruit/Adafruit-PN532"
 
 // Include C++ library:
-{{#global}}
+\{{#global}}
 #include <Adafruit_PN532.h>
-{{/global}}
+\{{/global}}
 
 // Adafruit_PN532 class wants to know ports in the moment of instantiation
 // but we don't know them at this moment.
@@ -115,7 +115,7 @@ struct State {
 // Define our custom type as a pointer on the class instance.
 using Type = Adafruit_PN532*;
 
-{{ GENERATED_CODE }}
+\{{ GENERATED_CODE }}
 
 void evaluate(Context ctx) {
     // It should be evaluated only once on the first (setup) transaction
@@ -175,7 +175,7 @@ Follow comments in the C++ code:
 struct State {
 };
 
-{{ GENERATED_CODE }}
+\{{ GENERATED_CODE }}
 
 void evaluate(Context ctx) {
     // The node responds only if there is an input pulse
@@ -244,7 +244,7 @@ struct Type {
     uint8_t items[7];
 };
 
-{{ GENERATED_CODE }}
+\{{ GENERATED_CODE }}
 
 void evaluate(Context ctx) {
     auto state = getState(ctx);
@@ -288,7 +288,7 @@ To compare two byte arrays we use the standard function `memcmp`:
 struct State {
 };
 
-{{ GENERATED_CODE }}
+\{{ GENERATED_CODE }}
 
 void evaluate(Context ctx) {
     auto uidA = getValue<input_IN1>(ctx);
@@ -323,7 +323,7 @@ Follow the C++ code:
 struct State {
 };
 
-{{ GENERATED_CODE }}
+\{{ GENERATED_CODE }}
 
 void evaluate(Context ctx) {
     if (!isInputDirty<input_READ>(ctx))
@@ -402,9 +402,9 @@ Well done!
     it in the code:
 
 ```cpp
-    {{#global}}
+    \{{#global}}
     #include <SomeLibrary.h>
-    {{/global}}
+    \{{/global}}
 ```
 
 3.  When you wrapping methods in nodes use verbs in their names (`pair-tag`,

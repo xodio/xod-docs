@@ -104,9 +104,9 @@ master-ветки. Если вы хотите подключить библио�
 #pragma XOD require "https://github.com/adafruit/Adafruit-PN532"
 
 // Подключим библиотеку в наш код:
-{{#global}}
+\{{#global}}
 #include <Adafruit_PN532.h>
-{{/global}}
+\{{/global}}
 
 struct State {
     // Класс Adafruit_PN532 требует указать пины подключения в момент
@@ -119,7 +119,7 @@ struct State {
 // Обозначаем наш кастомный тип как указатель на экземпляр класса
 using Type = Adafruit_PN532*;
 
-{{ GENERATED_CODE }}
+\{{ GENERATED_CODE }}
 
 void evaluate(Context ctx) {
     // Функция должна исполниться один раз на первой (setup) транзакции
@@ -180,7 +180,7 @@ NFC сканер и начать работать с ним. Для этого �
 struct State {
 };
 
-{{ GENERATED_CODE }}
+\{{ GENERATED_CODE }}
 
 void evaluate(Context ctx) {
     // Нода реагирует только если есть входной пульс
@@ -253,7 +253,7 @@ struct Type {
     uint8_t items[7];
 };
 
-{{ GENERATED_CODE }}
+\{{ GENERATED_CODE }}
 
 void evaluate(Context ctx) {
     auto state = getState(ctx);
@@ -294,7 +294,7 @@ void evaluate(Context ctx) {
 struct State {
 };
 
-{{ GENERATED_CODE }}
+\{{ GENERATED_CODE }}
 
 void evaluate(Context ctx) {
     auto uidA = getValue<input_IN1>(ctx);
@@ -329,7 +329,7 @@ void evaluate(Context ctx) {
 struct State {
 };
 
-{{ GENERATED_CODE }}
+\{{ GENERATED_CODE }}
 
 void evaluate(Context ctx) {
     if (!isInputDirty<input_READ>(ctx))
@@ -412,9 +412,9 @@ NFC-метка?
     коде:
 
 ```cpp
-    {{#global}}
+    \{{#global}}
     #include <SomeLibrary.h>
-    {{/global}}
+    \{{/global}}
 ```
 
 4.  Оборачивая методы в ноды используйте в их названии глаголы (`pair-tag`,
