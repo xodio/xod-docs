@@ -1,3 +1,3 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
-$SHOT ../tutorial-update-screenshot.xodball 24-flip-flop ./patch.png 400
+"$SHOT" ../tutorial-update-screenshot.xodball 24-flip-flop ./patch.png 400
