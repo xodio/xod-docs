@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 # TODO: add more steps to xodball
-$SHOT ./traffic-light-simple.xodball state-green ./state-2.patch.png 540
+"$SHOT" ./traffic-light-simple.xodball state-green ./state-2.patch.png 540

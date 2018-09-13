@@ -1,3 +1,3 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
-$SHOT ../tutorial-update-screenshot.xodball 14-map-adjust ./patch.png 400
+"$SHOT" ../tutorial-update-screenshot.xodball 14-map-adjust ./patch.png 400
