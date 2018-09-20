@@ -40,6 +40,11 @@ The most straightforward way to extend XOD and add support for new hardware.
 - [Simple traffic light example](./simple-traffic-light/) — doing things
   sequentially
 
+Interfaces and protocols:
+
+- [Controlling LEDs via UART](./uart-led-control) — exchanging text-based data
+  between two boards
+
 IoT and network communication:
 
 - [Quick setup of W5500 Ethernet Shield for Internet and LAN communication](./w5500-connect/)
