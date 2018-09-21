@@ -42,16 +42,19 @@ Take a look on class constructors in the Adafruit library:
 ```cpp
 class Adafruit_PN532{
     public:
-        Adafruit_PN532(uint8_t clk, uint8_t miso, uint8_t mosi, uint8_t ss);  // Software SPI
-        Adafruit_PN532(uint8_t irq, uint8_t reset);  // Hardware I2C
-        Adafruit_PN532(uint8_t ss);  // Hardware SPI
+        // Software SPI
+        Adafruit_PN532(uint8_t clk, uint8_t miso, uint8_t mosi, uint8_t ss);
+        // Hardware I2C
+        Adafruit_PN532(uint8_t irq, uint8_t reset);
+        // Hardware SPI
+        Adafruit_PN532(uint8_t ss);
         // …
 };
 ```
 
 The class has three constructors for different connection types: HardwareSPI,
-SoftwareSPI and HardwareI2C. Choose the last one and create the device node for
-the I2C connection:
+HardwareI2C, and SoftwareSPI. Choose the second one and create the device node
+for the I2C connection:
 
 1.  Create a new patch "pn532-device". The name of the patch becomes the name of
     the new custom type, which we will later pass into action nodes. Pay
@@ -331,7 +334,8 @@ void evaluate(Context ctx) {
 
     auto nfc = getValue<input_DEV>(ctx);
 
-    // Create a variable of a custom type by getting the type from output terminal
+    // Create a variable of a custom type
+    // by getting the type from output terminal
     ValueType<output_UID>::T uid;
     // Create a variable to store length of the UID
     uint8_t uidLength;
@@ -339,7 +343,11 @@ void evaluate(Context ctx) {
     // Fill UID with zeroes
     memset(uid.items, 0, sizeof(uid.items));
     // Detect the tag and read the UID
-    bool res = nfc->readPassiveTargetID(PN532_MIFARE_ISO14443A, uid.items, &uidLength);
+    bool res = nfc->readPassiveTargetID(
+      PN532_MIFARE_ISO14443A,
+      uid.items,
+      &uidLength
+    );
 
     if (res) {
         emitValue<output_UID>(ctx, uid);
@@ -401,11 +409,11 @@ Well done!
 2.  In addition to specifying where to get the library, do not forget to include
     it in the code:
 
-```cpp
-    \{{#global}}
-    #include <SomeLibrary.h>
-    \{{/global}}
-```
+    ```cpp
+        \{{#global}}
+        #include <SomeLibrary.h>
+        \{{/global}}
+    ```
 
 3.  When you wrapping methods in nodes use verbs in their names (`pair-tag`,
     `write-page`).
