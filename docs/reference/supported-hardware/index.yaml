@@ -544,6 +544,35 @@
           flavor: Brk
           url: https://www.sparkfun.com/products/12708
 
+- section: "RFID/NFC"
+  parts:
+    - part: PN532
+      kind: RFID/NFC
+      vendor: NXP
+      nodes:
+        - xod-dev/pn532-nfc
+      shopping:
+        - shop: Adafruit
+          sku: "#364"
+          flavor: Brk
+          url: https://www.adafruit.com/product/364
+        - shop: DFRobot
+          sku: DFR0231
+          flavor: Mod
+          url: https://www.dfrobot.com/product-892.html
+        - shop: Seeed
+          sku: 113030001
+          flavor: Sh
+          url: https://www.seeedstudio.com/NFC-Shield-V2-0-p-1370.html
+        - shop: Seeed
+          sku: 113020006
+          flavor: Mod
+          url: https://www.seeedstudio.com/Grove-NFC-p-1804.html
+        - shop: Seeed
+          sku: 113040010
+          flavor: Mod
+          url: https://www.seeedstudio.com/Xadow-NFC-v2-p-2562.html
+
 - section: "Network adapters"
   parts:
     - part: ESP8266
