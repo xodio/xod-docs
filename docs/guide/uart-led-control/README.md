@@ -1,5 +1,9 @@
 ---
 title: Controlling LEDs via UART — Exchanging Text-based Data Between Two Boards
+description: |
+  How to exchange data between two Arduino boards and how to control LEDs via
+  UART interface.
+image: ./uart-example.jpg
 ---
 
 # Controlling LEDs via UART — Exchanging Text-based Data Between Two Boards
@@ -213,17 +217,17 @@ UART. Create a new patch for the LEDs connected board and name it `leds`.
 
 - To set up the software serial interface put the
   [`soft-uart`](https://xod.io/libs/xod/uart/soft-uart/) node from the
-  `xod/uart` library onto the patch. Set `RX` and `TX` pin values. We put
-  the `D8` value to the `RX` pin and the `D9` value to the `TX`.
-- Arduino boards must communicate at the same speed. The `BAUD` pin value is the same as on the
-  previous patch. Put the `19200` value to the `BAUD` pin.
-- Add the `read-line` onto the patch. This node listens to the UART interface for the stream of
-  bytes. If it is available, the `read-line` node searches the `\n` byte literal
-  in it and dumps all the characters before the `\n` to a single line. It also
-  cuts the `\r` byte literal from the output. The `READ` pin triggers a new read
-  of a line. 
-- Link the `UART` pin of the `read-line` node with the `soft-uart`
-  node and set the `READ` value to `Continuously`.
+  `xod/uart` library onto the patch. Set `RX` and `TX` pin values. We put the
+  `D8` value to the `RX` pin and the `D9` value to the `TX`.
+- Arduino boards must communicate at the same speed. The `BAUD` pin value is the
+  same as on the previous patch. Put the `19200` value to the `BAUD` pin.
+- Add the `read-line` onto the patch. This node listens to the UART interface
+  for the stream of bytes. If it is available, the `read-line` node searches the
+  `\n` byte literal in it and dumps all the characters before the `\n` to a
+  single line. It also cuts the `\r` byte literal from the output. The `READ`
+  pin triggers a new read of a line.
+- Link the `UART` pin of the `read-line` node with the `soft-uart` node and set
+  the `READ` value to `Continuously`.
 
 ### Parse data
 
