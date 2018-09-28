@@ -1,6 +1,6 @@
 ---
 title: Wrapping Class-based Arduino Libraries
-version: 1.0.0
+version: 1.0.1
 ---
 
 # Wrapping Class-based Arduino Libraries
@@ -9,8 +9,8 @@ Many libraries already have been written for Arduino and they can be included
 into XOD to use the full power of the existing ecosystem.
 
 To understand this guide, you have to know how to write
-[C++ code in XOD](../../nodes-for-xod-in-cpp/) and how to work with
-[custom types](../../custom-types/). Also, you need to have some experience of
+[C++ code in XOD](../nodes-for-xod-in-cpp/) and how to work with
+[custom types](../custom-types/). Also, you need to have some experience of
 working with C++ libraries for Arduino.
 
 Imagine that we want our Arduino board to turn the built-in led on or off when
@@ -217,7 +217,7 @@ Now we can initialize the RFID/NFC module.
 <div class="ui segment note">
 <span class="ui ribbon label">Note</span>
 
-Do not forget to give [descriptions](../../documenting-nodes/) to terminals and
+Do not forget to give [descriptions](../documenting-nodes/) to terminals and
 patches.
 
 </div>
@@ -420,5 +420,5 @@ Well done!
 4.  Create quick start nodes to solve common problems (`nfc-scanner`,
     `nfc-writer`)
 
-Now you can [add project description and share it](../../creating-libraries/)
+Now you can [add project description and share it](../creating-libraries/)
 with the community.
