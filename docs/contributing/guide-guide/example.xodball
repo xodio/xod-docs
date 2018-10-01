@@ -1,0 +1,121 @@
+{
+  "name": "",
+  "patches": {
+    "@/comments": {
+      "comments": {
+        "H11B7ck97": {
+          "content": "<- [3]",
+          "id": "H11B7ck97",
+          "position": {
+            "x": -34,
+            "y": -102
+          },
+          "size": {
+            "height": 51,
+            "width": 68
+          }
+        },
+        "HJgEQcycm": {
+          "content": "[2] ->",
+          "id": "HJgEQcycm",
+          "position": {
+            "x": -204,
+            "y": -204
+          },
+          "size": {
+            "height": 51,
+            "width": 68
+          }
+        },
+        "S1PQQq1cQ": {
+          "content": "<- [1]",
+          "id": "S1PQQq1cQ",
+          "position": {
+            "x": 34,
+            "y": -306
+          },
+          "size": {
+            "height": 51,
+            "width": 136
+          }
+        }
+      },
+      "links": {
+        "BkBzQ9y97": {
+          "id": "BkBzQ9y97",
+          "input": {
+            "nodeId": "ByXf75k9Q",
+            "pinKey": "HkXK-dGob"
+          },
+          "output": {
+            "nodeId": "rk2bX5yqQ",
+            "pinKey": "SyomIRurDJ-"
+          }
+        },
+        "SJRbXckcm": {
+          "id": "SJRbXckcm",
+          "input": {
+            "nodeId": "rk2bX5yqQ",
+            "pinKey": "BJnQUR_BwyZ"
+          },
+          "output": {
+            "nodeId": "HJRe79kcQ",
+            "pinKey": "B1x2RV3eZ"
+          }
+        },
+        "rkyf7cJ5X": {
+          "id": "rkyf7cJ5X",
+          "input": {
+            "nodeId": "rk2bX5yqQ",
+            "pinKey": "HkqmLAOrD1W"
+          },
+          "output": {
+            "nodeId": "ryL-XckqQ",
+            "pinKey": "B1x2RV3eZ"
+          }
+        }
+      },
+      "nodes": {
+        "ByXf75k9Q": {
+          "id": "ByXf75k9Q",
+          "position": {
+            "x": -102,
+            "y": -102
+          },
+          "type": "xod/core/watch"
+        },
+        "HJRe79kcQ": {
+          "boundLiterals": {
+            "B1x2RV3eZ": "42"
+          },
+          "id": "HJRe79kcQ",
+          "position": {
+            "x": -136,
+            "y": -306
+          },
+          "type": "xod/core/constant-number"
+        },
+        "rk2bX5yqQ": {
+          "id": "rk2bX5yqQ",
+          "position": {
+            "x": -102,
+            "y": -204
+          },
+          "type": "xod/core/add"
+        },
+        "ryL-XckqQ": {
+          "boundLiterals": {
+            "B1x2RV3eZ": "15"
+          },
+          "id": "ryL-XckqQ",
+          "position": {
+            "x": -34,
+            "y": -306
+          },
+          "type": "xod/core/constant-number"
+        }
+      },
+      "path": "@/comments"
+    }
+  }
+}
