@@ -1,0 +1,147 @@
+{
+  "name": "",
+  "patches": {
+    "@/1-connect-node": {
+      "nodes": {
+        "r12zaWzcm": {
+          "id": "r12zaWzcm",
+          "position": {
+            "x": -1,
+            "y": -1
+          },
+          "type": "xod-dev/esp8266-mcu/connect"
+        }
+      },
+      "path": "@/1-connect-node"
+    },
+    "@/2-connecting-to-wifi": {
+      "links": {
+        "BkgbnWGqQ": {
+          "id": "BkgbnWGqQ",
+          "input": {
+            "nodeId": "Hyx12bMcQ",
+            "pinKey": "rJUjrCTUb"
+          },
+          "output": {
+            "nodeId": "H1WasWGq7",
+            "pinKey": "HyLAraK8Km"
+          }
+        },
+        "HyW-nWM9m": {
+          "id": "HyW-nWM9m",
+          "input": {
+            "nodeId": "Hyx12bMcQ",
+            "pinKey": "rJUjrCTUb-$1"
+          },
+          "output": {
+            "nodeId": "H1WasWGq7",
+            "pinKey": "HJ7RrpFUY7"
+          }
+        },
+        "SJWg2WMcm": {
+          "id": "SJWg2WMcm",
+          "input": {
+            "nodeId": "Hyx12bMcQ",
+            "pinKey": "rygjH06LW"
+          },
+          "output": {
+            "nodeId": "B1YRiWfqQ",
+            "pinKey": "By1xaQb-m"
+          }
+        },
+        "SJqZ2WMcQ": {
+          "id": "SJqZ2WMcQ",
+          "input": {
+            "nodeId": "ByOb2ZfqQ",
+            "pinKey": "HJdO9HwJ-"
+          },
+          "output": {
+            "nodeId": "Hyx12bMcQ",
+            "pinKey": "S1yaHC6UW"
+          }
+        },
+        "SyjpiWMqQ": {
+          "id": "SyjpiWMqQ",
+          "input": {
+            "nodeId": "HyKpoZGc7",
+            "pinKey": "SkGtVFvY7"
+          },
+          "output": {
+            "nodeId": "H1WasWGq7",
+            "pinKey": "H1Gd15UFQ"
+          }
+        },
+        "rkjAsWMc7": {
+          "id": "rkjAsWMc7",
+          "input": {
+            "nodeId": "B1YRiWfqQ",
+            "pinKey": "H17mp7ZZX"
+          },
+          "output": {
+            "nodeId": "HyKpoZGc7",
+            "pinKey": "ryxn_NYPKX"
+          }
+        },
+        "ryn-hWz57": {
+          "id": "ryn-hWz57",
+          "input": {
+            "nodeId": "ByOb2ZfqQ",
+            "pinKey": "S1n95SDJb"
+          },
+          "output": {
+            "nodeId": "Hyx12bMcQ",
+            "pinKey": "rkWHDAW_f"
+          }
+        }
+      },
+      "nodes": {
+        "B1YRiWfqQ": {
+          "id": "B1YRiWfqQ",
+          "position": {
+            "x": 170,
+            "y": 306
+          },
+          "type": "xod/net/format-ip"
+        },
+        "ByOb2ZfqQ": {
+          "id": "ByOb2ZfqQ",
+          "position": {
+            "x": 102,
+            "y": 510
+          },
+          "type": "xod/core/console-log"
+        },
+        "H1WasWGq7": {
+          "id": "H1WasWGq7",
+          "position": {
+            "x": 170,
+            "y": 102
+          },
+          "type": "xod-dev/esp8266-mcu/connect"
+        },
+        "HyKpoZGc7": {
+          "id": "HyKpoZGc7",
+          "position": {
+            "x": 170,
+            "y": 204
+          },
+          "type": "xod-dev/esp8266-mcu/lan-ip"
+        },
+        "Hyx12bMcQ": {
+          "arityLevel": 2,
+          "boundLiterals": {
+            "S10qrR6UZ": "\"Connecting\"",
+            "rygjH06LW-$1": "\"Error\""
+          },
+          "id": "Hyx12bMcQ",
+          "position": {
+            "x": 102,
+            "y": 408
+          },
+          "type": "xod/core/select"
+        }
+      },
+      "path": "@/2-connecting-to-wifi"
+    }
+  }
+}
