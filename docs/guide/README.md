@@ -34,8 +34,16 @@ The most straightforward way to extend XOD and add support for new hardware.
 
 ## Case studies
 
-- [Temperature log example](./sd-log-example/) — logging to SD card and visualizing data
-- [Simple traffic light example](./simple-traffic-light/) — doing things sequentially
+- [Digital clock example](./rtc-example/) — working with RTC modules
+- [Temperature log example](./sd-log-example/) — logging to SD card and
+  visualizing data
+- [Simple traffic light example](./simple-traffic-light/) — doing things
+  sequentially
+
+Interfaces and protocols:
+
+- [Controlling LEDs via UART](./uart-led-control) — exchanging text-based data
+  between two boards
 
 IoT and network communication:
 

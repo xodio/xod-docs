@@ -25,7 +25,7 @@
   "homepage": "https://github.com/xodio/xod-docs#readme",
   "prettier": {
     "parser": "markdown",
-    "proseWrap": "always"
+    "proseWrap": "never"
   },
   "devDependencies": {
     "prettier": "^1.13.7",
