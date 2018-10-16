@@ -1,6 +1,6 @@
 ---
 title: User Guide
-version: 1.1.0
+version: 1.2.0
 ---
 
 # User Guide
@@ -49,6 +49,7 @@ IoT and network communication:
 
 - [Quick setup of W5500 Ethernet Shield for Internet and LAN communication](./w5500-connect/)
 - [Advanced setup of W5500](./w5500-advanced/)
+- [Connecting to Internet with ESP8266-based MCUs](./esp8266-connect/)
 - [Fetching data from web API’s with HTTP GET requests](./http-get/)
 
 ## Projects and libraries
