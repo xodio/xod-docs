@@ -146,7 +146,7 @@ bitwise operation nodes.
 
 ## Port type
 
-The port type is used to denote physical ports on a board. For hystorical
+The port type is used to denote physical ports on a board. For historical
 reasons, the term “port” is used rather than “pin” to clearly distinguish the
 pins of XOD nodes (software thing) and pins for wires (hardware thing). You will
 see pins of the port type often when place nodes representing physical pieces of
