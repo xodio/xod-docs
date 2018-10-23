@@ -1,9 +1,9 @@
-- title: Smart Garage Model by Blynk and XOD 
+- title: Smart Garage Model with Blynk 
   image: ./__img__/smart-garage.jpg
   url: "https://www.hackster.io/gabbapeople/smart-garage-model-by-blynk-and-xod-7f7645"
   author: Max Danilin
-  description: Making a smart garage model from the toy building
-
+  description: Toy building automation using Bluetooth, phone, and Blynk app
+  
 - title: IoT Split-flap weather forecast 
   image: ./__img__/split-flip-display.jpg
   url: "https://www.instructables.com/id/IoT-Split-flap-Weather-Forecast-Powered-by-XOD/"
