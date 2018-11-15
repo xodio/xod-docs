@@ -1,5 +1,6 @@
 ---
 title: C++ Node API Reference
+version: 0.26.0
 ---
 
 # C++ Node API Reference
@@ -207,9 +208,82 @@ Copies elements from list `xs` into the flat `outBuff`. A caller must guarantee 
 
 Performs [left fold](<https://en.wikipedia.org/wiki/Fold_(higher-order_function)>) (also known as “reduce”) of the list `xs` using `func` reducer function and `acc` as starting value for the accumulator.
 
+## Type converters
+
+#### `size_t formatNumber(Number value, int prec, char* str)`
+
+Converts a `Number` to a string. Like `dtostrf` / `sprintf` / `to_string`, but RAM-efficient enough to be used on microcontrollers, works uniformly on any platform, and properly handles NaNs and infinity.
+
+Returns the string length without the terminating null character.
+
+Examples:
+
+<table class="ui compact small collapsing line table">
+  <thead>
+    <tr>
+      <th class="right aligned">value</th>
+      <th class="right aligned">prec</th>
+      <th>str</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="right aligned">-0.321</td>
+      <td class="right aligned">0</td>
+      <td>"0"</td>
+    </tr>
+    <tr>
+      <td class="right aligned">-0.321</td>
+      <td class="right aligned">2</td>
+      <td>"-0.32"</td>
+    </tr>
+    <tr>
+      <td class="right aligned">-0.64</td>
+      <td class="right aligned">0</td>
+      <td>"-1"</td>
+    </tr>
+    <tr>
+      <td class="right aligned">123.456</td>
+      <td class="right aligned">0</td>
+      <td>"123"</td>
+    </tr>
+    <tr>
+      <td class="right aligned">123.456</td>
+      <td class="right aligned">2</td>
+      <td>"123.46"</td>
+    </tr>
+    <tr>
+      <td class="right aligned">NaN</td>
+      <td class="disabled right aligned">any</td>
+      <td>"NaN"</td>
+    </tr>
+    <tr>
+      <td class="right aligned">Inf</td>
+      <td class="disabled right aligned">any</td>
+      <td>"Inf"</td>
+    </tr>
+    <tr>
+      <td class="right aligned">-Inf</td>
+      <td class="disabled right aligned">any</td>
+      <td>"-Inf"</td>
+    </tr>
+    <tr>
+      <td class="right aligned">99000000000</td>
+      <td class="disabled right aligned">any</td>
+      <td>"OVF"</td>
+    </tr>
+    <tr>
+      <td class="right aligned">-99000000000</td>
+      <td class="disabled right aligned">any</td>
+      <td>"-OVF"</td>
+    </tr>
+  </tbody>
+</table>
+
 <style>
 /* Shift the content to assist better visual structure perception */
 .ui.text.container p,
+.ui.text.container table,
 .ui.text.container pre {
   margin-left: 4ex;
 }
