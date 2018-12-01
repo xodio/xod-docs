@@ -1,6 +1,6 @@
 ---
 title: Документация XOD
-version: 1.0.0
+version: 1.0.1
 ---
 
 <style>
@@ -102,7 +102,7 @@ h2.icon.header {
     <img src="./__img__/reference.svg" />
   </a>
   <div class="content">
-    <a href="./reference/">Ссылки</a>
+    <a href="./reference/">Справка</a>
   </div>
 </h2>
 <div><!-- A div to force the following list to be the first-child and suppress margins -->
