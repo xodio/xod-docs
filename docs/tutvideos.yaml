@@ -1,16 +1,52 @@
-- title: XOD Channel
-  avatar: ./__img__/xod.jpg
-  description: "3 episodes, ~5m each"
-  url: "https://www.youtube.com/watch?v=qxjLH_3US04&list=PLVqjnBJ_sf9t343WLHiXHUaunl1z-IT8j"
-- title: DroneBot Workshop
+- title: {
+   en: "XOD Channel",
+   ru: "Канал XOD"
+ }
+- avatar: ./__img__/xod.jpg
+  description: {
+    en: "3 episodes, ~5m each",
+    ru: "3 эпизода, ~5 мин каждый"
+  }
+  url: {
+    en: "https://www.youtube.com/watch?v=qxjLH_3US04&list=PLVqjnBJ_sf9t343WLHiXHUaunl1z-IT8j",
+    ru: "https://www.youtube.com/watch?v=qxjLH_3US04&list=PLVqjnBJ_sf9t343WLHiXHUaunl1z-IT8j"
+  } 
+- title: {
+   en: "DroneBot Workshop",
+   ru: "DroneBot Workshop"
+ }
   avatar: ./__img__/drone-bot-workshop.jpg
-  description: "2 episodes, ~50m each"
-  url: "https://www.youtube.com/watch?v=L_FkrZTduVc"
-- title: Mert Arduino and Tech
+  description: {
+    en: "2 episodes, ~50m each",
+    ru: "3 эпизода, ~50 мин каждый"
+  }
+  url: {
+    en: "https://www.youtube.com/watch?v=L_FkrZTduVc",
+    ru: "https://www.youtube.com/watch?v=L_FkrZTduVc"
+  }
+- title: {
+   en: "Mert Arduino and Tech",
+   ru: "Mert Arduino and Tech"
+ }
   avatar: ./__img__/mert.jpg
-  description: "8 episodes, ~5m each"
-  url: "https://www.youtube.com/playlist?list=PL2GAS4vHuGW3jXdIxdYspRLZ-gRw8fAh3"
-- title: Puddin
+  description: {
+    en: "8 episodes, ~5m each",
+    ru: "8 эпизодов, ~5 мин каждый"
+  }
+  url: {
+    en: "https://www.youtube.com/playlist?list=PL2GAS4vHuGW3jXdIxdYspRLZ-gRw8fAh3",
+    ru: "https://www.youtube.com/playlist?list=PL2GAS4vHuGW3jXdIxdYspRLZ-gRw8fAh3"
+  }
+- title: {
+   en: "Puddin",
+   ru: "Puddin"
+ }
   avatar: ./__img__/puddin.jpg
-  description: "4 episodes, ~15m each"
-  url: "https://www.youtube.com/watch?v=9gZqTq0-NJQ&list=PLTmLCQdY9K61pwT_K0j1zokCnIQkjhsQb&index=1"
+  description: {
+    en: "4 episodes, ~15m each",
+    ru: "4 эпизода, ~15 мин каждый"
+  }
+  url: {
+    en: "https://www.youtube.com/watch?v=9gZqTq0-NJQ&list=PLTmLCQdY9K61pwT_K0j1zokCnIQkjhsQb&index=1",
+    ru: "https://www.youtube.com/watch?v=9gZqTq0-NJQ&list=PLTmLCQdY9K61pwT_K0j1zokCnIQkjhsQb&index=1"
+  }

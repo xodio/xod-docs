@@ -1,5 +1,6 @@
 ---
-title: XOD Documentation
+title: Документация XOD
+version: 1.0.0
 ---
 
 <style>
@@ -36,7 +37,7 @@ h2.icon.header {
 }
 </style>
 
-# XOD Documentation
+# Документация XOD
 
 <div class="ui three column doubling stackable horizontally padded grid">
 
@@ -47,25 +48,25 @@ h2.icon.header {
     <img src="./__img__/tutorial.svg" />
   </a>
   <div class="content">
-    <a href="./tutorial/">Tutorials</a>
+    <a href="./tutorial/">Учебники</a>
   </div>
 </h2>
 
-<h3 class="ui header">Official</h3>
+<h3 class="ui header">Официальные</h3>
 
-- [Get started](./tutorial/install/)
-- [Full index](./tutorial/) (28 chapters)
+- [С чего начать](./tutorial/install/)
+- [Полное содержание](./tutorial/) (28 разделов)
 
-<h3>For video lovers</h3>
+<h3>Для любителей видео учебников</h3>
 
 <div class="ui relaxed list">
   {{#each tutvideos}}
     <div class="item">
       <img class="ui avatar image" src="{{ avatar }}">
       <div class="content">
-        <a href="{{ url.en }}" target="_blank">{{ title.en }}</a>
+        <a href="{{ url.ru }}" target="_blank">{{ title.ru }}</a>
         <!-- counter _blank underscore ↑ -->
-        <div class="description">{{ description.en }}</div>
+        <div class="description">{{ description.ru }}</div>
       </div>
     </div>
   {{/each}}
@@ -80,20 +81,17 @@ h2.icon.header {
     <img src="./__img__/guide.svg" />
   </a>
   <div class="content">
-    <a href="./guide/">User Guide</a>
+    <a href="./guide/">Руководство пользователя</a>
   </div>
 </h2>
 
-[Concepts](./guide/#concepts) — XOD language objects and processes described in
-detail.
+[Концепции](./guide/#концепции) — объекты языка XOD и процессы, описанные в деталях.
 
-[Making your own nodes](./guide/#making-your-own-nodes) — the most
-straightforward way to extend XOD and add support for new hardware.
+[Создание собственных узлов](./guide/#создание-собственных-узлов) — самый простой способ расширить XOD и добавить поддержку нового оборудования.
 
-[Case studies](./guide/#case-studies) — how-to’s for common scenarios.
+[Примеры использования](./guide/#примеры-использования) — инструкции для общих сценариев.
 
-[Projects and libraries](./guide/#projects-and-libraries) — creating, managing,
-and sharing your works.
+[Проекты и библиотеки](./guide/#проекты-и-библиотеки) — как создать, управлять и делиться своими работами.
 
 </div><!-- column -->
 
@@ -104,19 +102,19 @@ and sharing your works.
     <img src="./__img__/reference.svg" />
   </a>
   <div class="content">
-    <a href="./reference/">Reference</a>
+    <a href="./reference/">Ссылки</a>
   </div>
 </h2>
 <div><!-- A div to force the following list to be the first-child and suppress margins -->
 
-- [Supported hardware](./reference/supported-hardware/)
+- [Поддерживаемое оборудование](./reference/supported-hardware/)
   <i class="ui large green microchip icon"></i>
-- [Mouse and keyboard shortcuts](./reference/shortcuts/)
-- [Data types reference](./reference/data-types/)
-- [C++ node API reference](./reference/node-cpp-api/)
+- [Управление мышью и горячие клавиши](./reference/shortcuts/)
+- [Типы данных](./reference/data-types/)
+- [API узлов на C++](./reference/node-cpp-api/)
 
 </div>
-<h3 class="ui header">Standard library nodes</h3>
+<h3 class="ui header">Узлы стандартной библиотеки</h3>
 
 - [`xod/bits`](https://xod.io/libs/xod/bits/)
 - [`xod/common-hardware`](https://xod.io/libs/xod/common-hardware/)
@@ -138,8 +136,8 @@ and sharing your works.
 
 <h2 id="showcase" class="ui header">
   <div class="content">
-    Showcase
-    <div class="sub header">Complete devices done with XOD</div>
+    Витрина
+    <div class="sub header">Завершённые устройства, сделанные с помощью XOD</div>
   </div>
 </h2>
 
