@@ -1,5 +1,6 @@
 ---
 title: XOD Documentation
+version 1.0.1
 ---
 
 <style>
