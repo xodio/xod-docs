@@ -137,7 +137,7 @@ h2.icon.header {
 <h2 id="showcase" class="ui header">
   <div class="content">
     Витрина
-    <div class="sub header">Завершённые устройства, сделанные с помощью XOD</div>
+    <div class="sub header">Завершённые устройства, созданные с помощью XOD</div>
   </div>
 </h2>
 
@@ -149,16 +149,14 @@ h2.icon.header {
         <!-- counter _blank underscore ↑ -->
       </div>
       <div class="content">
-        <a class="header" href="{{ url }}" target="_blank">{{ title }}</a>
+        <a class="header" href="{{ url }}" target="_blank">{{ title.ru }}</a>
         <!-- counter _blank underscore ↑ -->
-        <div class="meta">{{{ description }}} by {{ author }}</div>
+        <div class="meta">{{{ description.ru }}} от {{ author }}</div>
       </div>
     </div>
   {{/each}}
 </div>
 
-<h2 id="contributing" class="ui header"><a href="./contributing/">Contributing</a></h2>
+<h2 id="contributing" class="ui header"><a href="./contributing/">Помощь проекту</a></h2>
 
-Looking for the ways to improve the documentation, XOD language, or the
-ecosystem? There are many opportunities and we’re happy to accept any help. Read
-the summary in the [Contributor’s guide](./contributing/).
+Ищешь способ улучшить документацию, язык или экосистему XOD? Есть много возможностей, и мы будем рады принять любую помощь. Прочтите как [внести свой вклад в XOD](./contributing/).
