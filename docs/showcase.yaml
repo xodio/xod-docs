@@ -70,7 +70,8 @@
   }
 
 - title: {
-    en: 'Self-Driving Robot'
+    en: 'Self-Driving Robot',
+    ru: 'Самоходный робот '
   }
   image: ./__img__/self-driving-robot.jpeg
   url: "https://medium.com/xodlang/create-a-self-driving-robot-in-xod-part-1-8f0cdf8adac7"
