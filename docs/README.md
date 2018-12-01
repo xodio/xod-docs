@@ -151,9 +151,9 @@ and sharing your works.
         <!-- counter _blank underscore ↑ -->
       </div>
       <div class="content">
-        <a class="header" href="{{ url }}" target="_blank">{{ title }}</a>
+        <a class="header" href="{{ url }}" target="_blank">{{ title.en }}</a>
         <!-- counter _blank underscore ↑ -->
-        <div class="meta">{{{ description }}} by {{ author }}</div>
+        <div class="meta">{{{ description.en }}} by {{ author }}</div>
       </div>
     </div>
   {{/each}}
