@@ -1,4 +1,16 @@
 - title: {
+    en: 'Energy Cost Electrical Meter Device',
+    ru: 'Счётчик потреблённой электроэнергии'
+  }
+  image: ./__img__/cыurrent-meter.jpg
+  url: "https://www.instructables.com/id/Arduino-Energy-Cost-Electrical-Meter-Device/"
+  author: Max Danilin
+  description: {
+    en: 'Instructables article',
+    ru: 'Инструкция по сборке'
+  }
+
+- title: {
   en: 'Smart Garage Model with Blynk',
   ru: 'Модель умного гаража с Blynk'
 }
