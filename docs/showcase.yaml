@@ -2,7 +2,7 @@
     en: 'Energy Cost Electrical Meter Device',
     ru: 'Счётчик потреблённой электроэнергии'
   }
-  image: ./__img__/cыurrent-meter.jpg
+  image: ./__img__/current-meter.jpg
   url: "https://www.instructables.com/id/Arduino-Energy-Cost-Electrical-Meter-Device/"
   author: Max Danilin
   description: {
