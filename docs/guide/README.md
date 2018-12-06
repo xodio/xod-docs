@@ -44,6 +44,7 @@ Interfaces and protocols:
 
 - [Controlling LEDs via UART](./uart-led-control) — exchanging text-based data
   between two boards
+- [I²C communication basics](./i2c/)
 
 IoT and network communication:
 
