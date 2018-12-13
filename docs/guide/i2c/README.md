@@ -59,7 +59,16 @@ The module expects:
 - a single byte which tells a starting register address to write to;
 - one or more bytes which contain the new time values for that register and subsequent registers
 
-For our example, let’s ignore the date and focus on time. So, if we want to reset the current clock time to 01:02:03 on a button click, we should write `00h` as the starting register and then write `03h`, `02h`, and `01h`. Here’s the corresponding patch:
+For our example, let’s ignore the date and focus on time. So, if we want to reset the current clock time to 11:22:33 on a button click, we should write `00h` as the starting register and then write `33h`, `22h`, and `11h`.
+
+<div class="ui segment note">
+<span class="ui ribbon label">Note</span>
+
+You might wonder why are we using hexadecimal values to set decimal values. The reason is that this particular module reads and writes values in a so-called binary coded decimal format. We don’t encode or decode the values anyhow in this example to keep it focused.
+
+</div>
+
+Here’s the corresponding patch:
 
 ![Writing time to I2C patch](./write-rtc-no-buses.patch.png)
 
@@ -85,13 +94,6 @@ These two steps are enough for simple sensors, but in some cases, a prior sequen
 Here is a patch to read time from RTC every second and show it on `watch` nodes:
 
 ![Reading RTC data patch](./read-rtc.patch.png)
-
-<div class="ui segment note">
-<span class="ui ribbon label">Note</span>
-
-The incoming data has to be decoded from the binary coded decimal format to be displayed correctly. Decoding is omitted to keep the example focused. So if you’d run the example as is, the seconds’ increments can surprise: ...-08h-09h-10h-... (09h is 9 in decimal whereas 10h is 16).
-
-</div>
 
 As when writing data, the right idea is to catch possible errors:
 
