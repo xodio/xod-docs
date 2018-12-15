@@ -12,6 +12,6 @@
 
 # Подготовка ноды
 
-Как и обычно, когда вы создаете ноду C++, начните с нового патча, добавьте необходимые терминалы и `not-implemented-in-xod`.
+Как и обычно, когда вы [создаете ноду C++](https://github.com/bgoncharov/xod-docs/blob/master/docs/guide/nodes-for-xod-in-cpp), начните с нового патча, добавьте необходимые терминалы и `not-implemented-in-xod`.
 
 ![not-implemented-in-xod](https://github.com/bgoncharov/xod-docs/blob/master/docs/guide/cpp-time/outline.patch.png)
