@@ -42,3 +42,43 @@ void evaluate(Context ctx) {
     }
 }
 ```
+
+# Управление таймаутами
+
+Отлично. Мы сделали расписание. Теперь нужно сделать действие. Для этого используйте функцию [isTimedOut](https://github.com/bgoncharov/xod-docs/blob/master/docs/reference/node-cpp-api/#isTimedOut). Нам нужна явная проверка того, является ли текущая эвалюация вызванной таймаутом, поскольку причины для `evaluate` вызовов могут быть разные. Это можгут быть обновленные входные значения до истечения временного интервала.
+
+```c++
+struct State { };
+
+\{{ GENERATED_CODE }}
+
+// Note, we extracted a function to read `T` input and set timeout
+// with that value. The function helps us to avoid code duplication
+// in `evaluate` since we need the code twice.
+void charge(Context ctx) {
+    Number t = getValue<input_T>(ctx);
+    TimeMs milliseconds = t * 1000;
+    setTimeout(ctx, milliseconds);
+}
+
+void evaluate(Context ctx) {
+    if (isInputDirty<input_SET>(ctx)) {
+        charge(ctx);
+    }
+
+    if (isTimedOut(ctx)) {
+        // Timeout has been elapsed, emit an output pulse
+        emitValue<output_OUT>(ctx, true);
+        // To be re-evaluated next time we need to set timeout again
+        charge(ctx);
+    }
+}
+```
+
+# Отмена таймаута
+
+Единственное, что нам осталось сделать - сбросить настройки. Когда сигнал посылается в `RST`, мы используем функцию [`clearTimeout`](https://github.com/bgoncharov/xod-docs/blob/master/docs/reference/node-cpp-api/#clearTimeout), чтобы остановить счет.
+
+
+
+
