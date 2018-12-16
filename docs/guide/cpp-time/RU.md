@@ -14,7 +14,7 @@
 
 Как и обычно, когда вы [создаете ноду C++](https://github.com/bgoncharov/xod-docs/blob/master/docs/guide/nodes-for-xod-in-cpp), начните с нового патча, добавьте необходимые терминалы и `not-implemented-in-xod`.
 
-![not-implemented-in-xod](https://github.com/bgoncharov/xod-docs/blob/master/docs/guide/cpp-time/outline.patch.png)
+![`not-implemented-in-xod`](https://github.com/bgoncharov/xod-docs/blob/master/docs/guide/cpp-time/outline.patch.png)
 
 Не забудьте указать подходящее значение по умолчанию для `T`. 1 секунда - отлично.
 
@@ -45,7 +45,7 @@ void evaluate(Context ctx) {
 
 # Управление таймаутами
 
-Отлично. Мы сделали расписание. Теперь нужно сделать действие. Для этого используйте функцию [isTimedOut](https://github.com/bgoncharov/xod-docs/blob/master/docs/reference/node-cpp-api/#isTimedOut). Нам нужна явная проверка того, является ли текущая эвалюация вызванной таймаутом, поскольку причины для `evaluate` вызовов могут быть разные. Это можгут быть обновленные входные значения до истечения временного интервала.
+Отлично. Мы сделали расписание. Теперь нужно сделать действие. Для этого используйте функцию [`isTimedOut`](https://github.com/bgoncharov/xod-docs/blob/master/docs/reference/node-cpp-api/#isTimedOut). Нам нужна явная проверка того, является ли текущая эвалюация вызванной таймаутом, поскольку причины для `evaluate` вызовов могут быть разные. Это можгут быть обновленные входные значения до истечения временного интервала.
 
 ```c++
 struct State { };
@@ -79,6 +79,50 @@ void evaluate(Context ctx) {
 
 Единственное, что нам осталось сделать - сбросить настройки. Когда сигнал посылается в `RST`, мы используем функцию [`clearTimeout`](https://github.com/bgoncharov/xod-docs/blob/master/docs/reference/node-cpp-api/#clearTimeout), чтобы остановить счет.
 
+```c++
+struct State { };
 
+\{{ GENERATED_CODE }}
 
+void charge(Context ctx) {
+    Number t = getValue<input_T>(ctx);
+    TimeMs milliseconds = t * 1000;
+    setTimeout(ctx, milliseconds);
+}
 
+void evaluate(Context ctx) {
+    if (isInputDirty<input_RST>(ctx)) {
+        // When pulsed on `RST` we cancel the timeout countdown regardless
+        // whether it was set or not
+        clearTimeout(ctx);
+        // Return from `evaluate` early giving priority to `RST` so that
+        // pulse on `SET` and timeout will not be even checked at this
+        // evaluation pass
+        return;
+    }
+
+    if (isInputDirty<input_SET>(ctx)) {
+        charge(ctx);
+    }
+
+    if (isTimedOut(ctx)) {
+        emitValue<output_OUT>(ctx, true);
+        charge(ctx);
+    }
+}
+```
+
+# Тест
+
+Вот и все. Наша нода готова. Проверьте это двумя кнопками, подключенными к `SET` и `RST` и триггером со светодиодом на другой стороне
+
+![Test](https://github.com/bgoncharov/xod-docs/blob/master/docs/guide/cpp-time/test.patch.png)
+
+# Заключение
+
+XOD предоставляет довольно простой API для управления временем. Хоть это и просто, вы получаете все инструменты, необходимые для управления длительными процессами. Основные принципы:
+
+* Используйте `setTimeout`, чтобы запланировать повторную эвалюацию. Помните, что таймауты задаются в миллисекундах.
+* Всегда используйте `isTimedOut`, чтобы убедиться, что вы оцениваете, потому что прошло время.
+* Если вы хотите периодически запускать задачу, то вызывайте `setTimeout` повторно вручную когда `isTimedOut`.
+* Используйте `clearTimeout`, чтобы убедиться, что отсчет таймера запущен.
