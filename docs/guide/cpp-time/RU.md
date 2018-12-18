@@ -14,7 +14,7 @@
 
 Как и обычно, когда вы [создаете ноду C++](/docs/guide/nodes-for-xod-in-cpp), начинайте с нового патча, добавьте необходимые ноды-терминалы и `not-implemented-in-xod`.
 
-![`not-implemented-in-xod`](/xod-docs/blob/master/docs/guide/cpp-time/outline.patch.png)
+![`not-implemented-in-xod`](/docs/guide/cpp-time/outline.patch.png)
 
 Не забудьте указать нужное значение по умолчанию для `T`. 1 секунда - отлично.
 
