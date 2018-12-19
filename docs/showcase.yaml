@@ -1,96 +1,121 @@
 - title: {
-    en: 'Energy Cost Electrical Meter Device',
-    ru: 'Счётчик потреблённой электроэнергии'
+    en: Energy Cost Electrical Meter Device
+    ru: Счётчик потреблённой электроэнергии
   }
   image: ./__img__/current-meter.jpg
   url: "https://www.instructables.com/id/Arduino-Energy-Cost-Electrical-Meter-Device/"
   author: Max Danilin
   description: {
-    en: 'Instructables article',
-    ru: 'Инструкция по сборке'
+    en: Instructables article
+    ru: Инструкция по сборке
   }
 
 - title: {
-  en: 'Smart Garage Model with Blynk',
-  ru: 'Модель умного гаража с Blynk'
+  en: Smart Garage Model with Blynk
+  ru: Модель умного гаража с Blynk
 }
   image: ./__img__/smart-garage.jpg
   url: "https://www.hackster.io/gabbapeople/smart-garage-model-by-blynk-and-xod-7f7645"
   author: Max Danilin
   description: {
-    en: 'Toy building automation using Bluetooth, phone, and Blynk app',
-    ru: 'Автоматизация игрушечной постройки с использованием Bluetooth, телефона и приложения Blynk'
+    en: Toy building automation using Bluetooth, phone, and Blynk app
+    ru: Автоматизация игрушечной постройки с использованием Bluetooth, телефона и приложения Blynk
   }
   
 - title: {
-    en: 'IoT Split-flap weather forecast',
-    ru: 'IoT Перекидной прогноз погоды'
+    en: IoT Split-flap weather forecast
+    ru: IoT Перекидной прогноз погоды
   }
   image: ./__img__/split-flip-display.jpg
   url: "https://www.instructables.com/id/IoT-Split-flap-Weather-Forecast-Powered-by-XOD/"
   author: Max Danilin
   description: {
-    en: 'Instructables article',
-    ru: 'Инструкция по сборке'
+    en: Instructables article
+    ru: Инструкция по сборке
   }
 
 - title: {
-    en: 'XOD powered mBot',
-    ru: 'mBot написанный на XOD'
+    en: XOD powered mBot
+    ru: mBot написанный на XOD
   }
   image: ./__img__/mbot-pid.jpg
   url: "https://medium.com/xodlang/how-to-program-mbot-with-xod-pid-controller-c3e310f8eceb"
   author: Max Danilin
   description: {
-    en: 'Article series (<a href="https://medium.com/xodlang/how-to-program-mbot-with-xod-pid-controller-c3e310f8eceb">Hand follower</a>,<a href="https://medium.com/xodlang/xod-powered-line-follower-mbot-2ae4a4862a9e">Line follower</a>,<a href="https://medium.com/xodlang/xod-and-pid-powered-self-balancing-mbot-6c420600271e">Self-balancer</a>)',
-    ru: 'Серия постов (<a href="https://medium.com/xodlang/how-to-program-mbot-with-xod-pid-controller-c3e310f8eceb">Бот следует за рукой</a>,<a href="https://medium.com/xodlang/xod-powered-line-follower-mbot-2ae4a4862a9e">Бот движется по линии</a>,<a href="https://medium.com/xodlang/xod-and-pid-powered-self-balancing-mbot-6c420600271e">Удержание равновесия</a>)'
+    en: |
+      Article series (
+      <a
+        href="https://medium.com/xodlang/how-to-program-mbot-with-xod-pid-controller-c3e310f8eceb">Hand follower,</a><a
+        href="https://medium.com/xodlang/xod-powered-line-follower-mbot-2ae4a4862a9e">Line follower,</a><a
+        href="https://medium.com/xodlang/xod-and-pid-powered-self-balancing-mbot-6c420600271e">Self-balancer</a>
+      )
+    ru: |
+      Серия постов (
+      <a 
+        href="https://medium.com/xodlang/how-to-program-mbot-with-xod-pid-controller-c3e310f8eceb">Бот следует за рукой</a>,<a
+        href="https://medium.com/xodlang/xod-powered-line-follower-mbot-2ae4a4862a9e">Бот движется по линии</a>,<a 
+        href="https://medium.com/xodlang/xod-and-pid-powered-self-balancing-mbot-6c420600271e">Удержание равновесия</a>
+      )
   }
 
 - title: {
-    en: 'Automatic Trash Bin',
-    ru: 'Автоматическая корзина для мусора'
+    en: Automatic Trash Bin
+    ru: Автоматическая корзина для мусора
   }
   image: ./__img__/trash-bin.jpg
   url: "https://www.youtube.com/watch?v=KHysNei2bq8"
   author: Alex Gyver
   description: {
-    en: 'YouTube video',
-    ru: 'Видео на Youtube'
+    en: YouTube video
+    ru: Видео на Youtube
   }
 
 - title: {
-    en: 'Automatic Air Humidifier',
-    ru: 'Автоматический увлажнитель воздуха'
+    en: Automatic Air Humidifier
+    ru: Автоматический увлажнитель воздуха
   }
   image: ./__img__/automatic-humidifier.jpg
   url: "https://www.youtube.com/watch?v=8elsCIGOCWE"
   author: Alex Gyver
   description: {
-    en: 'YouTube video',
-    ru: 'Видео на Youtube'
+    en: YouTube video
+    ru: Видео на Youtube
   }
 
 - title: {
-    en: 'Self-Driving Robot',
-    ru: 'Самоходный робот '
+    en: Self-Driving Robot
+    ru: Самоходный робот
   }
   image: ./__img__/self-driving-robot.jpeg
   url: "https://medium.com/xodlang/create-a-self-driving-robot-in-xod-part-1-8f0cdf8adac7"
   author: Tommy Warner
   description: {
-    en: 'Article series (<a href="https://medium.com/xodlang/create-a-self-driving-robot-in-xod-part-1-8f0cdf8adac7">1,</a><a href="https://medium.com/xodlang/create-a-self-driving-robot-in-xod-part-2-a3a39bc4604f">2,</a><a href="https://medium.com/@tdubya17/servo-control-part-three-fe81ff54075e">3,</a><a href="https://medium.com/@tdubya17/hacking-nodes-with-c-part-four-3d84723d671d">4</a>)',
-    ru: 'Серия постов (<a href="https://medium.com/xodlang/create-a-self-driving-robot-in-xod-part-1-8f0cdf8adac7">1,</a><a href="https://medium.com/xodlang/create-a-self-driving-robot-in-xod-part-2-a3a39bc4604f">2,</a><a href="https://medium.com/@tdubya17/servo-control-part-three-fe81ff54075e">3,</a><a href="https://medium.com/@tdubya17/hacking-nodes-with-c-part-four-3d84723d671d">4</a>)'
+    en: |
+      Article series (
+      <a
+        href="https://medium.com/xodlang/create-a-self-driving-robot-in-xod-part-1-8f0cdf8adac7">1,</a><a
+        href="https://medium.com/xodlang/create-a-self-driving-robot-in-xod-part-2-a3a39bc4604f">2,</a><a
+        href="https://medium.com/@tdubya17/servo-control-part-three-fe81ff54075e">3,</a><a
+        href="https://medium.com/@tdubya17/hacking-nodes-with-c-part-four-3d84723d671d">4</a>
+      )
+    ru: |
+      Серия постов (
+      <a 
+        href="https://medium.com/xodlang/create-a-self-driving-robot-in-xod-part-1-8f0cdf8adac7">1,</a><a 
+        href="https://medium.com/xodlang/create-a-self-driving-robot-in-xod-part-2-a3a39bc4604f">2,</a><a 
+        href="https://medium.com/@tdubya17/servo-control-part-three-fe81ff54075e">3,</a><a 
+        ref="https://medium.com/@tdubya17/hacking-nodes-with-c-part-four-3d84723d671d">4</a>
+      )
   }
   
 - title: {
-    en: 'Rechargeable Solar Lamp',
-    ru: 'Лампа с подзарядкой от солнечной батареи'
+    en: Rechargeable Solar Lamp
+    ru: Лампа с подзарядкой от солнечной батареи
   }
   image: ./__img__/rechargeable-solar-lamp.jpeg
   url: "http://www.instructables.com/id/XOD-powered-Rechargeable-Solar-Lamp/"
   author: Victorian DeLorean
   description: {
-    en: 'Instructables article',
-    ru: 'Инструкция по сборке'
+    en: Instructables article
+    ru: Инструкция по сборке
   }
-
