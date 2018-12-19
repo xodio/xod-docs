@@ -64,9 +64,9 @@ h2.icon.header {
     <div class="item">
       <img class="ui avatar image" src="{{ avatar }}">
       <div class="content">
-        <a href="{{ url.ru }}" target="_blank">{{ title.ru }}</a>
+        <a href="{{#url.ru}}{{url.ru}}{{/url.ru}}{{^url.ru}}{{url.en}}{{/url.ru}}" target="_blank">{{#title.ru}}{{title.ru}}{{/title.ru}}{{^title.ru}}{{title.en}}{{/title.ru}}</a>
         <!-- counter _blank underscore ↑ -->
-        <div class="description">{{ description.ru }}</div>
+        <div class="description">{{#description.ru}}{{description.ru}}{{/description.ru}}{{^description.ru}}{{description.en}}{{/description.ru}}</div>
       </div>
     </div>
   {{/each}}
@@ -149,9 +149,9 @@ h2.icon.header {
         <!-- counter _blank underscore ↑ -->
       </div>
       <div class="content">
-        <a class="header" href="{{ url }}" target="_blank">{{ title.ru }}</a>
+        <a class="header" href="{{ url }}" target="_blank">{{#title.ru}}{{title.ru}}{{/title.ru}}{{^title.ru}}{{title.en}}{{/title.ru}}</a>
         <!-- counter _blank underscore ↑ -->
-        <div class="meta">{{{ description.ru }}} от {{ author }}</div>
+        <div class="meta">{{#description.ru}}{{description.ru}}{{/description.ru}}{{^description.ru}}{{description.en}}{{/description.ru}} от {{ author }}</div>
       </div>
     </div>
   {{/each}}

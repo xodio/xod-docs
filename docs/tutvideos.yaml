@@ -8,12 +8,10 @@
     ru: "3 эпизода, ~5 мин каждый"
   }
   url: {
-    en: "https://www.youtube.com/watch?v=qxjLH_3US04&list=PLVqjnBJ_sf9t343WLHiXHUaunl1z-IT8j",
-    ru: "https://www.youtube.com/watch?v=qxjLH_3US04&list=PLVqjnBJ_sf9t343WLHiXHUaunl1z-IT8j"
+    en: "https://www.youtube.com/watch?v=qxjLH_3US04&list=PLVqjnBJ_sf9t343WLHiXHUaunl1z-IT8j"
   } 
 - title: {
-   en: "DroneBot Workshop",
-   ru: "DroneBot Workshop"
+   en: "DroneBot Workshop"
  }
   avatar: ./__img__/drone-bot-workshop.jpg
   description: {
@@ -21,12 +19,10 @@
     ru: "3 эпизода, ~50 мин каждый"
   }
   url: {
-    en: "https://www.youtube.com/watch?v=L_FkrZTduVc",
-    ru: "https://www.youtube.com/watch?v=L_FkrZTduVc"
+    en: "https://www.youtube.com/watch?v=L_FkrZTduVc"
   }
 - title: {
-   en: "Mert Arduino and Tech",
-   ru: "Mert Arduino and Tech"
+   en: "Mert Arduino and Tech"
  }
   avatar: ./__img__/mert.jpg
   description: {
@@ -34,12 +30,10 @@
     ru: "8 эпизодов, ~5 мин каждый"
   }
   url: {
-    en: "https://www.youtube.com/playlist?list=PL2GAS4vHuGW3jXdIxdYspRLZ-gRw8fAh3",
-    ru: "https://www.youtube.com/playlist?list=PL2GAS4vHuGW3jXdIxdYspRLZ-gRw8fAh3"
+    en: "https://www.youtube.com/playlist?list=PL2GAS4vHuGW3jXdIxdYspRLZ-gRw8fAh3"
   }
 - title: {
-   en: "Puddin",
-   ru: "Puddin"
+   en: "Puddin"
  }
   avatar: ./__img__/puddin.jpg
   description: {
@@ -47,6 +41,5 @@
     ru: "4 эпизода, ~15 мин каждый"
   }
   url: {
-    en: "https://www.youtube.com/watch?v=9gZqTq0-NJQ&list=PLTmLCQdY9K61pwT_K0j1zokCnIQkjhsQb&index=1",
-    ru: "https://www.youtube.com/watch?v=9gZqTq0-NJQ&list=PLTmLCQdY9K61pwT_K0j1zokCnIQkjhsQb&index=1"
+    en: "https://www.youtube.com/watch?v=9gZqTq0-NJQ&list=PLTmLCQdY9K61pwT_K0j1zokCnIQkjhsQb&index=1"
   }
