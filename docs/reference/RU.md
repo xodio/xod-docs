@@ -8,9 +8,9 @@ version: 1.0.0
 - [Поддерживаемое оборудование](./supported-hardware/)
 - [Управление мышью и горячие клавиши](./shortcuts/)
 - [Типы данных](./data-types/)
-- [API узлов на C++](./node-cpp-api/)
+- [API нодов на C++](./node-cpp-api/)
 
-## Узлы стандартной библиотеки
+## Ноды стандартной библиотеки
 
 - [`xod/bits`](https://xod.io/libs/xod/bits/)
 - [`xod/common-hardware`](https://xod.io/libs/xod/common-hardware/)
