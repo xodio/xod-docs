@@ -8,6 +8,7 @@ title: Reference
 - [Mouse and keyboard shortcuts](./shortcuts/)
 - [Data types reference](./data-types/)
 - [C++ node API reference](./node-cpp-api/)
+- [Tabtest reference](./tabtests/)
 
 ## Standard library nodes
 
