@@ -114,6 +114,7 @@ and sharing your works.
 - [Mouse and keyboard shortcuts](./reference/shortcuts/)
 - [Data types reference](./reference/data-types/)
 - [C++ node API reference](./reference/node-cpp-api/)
+- [Tabtest reference](./reference/tabtests/)
 
 </div>
 <h3 class="ui header">Standard library nodes</h3>
