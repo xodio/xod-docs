@@ -1,3 +1,8 @@
+---
+title: Contributing to XOD Documentation
+version: 1.0.1
+---
+
 # Contributing to XOD Documentation
 
 If you would like to improve the XOD documentation, thank you in advance!
@@ -7,12 +12,12 @@ before.
 
 ## Change cycle
 
-1.  Fork this repository
-2.  Make changes
-3.  Open a Pull Request
-4.  Wait for review
-5.  Fix the issues reported
-6.  See the changes at https://xod.io/docs/
+1. Fork this repository
+2. Make changes
+3. Open a Pull Request
+4. Wait for review
+5. Fix the issues reported
+6. See the changes at https://xod.io/docs/
 
 There are two ways to accomplish the first three steps.
 
@@ -96,7 +101,7 @@ Use the full way because you have to add an image. Fork, clone, branch.
 Add a thumbnail of your project to `./docs/__img__`. Prefer photos to collages
 and JPG over PNG.
 
-Insert a new card for the project into `./docs/README.md`. Place the card at the
+Insert a new card for the project into `./docs/showcase.yaml`. Place the card at the
 very top position: the latest projects go first.
 
 Push, pull request.
