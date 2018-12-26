@@ -318,7 +318,7 @@
       kind: Infrared range meter
       vendor: Sharp
       nodes:
-        - xod/common-hardware/gp2ya02-range-meter
+        - xod-dev/sharp-irm/gp2ya02-range-meter
       shopping:
         - shop: Adafruit
           sku: "#1031"
@@ -333,7 +333,7 @@
       kind: Infrared range meter
       vendor: Sharp
       nodes:
-        - xod/common-hardware/gp2ya21-range-meter
+        - xod-dev/sharp-irm/gp2ya21-range-meter
       shopping:
         - shop: Adafruit
           sku: "#164"
@@ -348,7 +348,7 @@
       kind: Infrared range meter
       vendor: Sharp
       nodes:
-        - xod/common-hardware/gp2ya41-range-meter
+        - xod-dev/sharp-irm/gp2ya41-range-meter
       shopping:
         - shop: SparkFun
           sku: SEN-12728
@@ -524,8 +524,7 @@
       kind: Real Time Clock
       vendor: Maxim
       nodes:
-        - xod/common-hardware/ds1307-rtc-read
-        - xod/common-hardware/ds1307-rtc-write
+        - xod/ds-rtc
       shopping:
         - shop: Adafruit
           sku: "#3013"
