@@ -1,0 +1,427 @@
+{
+  "name": "",
+  "patches": {
+    "@/count": {
+      "attachments": [
+        {
+          "content": "\nstruct State {\n};\n\n{{ GENERATED_CODE }}\n\nvoid evaluate(Context ctx) {\n    //auto inValue = getValue<input_IN>(ctx);\n    //emitValue<output_OUT>(ctx, inValue);\n}\n",
+          "encoding": "utf-8",
+          "filename": "patch.cpp"
+        },
+        {
+          "content": "IN\tOUT\n\"some input\"\t\"expected output\"",
+          "encoding": "utf-8",
+          "filename": "patch.test.tsv"
+        }
+      ],
+      "nodes": {
+        "BJeCM6PqlN": {
+          "boundLiterals": {
+            "__out__": "1"
+          },
+          "description": "Value to add on each increment. Use a negative value (e.g. -1) to make decrements.",
+          "id": "BJeCM6PqlN",
+          "label": "STEP",
+          "position": {
+            "x": -68,
+            "y": -102
+          },
+          "type": "xod/patch-nodes/input-number"
+        },
+        "BkbCM6D5gN": {
+          "description": "Resets the accumulated value to zero.",
+          "id": "BkbCM6D5gN",
+          "label": "RST",
+          "position": {
+            "x": 170,
+            "y": -102
+          },
+          "type": "xod/patch-nodes/input-pulse"
+        },
+        "H10fpwqeV": {
+          "description": "Triggers a single increment.",
+          "id": "H10fpwqeV",
+          "label": "INC",
+          "position": {
+            "x": 68,
+            "y": -102
+          },
+          "type": "xod/patch-nodes/input-pulse"
+        },
+        "rJrX6wqeE": {
+          "id": "rJrX6wqeE",
+          "position": {
+            "x": -68,
+            "y": 0
+          },
+          "type": "xod/patch-nodes/not-implemented-in-xod"
+        },
+        "ryf0f6Pcx4": {
+          "description": "The accumulated value.",
+          "id": "ryf0f6Pcx4",
+          "position": {
+            "x": -68,
+            "y": 102
+          },
+          "type": "xod/patch-nodes/output-number"
+        },
+        "ryvN6D9lE": {
+          "id": "ryvN6D9lE",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "type": "xod/patch-nodes/tabtest"
+        }
+      },
+      "path": "@/count"
+    },
+    "@/test-select-4-numbers": {
+      "attachments": [
+        {
+          "content": "N1\tS1\tN2\tS2\tN3\tS3\tN4\tS4\tOUT\tDONE\n1\tno-pulse\t2\tno-pulse\t3\tno-pulse\t4\tno-pulse\t4\tno-pulse\n1\tpulse\t2\tno-pulse\t3\tno-pulse\t4\tno-pulse\t1\tpulse\n1\tno-pulse\t2\tpulse\t3\tno-pulse\t4\tno-pulse\t2\tpulse\n1\tno-pulse\t2\tno-pulse\t3\tpulse\t4\tno-pulse\t3\tpulse\n1\tno-pulse\t2\tno-pulse\t3\tno-pulse\t4\tpulse\t4\tpulse\n1\tno-pulse\t2\tno-pulse\t3\tno-pulse\t4\tno-pulse\t4\tno-pulse",
+          "encoding": "utf-8",
+          "filename": "patch.test.tsv"
+        }
+      ],
+      "links": {
+        "BJ5Fyd5eE": {
+          "id": "BJ5Fyd5eE",
+          "input": {
+            "nodeId": "rkPu1d9g4",
+            "pinKey": "__in__"
+          },
+          "output": {
+            "nodeId": "Hy3Ekucg4",
+            "pinKey": "rkWHDAW_f"
+          }
+        },
+        "ByxqJOqxV": {
+          "id": "ByxqJOqxV",
+          "input": {
+            "nodeId": "Hy3Ekucg4",
+            "pinKey": "rygjH06LW-$1"
+          },
+          "output": {
+            "nodeId": "B1yPy_clE",
+            "pinKey": "__out__"
+          }
+        },
+        "H1XcJ_9xV": {
+          "id": "H1XcJ_9xV",
+          "input": {
+            "nodeId": "Hy3Ekucg4",
+            "pinKey": "rygjH06LW-$2"
+          },
+          "output": {
+            "nodeId": "SJZyP1d5xN",
+            "pinKey": "__out__"
+          }
+        },
+        "HJuFkd5lV": {
+          "id": "HJuFkd5lV",
+          "input": {
+            "nodeId": "SkfdJ_5e4",
+            "pinKey": "__in__"
+          },
+          "output": {
+            "nodeId": "Hy3Ekucg4",
+            "pinKey": "S1yaHC6UW"
+          }
+        },
+        "HyNqy_9lN": {
+          "id": "HyNqy_9lN",
+          "input": {
+            "nodeId": "Hy3Ekucg4",
+            "pinKey": "rJUjrCTUb-$2"
+          },
+          "output": {
+            "nodeId": "rkGJwJOqeE",
+            "pinKey": "__out__"
+          }
+        },
+        "HyjtJdceV": {
+          "id": "HyjtJdceV",
+          "input": {
+            "nodeId": "Hy3Ekucg4",
+            "pinKey": "S10qrR6UZ"
+          },
+          "output": {
+            "nodeId": "By8SyO5g4",
+            "pinKey": "__out__"
+          }
+        },
+        "S12tydqgN": {
+          "id": "S12tydqgN",
+          "input": {
+            "nodeId": "Hy3Ekucg4",
+            "pinKey": "rkmiHCaIZ"
+          },
+          "output": {
+            "nodeId": "B15HkO9xE",
+            "pinKey": "__out__"
+          }
+        },
+        "SkAF1_5eE": {
+          "id": "SkAF1_5eE",
+          "input": {
+            "nodeId": "Hy3Ekucg4",
+            "pinKey": "rygjH06LW"
+          },
+          "output": {
+            "nodeId": "HyfUJO9eV",
+            "pinKey": "__out__"
+          }
+        },
+        "rkZqkd9g4": {
+          "id": "rkZqkd9g4",
+          "input": {
+            "nodeId": "Hy3Ekucg4",
+            "pinKey": "rJUjrCTUb-$1"
+          },
+          "output": {
+            "nodeId": "SyxJPJuqxN",
+            "pinKey": "__out__"
+          }
+        },
+        "ryJqyd9xE": {
+          "id": "ryJqyd9xE",
+          "input": {
+            "nodeId": "Hy3Ekucg4",
+            "pinKey": "rJUjrCTUb"
+          },
+          "output": {
+            "nodeId": "S1eMIkd9xN",
+            "pinKey": "__out__"
+          }
+        }
+      },
+      "nodes": {
+        "B15HkO9xE": {
+          "id": "B15HkO9xE",
+          "label": "S1",
+          "position": {
+            "x": 68,
+            "y": 0
+          },
+          "type": "xod/patch-nodes/input-pulse"
+        },
+        "B1yPy_clE": {
+          "id": "B1yPy_clE",
+          "label": "N3",
+          "position": {
+            "x": 170,
+            "y": 0
+          },
+          "type": "xod/patch-nodes/input-number"
+        },
+        "By8SyO5g4": {
+          "id": "By8SyO5g4",
+          "label": "N1",
+          "position": {
+            "x": 34,
+            "y": 0
+          },
+          "type": "xod/patch-nodes/input-number"
+        },
+        "HJ9qJ_5l4": {
+          "id": "HJ9qJ_5l4",
+          "position": {
+            "x": 340,
+            "y": 102
+          },
+          "type": "xod/patch-nodes/tabtest"
+        },
+        "Hy3Ekucg4": {
+          "arityLevel": 3,
+          "id": "Hy3Ekucg4",
+          "position": {
+            "x": 34,
+            "y": 102
+          },
+          "type": "xod/core/select"
+        },
+        "HyfUJO9eV": {
+          "id": "HyfUJO9eV",
+          "label": "N2",
+          "position": {
+            "x": 102,
+            "y": 0
+          },
+          "type": "xod/patch-nodes/input-number"
+        },
+        "S1eMIkd9xN": {
+          "id": "S1eMIkd9xN",
+          "label": "S2",
+          "position": {
+            "x": 136,
+            "y": 0
+          },
+          "type": "xod/patch-nodes/input-pulse"
+        },
+        "SJZyP1d5xN": {
+          "id": "SJZyP1d5xN",
+          "label": "N4",
+          "position": {
+            "x": 238,
+            "y": 0
+          },
+          "type": "xod/patch-nodes/input-number"
+        },
+        "SkfdJ_5e4": {
+          "id": "SkfdJ_5e4",
+          "position": {
+            "x": 34,
+            "y": 204
+          },
+          "type": "xod/patch-nodes/output-number"
+        },
+        "SyxJPJuqxN": {
+          "id": "SyxJPJuqxN",
+          "label": "S3",
+          "position": {
+            "x": 204,
+            "y": 0
+          },
+          "type": "xod/patch-nodes/input-pulse"
+        },
+        "rkGJwJOqeE": {
+          "id": "rkGJwJOqeE",
+          "label": "S4",
+          "position": {
+            "x": 272,
+            "y": 0
+          },
+          "type": "xod/patch-nodes/input-pulse"
+        },
+        "rkPu1d9g4": {
+          "id": "rkPu1d9g4",
+          "label": "DONE",
+          "position": {
+            "x": 68,
+            "y": 204
+          },
+          "type": "xod/patch-nodes/output-pulse"
+        }
+      },
+      "path": "@/test-select-4-numbers"
+    },
+    "@/to-percent": {
+      "attachments": [
+        {
+          "content": "NUM\tPERC\n1\t\"100%\"\n25.5\t\"255%\"\n0.735\t\"74%\"\n-0.6\t\"-60%\"\nNaN\t\"NaN\"\nInf\t\"Inf\"\n-Inf\t\"-Inf\"\n999999999999999\t\"OVF\"",
+          "encoding": "utf-8",
+          "filename": "patch.test.tsv"
+        }
+      ],
+      "links": {
+        "BJBoAHS9eE": {
+          "id": "BJBoAHS9eE",
+          "input": {
+            "nodeId": "SJoRSBcl4",
+            "pinKey": "BJlHojaWZ"
+          },
+          "output": {
+            "nodeId": "Hk-oASrcxV",
+            "pinKey": "BkQzLCurwJZ"
+          }
+        },
+        "BkwoAHH9eE": {
+          "id": "BkwoAHH9eE",
+          "input": {
+            "nodeId": "Hk-oASrcxV",
+            "pinKey": "B1GfLR_SPk-"
+          },
+          "output": {
+            "nodeId": "BJxoCrH5eN",
+            "pinKey": "__out__"
+          }
+        },
+        "SkLi0SH9xE": {
+          "id": "SkLi0SH9xE",
+          "input": {
+            "nodeId": "SkMoRBB9g4",
+            "pinKey": "__in__"
+          },
+          "output": {
+            "nodeId": "SkXoRSr9gN",
+            "pinKey": "rksccsp-W"
+          }
+        },
+        "rJ4oRBSqgN": {
+          "id": "rJ4oRBSqgN",
+          "input": {
+            "nodeId": "SkXoRSr9gN",
+            "pinKey": "Hkqu9oaWb"
+          },
+          "output": {
+            "nodeId": "SJoRSBcl4",
+            "pinKey": "r1H_oipZb"
+          }
+        }
+      },
+      "nodes": {
+        "BJxoCrH5eN": {
+          "id": "BJxoCrH5eN",
+          "label": "NUM",
+          "position": {
+            "x": -204,
+            "y": -204
+          },
+          "type": "xod/patch-nodes/input-number"
+        },
+        "HJwztr9xE": {
+          "id": "HJwztr9xE",
+          "position": {
+            "x": -102,
+            "y": -102
+          },
+          "type": "xod/patch-nodes/tabtest"
+        },
+        "Hk-oASrcxV": {
+          "boundLiterals": {
+            "SJ4zUC_BD1-": "100"
+          },
+          "id": "Hk-oASrcxV",
+          "position": {
+            "x": -204,
+            "y": -102
+          },
+          "type": "xod/core/multiply"
+        },
+        "SJoRSBcl4": {
+          "boundLiterals": {
+            "HJTIija-W": "0"
+          },
+          "id": "SJoRSBcl4",
+          "position": {
+            "x": -204,
+            "y": 0
+          },
+          "type": "xod/core/format-number"
+        },
+        "SkMoRBB9g4": {
+          "id": "SkMoRBB9g4",
+          "label": "PERC",
+          "position": {
+            "x": -204,
+            "y": 204
+          },
+          "type": "xod/patch-nodes/output-string"
+        },
+        "SkXoRSr9gN": {
+          "boundLiterals": {
+            "BkeKcj6ZZ": "\"%\""
+          },
+          "id": "SkXoRSr9gN",
+          "position": {
+            "x": -204,
+            "y": 102
+          },
+          "type": "xod/core/concat"
+        }
+      },
+      "path": "@/to-percent"
+    }
+  }
+}
