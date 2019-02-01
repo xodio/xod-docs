@@ -109,7 +109,7 @@
             "x": 102,
             "y": 510
           },
-          "type": "xod/core/console-log"
+          "type": "xod/debug/console-log"
         },
         "H1WasWGq7": {
           "id": "H1WasWGq7",

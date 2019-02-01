@@ -171,7 +171,7 @@
             "x": 68,
             "y": 510
           },
-          "type": "xod/core/watch"
+          "type": "xod/debug/watch"
         }
       },
       "path": "@/main"

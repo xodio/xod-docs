@@ -48,7 +48,7 @@
         },
         "rJ9ar0JzM": {
           "id": "rJ9ar0JzM",
-          "type": "xod/core/watch",
+          "type": "xod/debug/watch",
           "position": {
             "x": 136,
             "y": 204
