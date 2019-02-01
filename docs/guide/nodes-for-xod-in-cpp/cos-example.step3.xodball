@@ -89,7 +89,7 @@
             "x": 136,
             "y": 204
           },
-          "type": "xod/core/watch"
+          "type": "xod/debug/watch"
         },
         "SyY66fH-z": {
           "id": "SyY66fH-z",

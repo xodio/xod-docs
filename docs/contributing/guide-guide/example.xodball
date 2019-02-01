@@ -82,7 +82,7 @@
             "x": -102,
             "y": -102
           },
-          "type": "xod/core/watch"
+          "type": "xod/debug/watch"
         },
         "HJRe79kcQ": {
           "boundLiterals": {
