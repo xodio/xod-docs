@@ -537,7 +537,7 @@
             "x": 170,
             "y": 510
           },
-          "type": "xod/core/watch"
+          "type": "xod/debug/watch"
         },
         "BJrLe7Eu7": {
           "id": "BJrLe7Eu7",
@@ -652,7 +652,7 @@
             "x": 0,
             "y": 510
           },
-          "type": "xod/core/watch"
+          "type": "xod/debug/watch"
         }
       },
       "path": "@/example-uid-equals"

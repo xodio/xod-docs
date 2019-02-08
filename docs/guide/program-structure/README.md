@@ -20,7 +20,7 @@ Some nodes represent physical devices like LEDs or digital thermometers. Others
 are used to transform and filter data. Here are few examples:
 
 - [`thermometer-tmp36`](/libs/xod/common-hardware/thermometer-tmp36/)
-- [`console-log`](/libs/xod/core/console-log/)
+- [`console-log`](/libs/xod/debug/console-log/)
 - [`add`](/libs/xod/core/add/)
 - [`to-percent`](/libs/xod/core/to-percent/)
 
