@@ -1,0 +1,178 @@
+{
+  "name": "",
+  "patches": {
+    "@/on-board": {
+      "links": {
+        "B16SNkcNE": {
+          "id": "B16SNkcNE",
+          "input": {
+            "nodeId": "B1v-NJ54V",
+            "pinKey": "H1bLN9F-b"
+          },
+          "output": {
+            "nodeId": "H18rE1cEN",
+            "pinKey": "rkFgMITM-"
+          }
+        },
+        "HkXdEk54N": {
+          "id": "HkXdEk54N",
+          "input": {
+            "nodeId": "B1-uNJc4V",
+            "pinKey": "HkXK-dGob"
+          },
+          "output": {
+            "nodeId": "H18rE1cEN",
+            "pinKey": "rkFgMITM-"
+          }
+        },
+        "HyfFEJcE4": {
+          "id": "HyfFEJcE4",
+          "input": {
+            "nodeId": "B1v-NJ54V",
+            "pinKey": "Hkc3rF8xX"
+          },
+          "output": {
+            "nodeId": "H18rE1cEN",
+            "pinKey": "rkoSQYUxm"
+          }
+        },
+        "SyvLVkq4V": {
+          "id": "SyvLVkq4V",
+          "input": {
+            "nodeId": "B1v-NJ54V",
+            "pinKey": "B1TSE9tZ-"
+          },
+          "output": {
+            "nodeId": "rJ7LVyq4N",
+            "pinKey": "H1wh06BEV"
+          }
+        }
+      },
+      "nodes": {
+        "B1-uNJc4V": {
+          "id": "B1-uNJc4V",
+          "position": {
+            "x": 408,
+            "y": 204
+          },
+          "size": {
+            "height": 51,
+            "width": 102
+          },
+          "type": "xod/debug/watch"
+        },
+        "B1v-NJ54V": {
+          "id": "B1v-NJ54V",
+          "position": {
+            "x": 68,
+            "y": 204
+          },
+          "type": "xod/common-hardware/text-lcd-16x2"
+        },
+        "H18rE1cEN": {
+          "id": "H18rE1cEN",
+          "position": {
+            "x": 306,
+            "y": 0
+          },
+          "type": "xod/common-hardware/thermometer-tmp36"
+        },
+        "rJ7LVyq4N": {
+          "boundLiterals": {
+            "H1wh06BEV": "\"Temperature:\""
+          },
+          "id": "rJ7LVyq4N",
+          "position": {
+            "x": 136,
+            "y": 0
+          },
+          "size": {
+            "height": 51,
+            "width": 136
+          },
+          "type": "xod/debug/tweak-string-16"
+        }
+      },
+      "path": "@/on-board"
+    },
+    "@/simulation": {
+      "links": {
+        "r1vQ7JcEE": {
+          "id": "r1vQ7JcEE",
+          "input": {
+            "nodeId": "By7XXJcNE",
+            "pinKey": "HkXK-dGob"
+          },
+          "output": {
+            "nodeId": "Bkkmmkc4E",
+            "pinKey": "HkyxURuSPyW"
+          }
+        },
+        "rkZmXyq4E": {
+          "id": "rkZmXyq4E",
+          "input": {
+            "nodeId": "Bkkmmkc4E",
+            "pinKey": "ryTIROHwkW"
+          },
+          "output": {
+            "nodeId": "Sk5zm19EN",
+            "pinKey": "HJU8CE2lW"
+          }
+        },
+        "ryTzmkq44": {
+          "id": "ryTzmkq44",
+          "input": {
+            "nodeId": "Sk5zm19EN",
+            "pinKey": "B13SCNhl-"
+          },
+          "output": {
+            "nodeId": "HJ8M719EN",
+            "pinKey": "ByfGSDjQE"
+          }
+        }
+      },
+      "nodes": {
+        "Bkkmmkc4E": {
+          "id": "Bkkmmkc4E",
+          "position": {
+            "x": -68,
+            "y": 102
+          },
+          "type": "xod/core/flip-flop"
+        },
+        "By7XXJcNE": {
+          "id": "By7XXJcNE",
+          "position": {
+            "x": -68,
+            "y": 204
+          },
+          "size": {
+            "height": 51,
+            "width": 102
+          },
+          "type": "xod/debug/watch"
+        },
+        "HJ8M719EN": {
+          "boundLiterals": {
+            "ByfGSDjQE": "1"
+          },
+          "id": "HJ8M719EN",
+          "position": {
+            "x": 0,
+            "y": -102
+          },
+          "type": "xod/debug/tweak-number"
+        },
+        "Sk5zm19EN": {
+          "id": "Sk5zm19EN",
+          "position": {
+            "x": -34,
+            "y": 0
+          },
+          "type": "xod/core/clock"
+        }
+      },
+      "path": "@/simulation"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 ---
 title: User Guide
-version: 1.2.0
+version: 1.3.0
 ---
 
 # User Guide
@@ -54,10 +54,12 @@ IoT and network communication:
 - [Connecting to Internet with ESP8266-based MCUs](./esp8266-connect/)
 - [Fetching data from web API’s with HTTP GET requests](./http-get/)
 
-## Projects and libraries
+<a name="projects-and-libraries"><!-- Old anchor name --></a>
+## Development
 
-How to create, manage, and share your work.
+How to create, manage, and share programs in XOD.
 
 - [Working on projects](./projects/)
+- [Debugging programs](./debugging/)
 - [Using libraries](./using-libraries/)
 - [Creating libraries](./creating-libraries/)

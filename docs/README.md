@@ -1,5 +1,6 @@
 ---
 title: XOD Documentation
+version: 1.1.0
 ---
 
 <style>
@@ -92,8 +93,8 @@ straightforward way to extend XOD and add support for new hardware.
 
 [Case studies](./guide/#case-studies) — how-to’s for common scenarios.
 
-[Projects and libraries](./guide/#projects-and-libraries) — creating, managing,
-and sharing your works.
+[Development](./guide/#development) — creating, managing,
+and sharing programs in XOD.
 
 </div><!-- column -->
 
