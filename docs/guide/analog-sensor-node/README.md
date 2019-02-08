@@ -52,7 +52,7 @@ interchange.
 
 So, in XOD we need to read analog values from the sensor, do the math, and we’ll
 get desired distance value in meters. While testing, use the
-[`watch`](/libs/xod/core/watch/) nodes to observe the results and verify
+[`watch`](/libs/xod/debug/watch/) nodes to observe the results and verify
 correctness. Here is our patch:
 
 ![Single patch implementation](./step1.patch.png)

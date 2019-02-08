@@ -322,7 +322,7 @@
             "x": 34,
             "y": 204
           },
-          "type": "xod/core/watch"
+          "type": "xod/debug/watch"
         },
         "By8nEU81V": {
           "boundLiterals": {
@@ -492,7 +492,7 @@
             "x": 170,
             "y": 204
           },
-          "type": "xod/core/watch"
+          "type": "xod/debug/watch"
         },
         "ryG6HLUkN": {
           "id": "ryG6HLUkN",
@@ -500,7 +500,7 @@
             "x": 306,
             "y": 204
           },
-          "type": "xod/core/watch"
+          "type": "xod/debug/watch"
         }
       },
       "path": "@/read-rtc"
@@ -1010,7 +1010,7 @@
             "x": 441,
             "y": 509
           },
-          "type": "xod/core/watch"
+          "type": "xod/debug/watch"
         },
         "BJIaroLIJ4": {
           "id": "BJIaroLIJ4",
@@ -1026,7 +1026,7 @@
             "x": 305,
             "y": 509
           },
-          "type": "xod/core/watch"
+          "type": "xod/debug/watch"
         },
         "BkETBj8IkE": {
           "id": "BkETBj8IkE",
@@ -1182,7 +1182,7 @@
             "x": 169,
             "y": 509
           },
-          "type": "xod/core/watch"
+          "type": "xod/debug/watch"
         },
         "SkbzuPU14": {
           "boundLiterals": {
@@ -1284,7 +1284,7 @@
             "height": 51,
             "width": 68
           },
-          "type": "xod/core/watch"
+          "type": "xod/debug/watch"
         },
         "rkXwo8UyV": {
           "id": "rkXwo8UyV",
@@ -2197,7 +2197,7 @@
             "height": 51,
             "width": 68
           },
-          "type": "xod/core/watch"
+          "type": "xod/debug/watch"
         },
         "H1NLmc8Lk4": {
           "id": "H1NLmc8Lk4",
@@ -2426,7 +2426,7 @@
             "height": 51,
             "width": 68
           },
-          "type": "xod/core/watch"
+          "type": "xod/debug/watch"
         },
         "ryv8QcIU1E": {
           "id": "ryv8QcIU1E",

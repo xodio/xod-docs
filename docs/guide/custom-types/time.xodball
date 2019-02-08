@@ -536,7 +536,7 @@
             "x": 136,
             "y": 408
           },
-          "type": "xod/core/watch"
+          "type": "xod/debug/watch"
         },
         "H1O-Fy7gQ": {
           "id": "H1O-Fy7gQ",

@@ -300,7 +300,7 @@
             "x": 68,
             "y": 204
           },
-          "type": "xod/core/watch"
+          "type": "xod/debug/watch"
         },
         "BytOAxolG": {
           "boundLiterals": {
@@ -327,7 +327,7 @@
             "x": -204,
             "y": 204
           },
-          "type": "xod/core/watch"
+          "type": "xod/debug/watch"
         },
         "HyIFsxjgG": {
           "id": "HyIFsxjgG",
@@ -335,7 +335,7 @@
             "x": -68,
             "y": 204
           },
-          "type": "xod/core/watch"
+          "type": "xod/debug/watch"
         },
         "Hyxo2G-jxf": {
           "boundLiterals": {
