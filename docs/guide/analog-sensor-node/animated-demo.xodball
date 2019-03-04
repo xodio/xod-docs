@@ -1,0 +1,116 @@
+{
+  "name": "",
+  "patches": {
+    "@/demo": {
+      "links": {
+        "BJVw55c8N": {
+          "id": "BJVw55c8N",
+          "input": {
+            "nodeId": "HJew5ccLN",
+            "pinKey": "HkXK-dGob"
+          },
+          "output": {
+            "nodeId": "BkpIq99UE",
+            "pinKey": "SkDr559I4"
+          }
+        }
+      },
+      "nodes": {
+        "BkpIq99UE": {
+          "boundLiterals": {
+            "rJPGqccLE": "A3"
+          },
+          "id": "BkpIq99UE",
+          "position": {
+            "x": 1,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "@/gp2y0a02-range-meter"
+        },
+        "HJew5ccLN": {
+          "id": "HJew5ccLN",
+          "position": {
+            "x": 1,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/debug/watch"
+        }
+      },
+      "path": "@/demo"
+    },
+    "@/gp2y0a02-range-meter": {
+      "links": {
+        "ByG45q9LV": {
+          "id": "ByG45q9LV",
+          "input": {
+            "nodeId": "ByxN595L4",
+            "pinKey": "BJlzICOSv1-"
+          },
+          "output": {
+            "nodeId": "B1WQ59qUV",
+            "pinKey": "BJB_WYnYyM"
+          }
+        },
+        "rk0B5qqIN": {
+          "id": "rk0B5qqIN",
+          "input": {
+            "nodeId": "SkDr559I4",
+            "pinKey": "__in__"
+          },
+          "output": {
+            "nodeId": "ByxN595L4",
+            "pinKey": "H12bIR_SPyZ"
+          }
+        }
+      },
+      "nodes": {
+        "B1WQ59qUV": {
+          "id": "B1WQ59qUV",
+          "position": {
+            "x": 0,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/core/sine-wave"
+        },
+        "ByxN595L4": {
+          "boundLiterals": {
+            "HJCWLAdSwyW": "1",
+            "rJbGU0_Hv1Z": "0.2",
+            "rkpbU0OrwyZ": "0.5"
+          },
+          "id": "ByxN595L4",
+          "position": {
+            "x": 0,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/math/map"
+        },
+        "SkDr559I4": {
+          "id": "SkDr559I4",
+          "label": "Dm",
+          "position": {
+            "x": 0,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/output-number"
+        },
+        "rJPGqccLE": {
+          "id": "rJPGqccLE",
+          "label": "PORT",
+          "position": {
+            "x": 0,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/input-port"
+        }
+      },
+      "path": "@/gp2y0a02-range-meter"
+    }
+  }
+}

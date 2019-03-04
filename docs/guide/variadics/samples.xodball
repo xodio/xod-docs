@@ -7,36 +7,42 @@
           "content": "As many pins as necessary",
           "id": "Byl9xSNdM",
           "position": {
-            "x": 68,
-            "y": -204
+            "x": -2,
+            "y": -2,
+            "units": "slots"
           },
           "size": {
-            "height": 51,
-            "width": 136
+            "height": 1,
+            "width": 5,
+            "units": "slots"
           }
         },
         "HkJ3lrVuf": {
           "content": "Works for any data types",
           "id": "HkJ3lrVuf",
           "position": {
-            "x": 68,
-            "y": 102
+            "x": -2,
+            "y": 0,
+            "units": "slots"
           },
           "size": {
-            "height": 51,
-            "width": 238
+            "height": 1,
+            "width": 5,
+            "units": "slots"
           }
         },
         "r1XKgBN_f": {
           "content": "The same `add` node\n🔻🔻🔻",
           "id": "r1XKgBN_f",
           "position": {
-            "x": -374,
-            "y": -204
+            "x": -11,
+            "y": -2,
+            "units": "slots"
           },
           "size": {
-            "height": 51,
-            "width": 170
+            "height": 1,
+            "width": 4,
+            "units": "slots"
           }
         }
       },
@@ -45,8 +51,9 @@
           "arityLevel": 4,
           "id": "B1HIeBNdf",
           "position": {
-            "x": -374,
-            "y": 204
+            "x": -11,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/core/add"
         },
@@ -54,33 +61,47 @@
           "arityLevel": 3,
           "id": "B1TMgSEuf",
           "position": {
-            "x": -374,
-            "y": 102
+            "x": -11,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/core/add"
         },
         "BkUGlS4Of": {
-          "arityLevel": 9,
+          "arityLevel": 7,
           "id": "BkUGlS4Of",
           "position": {
-            "x": -34,
-            "y": -102
+            "x": -5,
+            "y": -1,
+            "units": "slots"
           },
           "type": "xod/core/multiply"
         },
         "ByC31SNuM": {
           "id": "ByC31SNuM",
           "position": {
-            "x": -374,
-            "y": -102
+            "x": -11,
+            "y": -1,
+            "units": "slots"
           },
           "type": "xod/core/add"
+        },
+        "H1C502SI4": {
+          "arityLevel": 3,
+          "id": "H1C502SI4",
+          "position": {
+            "x": -5,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/core/select"
         },
         "H1j9fBEdz": {
           "id": "H1j9fBEdz",
           "position": {
-            "x": -34,
-            "y": 102
+            "x": -5,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/core/or"
         },
@@ -88,25 +109,28 @@
           "arityLevel": 2,
           "id": "r1BggH4uf",
           "position": {
-            "x": -374,
-            "y": 0
+            "x": -11,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/core/add"
         },
         "rJmjfrVuf": {
-          "arityLevel": 9,
+          "arityLevel": 7,
           "id": "rJmjfrVuf",
           "position": {
-            "x": -34,
-            "y": 204
+            "x": -5,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/core/or"
         },
         "ry3ZgB4uG": {
           "id": "ry3ZgB4uG",
           "position": {
-            "x": -34,
-            "y": -204
+            "x": -5,
+            "y": -2,
+            "units": "slots"
           },
           "type": "xod/core/multiply"
         }
@@ -219,80 +243,90 @@
         "B1_l7rEuM": {
           "id": "B1_l7rEuM",
           "position": {
-            "x": 34,
-            "y": 0
+            "x": 1,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-number"
         },
         "B1tkXBNdG": {
           "id": "B1tkXBNdG",
           "position": {
-            "x": 68,
-            "y": 204
+            "x": 2,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/core/add"
         },
         "Byv-7BNuG": {
           "id": "Byv-7BNuG",
           "position": {
-            "x": 136,
-            "y": 510
+            "x": 4,
+            "y": 5,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/output-number"
         },
         "H1e2gXBEuM": {
           "id": "H1e2gXBEuM",
           "position": {
-            "x": 102,
-            "y": 0
+            "x": 3,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-number"
         },
         "S16J7BNuz": {
           "id": "S16J7BNuz",
           "position": {
-            "x": 102,
-            "y": 306
+            "x": 3,
+            "y": 3,
+            "units": "slots"
           },
           "type": "xod/core/add"
         },
         "SJke7rV_G": {
           "id": "SJke7rV_G",
           "position": {
-            "x": 136,
-            "y": 408
+            "x": 4,
+            "y": 4,
+            "units": "slots"
           },
           "type": "xod/core/add"
         },
         "SkaxXrVdM": {
           "id": "SkaxXrVdM",
           "position": {
-            "x": 136,
-            "y": 0
+            "x": 4,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-number"
         },
         "SkeTl7HVuG": {
           "id": "SkeTl7HVuG",
           "position": {
-            "x": 170,
-            "y": 0
+            "x": 5,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-number"
         },
         "SynxmSVdG": {
           "id": "SynxmSVdG",
           "position": {
-            "x": 68,
-            "y": 0
+            "x": 2,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-number"
         },
         "rk8ymBEuf": {
           "id": "rk8ymBEuf",
           "position": {
-            "x": 34,
-            "y": 102
+            "x": 1,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/core/add"
         }
@@ -305,12 +339,14 @@
           "content": "`select` inputs grow in pairs",
           "id": "SJeRmH4uz",
           "position": {
-            "x": 204,
-            "y": 102
+            "x": 6,
+            "y": 1,
+            "units": "slots"
           },
           "size": {
-            "height": 51,
-            "width": 238
+            "height": 1,
+            "width": 6,
+            "units": "slots"
           }
         }
       },
@@ -318,8 +354,9 @@
         "B1Y3mBNOM": {
           "id": "B1Y3mBNOM",
           "position": {
-            "x": 34,
-            "y": 102
+            "x": 1,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/core/select"
         },
@@ -327,8 +364,9 @@
           "arityLevel": 4,
           "id": "S1Bp7B4uG",
           "position": {
-            "x": 34,
-            "y": 408
+            "x": 1,
+            "y": 4,
+            "units": "slots"
           },
           "type": "xod/core/select"
         },
@@ -336,8 +374,9 @@
           "arityLevel": 2,
           "id": "SJ3nQHEdG",
           "position": {
-            "x": 34,
-            "y": 204
+            "x": 1,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/core/select"
         },
@@ -345,8 +384,9 @@
           "arityLevel": 3,
           "id": "r1eTXH4_M",
           "position": {
-            "x": 34,
-            "y": 306
+            "x": 1,
+            "y": 3,
+            "units": "slots"
           },
           "type": "xod/core/select"
         }
@@ -515,8 +555,9 @@
           "id": "BJH7fSNdf",
           "label": "S1",
           "position": {
-            "x": 68,
-            "y": 0
+            "x": 2,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-pulse"
         },
@@ -524,8 +565,9 @@
           "id": "BJJ4zSVdG",
           "label": "X3",
           "position": {
-            "x": 170,
-            "y": 0
+            "x": 5,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-number"
         },
@@ -533,8 +575,9 @@
           "id": "BygNfHNuz",
           "label": "X4",
           "position": {
-            "x": 238,
-            "y": 0
+            "x": 7,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-number"
         },
@@ -542,24 +585,27 @@
           "id": "HJlTQfHVOz",
           "label": "S2",
           "position": {
-            "x": 136,
-            "y": 0
+            "x": 4,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-pulse"
         },
         "Hy_LMSEOf": {
           "id": "Hy_LMSEOf",
           "position": {
-            "x": 170,
-            "y": 408
+            "x": 5,
+            "y": 4,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/output-number"
         },
         "SJWZzHVuf": {
           "id": "SJWZzHVuf",
           "position": {
-            "x": 34,
-            "y": 102
+            "x": 1,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/core/select"
         },
@@ -567,8 +613,9 @@
           "id": "SyazMr4uM",
           "label": "X1",
           "position": {
-            "x": 34,
-            "y": 0
+            "x": 1,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-number"
         },
@@ -576,24 +623,27 @@
           "id": "SyexEMrV_f",
           "label": "S4",
           "position": {
-            "x": 272,
-            "y": 0
+            "x": 8,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-pulse"
         },
         "r1Y-MSEOG": {
           "id": "r1Y-MSEOG",
           "position": {
-            "x": 170,
-            "y": 306
+            "x": 5,
+            "y": 3,
+            "units": "slots"
           },
           "type": "xod/core/select"
         },
         "rk6IMrEdf": {
           "id": "rk6IMrEdf",
           "position": {
-            "x": 204,
-            "y": 408
+            "x": 6,
+            "y": 4,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/output-pulse"
         },
@@ -601,8 +651,9 @@
           "id": "rkaQfrEuG",
           "label": "X2",
           "position": {
-            "x": 102,
-            "y": 0
+            "x": 3,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-number"
         },
@@ -610,16 +661,18 @@
           "id": "rklkNMHN_M",
           "label": "S3",
           "position": {
-            "x": 204,
-            "y": 0
+            "x": 6,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-pulse"
         },
         "ryIbfHEdM": {
           "id": "ryIbfHEdM",
           "position": {
-            "x": 102,
-            "y": 204
+            "x": 3,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/core/select"
         }
@@ -776,16 +829,18 @@
         "BJrJHSEOf": {
           "id": "BJrJHSEOf",
           "position": {
-            "x": 136,
-            "y": 510
+            "x": 4,
+            "y": 5,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/output-string"
         },
         "By9G2BNdf": {
           "id": "By9G2BNdf",
           "position": {
-            "x": 136,
-            "y": 102
+            "x": 4,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/core/join"
         },
@@ -793,24 +848,27 @@
           "id": "Hk72NH4Of",
           "label": "S1",
           "position": {
-            "x": 170,
-            "y": 0
+            "x": 5,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-string"
         },
         "HkyX2r4_M": {
           "id": "HkyX2r4_M",
           "position": {
-            "x": 136,
-            "y": 204
+            "x": 4,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/core/join"
         },
         "S17mnrE_G": {
           "id": "S17mnrE_G",
           "position": {
-            "x": 136,
-            "y": 408
+            "x": 4,
+            "y": 4,
+            "units": "slots"
           },
           "type": "xod/core/join"
         },
@@ -818,8 +876,9 @@
           "id": "SyanESVOf",
           "label": "S4",
           "position": {
-            "x": 374,
-            "y": 0
+            "x": 11,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-string"
         },
@@ -827,8 +886,9 @@
           "id": "rJeonVHV_f",
           "label": "S3",
           "position": {
-            "x": 306,
-            "y": 0
+            "x": 9,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-string"
         },
@@ -836,16 +896,18 @@
           "id": "rJonESV_M",
           "label": "S2",
           "position": {
-            "x": 238,
-            "y": 0
+            "x": 7,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-string"
         },
         "rkMXnBNuf": {
           "id": "rkMXnBNuf",
           "position": {
-            "x": 136,
-            "y": 306
+            "x": 4,
+            "y": 3,
+            "units": "slots"
           },
           "type": "xod/core/join"
         },
@@ -853,8 +915,9 @@
           "id": "rycC4SEdz",
           "label": "S5",
           "position": {
-            "x": 442,
-            "y": 0
+            "x": 13,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-string"
         },
@@ -863,7 +926,8 @@
           "label": "D",
           "position": {
             "x": 0,
-            "y": 0
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-string"
         }
