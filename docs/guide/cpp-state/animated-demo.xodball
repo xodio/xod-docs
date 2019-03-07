@@ -1,0 +1,283 @@
+{
+  "name": "",
+  "patches": {
+    "@/count": {
+      "comments": {
+        "Hk_DJocLN": {
+          "content": "Double-click to edit comment",
+          "id": "Hk_DJocLN",
+          "position": {
+            "x": 44,
+            "y": 105,
+            "units": "slots"
+          },
+          "size": {
+            "height": 65,
+            "width": 176,
+            "units": "slots"
+          }
+        },
+        "rJ9dkjqU4": {
+          "content": "Double-click to edit comment",
+          "id": "rJ9dkjqU4",
+          "position": {
+            "x": 44,
+            "y": 105,
+            "units": "slots"
+          },
+          "size": {
+            "height": 65,
+            "width": 176,
+            "units": "slots"
+          }
+        }
+      },
+      "links": {
+        "B1Nn1i9IV": {
+          "id": "B1Nn1i9IV",
+          "input": {
+            "nodeId": "SJ72yi58V",
+            "pinKey": "rJXICuSwyW"
+          },
+          "output": {
+            "nodeId": "ryA5JjqUV",
+            "pinKey": "r1yhZRd8W"
+          }
+        },
+        "BJ_01sc84": {
+          "id": "BJ_01sc84",
+          "input": {
+            "nodeId": "rJmaL1j5LN",
+            "pinKey": "__in__"
+          },
+          "output": {
+            "nodeId": "ryA5JjqUV",
+            "pinKey": "r1yhZRd8W"
+          }
+        },
+        "Hy3akiqIE": {
+          "id": "Hy3akiqIE",
+          "input": {
+            "nodeId": "Hy5TkicIN",
+            "pinKey": "BJI7P8t9Z"
+          },
+          "output": {
+            "nodeId": "SJ72yi58V",
+            "pinKey": "H1E8AuSPkZ"
+          }
+        },
+        "rJxi1iqUV": {
+          "id": "rJxi1iqUV",
+          "input": {
+            "nodeId": "ryA5JjqUV",
+            "pinKey": "HJvqZ0dLZ"
+          },
+          "output": {
+            "nodeId": "BJbT8ys984",
+            "pinKey": "__out__"
+          }
+        },
+        "ryGjJjcI4": {
+          "id": "ryGjJjcI4",
+          "input": {
+            "nodeId": "ryA5JjqUV",
+            "pinKey": "HJAq-A_8-"
+          },
+          "output": {
+            "nodeId": "rJFqJi5UV",
+            "pinKey": "HJU8CE2lW"
+          }
+        },
+        "ryf0JscIE": {
+          "id": "ryf0JscIE",
+          "input": {
+            "nodeId": "ryA5JjqUV",
+            "pinKey": "SkUjZA_L-"
+          },
+          "output": {
+            "nodeId": "Hy5TkicIN",
+            "pinKey": "HJhXDIY9-"
+          }
+        }
+      },
+      "nodes": {
+        "BJbT8ys984": {
+          "boundLiterals": {
+            "__out__": "1"
+          },
+          "description": "Value to add on each increment. Use a negative value (e.g. -1) to make decrements.",
+          "id": "BJbT8ys984",
+          "label": "STEP",
+          "position": {
+            "x": 0,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/input-number"
+        },
+        "BJeaUks5LN": {
+          "description": "Triggers a single increment.",
+          "id": "BJeaUks5LN",
+          "label": "INC",
+          "position": {
+            "x": 4,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/input-pulse"
+        },
+        "BJfaLyo5U4": {
+          "description": "Resets the accumulated value to zero.",
+          "id": "BJfaLyo5U4",
+          "label": "RST",
+          "position": {
+            "x": 8,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/input-pulse"
+        },
+        "Hy5TkicIN": {
+          "id": "Hy5TkicIN",
+          "position": {
+            "x": 5,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/core/defer"
+        },
+        "SJ72yi58V": {
+          "boundLiterals": {
+            "HJG8C_SPkb": "10"
+          },
+          "id": "SJ72yi58V",
+          "position": {
+            "x": 3,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/core/equal"
+        },
+        "rJFqJi5UV": {
+          "boundLiterals": {
+            "B13SCNhl-": "0.1"
+          },
+          "id": "rJFqJi5UV",
+          "position": {
+            "x": 1,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/core/clock"
+        },
+        "rJmaL1j5LN": {
+          "description": "The accumulated value.",
+          "id": "rJmaL1j5LN",
+          "position": {
+            "x": 0,
+            "y": 4,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/output-number"
+        },
+        "ryA5JjqUV": {
+          "id": "ryA5JjqUV",
+          "position": {
+            "x": 0,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/core/count"
+        }
+      },
+      "path": "@/count"
+    },
+    "@/main": {
+      "links": {
+        "HJmh53qU4": {
+          "id": "HJmh53qU4",
+          "input": {
+            "nodeId": "rysJlo5UV",
+            "pinKey": "BJfaLyo5U4"
+          },
+          "output": {
+            "nodeId": "B1s0CcqLE",
+            "pinKey": "BJ--G1tI-"
+          }
+        },
+        "SJ0kejq8E": {
+          "id": "SJ0kejq8E",
+          "input": {
+            "nodeId": "HJxzkiqLE",
+            "pinKey": "HkXK-dGob"
+          },
+          "output": {
+            "nodeId": "rysJlo5UV",
+            "pinKey": "rJmaL1j5LN"
+          }
+        },
+        "rJf2qn9IE": {
+          "id": "rJf2qn9IE",
+          "input": {
+            "nodeId": "rysJlo5UV",
+            "pinKey": "BJeaUks5LN"
+          },
+          "output": {
+            "nodeId": "SJuCAq9IN",
+            "pinKey": "BJ--G1tI-"
+          }
+        }
+      },
+      "nodes": {
+        "B1s0CcqLE": {
+          "boundLiterals": {
+            "ByNiWkt8Z": "D8"
+          },
+          "id": "B1s0CcqLE",
+          "position": {
+            "x": 7,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/button"
+        },
+        "HJxzkiqLE": {
+          "id": "HJxzkiqLE",
+          "position": {
+            "x": 4,
+            "y": 2,
+            "units": "slots"
+          },
+          "size": {
+            "height": 1,
+            "width": 3,
+            "units": "slots"
+          },
+          "type": "xod/debug/watch"
+        },
+        "SJuCAq9IN": {
+          "boundLiterals": {
+            "ByNiWkt8Z": "D7"
+          },
+          "id": "SJuCAq9IN",
+          "position": {
+            "x": 4,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/button"
+        },
+        "rysJlo5UV": {
+          "id": "rysJlo5UV",
+          "position": {
+            "x": 4,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "@/count"
+        }
+      },
+      "path": "@/main"
+    }
+  }
+}

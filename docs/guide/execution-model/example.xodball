@@ -1,0 +1,202 @@
+{
+  "name": "",
+  "patches": {
+    "@/downstream": {
+      "nodes": {
+        "BJMFmvHIE": {
+          "id": "BJMFmvHIE",
+          "position": {
+            "x": 0,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/output-pulse"
+        },
+        "ByauXDrUN": {
+          "id": "ByauXDrUN",
+          "position": {
+            "x": 2,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/input-boolean"
+        },
+        "rk2dQwSI4": {
+          "id": "rk2dQwSI4",
+          "position": {
+            "x": 0,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/input-boolean"
+        }
+      },
+      "path": "@/downstream"
+    },
+    "@/identity-bool": {
+      "nodes": {
+        "H1Tc7DSI4": {
+          "id": "H1Tc7DSI4",
+          "position": {
+            "x": 1,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/output-boolean"
+        },
+        "rkv5QvBIV": {
+          "id": "rkv5QvBIV",
+          "position": {
+            "x": 1,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/input-boolean"
+        }
+      },
+      "path": "@/identity-bool"
+    },
+    "@/main": {
+      "links": {
+        "B1as7vHUN": {
+          "id": "B1as7vHUN",
+          "input": {
+            "nodeId": "Syjt7PrU4",
+            "pinKey": "ByauXDrUN"
+          },
+          "output": {
+            "nodeId": "rymjXDrIE",
+            "pinKey": "H1Tc7DSI4"
+          }
+        },
+        "H1nsXwBU4": {
+          "id": "H1nsXwBU4",
+          "input": {
+            "nodeId": "Syjt7PrU4",
+            "pinKey": "rk2dQwSI4"
+          },
+          "output": {
+            "nodeId": "SJSiQwH8V",
+            "pinKey": "H1Tc7DSI4"
+          }
+        },
+        "SyqimvSLV": {
+          "id": "SyqimvSLV",
+          "input": {
+            "nodeId": "rymjXDrIE",
+            "pinKey": "rkv5QvBIV"
+          },
+          "output": {
+            "nodeId": "SJKFQvrUE",
+            "pinKey": "Hyz_QPHIV"
+          }
+        },
+        "rJYs7vBI4": {
+          "id": "rJYs7vBI4",
+          "input": {
+            "nodeId": "B1Ws7PBUE",
+            "pinKey": "rkv5QvBIV"
+          },
+          "output": {
+            "nodeId": "SJKFQvrUE",
+            "pinKey": "Hyz_QPHIV"
+          }
+        },
+        "rkijmDHIV": {
+          "id": "rkijmDHIV",
+          "input": {
+            "nodeId": "SJSiQwH8V",
+            "pinKey": "rkv5QvBIV"
+          },
+          "output": {
+            "nodeId": "B1Ws7PBUE",
+            "pinKey": "H1Tc7DSI4"
+          }
+        }
+      },
+      "nodes": {
+        "B1Ws7PBUE": {
+          "id": "B1Ws7PBUE",
+          "label": "M1",
+          "position": {
+            "x": 1,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "@/identity-bool"
+        },
+        "SJKFQvrUE": {
+          "id": "SJKFQvrUE",
+          "position": {
+            "x": 2,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "@/upstream"
+        },
+        "SJSiQwH8V": {
+          "id": "SJSiQwH8V",
+          "label": "M2",
+          "position": {
+            "x": 1,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "@/identity-bool"
+        },
+        "Syjt7PrU4": {
+          "id": "Syjt7PrU4",
+          "position": {
+            "x": 2,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "@/downstream"
+        },
+        "rymjXDrIE": {
+          "id": "rymjXDrIE",
+          "label": "M3",
+          "position": {
+            "x": 3,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "@/identity-bool"
+        }
+      },
+      "path": "@/main"
+    },
+    "@/upstream": {
+      "nodes": {
+        "BJtwXwr84": {
+          "id": "BJtwXwr84",
+          "position": {
+            "x": 3,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/input-pulse"
+        },
+        "Hyz_QPHIV": {
+          "id": "Hyz_QPHIV",
+          "position": {
+            "x": 1,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/output-boolean"
+        },
+        "SkuDQwSIV": {
+          "id": "SkuDQwSIV",
+          "position": {
+            "x": 1,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/input-pulse"
+        }
+      },
+      "path": "@/upstream"
+    }
+  }
+}

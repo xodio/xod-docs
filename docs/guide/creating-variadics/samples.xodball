@@ -1,14 +1,128 @@
 {
   "name": "",
   "patches": {
+    "@/join": {
+      "links": {
+        "HJUkx9LrIV": {
+          "id": "HJUkx9LrIV",
+          "input": {
+            "nodeId": "SJ-1l9LHLV",
+            "pinKey": "BkeKcj6ZZ-$1"
+          },
+          "output": {
+            "nodeId": "BkE1xqISLV",
+            "pinKey": "__out__"
+          }
+        },
+        "Sydke9UrLV": {
+          "id": "Sydke9UrLV",
+          "input": {
+            "nodeId": "SJ-1l9LHLV",
+            "pinKey": "Hkqu9oaWb"
+          },
+          "output": {
+            "nodeId": "rJf1xc8H8E",
+            "pinKey": "__out__"
+          }
+        },
+        "rJBylqLBUV": {
+          "id": "rJBylqLBUV",
+          "input": {
+            "nodeId": "HyxJe98HL4",
+            "pinKey": "__in__"
+          },
+          "output": {
+            "nodeId": "SJ-1l9LHLV",
+            "pinKey": "rksccsp-W"
+          }
+        },
+        "ryDyg5LrUE": {
+          "id": "ryDyg5LrUE",
+          "input": {
+            "nodeId": "SJ-1l9LHLV",
+            "pinKey": "BkeKcj6ZZ"
+          },
+          "output": {
+            "nodeId": "SkQkx9IrLE",
+            "pinKey": "__out__"
+          }
+        }
+      },
+      "nodes": {
+        "B1Jlc8BLE": {
+          "id": "B1Jlc8BLE",
+          "position": {
+            "x": 6,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/variadic-1"
+        },
+        "BkE1xqISLV": {
+          "id": "BkE1xqISLV",
+          "label": "S2",
+          "position": {
+            "x": 4,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/input-string"
+        },
+        "HyxJe98HL4": {
+          "id": "HyxJe98HL4",
+          "position": {
+            "x": 2,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/output-string"
+        },
+        "SJ-1l9LHLV": {
+          "arityLevel": 2,
+          "id": "SJ-1l9LHLV",
+          "position": {
+            "x": 2,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/core/concat"
+        },
+        "SkQkx9IrLE": {
+          "boundLiterals": {
+            "__out__": "\" \""
+          },
+          "description": "Delimiter character or string",
+          "id": "SkQkx9IrLE",
+          "label": "D",
+          "position": {
+            "x": 0,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/input-string"
+        },
+        "rJf1xc8H8E": {
+          "id": "rJf1xc8H8E",
+          "label": "S1",
+          "position": {
+            "x": 2,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/input-string"
+        }
+      },
+      "path": "@/join"
+    },
     "@/pin-assignments": {
       "nodes": {
         "BJWCx5LOf": {
           "id": "BJWCx5LOf",
           "label": "V1",
           "position": {
-            "x": 68,
-            "y": -306
+            "x": 2,
+            "y": -3,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-number"
         },
@@ -16,16 +130,18 @@
           "id": "Bk_ie9U_G",
           "label": "S2",
           "position": {
-            "x": -102,
-            "y": -306
+            "x": -3,
+            "y": -3,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-boolean"
         },
         "HJmbW9Udz": {
           "id": "HJmbW9Udz",
           "position": {
-            "x": 34,
-            "y": -102
+            "x": 1,
+            "y": -1,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/output-number"
         },
@@ -33,8 +149,9 @@
           "id": "HkKneq8Oz",
           "label": "A1",
           "position": {
-            "x": -68,
-            "y": -306
+            "x": -2,
+            "y": -3,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-string"
         },
@@ -42,8 +159,9 @@
           "id": "Hy4TgcIdz",
           "label": "V2",
           "position": {
-            "x": 102,
-            "y": -306
+            "x": 3,
+            "y": -3,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-pulse"
         },
@@ -51,8 +169,9 @@
           "id": "HyTTlqUOz",
           "label": "A4",
           "position": {
-            "x": 34,
-            "y": -306
+            "x": 1,
+            "y": -3,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-number"
         },
@@ -60,7 +179,8 @@
           "id": "S1rl-5Iuz",
           "position": {
             "x": 0,
-            "y": -102
+            "y": -1,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/output-boolean"
         },
@@ -68,8 +188,9 @@
           "id": "SkgjecUOf",
           "label": "S1",
           "position": {
-            "x": -136,
-            "y": -306
+            "x": -4,
+            "y": -3,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-number"
         },
@@ -77,8 +198,9 @@
           "id": "SyR2g5LdG",
           "label": "A2",
           "position": {
-            "x": -34,
-            "y": -306
+            "x": -1,
+            "y": -3,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-string"
         },
@@ -87,31 +209,35 @@
           "label": "A3",
           "position": {
             "x": 0,
-            "y": -306
+            "y": -3,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-boolean"
         },
         "r1n0lq8Oz": {
           "id": "r1n0lq8Oz",
           "position": {
-            "x": -68,
-            "y": -102
+            "x": -2,
+            "y": -1,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/output-string"
         },
         "ryCCx9IuG": {
           "id": "ryCCx9IuG",
           "position": {
-            "x": -34,
-            "y": -102
+            "x": -1,
+            "y": -1,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/output-string"
         },
         "rydW-cIOf": {
           "id": "rydW-cIOf",
           "position": {
-            "x": 204,
-            "y": -204
+            "x": 6,
+            "y": -2,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/variadic-2"
         }

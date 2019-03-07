@@ -1,6 +1,6 @@
 {
   "name": "xod-docs",
-  "version": "0.27.0",
+  "version": "0.28.0",
   "description": "XOD documentation",
   "scripts": {
     "prettier": "prettier --write",

@@ -6,8 +6,9 @@
         "SkhfwCx7X": {
           "id": "SkhfwCx7X",
           "position": {
-            "x": 102,
-            "y": 102
+            "x": 3,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod-dev/w5500/w5500-device"
         }
@@ -40,16 +41,18 @@
           },
           "id": "BydNvCgXQ",
           "position": {
-            "x": 102,
-            "y": 102
+            "x": 3,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/net/mac-address"
         },
         "HJXNw0gX7": {
           "id": "HJXNw0gX7",
           "position": {
-            "x": 102,
-            "y": 204
+            "x": 3,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod-dev/w5500/w5500-device"
         }
@@ -94,7 +97,8 @@
           "id": "BkScvRlmX",
           "position": {
             "x": 0,
-            "y": 0
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/net/mac-address"
         },
@@ -102,15 +106,17 @@
           "id": "HkSUwCxXm",
           "position": {
             "x": 0,
-            "y": 204
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod-dev/w5500/connect"
         },
         "rJx8vCeX7": {
           "id": "rJx8vCeX7",
           "position": {
-            "x": -1,
-            "y": 101
+            "x": 0,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod-dev/w5500/w5500-device"
         }
@@ -223,8 +229,9 @@
         "BkXjw0gQQ": {
           "id": "BkXjw0gQQ",
           "position": {
-            "x": -1,
-            "y": 100
+            "x": 0,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod-dev/w5500/w5500-device"
         },
@@ -232,7 +239,8 @@
           "id": "S1hpPAlmm",
           "position": {
             "x": 0,
-            "y": 306
+            "y": 3,
+            "units": "slots"
           },
           "type": "xod-dev/w5500/lan-ip"
         },
@@ -242,16 +250,18 @@
           },
           "id": "SJRiD0g77",
           "position": {
-            "x": -68,
-            "y": 510
+            "x": -2,
+            "y": 5,
+            "units": "slots"
           },
           "type": "xod/common-hardware/text-lcd-16x2-i2c"
         },
         "SJiyuBfmm": {
           "id": "SJiyuBfmm",
           "position": {
-            "x": 34,
-            "y": 408
+            "x": 1,
+            "y": 4,
+            "units": "slots"
           },
           "type": "xod/core/format-progress"
         },
@@ -259,7 +269,8 @@
           "id": "rJlQsDAx7m",
           "position": {
             "x": 0,
-            "y": 203
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod-dev/w5500/connect"
         },
@@ -275,7 +286,8 @@
           "id": "ryWmjDRl77",
           "position": {
             "x": 0,
-            "y": -1
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/net/mac-address"
         },
@@ -283,7 +295,8 @@
           "id": "rythDClX7",
           "position": {
             "x": 0,
-            "y": 408
+            "y": 4,
+            "units": "slots"
           },
           "type": "xod/net/format-ip"
         }
@@ -397,7 +410,8 @@
           "id": "B1Y5XJ-m7",
           "position": {
             "x": 0,
-            "y": 306
+            "y": 3,
+            "units": "slots"
           },
           "type": "xod-dev/w5500/lan-ip"
         },
@@ -413,15 +427,17 @@
           "id": "BJI3FX1b7Q",
           "position": {
             "x": 0,
-            "y": -1
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/net/mac-address"
         },
         "HJhFXkbQ7": {
           "id": "HJhFXkbQ7",
           "position": {
-            "x": -1,
-            "y": 100
+            "x": 0,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod-dev/w5500/w5500-device"
         },
@@ -429,15 +445,17 @@
           "id": "HyHsmyb7m",
           "position": {
             "x": 0,
-            "y": 204
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod-dev/w5500/connect-manual"
         },
         "S11ZKHzmX": {
           "id": "S11ZKHzmX",
           "position": {
-            "x": 34,
-            "y": 408
+            "x": 1,
+            "y": 4,
+            "units": "slots"
           },
           "type": "xod/core/format-progress"
         },
@@ -447,8 +465,9 @@
           },
           "id": "SkMht7JZ7X",
           "position": {
-            "x": -68,
-            "y": 510
+            "x": -2,
+            "y": 5,
+            "units": "slots"
           },
           "type": "xod/common-hardware/text-lcd-16x2-i2c"
         },
@@ -456,7 +475,8 @@
           "id": "rkxFqXkb77",
           "position": {
             "x": 0,
-            "y": 408
+            "y": 4,
+            "units": "slots"
           },
           "type": "xod/net/format-ip"
         }
@@ -613,32 +633,36 @@
         "BJtVCQybXQ": {
           "id": "BJtVCQybXQ",
           "position": {
-            "x": 102,
-            "y": 510
+            "x": 3,
+            "y": 5,
+            "units": "slots"
           },
           "type": "xod-dev/w5500/connect-manual"
         },
         "ByERmyZQm": {
           "id": "ByERmyZQm",
           "position": {
-            "x": 34,
-            "y": 102
+            "x": 1,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod-dev/w5500/w5500-device"
         },
         "Hkz7tHMQ7": {
           "id": "Hkz7tHMQ7",
           "position": {
-            "x": 136,
-            "y": 714
+            "x": 4,
+            "y": 7,
+            "units": "slots"
           },
           "type": "xod/core/format-progress"
         },
         "HyuNRXJb7X": {
           "id": "HyuNRXJb7X",
           "position": {
-            "x": 102,
-            "y": 714
+            "x": 3,
+            "y": 7,
+            "units": "slots"
           },
           "type": "xod/net/format-ip"
         },
@@ -650,10 +674,10 @@
             "ryefxxZBZm": "1d"
           },
           "id": "HywlV1-7X",
-          "label": "IP 192.168.88.1",
           "position": {
-            "x": 204,
-            "y": 306
+            "x": 6,
+            "y": 3,
+            "units": "slots"
           },
           "type": "xod/net/ip-address"
         },
@@ -663,8 +687,9 @@
           },
           "id": "HyzN0Q1b7Q",
           "position": {
-            "x": 34,
-            "y": 816
+            "x": 1,
+            "y": 8,
+            "units": "slots"
           },
           "type": "xod/common-hardware/text-lcd-16x2-i2c"
         },
@@ -676,10 +701,10 @@
             "ryefxxZBZm": "8d"
           },
           "id": "SkGx4yWX7",
-          "label": "IP 8.8.8.8",
           "position": {
-            "x": 170,
-            "y": 204
+            "x": 5,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/net/ip-address"
         },
@@ -691,18 +716,19 @@
             "ryefxxZBZm": "20d"
           },
           "id": "Syny4kbXm",
-          "label": "IP 192.168.88.20",
           "position": {
-            "x": 136,
-            "y": 102
+            "x": 4,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/net/ip-address"
         },
         "rJDNCQ1bXQ": {
           "id": "rJDNCQ1bXQ",
           "position": {
-            "x": 102,
-            "y": 612
+            "x": 3,
+            "y": 6,
+            "units": "slots"
           },
           "type": "xod-dev/w5500/lan-ip"
         },
@@ -713,10 +739,10 @@
             "ryMGggZH-Q": "255d"
           },
           "id": "rJkWV1WmX",
-          "label": "IP 255.255.255.0",
           "position": {
-            "x": 238,
-            "y": 408
+            "x": 7,
+            "y": 4,
+            "units": "slots"
           },
           "type": "xod/net/ip-address"
         },
@@ -731,8 +757,9 @@
           },
           "id": "rkBVC7ybmX",
           "position": {
-            "x": 34,
-            "y": 0
+            "x": 1,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/net/mac-address"
         }
@@ -846,8 +873,9 @@
           "id": "B1RIcZb7m",
           "label": "ERR",
           "position": {
-            "x": 170,
-            "y": 612
+            "x": 5,
+            "y": 6,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/output-pulse"
         },
@@ -859,10 +887,10 @@
             "ryefxxZBZm": "1d"
           },
           "id": "B1SRN5WZQQ",
-          "label": "IP 192.168.88.1",
           "position": {
-            "x": 204,
-            "y": 306
+            "x": 6,
+            "y": 3,
+            "units": "slots"
           },
           "type": "xod/net/ip-address"
         },
@@ -873,18 +901,19 @@
             "ryMGggZH-Q": "255d"
           },
           "id": "BknAEqW-X7",
-          "label": "IP 255.255.255.0",
           "position": {
-            "x": 238,
-            "y": 408
+            "x": 7,
+            "y": 4,
+            "units": "slots"
           },
           "type": "xod/net/ip-address"
         },
         "H1REcWWXX": {
           "id": "H1REcWWXX",
           "position": {
-            "x": 102,
-            "y": 510
+            "x": 3,
+            "y": 5,
+            "units": "slots"
           },
           "type": "xod-dev/w5500/connect-manual"
         },
@@ -900,7 +929,8 @@
           "id": "H1pAVqZbQ7",
           "position": {
             "x": 0,
-            "y": -1
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/net/mac-address"
         },
@@ -912,10 +942,10 @@
             "ryefxxZBZm": "8d"
           },
           "id": "HJwA49--Xm",
-          "label": "IP 8.8.8.8",
           "position": {
-            "x": 170,
-            "y": 204
+            "x": 5,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/net/ip-address"
         },
@@ -923,8 +953,9 @@
           "id": "HknU9WZmQ",
           "label": "OK",
           "position": {
-            "x": 136,
-            "y": 612
+            "x": 4,
+            "y": 6,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/output-pulse"
         },
@@ -936,18 +967,19 @@
             "ryefxxZBZm": "20d"
           },
           "id": "Hy_AN5ZZQQ",
-          "label": "IP 192.168.88.20",
           "position": {
-            "x": 136,
-            "y": 102
+            "x": 4,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/net/ip-address"
         },
         "rkzAE9-ZXm": {
           "id": "rkzAE9-ZXm",
           "position": {
-            "x": -1,
-            "y": 100
+            "x": 0,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod-dev/w5500/w5500-device"
         },
@@ -955,8 +987,9 @@
           "id": "ryhTXBGQ7",
           "label": "INET",
           "position": {
-            "x": 102,
-            "y": 612
+            "x": 3,
+            "y": 6,
+            "units": "slots"
           },
           "type": "xod-dev/w5500/output-w5500-inet"
         }
@@ -968,8 +1001,9 @@
         "BJHHhZ-Qm": {
           "id": "BJHHhZ-Qm",
           "position": {
-            "x": 102,
-            "y": 102
+            "x": 3,
+            "y": 1,
+            "units": "slots"
           },
           "type": "@/internet"
         }

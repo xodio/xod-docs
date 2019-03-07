@@ -10,13 +10,14 @@
       "nodes": {
         "SkjpJD4F-": {
           "boundLiterals": {
-            "B1oqkTnIb": "11",
+            "B1oqkTnIb": "D11",
             "HyYh1a3LZ": "0"
           },
           "id": "SkjpJD4F-",
           "position": {
-            "x": 340,
-            "y": 204
+            "x": 10,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/common-hardware/led"
         }
@@ -27,13 +28,14 @@
       "nodes": {
         "r141y-KbX": {
           "boundLiterals": {
-            "B1oqkTnIb": "11",
+            "B1oqkTnIb": "D11",
             "HyYh1a3LZ": "1"
           },
           "id": "r141y-KbX",
           "position": {
-            "x": -137,
-            "y": -1
+            "x": -4,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/common-hardware/led"
         }
@@ -46,25 +48,28 @@
           "content": "The LED is on because of the `led` node.\nA node is a visual representation of some physical device (such as the ports on an Arduino) or some function (adding, subtracting, or more complicated stuff).\n\nThe small colored circles on the nodes are called *pins*. Pins are divided into inputs and outputs. Inputs are always on the top side of the nodes, outputs on the bottom.\n\nThe `led` node is a simple LED-controlling node. It can control only one single-colored LED. The node has only input pins: `PORT` and `LUM`. \n\nPins are used to transfer data between nodes. Nodes process these values and take some action or give a result. In our case, the `led` node transfers the led brightnes value (set in `LUM`) to the Arduino port (set in `PORT`).\n\n## Instructions\n\n1. Click on the `led` node. You will see the Inspector under the list of projects. You can set the node parameters in the Inspector.\n\n2. In the Inspector, change the `LUM` value from 1 to 0.\n\n3. Upload the program to the Arduino. To do so, select Deploy → Upload to Arduino from the menu.\n\nThe LED will switch off after the upload because Arduino sent a value of 0 to the LED's pin. Physically speaking, it stopped delivering voltage to the pin.",
           "id": "H1nSnynt-",
           "position": {
-            "x": -68,
-            "y": 0
+            "x": -2,
+            "y": 0,
+            "units": "slots"
           },
           "size": {
-            "height": 765,
-            "width": 306
+            "height": 8,
+            "width": 7,
+            "units": "slots"
           }
         }
       },
       "nodes": {
         "BykwlvEF-": {
           "boundLiterals": {
-            "B1oqkTnIb": "11",
+            "B1oqkTnIb": "D11",
             "HyYh1a3LZ": "1"
           },
           "id": "BykwlvEF-",
           "position": {
-            "x": 272,
-            "y": 204
+            "x": 8,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/common-hardware/led"
         }
@@ -77,25 +82,28 @@
           "content": "The `LUM` pin on the `led` node accepts values between 0 and 1. The 0 value represents no glow at all, while a value of 1 denotes full brightness.\n\nHowever, you can adjust brightness level by setting values *between* 0 and 1 to the `LUM` pin.\n\n## Instructions\n\n1. Set the `LUM` pin to 0.4. To do this, click on the led node and type in the value in the Inspector.\n\n2. Upload the patch program to the Arduino.\n\nNow your LED is not glowing as bright as before. Feel free to try other values between 0 and 1 before moving on to the next step.\n",
           "id": "BkVzdWnKW",
           "position": {
-            "x": -68,
-            "y": 0
+            "x": -2,
+            "y": 0,
+            "units": "slots"
           },
           "size": {
-            "height": 357,
-            "width": 306
+            "height": 4,
+            "width": 7,
+            "units": "slots"
           }
         }
       },
       "nodes": {
         "BJ2tewEKb": {
           "boundLiterals": {
-            "B1oqkTnIb": "11",
+            "B1oqkTnIb": "D11",
             "HyYh1a3LZ": "0"
           },
           "id": "BJ2tewEKb",
           "position": {
-            "x": 272,
-            "y": 204
+            "x": 8,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/common-hardware/led"
         }
@@ -108,37 +116,42 @@
           "content": "- `PORT` assigns the number of the Arduino’s digital port to be used.\n- `LUM` controls the brightness (value is between 0 and 1).",
           "id": "BJ7AzfhK-",
           "position": {
-            "x": 408,
-            "y": 204
+            "x": 12,
+            "y": 2,
+            "units": "slots"
           },
           "size": {
-            "height": 51,
-            "width": 510
+            "height": 1,
+            "width": 12,
+            "units": "slots"
           }
         },
         "rkZofM3KW": {
           "content": "Now you know what `LUM` pin does.\nHowever, an LED could be connected to any digital port on an Arduino. So you need to inform the node of the port number that you are about to use. You can do it with the `PORT` pin.\n\n## Instructions\n\n1. Reconnect the LED to digital port 10 on Arduino ([scheme](https://xod.io/docs/tutorial/05-wiring/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial_05)).\n\n2. Change the `PORT` pin value to 10 and the `LUM` value to 1.\n\n3. Upload your patch to the Arduino.\n\nThe LED should turn on at Arduino's port 10.\n",
           "id": "rkZofM3KW",
           "position": {
-            "x": -34,
-            "y": 0
+            "x": -1,
+            "y": 0,
+            "units": "slots"
           },
           "size": {
-            "height": 357,
-            "width": 306
+            "height": 4,
+            "width": 7,
+            "units": "slots"
           }
         }
       },
       "nodes": {
         "B1I7-DEYW": {
           "boundLiterals": {
-            "B1oqkTnIb": "11",
+            "B1oqkTnIb": "D11",
             "HyYh1a3LZ": "0.4"
           },
           "id": "B1I7-DEYW",
           "position": {
-            "x": 306,
-            "y": 204
+            "x": 9,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/common-hardware/led"
         }
@@ -151,37 +164,42 @@
           "content": "Yet another way is the Quick Search feature:\n\n1. Press “I” key or *double-click* anywhere on the patch.\n2. Type what you are looking for.\n\nIt searches not only in nodes titles, but even in the nodes description, like a small and dumb built-in Google. ",
           "id": "Hy229X-hZ",
           "position": {
-            "x": 374,
-            "y": 408
+            "x": 11,
+            "y": 4,
+            "units": "slots"
           },
           "size": {
-            "height": 153,
-            "width": 442
+            "height": 2,
+            "width": 11,
+            "units": "slots"
           }
         },
         "SJwr3fhFb": {
           "content": "Now, let’s turn on two LEDs together! You will need another `led` node.\n\n## Instructions\n\n1. Assemble a circuit according to the [scheme](https://xod.io/docs/tutorial/06-adding-nodes/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial_06).\n2. In the node list (below the `welcome-to-xod`), you will find `xod/common-hardware` section. This is a *library* where you can find nodes to work with specific hardware.\n3. Find the `led` node. Note that nodes are arranged in alphabetical order.\n4. Hover the cursor over that node and click the burger button to access a context menu. There click “Place” to add the node onto a patch.\n5. Drag the new node to any slot. \n6. Now, assign the new values for the `PORT` and `LUM` pins to turn on the second LED.\n7. Upload the patch to the Arduino.\n\nBoth LEDs should turn on now.\n\nAlternatively, you may *drag* a node from the Project Browser instead of using the context menu. Try to add yet more `led` nodes to your project.",
           "id": "SJwr3fhFb",
           "position": {
-            "x": -34,
-            "y": 0
+            "x": -1,
+            "y": 0,
+            "units": "slots"
           },
           "size": {
-            "height": 561,
-            "width": 306
+            "height": 6,
+            "width": 7,
+            "units": "slots"
           }
         }
       },
       "nodes": {
         "Hkg_WP4Kb": {
           "boundLiterals": {
-            "B1oqkTnIb": "10",
+            "B1oqkTnIb": "D10",
             "HyYh1a3LZ": "1"
           },
           "id": "Hkg_WP4Kb",
           "position": {
-            "x": 306,
-            "y": 204
+            "x": 9,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/common-hardware/led"
         }
@@ -192,40 +210,43 @@
       "nodes": {
         "H1ZcSkbFWm": {
           "boundLiterals": {
-            "B1oqkTnIb": "10",
+            "B1oqkTnIb": "D10",
             "HyYh1a3LZ": "1"
           },
           "id": "H1ZcSkbFWm",
           "label": "Alarm",
           "position": {
-            "x": 109,
-            "y": 102
+            "x": 3,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/common-hardware/led"
         },
         "Hkx5By-YZ7": {
           "boundLiterals": {
-            "B1oqkTnIb": "10",
+            "B1oqkTnIb": "D10",
             "HyYh1a3LZ": "1"
           },
           "id": "Hkx5By-YZ7",
           "label": "LED42 ✌✌✌",
           "position": {
-            "x": 238,
-            "y": 102
+            "x": 7,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/common-hardware/led"
         },
         "rkqrk-YWQ": {
           "boundLiterals": {
-            "B1oqkTnIb": "11",
+            "B1oqkTnIb": "D11",
             "HyYh1a3LZ": "1"
           },
           "id": "rkqrk-YWQ",
           "label": "Red LED",
           "position": {
-            "x": -34,
-            "y": 102
+            "x": -1,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/common-hardware/led"
         }
@@ -264,32 +285,35 @@
           },
           "id": "B1-y0kWtWm",
           "position": {
-            "x": 169,
-            "y": 101
+            "x": 5,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/core/constant-number"
         },
         "H110k-Yb7": {
           "boundLiterals": {
-            "B1oqkTnIb": "10"
+            "B1oqkTnIb": "D10"
           },
           "id": "H110k-Yb7",
           "label": "LED1",
           "position": {
-            "x": 67,
-            "y": 305
+            "x": 2,
+            "y": 3,
+            "units": "slots"
           },
           "type": "xod/common-hardware/led"
         },
         "Hkx1Cy-t-Q": {
           "boundLiterals": {
-            "B1oqkTnIb": "11"
+            "B1oqkTnIb": "D11"
           },
           "id": "Hkx1Cy-t-Q",
           "label": "LED2",
           "position": {
-            "x": 203,
-            "y": 305
+            "x": 6,
+            "y": 3,
+            "units": "slots"
           },
           "type": "xod/common-hardware/led"
         }
@@ -325,32 +349,35 @@
         "BJDml-KZQ": {
           "id": "BJDml-KZQ",
           "position": {
-            "x": 374,
-            "y": 0
+            "x": 11,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/common-hardware/pot"
         },
         "SJFeebFWm": {
           "boundLiterals": {
-            "B1oqkTnIb": "11"
+            "B1oqkTnIb": "D11"
           },
           "id": "SJFeebFWm",
           "label": "LED2",
           "position": {
-            "x": 407,
-            "y": 203
+            "x": 12,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/common-hardware/led"
         },
         "rJZFxlWFbQ": {
           "boundLiterals": {
-            "B1oqkTnIb": "10"
+            "B1oqkTnIb": "D10"
           },
           "id": "rJZFxlWFbQ",
           "label": "LED1",
           "position": {
-            "x": 271,
-            "y": 203
+            "x": 8,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/common-hardware/led"
         }
@@ -400,40 +427,44 @@
           },
           "id": "HkCEOMSWm",
           "position": {
-            "x": 204,
-            "y": 204
+            "x": 6,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/core/multiply"
         },
         "SJihHwNKb": {
           "boundLiterals": {
-            "B1oqkTnIb": "11"
+            "B1oqkTnIb": "D11"
           },
           "id": "SJihHwNKb",
           "label": "LED2",
           "position": {
-            "x": 170,
-            "y": 306
+            "x": 5,
+            "y": 3,
+            "units": "slots"
           },
           "type": "xod/common-hardware/led"
         },
         "SyclTC1hb": {
           "id": "SyclTC1hb",
           "position": {
-            "x": 68,
-            "y": 0
+            "x": 2,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/common-hardware/pot"
         },
         "r1V3SDEtW": {
           "boundLiterals": {
-            "B1oqkTnIb": "10"
+            "B1oqkTnIb": "D10"
           },
           "id": "r1V3SDEtW",
           "label": "LED1",
           "position": {
-            "x": 34,
-            "y": 306
+            "x": 1,
+            "y": 3,
+            "units": "slots"
           },
           "type": "xod/common-hardware/led"
         }
@@ -457,20 +488,22 @@
       "nodes": {
         "Syv38wNYW": {
           "boundLiterals": {
-            "S1vGmu6Gb": "9"
+            "S1vGmu6Gb": "D9"
           },
           "id": "Syv38wNYW",
           "position": {
-            "x": 136,
-            "y": 408
+            "x": 4,
+            "y": 4,
+            "units": "slots"
           },
           "type": "xod/common-hardware/servo"
         },
         "rk_tTCk2Z": {
           "id": "rk_tTCk2Z",
           "position": {
-            "x": 170,
-            "y": 204
+            "x": 5,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/common-hardware/pot"
         }
@@ -482,27 +515,30 @@
         "HJojTfHbX": {
           "id": "HJojTfHbX",
           "position": {
-            "x": 272,
-            "y": 306
+            "x": 8,
+            "y": 3,
+            "units": "slots"
           },
           "type": "xod/common-hardware/led"
         },
         "Hy3tvDEKZ": {
           "boundLiterals": {
-            "S1vGmu6Gb": "9"
+            "S1vGmu6Gb": "D9"
           },
           "id": "Hy3tvDEKZ",
           "position": {
-            "x": 272,
-            "y": 204
+            "x": 8,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/common-hardware/servo"
         },
         "r11jaGrZX": {
           "id": "r11jaGrZX",
           "position": {
-            "x": 272,
-            "y": -102
+            "x": 8,
+            "y": -1,
+            "units": "slots"
           },
           "type": "xod/common-hardware/pot"
         },
@@ -512,16 +548,18 @@
           },
           "id": "rkEKww4tW",
           "position": {
-            "x": 272,
-            "y": 0
+            "x": 8,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/common-hardware/thermometer-tmp36"
         },
         "rySoazrZQ": {
           "id": "rySoazrZQ",
           "position": {
-            "x": 272,
-            "y": 102
+            "x": 8,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/core/multiply"
         }
@@ -560,27 +598,30 @@
           },
           "id": "Bklh_vNFb",
           "position": {
-            "x": -34,
-            "y": 0
+            "x": -1,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/common-hardware/thermometer-tmp36"
         },
         "SJBKxWK-X": {
           "id": "SJBKxWK-X",
           "position": {
-            "x": -34,
-            "y": 102
+            "x": -1,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/math/map"
         },
         "rkK3_PEYb": {
           "boundLiterals": {
-            "S1vGmu6Gb": "9"
+            "S1vGmu6Gb": "D9"
           },
           "id": "rkK3_PEYb",
           "position": {
-            "x": -68,
-            "y": 204
+            "x": -2,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/common-hardware/servo"
         }
@@ -619,19 +660,21 @@
           },
           "id": "B1WVFPEtZ",
           "position": {
-            "x": 136,
-            "y": 0
+            "x": 4,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/common-hardware/thermometer-tmp36"
         },
         "BJrNFP4tZ": {
           "boundLiterals": {
-            "S1vGmu6Gb": "9"
+            "S1vGmu6Gb": "D9"
           },
           "id": "BJrNFP4tZ",
           "position": {
-            "x": 102,
-            "y": 204
+            "x": 3,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/common-hardware/servo"
         },
@@ -643,8 +686,9 @@
           },
           "id": "HkGG5mBWQ",
           "position": {
-            "x": 136,
-            "y": 102
+            "x": 4,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/math/map-clip"
         }
@@ -668,12 +712,13 @@
       "nodes": {
         "S13FKPEFb": {
           "boundLiterals": {
-            "B1oqkTnIb": "11"
+            "B1oqkTnIb": "D11"
           },
           "id": "S13FKPEFb",
           "position": {
-            "x": 136,
-            "y": 306
+            "x": 4,
+            "y": 3,
+            "units": "slots"
           },
           "type": "xod/common-hardware/led"
         },
@@ -683,8 +728,9 @@
           },
           "id": "S1gzhXSZm",
           "position": {
-            "x": 170,
-            "y": 102
+            "x": 5,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/common-hardware/button"
         }
@@ -742,81 +788,90 @@
         "BJ3z5DEtZ": {
           "id": "BJ3z5DEtZ",
           "position": {
-            "x": 34,
-            "y": 204
+            "x": 1,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/core/not"
         },
         "ByCkcvVYW": {
           "boundLiterals": {
-            "B1oqkTnIb": "11"
+            "B1oqkTnIb": "D11"
           },
           "id": "ByCkcvVYW",
           "position": {
-            "x": 34,
-            "y": 306
+            "x": 1,
+            "y": 3,
+            "units": "slots"
           },
           "type": "xod/common-hardware/led"
         },
         "ByHgcw4Yb": {
           "boundLiterals": {
-            "ByNiWkt8Z": "13"
+            "ByNiWkt8Z": "D13"
           },
           "id": "ByHgcw4Yb",
           "position": {
-            "x": 34,
-            "y": 0
+            "x": 1,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/common-hardware/button"
         },
         "ByVg5w4F-": {
           "boundLiterals": {
-            "ByNiWkt8Z": "12"
+            "ByNiWkt8Z": "D12"
           },
           "id": "ByVg5w4F-",
           "position": {
-            "x": 136,
-            "y": 0
+            "x": 4,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/common-hardware/button"
         },
         "Byp-5wEF-": {
           "id": "Byp-5wEF-",
           "position": {
-            "x": 34,
-            "y": 102
+            "x": 1,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/core/and"
         },
         "H1xr5vNtZ": {
           "id": "H1xr5vNtZ",
           "position": {
-            "x": 136,
-            "y": 306
+            "x": 4,
+            "y": 3,
+            "units": "slots"
           },
           "type": "xod/core/nor"
         },
         "r1U4cD4Yb": {
           "id": "r1U4cD4Yb",
           "position": {
-            "x": 136,
-            "y": 204
+            "x": 4,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/core/or"
         },
         "r1rHcPVYZ": {
           "id": "r1rHcPVYZ",
           "position": {
-            "x": 238,
-            "y": 306
+            "x": 7,
+            "y": 3,
+            "units": "slots"
           },
           "type": "xod/core/xor"
         },
         "rkTBcPEFZ": {
           "id": "rkTBcPEFZ",
           "position": {
-            "x": 238,
-            "y": 204
+            "x": 7,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/core/nand"
         }
@@ -841,19 +896,21 @@
         "HJyUHF5ZX": {
           "id": "HJyUHF5ZX",
           "position": {
-            "x": 272,
-            "y": 0
+            "x": 8,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/common-hardware/analog-sensor"
         },
         "Hk0_5wNY-": {
           "boundLiterals": {
-            "B1oqkTnIb": "11"
+            "B1oqkTnIb": "D11"
           },
           "id": "Hk0_5wNY-",
           "position": {
-            "x": 238,
-            "y": 204
+            "x": 7,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/common-hardware/led"
         }
@@ -868,32 +925,36 @@
           },
           "id": "BJszoD4tZ",
           "position": {
-            "x": 340,
-            "y": 102
+            "x": 10,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/common-hardware/led"
         },
         "SknJWbY-m": {
           "id": "SknJWbY-m",
           "position": {
-            "x": 476,
-            "y": 0
+            "x": 14,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/core/greater"
         },
         "r1zxWbYbQ": {
           "id": "r1zxWbYbQ",
           "position": {
-            "x": 238,
-            "y": 0
+            "x": 7,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/core/less"
         },
         "ryMPSF5ZX": {
           "id": "ryMPSF5ZX",
           "position": {
-            "x": 340,
-            "y": -102
+            "x": 10,
+            "y": -1,
+            "units": "slots"
           },
           "type": "xod/common-hardware/analog-sensor"
         }
@@ -943,19 +1004,21 @@
           },
           "id": "Bkxay1E5Z",
           "position": {
-            "x": 238,
-            "y": 0
+            "x": 7,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/core/greater"
         },
         "By4w_LqoZ": {
           "boundLiterals": {
-            "S1vGmu6Gb": "9"
+            "S1vGmu6Gb": "D9"
           },
           "id": "By4w_LqoZ",
           "position": {
-            "x": 204,
-            "y": 204
+            "x": 6,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/common-hardware/servo"
         },
@@ -966,16 +1029,18 @@
           },
           "id": "BywpJ149Z",
           "position": {
-            "x": 238,
-            "y": 102
+            "x": 7,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/core/if-else"
         },
         "SJTwHK9-7": {
           "id": "SJTwHK9-7",
           "position": {
-            "x": 238,
-            "y": -102
+            "x": 7,
+            "y": -1,
+            "units": "slots"
           },
           "type": "xod/common-hardware/analog-sensor"
         }
@@ -1036,19 +1101,21 @@
           },
           "id": "B185dU5s-",
           "position": {
-            "x": 102,
-            "y": 306
+            "x": 3,
+            "y": 3,
+            "units": "slots"
           },
           "type": "xod/core/fade"
         },
         "B1ki_85jZ": {
           "boundLiterals": {
-            "S1vGmu6Gb": "9"
+            "S1vGmu6Gb": "D9"
           },
           "id": "B1ki_85jZ",
           "position": {
-            "x": 68,
-            "y": 408
+            "x": 2,
+            "y": 4,
+            "units": "slots"
           },
           "type": "xod/common-hardware/servo"
         },
@@ -1058,16 +1125,18 @@
           },
           "id": "BkiYd85o-",
           "position": {
-            "x": 102,
-            "y": 204
+            "x": 3,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/core/if-else"
         },
         "BkqfdIqob": {
           "id": "BkqfdIqob",
           "position": {
-            "x": 102,
-            "y": 102
+            "x": 3,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/core/greater"
         },
@@ -1077,8 +1146,9 @@
           },
           "id": "rJyzdUqjZ",
           "position": {
-            "x": 102,
-            "y": 0
+            "x": 3,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/gpio/analog-read"
         }
@@ -1104,19 +1174,21 @@
           "id": "H1O2DMN5b",
           "label": "pot",
           "position": {
-            "x": 306,
-            "y": 204
+            "x": 9,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/gpio/analog-read"
         },
         "Skw0PzVcZ": {
           "boundLiterals": {
-            "S1vGmu6Gb": "9"
+            "S1vGmu6Gb": "D9"
           },
           "id": "Skw0PzVcZ",
           "position": {
-            "x": 272,
-            "y": 408
+            "x": 8,
+            "y": 4,
+            "units": "slots"
           },
           "type": "xod/common-hardware/servo"
         }
@@ -1151,12 +1223,13 @@
       "nodes": {
         "By-NXQVqW": {
           "boundLiterals": {
-            "S1vGmu6Gb": "9"
+            "S1vGmu6Gb": "D9"
           },
           "id": "By-NXQVqW",
           "position": {
-            "x": 136,
-            "y": 510
+            "x": 4,
+            "y": 5,
+            "units": "slots"
           },
           "type": "xod/common-hardware/servo"
         },
@@ -1164,8 +1237,9 @@
           "id": "ByUpzmN5W",
           "label": "pot",
           "position": {
-            "x": 170,
-            "y": 408
+            "x": 5,
+            "y": 4,
+            "units": "slots"
           },
           "type": "xod/gpio/analog-read"
         },
@@ -1175,8 +1249,9 @@
           },
           "id": "rk_NQmEqb",
           "position": {
-            "x": 204,
-            "y": 306
+            "x": 6,
+            "y": 3,
+            "units": "slots"
           },
           "type": "xod/core/clock"
         }
@@ -1211,28 +1286,31 @@
       "nodes": {
         "Hy_vm7E9b": {
           "boundLiterals": {
-            "S1vGmu6Gb": "9"
+            "S1vGmu6Gb": "D9"
           },
           "id": "Hy_vm7E9b",
           "position": {
-            "x": 68,
-            "y": 306
+            "x": 2,
+            "y": 3,
+            "units": "slots"
           },
           "type": "xod/common-hardware/servo"
         },
         "SkddQ749Z": {
           "id": "SkddQ749Z",
           "position": {
-            "x": 102,
-            "y": 204
+            "x": 3,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/core/count"
         },
         "r1xdmX4qW": {
           "id": "r1xdmX4qW",
           "position": {
-            "x": 136,
-            "y": 102
+            "x": 4,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/core/clock"
         }
@@ -1271,27 +1349,30 @@
           },
           "id": "ByXLOXV9W",
           "position": {
-            "x": 340,
-            "y": 102
+            "x": 10,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/core/clock"
         },
         "HyA_GKr9W": {
           "boundLiterals": {
-            "B1oqkTnIb": "11"
+            "B1oqkTnIb": "D11"
           },
           "id": "HyA_GKr9W",
           "position": {
-            "x": 272,
-            "y": 306
+            "x": 8,
+            "y": 3,
+            "units": "slots"
           },
           "type": "xod/common-hardware/led"
         },
         "HyNvOmN5b": {
           "id": "HyNvOmN5b",
           "position": {
-            "x": 306,
-            "y": 204
+            "x": 9,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/core/flip-flop"
         }
@@ -1304,72 +1385,84 @@
           "content": "The `clock` node provides the pulse frequency for sending data to the servo.",
           "id": "BJoLt--tbX",
           "position": {
-            "x": 543,
-            "y": 407
+            "x": 16,
+            "y": 4,
+            "units": "slots"
           },
           "size": {
-            "height": 51,
-            "width": 340
+            "height": 1,
+            "width": 8,
+            "units": "slots"
           }
         },
         "BkRIKZ-KZm": {
           "content": "The `servo` node receives a value from 0 to 1 in the `VAL` pin, which corresponds to the rotation of the shaft from 0° to 180°, respectively.",
           "id": "BkRIKZ-KZm",
           "position": {
-            "x": 509,
-            "y": 611
+            "x": 15,
+            "y": 6,
+            "units": "slots"
           },
           "size": {
-            "height": 51,
-            "width": 374
+            "height": 1,
+            "width": 9,
+            "units": "slots"
           }
         },
         "BkT8K-Zt-m": {
           "content": "The `flip-flop` node changes the state on the `MEM` pin from 0 to 1 every 30 seconds. Fortunately, the boolean and number data types are compatible with each other — `true` and `false` are automatically converted to `1` and `0` for the `map` `X` input\n",
           "id": "BkT8K-Zt-m",
           "position": {
-            "x": 578,
-            "y": 102
+            "x": 17,
+            "y": 1,
+            "units": "slots"
           },
           "size": {
-            "height": 153,
-            "width": 306
+            "height": 2,
+            "width": 7,
+            "units": "slots"
           }
         },
         "H1Je8FbbtbQ": {
           "content": "The `map` node is used to set the rotation angle of the servo for one send from `count`.",
           "id": "H1Je8FbbtbQ",
           "position": {
-            "x": 578,
-            "y": 306
+            "x": 17,
+            "y": 3,
+            "units": "slots"
           },
           "size": {
-            "height": 51,
-            "width": 306
+            "height": 1,
+            "width": 7,
+            "units": "slots"
           }
         },
         "Hy58KWWKbX": {
           "content": "The `count` node sends the accumulated rotation angle to the servo.",
           "id": "Hy58KWWKbX",
           "position": {
-            "x": 509,
-            "y": 509
+            "x": 15,
+            "y": 5,
+            "units": "slots"
           },
           "size": {
-            "height": 51,
-            "width": 374
+            "height": 1,
+            "width": 9,
+            "units": "slots"
           }
         },
         "S1hIFW-YWQ": {
           "content": "This node sends a pulse to `flip-flop` once every 30 seconds, changing its value from `true` to `false` and back.",
           "id": "S1hIFW-YWQ",
           "position": {
-            "x": 509,
-            "y": -1
+            "x": 15,
+            "y": -0.05,
+            "units": "slots"
           },
           "size": {
-            "height": 51,
-            "width": 374
+            "height": 1,
+            "width": 9,
+            "units": "slots"
           }
         }
       },
@@ -1433,12 +1526,13 @@
       "nodes": {
         "HJfLFWZt-X": {
           "boundLiterals": {
-            "S1vGmu6Gb": "9"
+            "S1vGmu6Gb": "D9"
           },
           "id": "HJfLFWZt-X",
           "position": {
-            "x": 373,
-            "y": 611
+            "x": 11,
+            "y": 6,
+            "units": "slots"
           },
           "type": "xod/common-hardware/servo"
         },
@@ -1446,8 +1540,9 @@
           "id": "HkQ8Y-ZK-7",
           "label": "count",
           "position": {
-            "x": 373,
-            "y": 509
+            "x": 11,
+            "y": 5,
+            "units": "slots"
           },
           "type": "xod/core/count"
         },
@@ -1459,8 +1554,9 @@
           },
           "id": "S1ItZ-Y-X",
           "position": {
-            "x": 374,
-            "y": 306
+            "x": 11,
+            "y": 3,
+            "units": "slots"
           },
           "type": "xod/math/map"
         },
@@ -1471,16 +1567,18 @@
           "id": "r1VIYWbKWX",
           "label": "long-clock",
           "position": {
-            "x": 373,
-            "y": -1
+            "x": 11,
+            "y": -0.05,
+            "units": "slots"
           },
           "type": "xod/core/clock"
         },
         "rkgLFZZK-m": {
           "id": "rkgLFZZK-m",
           "position": {
-            "x": 373,
-            "y": 101
+            "x": 11,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/core/flip-flop"
         },
@@ -1491,8 +1589,9 @@
           "id": "rybIF-bY-7",
           "label": "step-clock",
           "position": {
-            "x": 407,
-            "y": 407
+            "x": 12,
+            "y": 4,
+            "units": "slots"
           },
           "type": "xod/core/clock"
         }
@@ -1528,18 +1627,19 @@
         "BJLI75r9Z": {
           "boundLiterals": {
             "B1TSE9tZ-": "\"Make\"",
-            "BJJqaX4Gb": "5",
+            "BJJqaX4Gb": "D5",
             "H1bLN9F-b": "\"the links!\"",
-            "HJysTXVMb": "3",
-            "S1nqa7NMZ": "4",
-            "SkBK6Q4fb": "11",
-            "rJlYT7EfW": "12",
-            "rkbjp7Ezb": "2"
+            "HJysTXVMb": "D3",
+            "S1nqa7NMZ": "D4",
+            "SkBK6Q4fb": "D11",
+            "rJlYT7EfW": "D12",
+            "rkbjp7Ezb": "D2"
           },
           "id": "BJLI75r9Z",
           "position": {
-            "x": 442,
-            "y": 918
+            "x": 13,
+            "y": 9,
+            "units": "slots"
           },
           "type": "xod/common-hardware/text-lcd-16x2"
         },
@@ -1549,8 +1649,9 @@
           },
           "id": "By6RU3IqZ",
           "position": {
-            "x": 646,
-            "y": 816
+            "x": 19,
+            "y": 8,
+            "units": "slots"
           },
           "type": "xod/core/constant-string"
         },
@@ -1560,8 +1661,9 @@
           },
           "id": "ryvyP3I9-",
           "position": {
-            "x": 680,
-            "y": 816
+            "x": 20,
+            "y": 8,
+            "units": "slots"
           },
           "type": "xod/core/constant-string"
         }
@@ -1596,17 +1698,18 @@
       "nodes": {
         "BJFi3y8qZ": {
           "boundLiterals": {
-            "BJJqaX4Gb": "5",
-            "HJysTXVMb": "3",
-            "S1nqa7NMZ": "4",
-            "SkBK6Q4fb": "11",
-            "rJlYT7EfW": "12",
-            "rkbjp7Ezb": "2"
+            "BJJqaX4Gb": "D5",
+            "HJysTXVMb": "D3",
+            "S1nqa7NMZ": "D4",
+            "SkBK6Q4fb": "D11",
+            "rJlYT7EfW": "D12",
+            "rkbjp7Ezb": "D2"
           },
           "id": "BJFi3y8qZ",
           "position": {
-            "x": 442,
-            "y": 1122
+            "x": 13,
+            "y": 11,
+            "units": "slots"
           },
           "type": "xod/common-hardware/text-lcd-16x2"
         },
@@ -1616,16 +1719,18 @@
           },
           "id": "BJV7SDJbG",
           "position": {
-            "x": 680,
-            "y": 1020
+            "x": 20,
+            "y": 10,
+            "units": "slots"
           },
           "type": "xod/common-hardware/thermometer-tmp36"
         },
         "HkvT31LqZ": {
           "id": "HkvT31LqZ",
           "position": {
-            "x": 646,
-            "y": 1020
+            "x": 19,
+            "y": 10,
+            "units": "slots"
           },
           "type": "xod/core/system-time"
         }
@@ -1705,8 +1810,9 @@
         "B1V26JIc-": {
           "id": "B1V26JIc-",
           "position": {
-            "x": 340,
-            "y": 714
+            "x": 10,
+            "y": 7,
+            "units": "slots"
           },
           "type": "xod/core/concat"
         },
@@ -1717,8 +1823,9 @@
           "id": "By5oDu8qW",
           "label": "Photoresistor",
           "position": {
-            "x": 578,
-            "y": 612
+            "x": 17,
+            "y": 6,
+            "units": "slots"
           },
           "type": "xod/gpio/analog-read"
         },
@@ -1729,24 +1836,35 @@
           "id": "HJvfG4rbX",
           "label": "Light",
           "position": {
-            "x": 544,
-            "y": 612
+            "x": 16,
+            "y": 6,
+            "units": "slots"
           },
           "type": "xod/core/constant-string"
         },
         "S1ykdOLqb": {
           "id": "S1ykdOLqb",
           "position": {
-            "x": 544,
-            "y": 714
+            "x": 16,
+            "y": 7,
+            "units": "slots"
           },
           "type": "xod/core/concat"
         },
         "SJHcpyUqb": {
+          "boundLiterals": {
+            "BJJqaX4Gb": "D5",
+            "HJysTXVMb": "D3",
+            "S1nqa7NMZ": "D4",
+            "SkBK6Q4fb": "D11",
+            "rJlYT7EfW": "D12",
+            "rkbjp7Ezb": "D2"
+          },
           "id": "SJHcpyUqb",
           "position": {
-            "x": 238,
-            "y": 816
+            "x": 7,
+            "y": 8,
+            "units": "slots"
           },
           "type": "xod/common-hardware/text-lcd-16x2"
         },
@@ -1757,19 +1875,21 @@
           "id": "SyQzM4SZQ",
           "label": "Temp:",
           "position": {
-            "x": 340,
-            "y": 612
+            "x": 10,
+            "y": 6,
+            "units": "slots"
           },
           "type": "xod/core/constant-string"
         },
         "r19sT1I9-": {
           "boundLiterals": {
-            "H1s0WI6MZ": "1"
+            "H1s0WI6MZ": "D1"
           },
           "id": "r19sT1I9-",
           "position": {
-            "x": 374,
-            "y": 612
+            "x": 11,
+            "y": 6,
+            "units": "slots"
           },
           "type": "xod/common-hardware/thermometer-tmp36"
         }
@@ -1782,12 +1902,14 @@
           "content": "**Congratulations!**\n\nYou have completed the tutorial. Hope you enjoyed it. May we ask to rate it?\n\n[★★★★★ Excellent!](https://forum.xod.io/t/tutorial-feedback/457/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial_99&utm_term=5_stars)\n[★★★★ Very Good](https://forum.xod.io/t/tutorial-feedback/457/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial_99&utm_term=4_stars)\n[★★★ Okay](https://forum.xod.io/t/tutorial-feedback/457/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial_99&utm_term=3_stars)\n[★★ So-so](https://forum.xod.io/t/tutorial-feedback/457/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial_99&utm_term=2_stars)\n[★ Poor](https://forum.xod.io/t/tutorial-feedback/457/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial_99&utm_term=1_star)\n\nIf you would like to give more detailed feedback, we’ll happy to hear it on the rating page.",
           "id": "Bk_ETwPHM",
           "position": {
-            "x": 34,
-            "y": 0
+            "x": 1,
+            "y": 0,
+            "units": "slots"
           },
           "size": {
-            "height": 255,
-            "width": 442
+            "height": 3,
+            "width": 11,
+            "units": "slots"
           }
         }
       },
@@ -1819,80 +1941,90 @@
         "B1AahPDBG": {
           "id": "B1AahPDBG",
           "position": {
-            "x": 170,
-            "y": 510
+            "x": 5,
+            "y": 5,
+            "units": "slots"
           },
           "type": "xod/math/ceil"
         },
         "BJq6nPwHz": {
           "id": "BJq6nPwHz",
           "position": {
-            "x": 272,
-            "y": 510
+            "x": 8,
+            "y": 5,
+            "units": "slots"
           },
           "type": "xod/math/ceil"
         },
         "ByP63PPHf": {
           "id": "ByP63PPHf",
           "position": {
-            "x": 204,
-            "y": 510
+            "x": 6,
+            "y": 5,
+            "units": "slots"
           },
           "type": "xod/math/ceil"
         },
         "H1D22DDBf": {
           "id": "H1D22DDBf",
           "position": {
-            "x": 136,
-            "y": 510
+            "x": 4,
+            "y": 5,
+            "units": "slots"
           },
           "type": "xod/math/ceil"
         },
         "HySThPDBM": {
           "id": "HySThPDBM",
           "position": {
-            "x": 238,
-            "y": 510
+            "x": 7,
+            "y": 5,
+            "units": "slots"
           },
           "type": "xod/math/ceil"
         },
         "SJpThvwSf": {
           "id": "SJpThvwSf",
           "position": {
-            "x": 306,
-            "y": 510
+            "x": 9,
+            "y": 5,
+            "units": "slots"
           },
           "type": "xod/math/ceil"
         },
         "Sy6n2DvHM": {
           "id": "Sy6n2DvHM",
           "position": {
-            "x": 374,
-            "y": 408
+            "x": 11,
+            "y": 4,
+            "units": "slots"
           },
           "type": "xod/math/ceil"
         },
         "r1AmpwvHf": {
           "id": "r1AmpwvHf",
           "position": {
-            "x": 272,
-            "y": 306
+            "x": 8,
+            "y": 3,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/output-number"
         },
         "rJhi2DPBG": {
           "id": "rJhi2DPBG",
           "position": {
-            "x": 68,
-            "y": 408
+            "x": 2,
+            "y": 4,
+            "units": "slots"
           },
           "type": "xod/math/ceil"
         },
         "rJnXTwvSM": {
           "id": "rJnXTwvSM",
           "position": {
-            "x": 170,
-            "y": 306
+            "x": 5,
+            "y": 3,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/output-number"
         }
