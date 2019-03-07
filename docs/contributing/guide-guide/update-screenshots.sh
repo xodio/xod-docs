@@ -1,3 +1,3 @@
 #!/bin/sh
 
-"$SHOT" "./example.xodball" comments ./comments.patch.png 300
+"$SHOT" "./example.xodball" comments ./comments.patch.png 360

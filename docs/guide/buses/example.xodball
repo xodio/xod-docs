@@ -198,8 +198,9 @@
           },
           "id": "B1H6NuWQIX",
           "position": {
-            "x": -340,
-            "y": -204
+            "x": -7,
+            "y": -2,
+            "units": "slots"
           },
           "type": "xod/i2c/begin-transmission"
         },
@@ -207,16 +208,18 @@
           "id": "B1bTVdbQ8X",
           "label": "W",
           "position": {
-            "x": 102,
-            "y": -408
+            "x": 3,
+            "y": -4,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-pulse"
         },
         "BJP6NdZ7IX": {
           "id": "BJP6NdZ7IX",
           "position": {
-            "x": 68,
-            "y": -204
+            "x": 2,
+            "y": -2,
+            "units": "slots"
           },
           "type": "xod/i2c/end-transmission"
         },
@@ -224,8 +227,9 @@
           "id": "Bk9TEuWQL7",
           "label": "DONE",
           "position": {
-            "x": 68,
-            "y": 0
+            "x": 2,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/output-pulse"
         },
@@ -233,8 +237,9 @@
           "id": "BkI64ubmUm",
           "label": "ERR",
           "position": {
-            "x": 136,
-            "y": 0
+            "x": 3,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/output-pulse"
         },
@@ -242,8 +247,9 @@
           "id": "BkaNdbQLQ",
           "label": "REG",
           "position": {
-            "x": -170,
-            "y": -408
+            "x": -3,
+            "y": -4,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-byte"
         },
@@ -251,8 +257,9 @@
           "id": "Byl64ObXI7",
           "label": "VAL",
           "position": {
-            "x": -34,
-            "y": -408
+            "x": 0,
+            "y": -4,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-byte"
         },
@@ -260,16 +267,18 @@
           "id": "HkuTNdW78m",
           "label": "I2C",
           "position": {
-            "x": -340,
-            "y": -408
+            "x": -7,
+            "y": -4,
+            "units": "slots"
           },
           "type": "xod/i2c/input-i2c"
         },
         "rkVpNObmIX": {
           "id": "rkVpNObmIX",
           "position": {
-            "x": -68,
-            "y": -204
+            "x": -1,
+            "y": -2,
+            "units": "slots"
           },
           "type": "xod/i2c/write-byte"
         },
@@ -277,8 +286,9 @@
           "id": "rkmpEd-X87",
           "label": "ADDR",
           "position": {
-            "x": -306,
-            "y": -408
+            "x": -6,
+            "y": -4,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-byte"
         },
@@ -286,8 +296,9 @@
           "arityLevel": 3,
           "id": "rktTEuWXIQ",
           "position": {
-            "x": 136,
-            "y": -102
+            "x": 3,
+            "y": -1,
+            "units": "slots"
           },
           "type": "xod/core/any"
         },
@@ -297,8 +308,9 @@
           },
           "id": "ryfp4dWQIX",
           "position": {
-            "x": -204,
-            "y": -204
+            "x": -4,
+            "y": -2,
+            "units": "slots"
           },
           "type": "xod/i2c/write-byte"
         }
@@ -555,8 +567,9 @@
           "id": "B13UFWQUX",
           "label": "ERR3",
           "position": {
-            "x": 578,
-            "y": 408
+            "x": 15,
+            "y": 4,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/from-bus"
         },
@@ -564,8 +577,9 @@
           "id": "B1eyFbmIQ",
           "label": "I2C",
           "position": {
-            "x": 136,
-            "y": 204
+            "x": 5,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/from-bus"
         },
@@ -573,16 +587,18 @@
           "id": "BJ-vfK-7Im",
           "label": "ERR2",
           "position": {
-            "x": 544,
-            "y": 408
+            "x": 14,
+            "y": 4,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/from-bus"
         },
         "BJPwYuZXLQ": {
           "id": "BJPwYuZXLQ",
           "position": {
-            "x": 408,
-            "y": 306
+            "x": 11,
+            "y": 3,
+            "units": "slots"
           },
           "type": "xod/i2c/end-transmission"
         },
@@ -592,16 +608,18 @@
           },
           "id": "BJrvKO-QIm",
           "position": {
-            "x": 0,
-            "y": 306
+            "x": 2,
+            "y": 3,
+            "units": "slots"
           },
           "type": "xod/i2c/begin-transmission"
         },
         "Bk4vKO-m8X": {
           "id": "Bk4vKO-m8X",
           "position": {
-            "x": 272,
-            "y": 306
+            "x": 8,
+            "y": 3,
+            "units": "slots"
           },
           "type": "xod/i2c/write-byte"
         },
@@ -609,8 +627,9 @@
           "id": "BkF-FWQIm",
           "label": "I2C",
           "position": {
-            "x": 408,
-            "y": 204
+            "x": 11,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/from-bus"
         },
@@ -618,8 +637,9 @@
           "id": "H1ZTqObQ87",
           "label": "I2C",
           "position": {
-            "x": 0,
-            "y": 204
+            "x": 2,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/from-bus"
         },
@@ -627,8 +647,9 @@
           "id": "H1lh8Y-XU7",
           "label": "ERR4",
           "position": {
-            "x": 612,
-            "y": 408
+            "x": 16,
+            "y": 4,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/from-bus"
         },
@@ -636,8 +657,9 @@
           "id": "HJ0GtWXIX",
           "label": "ERR4",
           "position": {
-            "x": 442,
-            "y": 408
+            "x": 12,
+            "y": 4,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/to-bus"
         },
@@ -645,8 +667,9 @@
           "id": "HJFftbQ8Q",
           "label": "ERR3",
           "position": {
-            "x": 306,
-            "y": 408
+            "x": 9,
+            "y": 4,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/to-bus"
         },
@@ -654,8 +677,9 @@
           "id": "HJlDY_W7Lm",
           "label": "VAL",
           "position": {
-            "x": 306,
-            "y": 102
+            "x": 9,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-byte"
         },
@@ -663,8 +687,9 @@
           "id": "HkwMYWX8Q",
           "label": "ERR2",
           "position": {
-            "x": 170,
-            "y": 408
+            "x": 6,
+            "y": 4,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/to-bus"
         },
@@ -672,8 +697,9 @@
           "id": "HyDtOb7Um",
           "label": "REG",
           "position": {
-            "x": 170,
-            "y": 102
+            "x": 6,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-byte"
         },
@@ -681,8 +707,9 @@
           "id": "S1M1F-787",
           "label": "I2C",
           "position": {
-            "x": 272,
-            "y": 204
+            "x": 8,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/from-bus"
         },
@@ -690,8 +717,9 @@
           "id": "S1ZVGKbQ87",
           "label": "ERR1",
           "position": {
-            "x": 510,
-            "y": 408
+            "x": 13,
+            "y": 4,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/from-bus"
         },
@@ -699,8 +727,9 @@
           "id": "S1dPYuZQLX",
           "label": "I2C",
           "position": {
-            "x": -1,
-            "y": -1
+            "x": 2,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/i2c/input-i2c"
         },
@@ -710,8 +739,9 @@
           },
           "id": "SJGPK_-XUQ",
           "position": {
-            "x": 136,
-            "y": 306
+            "x": 5,
+            "y": 3,
+            "units": "slots"
           },
           "type": "xod/i2c/write-byte"
         },
@@ -719,8 +749,9 @@
           "id": "Skp5uZmL7",
           "label": "I2C",
           "position": {
-            "x": 0,
-            "y": 102
+            "x": 2,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/to-bus"
         },
@@ -728,8 +759,9 @@
           "id": "SkqDt_-XUQ",
           "label": "DONE",
           "position": {
-            "x": 408,
-            "y": 612
+            "x": 11,
+            "y": 6,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/output-pulse"
         },
@@ -737,8 +769,9 @@
           "id": "ry-vFubQIX",
           "label": "W",
           "position": {
-            "x": 374,
-            "y": 102
+            "x": 11,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-pulse"
         },
@@ -746,8 +779,9 @@
           "id": "ry7vFubm8Q",
           "label": "ADDR",
           "position": {
-            "x": 34,
-            "y": 102
+            "x": 3,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-byte"
         },
@@ -755,8 +789,9 @@
           "id": "ryEztb7Lm",
           "label": "ERR1",
           "position": {
-            "x": 34,
-            "y": 408
+            "x": 3,
+            "y": 4,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/to-bus"
         },
@@ -764,8 +799,9 @@
           "id": "ryLDYd-XLm",
           "label": "ERR",
           "position": {
-            "x": 510,
-            "y": 612
+            "x": 13,
+            "y": 6,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/output-pulse"
         },
@@ -773,8 +809,9 @@
           "arityLevel": 3,
           "id": "rytvYubQLX",
           "position": {
-            "x": 510,
-            "y": 510
+            "x": 13,
+            "y": 5,
+            "units": "slots"
           },
           "type": "xod/core/any"
         }

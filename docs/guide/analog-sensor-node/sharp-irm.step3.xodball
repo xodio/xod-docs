@@ -7,48 +7,56 @@
           "content": "Divide by 100 to convert centimeters to meters",
           "id": "Bko0B0xsgz",
           "position": {
-            "x": 136,
-            "y": 612
+            "units": "slots",
+            "x": 4,
+            "y": 6
           },
           "size": {
-            "height": 51,
-            "width": 170
+            "height": 1,
+            "units": "slots",
+            "width": 4
           }
         },
         "H1FCSCxsxf": {
           "content": "Map the voltage to inverse distance (1/cm)",
           "id": "H1FCSCxsxf",
           "position": {
-            "x": 272,
-            "y": 408
+            "units": "slots",
+            "x": 8,
+            "y": 4
           },
           "size": {
-            "height": 51,
-            "width": 136
+            "height": 1,
+            "units": "slots",
+            "width": 4
           }
         },
         "SJu0H0xsxz": {
           "content": "Multiply by AVcc to get the voltage level",
           "id": "SJu0H0xsxz",
           "position": {
-            "x": 170,
-            "y": 306
+            "units": "slots",
+            "x": 5,
+            "y": 3
           },
           "size": {
-            "height": 51,
-            "width": 170
+            "height": 1,
+            "units": "slots",
+            "width": 4
           }
         },
         "rJqArResef": {
           "content": "Invert the distance",
           "id": "rJqArResef",
           "position": {
-            "x": 136,
-            "y": 510
+            "units": "slots",
+            "x": 4,
+            "y": 5
           },
           "size": {
-            "height": 51,
-            "width": 136
+            "height": 1,
+            "units": "slots",
+            "width": 4
           }
         }
       },
@@ -150,8 +158,9 @@
           "id": "BJqdlWogG",
           "label": "AVcc",
           "position": {
-            "x": 102,
-            "y": 204
+            "units": "slots",
+            "x": 3,
+            "y": 2
           },
           "type": "xod/patch-nodes/input-number"
         },
@@ -164,8 +173,9 @@
           },
           "id": "HkWRBRxigf",
           "position": {
-            "x": 68,
-            "y": 408
+            "units": "slots",
+            "x": 2,
+            "y": 4
           },
           "type": "xod/math/map"
         },
@@ -173,7 +183,8 @@
           "id": "HkhxMoR1X",
           "label": "PORT",
           "position": {
-            "x": 34,
+            "units": "slots",
+            "x": 1,
             "y": 0
           },
           "type": "xod/patch-nodes/input-port"
@@ -181,8 +192,9 @@
         "SJAyGsRJQ": {
           "id": "SJAyGsRJQ",
           "position": {
-            "x": 34,
-            "y": 102
+            "units": "slots",
+            "x": 1,
+            "y": 1
           },
           "type": "xod/common-hardware/analog-sensor"
         },
@@ -190,8 +202,9 @@
           "id": "SkTw0gjgf",
           "label": "Dm",
           "position": {
-            "x": 34,
-            "y": 714
+            "units": "slots",
+            "x": 1,
+            "y": 7
           },
           "type": "xod/patch-nodes/output-number"
         },
@@ -201,8 +214,9 @@
           },
           "id": "Skg0rRxjeM",
           "position": {
-            "x": 68,
-            "y": 306
+            "units": "slots",
+            "x": 2,
+            "y": 3
           },
           "type": "xod/core/multiply"
         },
@@ -213,7 +227,8 @@
           "id": "SyeOgZsgG",
           "label": "UPD",
           "position": {
-            "x": 136,
+            "units": "slots",
+            "x": 4,
             "y": 0
           },
           "type": "xod/patch-nodes/input-pulse"
@@ -224,8 +239,9 @@
           },
           "id": "SyfABRgjgG",
           "position": {
-            "x": 34,
-            "y": 510
+            "units": "slots",
+            "x": 1,
+            "y": 5
           },
           "type": "xod/core/divide"
         },
@@ -235,8 +251,9 @@
           },
           "id": "rJQABAgilM",
           "position": {
-            "x": 34,
-            "y": 612
+            "units": "slots",
+            "x": 1,
+            "y": 6
           },
           "type": "xod/core/divide"
         }
@@ -246,15 +263,17 @@
     "@/main": {
       "comments": {
         "HJcjI-olf": {
-          "content": "Look! We can read three sensors at once",
+          "content": "Look!\nWe can read three sensors\nat once",
           "id": "HJcjI-olf",
           "position": {
-            "x": 204,
-            "y": 102
+            "units": "slots",
+            "x": 6,
+            "y": 1
           },
           "size": {
-            "height": 51,
-            "width": 136
+            "height": 2,
+            "units": "slots",
+            "width": 3
           }
         }
       },
@@ -297,54 +316,65 @@
         "B1s3zWoeM": {
           "id": "B1s3zWoeM",
           "position": {
-            "x": 68,
-            "y": 204
+            "units": "slots",
+            "x": 2,
+            "y": 2
           },
           "type": "xod/debug/watch"
         },
         "BytOAxolG": {
           "boundLiterals": {
-            "HJ7vCgjef": "1"
+            "HJ7vCgjef": "1",
+            "HkhxMoR1X": "A2"
           },
           "id": "BytOAxolG",
           "position": {
-            "x": -68,
-            "y": 102
+            "units": "slots",
+            "x": -2,
+            "y": 1
           },
           "type": "@/gp2y0a02-range-meter"
         },
         "H1xY2GWjez": {
+          "boundLiterals": {
+            "HkhxMoR1X": "A1"
+          },
           "id": "H1xY2GWjez",
           "position": {
-            "x": -204,
-            "y": 102
+            "units": "slots",
+            "x": -6,
+            "y": 1
           },
           "type": "@/gp2y0a02-range-meter"
         },
         "HJF3MWjgG": {
           "id": "HJF3MWjgG",
           "position": {
-            "x": -204,
-            "y": 204
+            "units": "slots",
+            "x": -6,
+            "y": 2
           },
           "type": "xod/debug/watch"
         },
         "HyIFsxjgG": {
           "id": "HyIFsxjgG",
           "position": {
-            "x": -68,
-            "y": 204
+            "units": "slots",
+            "x": -2,
+            "y": 2
           },
           "type": "xod/debug/watch"
         },
         "Hyxo2G-jxf": {
           "boundLiterals": {
-            "HJ7vCgjef": "2"
+            "HJ7vCgjef": "2",
+            "HkhxMoR1X": "A3"
           },
           "id": "Hyxo2G-jxf",
           "position": {
-            "x": 68,
-            "y": 102
+            "units": "slots",
+            "x": 2,
+            "y": 1
           },
           "type": "@/gp2y0a02-range-meter"
         }
