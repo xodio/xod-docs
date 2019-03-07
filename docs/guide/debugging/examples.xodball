@@ -52,28 +52,43 @@
         "B1-uNJc4V": {
           "id": "B1-uNJc4V",
           "position": {
-            "x": 408,
-            "y": 204
+            "x": 12,
+            "y": 2,
+            "units": "slots"
           },
           "size": {
-            "height": 51,
-            "width": 102
+            "height": 1,
+            "width": 3,
+            "units": "slots"
           },
           "type": "xod/debug/watch"
         },
         "B1v-NJ54V": {
+          "boundLiterals": {
+            "BJJqaX4Gb": "D9",
+            "HJysTXVMb": "D11",
+            "S1nqa7NMZ": "D10",
+            "SkBK6Q4fb": "D8",
+            "rJlYT7EfW": "D7",
+            "rkbjp7Ezb": "D12"
+          },
           "id": "B1v-NJ54V",
           "position": {
-            "x": 68,
-            "y": 204
+            "x": 2,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/common-hardware/text-lcd-16x2"
         },
         "H18rE1cEN": {
+          "boundLiterals": {
+            "H1s0WI6MZ": "A2"
+          },
           "id": "H18rE1cEN",
           "position": {
-            "x": 306,
-            "y": 0
+            "x": 9,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/common-hardware/thermometer-tmp36"
         },
@@ -83,12 +98,14 @@
           },
           "id": "rJ7LVyq4N",
           "position": {
-            "x": 136,
-            "y": 0
+            "x": 4,
+            "y": 0,
+            "units": "slots"
           },
           "size": {
-            "height": 51,
-            "width": 136
+            "height": 1,
+            "width": 4,
+            "units": "slots"
           },
           "type": "xod/debug/tweak-string-16"
         }
@@ -135,20 +152,23 @@
         "Bkkmmkc4E": {
           "id": "Bkkmmkc4E",
           "position": {
-            "x": -68,
-            "y": 102
+            "x": -2,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/core/flip-flop"
         },
         "By7XXJcNE": {
           "id": "By7XXJcNE",
           "position": {
-            "x": -68,
-            "y": 204
+            "x": -2,
+            "y": 2,
+            "units": "slots"
           },
           "size": {
-            "height": 51,
-            "width": 102
+            "height": 1,
+            "width": 3,
+            "units": "slots"
           },
           "type": "xod/debug/watch"
         },
@@ -159,15 +179,17 @@
           "id": "HJ8M719EN",
           "position": {
             "x": 0,
-            "y": -102
+            "y": -1,
+            "units": "slots"
           },
           "type": "xod/debug/tweak-number"
         },
         "Sk5zm19EN": {
           "id": "Sk5zm19EN",
           "position": {
-            "x": -34,
-            "y": 0
+            "x": -1,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/core/clock"
         }

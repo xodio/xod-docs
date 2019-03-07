@@ -1,0 +1,93 @@
+{
+  "name": "",
+  "patches": {
+    "@/main": {
+      "links": {
+        "HkNqX_H8N": {
+          "id": "HkNqX_H8N",
+          "input": {
+            "nodeId": "H1enYXOSLV",
+            "pinKey": "HyYh1a3LZ"
+          },
+          "output": {
+            "nodeId": "BJkt7_B8V",
+            "pinKey": "BkoeN9Ay7"
+          }
+        },
+        "HkQ5QuSLV": {
+          "id": "HkQ5QuSLV",
+          "input": {
+            "nodeId": "Bk2YmuSIV",
+            "pinKey": "HyYh1a3LZ"
+          },
+          "output": {
+            "nodeId": "BJkt7_B8V",
+            "pinKey": "BkoeN9Ay7"
+          }
+        },
+        "r1b57Or8N": {
+          "id": "r1b57Or8N",
+          "input": {
+            "nodeId": "HJ5tX_H8V",
+            "pinKey": "HyYh1a3LZ"
+          },
+          "output": {
+            "nodeId": "BJkt7_B8V",
+            "pinKey": "BkoeN9Ay7"
+          }
+        }
+      },
+      "nodes": {
+        "BJkt7_B8V": {
+          "boundLiterals": {
+            "r1l3XcR17": "A1"
+          },
+          "id": "BJkt7_B8V",
+          "position": {
+            "x": 3,
+            "y": -1,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/analog-sensor"
+        },
+        "Bk2YmuSIV": {
+          "boundLiterals": {
+            "B1oqkTnIb": "D10"
+          },
+          "id": "Bk2YmuSIV",
+          "position": {
+            "x": 2,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/led"
+        },
+        "H1enYXOSLV": {
+          "boundLiterals": {
+            "B1oqkTnIb": "D9"
+          },
+          "id": "H1enYXOSLV",
+          "position": {
+            "x": 5,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/led"
+        },
+        "HJ5tX_H8V": {
+          "boundLiterals": {
+            "B1oqkTnIb": "D13"
+          },
+          "id": "HJ5tX_H8V",
+          "position": {
+            "x": -1,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/led"
+        }
+      },
+      "path": "@/main"
+    }
+  }
+}

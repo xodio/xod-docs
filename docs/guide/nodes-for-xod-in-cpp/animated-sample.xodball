@@ -1,0 +1,61 @@
+{
+  "name": "",
+  "patches": {
+    "@/main": {
+      "links": {
+        "Sk4mRj9L4": {
+          "id": "Sk4mRj9L4",
+          "input": {
+            "nodeId": "HJRf0o5UN",
+            "pinKey": "HJiwJ33LW"
+          },
+          "output": {
+            "nodeId": "HJhGAicLN",
+            "pinKey": "BkEVI0uHwJb"
+          }
+        },
+        "rJX7Cj5I4": {
+          "id": "rJX7Cj5I4",
+          "input": {
+            "nodeId": "B1MQAicIN",
+            "pinKey": "HkXK-dGob"
+          },
+          "output": {
+            "nodeId": "HJRf0o5UN",
+            "pinKey": "Bkpwy22I-"
+          }
+        }
+      },
+      "nodes": {
+        "B1MQAicIN": {
+          "id": "B1MQAicIN",
+          "position": {
+            "x": 1,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/debug/watch"
+        },
+        "HJRf0o5UN": {
+          "id": "HJRf0o5UN",
+          "position": {
+            "x": 1,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/math/cos"
+        },
+        "HJhGAicLN": {
+          "id": "HJhGAicLN",
+          "position": {
+            "x": 1,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/core/system-time"
+        }
+      },
+      "path": "@/main"
+    }
+  }
+}
