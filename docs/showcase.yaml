@@ -1,3 +1,9 @@
+- title: Pneumatic Squid Launcher 
+  image: ./__img__/squid-launcher.jpeg
+  url: "https://www.youtube.com/watch?v=gCIDYpCU8fQ"
+  author: Max Danilin / Amperka Cyber Couch
+  description: YouTube video
+
 - title: Christmas WS2812 Lights Sniffing Colors
   image: ./__img__/christmas-tree-light.jpg
   url: "https://www.instructables.com/id/Christmas-Tree-Light-Controlled-by-a-Toy/"
