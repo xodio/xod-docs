@@ -1,6 +1,6 @@
 ---
 title: Wrapping Class-based Arduino Libraries
-version: 1.0.1
+version: 1.1.0
 ---
 
 # Wrapping Class-based Arduino Libraries
@@ -63,7 +63,8 @@ for the I2C connection:
 2.  Place the node `not-implemented-in-xod`, because we have to create an
     instance of the class from C++ library.
 3.  Place the node `output-self` and set its label to `DEV`. Such way we’re
-    defining a new custom type.
+    defining a new [custom type](../custom-types/). After that you can find 
+    `input-pn532-device` and `output-pn532-device` terminals in Project Browser.
 4.  Place one terminal `input-port` to specify interruption port with label
     `IRQ`. This is one of two ports, which are required in the constructor
     arguments. This port is used to notify Arduino board that the module
@@ -169,6 +170,15 @@ with a verb (`init`, `read-byte`, `pair-tag`, `write-line` and etc).
 ### Create node `init`
 
 Let's create a node that initializes the NFC scanner.
+
+<div class="ui segment note">
+<span class="ui ribbon label">Note</span>
+
+The `input-pn532-device` terminal was automatically generated after adding the `output-self`
+terminal to the `pn532-device` patch. You can find it in the Project Browser.
+
+</div>
+
 
 ![Create init patch](./init.patch.png)
 
