@@ -2987,6 +2987,9 @@
       },
       "path": "@/210-string-formatting"
     },
+    "@/300-creating-nodes": {
+      "path": "@/300-creating-nodes"
+    },
     "@/211-units-of-measure": {
       "nodes": {
         "H1E_oNGF4": {
@@ -3080,9 +3083,6 @@
         }
       },
       "path": "@/211-units-of-measure"
-    },
-    "@/300-creating-nodes": {
-      "path": "@/300-creating-nodes"
     },
     "@/301-create-new-patch": {
       "nodes": {
