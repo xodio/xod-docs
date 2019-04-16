@@ -1,0 +1,83 @@
+- from: /tutorial/01-hello/
+  to:   /tutorial/001-hello/
+
+- from: /tutorial/02-deploy/
+  to:   /tutorial/101-upload/
+
+- from: /tutorial/03-inspector/
+  to:   /tutorial/003-inspector/
+
+- from: /tutorial/04-pwm/
+  to:   /tutorial/103-led/
+
+- from: /tutorial/05-wiring/
+  to:   /tutorial/103-led/
+
+- from: /tutorial/06-adding-nodes/
+  to:   /tutorial/004-patching/
+
+- from: /tutorial/07-labels/
+  to:   /tutorial/
+
+- from: /tutorial/08-constants/
+  to:   /tutorial/
+
+- from: /tutorial/09-pot/
+  to:   /tutorial/105-pot/
+
+- from: /tutorial/10-math/
+  to:   /tutorial/
+
+- from: /tutorial/11-servo/
+  to:   /tutorial/106-servo/
+
+- from: /tutorial/12-help/
+  to:   /tutorial/006-help/
+
+- from: /tutorial/13-map/
+  to:   /tutorial/201-matching-ranges/
+
+- from: /tutorial/14-map-adjust/
+  to:   /tutorial/201-matching-ranges/
+
+- from: /tutorial/15-buttons/
+  to:   /tutorial/104-button/
+
+- from: /tutorial/16-logic/
+  to:   /tutorial/007-booleans/
+
+- from: /tutorial/17-ldr/
+  to:   /tutorial/110-ldr/
+
+- from: /tutorial/18-comparisons/
+  to:   /tutorial/202-alarm/
+
+- from: /tutorial/19-if-else/
+  to:   /tutorial/011-branching/
+
+- from: /tutorial/20-fade/
+  to:   /tutorial/206-fade/
+
+- from: /tutorial/21-pulses/
+  to:   /tutorial/009-pulses/
+
+- from: /tutorial/22-clock/
+  to:   /tutorial/009-pulses/
+
+- from: /tutorial/23-count/
+  to:   /tutorial/009-pulses/
+
+- from: /tutorial/24-flip-flop/
+  to:   /tutorial/203-permanent-alarm/
+
+- from: /tutorial/25-multiple-timelines/
+  to:   /tutorial/
+
+- from: /tutorial/26-lcd/
+  to:   /tutorial/108-text-lcd/
+
+- from: /tutorial/27-lcd-data/
+  to:   /tutorial/109-thermometer/
+
+- from: /tutorial/28-string-concat/
+  to:   /tutorial/210-string-formatting/

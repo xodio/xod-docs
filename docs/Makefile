@@ -19,13 +19,15 @@ DPI=192
 ALL_FZZ = $(shell find . -name "*.fzz")
 ALL_FZ_PNG = $(ALL_FZZ:%.fzz=%.fz.png)
 
+CURDIR = $(shell pwd)
+
 %.fz.png: %_breadboard.svg
 	inkscape --without-gui \
-		--export-png=$@ \
+		--export-png=$(CURDIR)/$@ \
 		--export-dpi=$(DPI) \
 		--export-area-drawing \
 		--export-background=white \
-		--export-background-opacity=255 $<
+		--export-background-opacity=255 $(CURDIR)/$<
 
 %_breadboard.svg: %.fzz
 	Fritzing -svg $(dir $<)
