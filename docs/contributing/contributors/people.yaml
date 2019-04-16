@@ -26,6 +26,11 @@
   activities:
     articles: 1
 
+- username: cesars
+  activities:
+    libs: 1
+    replying: 1
+
 - username: dox
   activities:
     replying: 1
