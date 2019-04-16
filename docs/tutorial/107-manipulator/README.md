@@ -3,7 +3,6 @@ title: Manipulator
 version: 2.0.0
 ---
 
-
 <!--
 This file is auto-generated from the 'welcome-to-xod' project.
 Do not change this file manually because your changes may be lost after
@@ -17,7 +16,6 @@ If you want to change a Fritzing scheme or comments for it, change the
 Then run auto-generator tool (xod/tools/generate-tutorial-docs.js).
 -->
 
-
 <div class="ui segment note">
 <span class="ui ribbon label">Note</span>
 This is a web-version of a tutorial chapter embedded right into the XOD IDE.
@@ -29,8 +27,6 @@ To get a better learning experience we recommend to install the
 # Manipulator
 
 ![Screenshot of 107-manipulator](./107-manipulator.patch.png)
-
-
 
 Controlling the servo with a potentiometer or another analog sensor is easy. However, what if we want to make some complex movements with servos?
 
@@ -44,8 +40,6 @@ This program rotates the servo to the maximum angle slowly and then turn it back
 
 Upload the program and check it out.
 
-
-
 ## Circuit
 
 <div class="ui segment note">
@@ -57,15 +51,14 @@ The circuit is the same as for the previous lesson.
 
 [↓ Download as a Fritzing project](./circuit.fzz)
 
-
 ## Exercise
 
 Let's change the servo trajectory.
 
-1. Add two more `rotate-slow` nodes.
-2. Link all nodes in the same way.
-3. Adjust pin values of `rotate-slow`.
-4. Upload the program.
+1.  Add two more `rotate-slow` nodes.
+2.  Link all nodes in the same way.
+3.  Adjust pin values of `rotate-slow`.
+4.  Upload the program.
 
 Press the button and see how the servo fulfills your order.
 
@@ -76,8 +69,6 @@ The `xod-dev/servo` library also contains a `rotate` node. The main difference b
 And if you wonder how the simple `servo` node used in the previous chapter works: under the hood, it is a trivial composition of `servo-device` and `rotate` with a few terminals exposed to you. Simple nodes (also known as quickstart nodes) are enough for basic applications and when you need more, you use raw device nodes along with action nodes like you do in this chapter.
 
 This idiom is applicable to other hardware as well.
-
-
 
 <div class="ui grid">
   <div class="five wide column left aligned ">
@@ -90,5 +81,3 @@ This idiom is applicable to other hardware as well.
     <a href="../108-text-lcd/">Next lesson →</a>
   </div>
 </div>
-
-

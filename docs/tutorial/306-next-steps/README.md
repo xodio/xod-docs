@@ -3,7 +3,6 @@ title: Next Steps
 version: 2.0.0
 ---
 
-
 <!--
 This file is auto-generated from the 'welcome-to-xod' project.
 Do not change this file manually because your changes may be lost after
@@ -17,7 +16,6 @@ If you want to change a Fritzing scheme or comments for it, change the
 Then run auto-generator tool (xod/tools/generate-tutorial-docs.js).
 -->
 
-
 <div class="ui segment note">
 <span class="ui ribbon label">Note</span>
 This is a web-version of a tutorial chapter embedded right into the XOD IDE.
@@ -30,17 +28,9 @@ To get a better learning experience we recommend to install the
 
 ![Screenshot of 306-next-steps](./306-next-steps.patch.png)
 
-
-
 What you've just learned about making nodes is totally sufficient for day-to-day xoding.
 
 If you are interested in a more in-depth guide on creating nodes, check out the [docs on xod.io](https://xod.io/docs/guide/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial#making-your-own-nodes). There you will learn about creating nodes in C++, testing them using tabtests and wrapping existing Arduino libraries.
-
-
-
-
-
-
 
 <div class="ui grid">
   <div class="five wide column left aligned ">
@@ -53,5 +43,3 @@ If you are interested in a more in-depth guide on creating nodes, check out the 
     <a href="../999-the-end/">Next lesson →</a>
   </div>
 </div>
-
-

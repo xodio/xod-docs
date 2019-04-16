@@ -3,7 +3,6 @@ title: Ambient Light Sensor
 version: 2.0.0
 ---
 
-
 <!--
 This file is auto-generated from the 'welcome-to-xod' project.
 Do not change this file manually because your changes may be lost after
@@ -17,7 +16,6 @@ If you want to change a Fritzing scheme or comments for it, change the
 Then run auto-generator tool (xod/tools/generate-tutorial-docs.js).
 -->
 
-
 <div class="ui segment note">
 <span class="ui ribbon label">Note</span>
 This is a web-version of a tutorial chapter embedded right into the XOD IDE.
@@ -30,13 +28,9 @@ To get a better learning experience we recommend to install the
 
 ![Screenshot of 110-ldr](./110-ldr.patch.png)
 
-
-
 Let’s introduce a new sensor to measure the ambient light level. A photoresistor (aka light dependent resistor or LDR) will do a great job of measuring the parameter. However, there is a small problem: we do not have a photoresistor node in XOD.
 
 We have basic nodes for working with digital and analog ports though. The photoresistor is a pretty primitive device, and all we need to do is read its value from the analog port. To do so, use an `analog-sensor` node.
-
-
 
 ## Circuit
 
@@ -44,20 +38,17 @@ We have basic nodes for working with digital and analog ports though. The photor
 
 [↓ Download as a Fritzing project](./circuit.fzz)
 
-
 ## Exercise
 
 Let’s make a smart (or dumb) light bulb.
 
-1. Assemble the [circuit with an LDR and LED](https://xod.io/docs/tutorial/110-ldr/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial#circuit).
+1.  Assemble the [circuit with an LDR and LED](https://xod.io/docs/tutorial/110-ldr/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial#circuit).
 
-2. Link the `VAL` output pin of the `analog-sensor` node to the `LUM` pin of the `led` node.
+2.  Link the `VAL` output pin of the `analog-sensor` node to the `LUM` pin of the `led` node.
 
-3. Upload the patch to the board.
+3.  Upload the patch to the board.
 
 Cover the photoresistor with your hand and watch how the brightness of the LED changes.
-
-
 
 <div class="ui grid">
   <div class="five wide column left aligned ">
@@ -70,5 +61,3 @@ Cover the photoresistor with your hand and watch how the brightness of the LED c
     <a href="../200-patterns/">Next lesson →</a>
   </div>
 </div>
-
-

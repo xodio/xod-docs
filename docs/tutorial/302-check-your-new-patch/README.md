@@ -3,7 +3,6 @@ title: Check Your New Patch
 version: 2.0.0
 ---
 
-
 <!--
 This file is auto-generated from the 'welcome-to-xod' project.
 Do not change this file manually because your changes may be lost after
@@ -17,7 +16,6 @@ If you want to change a Fritzing scheme or comments for it, change the
 Then run auto-generator tool (xod/tools/generate-tutorial-docs.js).
 -->
 
-
 <div class="ui segment note">
 <span class="ui ribbon label">Note</span>
 This is a web-version of a tutorial chapter embedded right into the XOD IDE.
@@ -30,18 +28,9 @@ To get a better learning experience we recommend to install the
 
 ![Screenshot of 302-check-your-new-patch](./302-check-your-new-patch.patch.png)
 
-
-
 If the `between` patch you’ve created looks like this one, you did everything right!
 
 Continue to the next chapter.
-
-
-
-
-
-
-
 
 <div class="ui grid">
   <div class="five wide column left aligned ">
@@ -54,5 +43,3 @@ Continue to the next chapter.
     <a href="../303-add-terminals/">Next lesson →</a>
   </div>
 </div>
-
-

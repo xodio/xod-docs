@@ -3,7 +3,6 @@ title: Potentiometer
 version: 2.0.0
 ---
 
-
 <!--
 This file is auto-generated from the 'welcome-to-xod' project.
 Do not change this file manually because your changes may be lost after
@@ -17,7 +16,6 @@ If you want to change a Fritzing scheme or comments for it, change the
 Then run auto-generator tool (xod/tools/generate-tutorial-docs.js).
 -->
 
-
 <div class="ui segment note">
 <span class="ui ribbon label">Note</span>
 This is a web-version of a tutorial chapter embedded right into the XOD IDE.
@@ -30,13 +28,9 @@ To get a better learning experience we recommend to install the
 
 ![Screenshot of 105-pot](./105-pot.patch.png)
 
-
-
 The potentiometer reads an analog value from the hardware port and outputs a normalized result in the range from `0.0` to `1.0`, depending on the angle of the knob.
 
 It brings an easy solution to control LEDs, servos, and system coefficients.
-
-
 
 ## Circuit
 
@@ -44,22 +38,19 @@ It brings an easy solution to control LEDs, servos, and system coefficients.
 
 [↓ Download as a Fritzing project](./circuit.fzz)
 
-
 ## Exercise
 
 Let's control the brightness of the LED with a potentiometer.
 
-1. Connect a potentiometer to the Arduino  board according to the [scheme](https://xod.io/docs/tutorial/105-pot/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial#circuit).
+1.  Connect a potentiometer to the Arduino board according to the [scheme](https://xod.io/docs/tutorial/105-pot/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial#circuit).
 
-2. Set the `PORT` pin value on the `pot` node to `A0` because it’s connected to the analog board port A0.
+2.  Set the `PORT` pin value on the `pot` node to `A0` because it’s connected to the analog board port A0.
 
-3. Link the `pot` node `VAL` pin to the `LUM` pin on the `led` node.
+3.  Link the `pot` node `VAL` pin to the `LUM` pin on the `led` node.
 
-4. Upload your patch.
+4.  Upload your patch.
 
 Rotate the knob and see how the LED reacts to it. Cool, eh?
-
-
 
 <div class="ui grid">
   <div class="five wide column left aligned ">
@@ -72,5 +63,3 @@ Rotate the knob and see how the LED reacts to it. Cool, eh?
     <a href="../106-servo/">Next lesson →</a>
   </div>
 </div>
-
-

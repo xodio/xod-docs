@@ -3,7 +3,6 @@ title: Flip-flops
 version: 2.0.0
 ---
 
-
 <!--
 This file is auto-generated from the 'welcome-to-xod' project.
 Do not change this file manually because your changes may be lost after
@@ -17,7 +16,6 @@ If you want to change a Fritzing scheme or comments for it, change the
 Then run auto-generator tool (xod/tools/generate-tutorial-docs.js).
 -->
 
-
 <div class="ui segment note">
 <span class="ui ribbon label">Note</span>
 This is a web-version of a tutorial chapter embedded right into the XOD IDE.
@@ -30,28 +28,19 @@ To get a better learning experience we recommend to install the
 
 ![Screenshot of 010-flip-flop](./010-flip-flop.patch.png)
 
-
-
 You can control the behavior of many nodes with pulses. A very useful node is `flip-flop`. It acts like a virtual switch, whose states can be controlled by pulses. A pulse on `SET` turns the stored `MEM` value to true. `RST` resets `MEM` to false. And a pulse on `TGL` inverses the `MEM` value.
 
 The patch shown here toggles the output boolean value each second.
-
-
-
-
 
 ## Exercise
 
 Let’s experiment with the `flip-flop` node.
 
-1. Replace `clock` node with `tweak-pulse` node.
-2. Add a couple more `tweak-pulse`s and connect them to `flip-flop`'s `SET` and `RST` pins.
-3. Run the simulation, and send pulses to each pin
+1.  Replace `clock` node with `tweak-pulse` node.
+2.  Add a couple more `tweak-pulse`s and connect them to `flip-flop`'s `SET` and `RST` pins.
+3.  Run the simulation, and send pulses to each pin
 
 Observe how the `MEM` value changes when sending several pulses to the same pin in a row.
-
-
-
 
 <div class="ui grid">
   <div class="five wide column left aligned ">
@@ -64,5 +53,3 @@ Observe how the `MEM` value changes when sending several pulses to the same pin 
     <a href="../011-branching/">Next lesson →</a>
   </div>
 </div>
-
-

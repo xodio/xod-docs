@@ -3,7 +3,6 @@ title: Patterns
 version: 2.0.0
 ---
 
-
 <!--
 This file is auto-generated from the 'welcome-to-xod' project.
 Do not change this file manually because your changes may be lost after
@@ -17,7 +16,6 @@ If you want to change a Fritzing scheme or comments for it, change the
 Then run auto-generator tool (xod/tools/generate-tutorial-docs.js).
 -->
 
-
 <div class="ui segment note">
 <span class="ui ribbon label">Note</span>
 This is a web-version of a tutorial chapter embedded right into the XOD IDE.
@@ -28,19 +26,9 @@ To get a better learning experience we recommend to install the
 
 # Patterns
 
-
-
-
-
 In this part of the tutorial you meet the most popular and useful patterns of doing something more complex than a blinking LED. Learn how to deal with loops, keep and change state, make smooth transitions and so on.
 
 This part of the tutorial is a handbook that can be useful for your projects in the future. So don't be shy to come back.
-
-
-
-
-
-
 
 <div class="ui grid">
   <div class="five wide column left aligned ">
@@ -53,5 +41,3 @@ This part of the tutorial is a handbook that can be useful for your projects in 
     <a href="../201-matching-ranges/">Next lesson →</a>
   </div>
 </div>
-
-

@@ -3,7 +3,6 @@ title: Adding Documentation
 version: 2.0.0
 ---
 
-
 <!--
 This file is auto-generated from the 'welcome-to-xod' project.
 Do not change this file manually because your changes may be lost after
@@ -17,7 +16,6 @@ If you want to change a Fritzing scheme or comments for it, change the
 Then run auto-generator tool (xod/tools/generate-tutorial-docs.js).
 -->
 
-
 <div class="ui segment note">
 <span class="ui ribbon label">Note</span>
 This is a web-version of a tutorial chapter embedded right into the XOD IDE.
@@ -30,24 +28,16 @@ To get a better learning experience we recommend to install the
 
 ![Screenshot of 305-document-it](./305-document-it.patch.png)
 
-
-
 The only thing our node lacks is proper documentation. The pins are unlabeled and the help panel does not describe what it does at all. Let's fix that.
-
-
-
-
 
 ## Instructions
 
 Apply the instructions to your `between` node.
 
-1. Using Inspector add descriptions to the terminal nodes. They will become pin descriptions in the help panel.
-2. Click on any empty space on the patch to see the Inspector for the whole patch.
-3. Add the description for the whole patch. It will become the node's description for the node in the help panel.
-4. Invoke the help box to see how the documentation renders.
-
-
+1.  Using Inspector add descriptions to the terminal nodes. They will become pin descriptions in the help panel.
+2.  Click on any empty space on the patch to see the Inspector for the whole patch.
+3.  Add the description for the whole patch. It will become the node's description for the node in the help panel.
+4.  Invoke the help box to see how the documentation renders.
 
 <div class="ui grid">
   <div class="five wide column left aligned ">
@@ -60,5 +50,3 @@ Apply the instructions to your `between` node.
     <a href="../306-next-steps/">Next lesson →</a>
   </div>
 </div>
-
-

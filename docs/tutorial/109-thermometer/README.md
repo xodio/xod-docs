@@ -3,7 +3,6 @@ title: Thermometer
 version: 2.0.0
 ---
 
-
 <!--
 This file is auto-generated from the 'welcome-to-xod' project.
 Do not change this file manually because your changes may be lost after
@@ -17,7 +16,6 @@ If you want to change a Fritzing scheme or comments for it, change the
 Then run auto-generator tool (xod/tools/generate-tutorial-docs.js).
 -->
 
-
 <div class="ui segment note">
 <span class="ui ribbon label">Note</span>
 This is a web-version of a tutorial chapter embedded right into the XOD IDE.
@@ -30,13 +28,9 @@ To get a better learning experience we recommend to install the
 
 ![Screenshot of 109-thermometer](./109-thermometer.patch.png)
 
-
-
 What if you need to control the ambient air temperature?
 
 A popular chip to measure temperature is TMP36 thermometer. XOD has a node `thermometer-tmp36` for this IC in `xod/common-hardware`. It outputs the temperature in degrees Celsius.
-
-
 
 ## Circuit
 
@@ -44,18 +38,17 @@ A popular chip to measure temperature is TMP36 thermometer. XOD has a node `ther
 
 [↓ Download as a Fritzing project](./circuit.fzz)
 
-
 ## Exercise
 
 Showing static text on the LCD is boring. So let's make a smarter device and show the temperature on the LCD.
 
-1. Add a thermometer to your [circuit as shown](https://xod.io/docs/tutorial/109-thermometer/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial#circuit).
+1.  Add a thermometer to your [circuit as shown](https://xod.io/docs/tutorial/109-thermometer/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial#circuit).
 
-2. Ensure the correct `PORT` for the `thermometer-tmp36` node.
+2.  Ensure the correct `PORT` for the `thermometer-tmp36` node.
 
-3. Link `Tc` of `thermometer-tmp36` with `L1` of `text-lcd-16x2-i2c`.
+3.  Link `Tc` of `thermometer-tmp36` with `L1` of `text-lcd-16x2-i2c`.
 
-4. Upload your patch.
+4.  Upload your patch.
 
 Now you have a portable thermometer.
 
@@ -64,8 +57,6 @@ Now you have a portable thermometer.
 You can convert Celsius to Fahrenheit using `xod/units/c-to-f` node.
 
 Moreover, you can add a `concat` node and show the temperature on the display like "22C" instead of a plain number. See `210-string-formatting` for more details.
-
-
 
 <div class="ui grid">
   <div class="five wide column left aligned ">
@@ -78,5 +69,3 @@ Moreover, you can add a `concat` node and show the temperature on the display li
     <a href="../110-ldr/">Next lesson →</a>
   </div>
 </div>
-
-

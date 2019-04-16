@@ -3,7 +3,6 @@ title: Using Your New Node
 version: 2.0.0
 ---
 
-
 <!--
 This file is auto-generated from the 'welcome-to-xod' project.
 Do not change this file manually because your changes may be lost after
@@ -17,7 +16,6 @@ If you want to change a Fritzing scheme or comments for it, change the
 Then run auto-generator tool (xod/tools/generate-tutorial-docs.js).
 -->
 
-
 <div class="ui segment note">
 <span class="ui ribbon label">Note</span>
 This is a web-version of a tutorial chapter embedded right into the XOD IDE.
@@ -30,28 +28,20 @@ To get a better learning experience we recommend to install the
 
 ![Screenshot of 304-use-new-node](./304-use-new-node.patch.png)
 
-
-
 Now you can use the new node just like any other.
-
-
-
-
 
 ## Instructions
 
-1. Drag’n’drop your `between` node from Project Browser to this patch and replace the `303-...` node with it.
-2. Add a few more `between`’s: double click on empty space and type “between”. Your node is here and denoted as `@/between`.
-3. Bind some values to the inputs of new `between` nodes, add some `tweak-number` and `watch` nodes to play.
-4. Run simulation to check how the new node works.
+1.  Drag’n’drop your `between` node from Project Browser to this patch and replace the `303-...` node with it.
+2.  Add a few more `between`’s: double click on empty space and type “between”. Your node is here and denoted as `@/between`.
+3.  Bind some values to the inputs of new `between` nodes, add some `tweak-number` and `watch` nodes to play.
+4.  Run simulation to check how the new node works.
 
 ### Paths starting with @/
 
-The at (*@*) symbol in the patch path shown by the quick search suggester denotes “*this project*”. That is, the node is located in the current projects, not in a library.
+The at (_@_) symbol in the patch path shown by the quick search suggester denotes “_this project_”. That is, the node is located in the current projects, not in a library.
 
 <- Place your `between` node instead
-
-
 
 <div class="ui grid">
   <div class="five wide column left aligned ">
@@ -64,5 +54,3 @@ The at (*@*) symbol in the patch path shown by the quick search suggester denote
     <a href="../305-document-it/">Next lesson →</a>
   </div>
 </div>
-
-
