@@ -4,11 +4,7 @@ title: Требуемое оборудование
 
 # Требуемое оборудование
 
-XOD не привязан к конкретному поставщику оборудования. Он совместим с
-различными платами контроллеров,  датчиками и периферийными устройствами, которые могут быть запрограммированы с помощью Arduino IDE
-Тем не менее, для оптимальной работы с этим учебником мы рекомендуем Вам использовать
-[Arduino Starter Kit](https://store.arduino.cc/usa/arduino-starter-kit?utm_source=xodio&utm_medium=xod&utm_campaign=tutorial)
-потому что он содержит все компоненты, необходимые для завершения уроков.
+XOD не привязан к конкретному поставщику оборудования. Он совместим с различными платами контроллеров, датчиками и периферийными устройствами, которые могут быть запрограммированы с помощью Arduino IDE Тем не менее, для оптимальной работы с этим учебником мы рекомендуем Вам использовать [Arduino Starter Kit](https://store.arduino.cc/usa/arduino-starter-kit?utm_source=xodio&utm_medium=xod&utm_campaign=tutorial) потому что он содержит все компоненты, необходимые для завершения уроков.
 
 [![Arduino Starter Kit](./ask.jpg)](https://store.arduino.cc/usa/arduino-starter-kit?utm_source=xodio&utm_medium=xod&utm_campaign=tutorial)
 

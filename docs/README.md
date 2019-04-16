@@ -55,7 +55,7 @@ h2.icon.header {
 <h3 class="ui header">Official</h3>
 
 - [Get started](./tutorial/install/)
-- [Full index](./tutorial/) (28 chapters)
+- [Full index](./tutorial/) (42 chapters)
 
 <h3>For video lovers</h3>
 
