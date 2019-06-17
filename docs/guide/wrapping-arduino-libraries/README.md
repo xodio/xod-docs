@@ -63,7 +63,7 @@ for the I2C connection:
 2.  Place the node `not-implemented-in-xod`, because we have to create an
     instance of the class from C++ library.
 3.  Place the node `output-self` and set its label to `DEV`. Such way we’re
-    defining a new [custom type](../custom-types/). After that you can find 
+    defining a new [custom type](../custom-types/). After that you can find
     `input-pn532-device` and `output-pn532-device` terminals in Project Browser.
 4.  Place one terminal `input-port` to specify interruption port with label
     `IRQ`. This is one of two ports, which are required in the constructor
@@ -205,12 +205,12 @@ void evaluate(Context ctx) {
     if (!versiondata) {
       // If the module did not respond with its version,
       // it's a connection error or something wrong with the module
-      emitValue<output_ERR>(ctx, 1);
+      raiseError(ctx); // Initialization error
       return;
     }
 
-    // Set the max number of retry attempts to read from a tag
-    // This prevents us from waiting forever for a tag, which is
+    // Set the max number of retry attempts to read from a card
+    // This prevents us from waiting forever for a card, which is
     // the default behavior of the PN532.
     nfc->setPassiveActivationRetries(1);
 
@@ -363,7 +363,7 @@ void evaluate(Context ctx) {
         emitValue<output_UID>(ctx, uid);
         emitValue<output_OK>(ctx, 1);
     } else {
-        emitValue<output_ERR>(ctx, 1);
+        emitValue<output_NA>(ctx, 1);
     }
 }
 ```

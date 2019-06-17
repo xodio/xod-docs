@@ -76,11 +76,11 @@ The links from `i2c` going to every action node can produce too much of visual n
 
 ![Writing time to I2C patch](./write-rtc.patch.png)
 
-When doing IO, everything can go wrong at any stage: module might be disconnected or browned out by a power-hungry neighbor, the bus can be busy, etc. It is a good idea to handle errors somehow. For example, we can output the error count to a `watch` node:
+When doing IO, everything can go wrong at any stage: module might be disconnected or browned out by a power-hungry neighbor, the bus can be busy, etc. It is a good idea to handle errors somehow. For example, we can catch errors at the end of the pipeline with a `pulse-on-error` node, count errors, and output to a `watch` node:
 
 ![Handling writing errors](./write-rtc-err.patch.png)
 
-If you’re creating a patch node to support a new piece of hardware, gathering all `ERR`’s together with `any` and just passing it out as an output pulse is a good strategy.
+If you’re creating a patch node to support a new piece of hardware, a good strategy might be to simply let the errors to pass down through the output terminals. That is, do nothing special. In this case, patches which use this node will have a chance to decide what to do in case of errors.
 
 ## Reading data
 
