@@ -28,7 +28,7 @@
     "proseWrap": "never"
   },
   "devDependencies": {
-    "prettier": "^1.17.1",
+    "prettier": "^1.18.2",
     "prettier-check": "^2.0.0"
   }
 }
