@@ -46,7 +46,7 @@ with `OK` and `ERR` pulses which fire on success or failure.
 
 When `enthernet-shield` receives a pulse on `CONN` it starts negotiating network
 parameters with the router and automatically sets up the device’s IP address,
-gateway address, network mask, and DNS server IP. Upon successful connection,
+gateway address, network mask, and [DNS](https://hosting.review/web-hosting-glossary/#9) server IP. Upon successful connection,
 the node emits a pulse on `OK` and sets `INET` to a value which is expected by
 other nodes made for network communication.
 
