@@ -84,6 +84,13 @@ and passes a received value through the outgoing link on the next transaction.
 In other words, XOD supports the feedback loops, but the cycle path must
 have at least one `defer` node in it to clarify the correct evaluation order.
 
+### Errors
+
+Some nodes may raise an error instead of setting a value or emitting a pulse.
+The errors propagate recursively down through the program graph and block the
+evaluation of all affected nodes even if they should re-evaluate by other means.
+See details in the [Errors guide](../errors/).
+
 ## Summary
 
 The program's life cycle can be looked at as a infinite series of transactions
