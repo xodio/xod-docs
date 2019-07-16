@@ -16,6 +16,7 @@ XOD language objects and processes described in detail.
 - [Variadic nodes](./variadics/)
 - [Generic nodes](./generics/)
 - [Buses](./buses/)
+- [Errors](./errors/)
 
 ## Making your own nodes
 
