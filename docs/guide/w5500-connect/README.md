@@ -42,7 +42,7 @@ the `CONN` is bound to `On Boot` so that the shield tries to connect to the
 router when the program starts.
 
 The node outputs `INET` which represents the resulting internet connection along
-with `OK` and `ERR` pulses which fire on success or failure.
+with `OK` pulse which fires on success.
 
 When `enthernet-shield` receives a pulse on `CONN` it starts negotiating network
 parameters with the router and automatically sets up the device’s IP address,

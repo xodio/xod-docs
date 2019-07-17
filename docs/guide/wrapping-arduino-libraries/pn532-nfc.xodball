@@ -708,22 +708,12 @@
     "@/init": {
       "attachments": [
         {
-          "content": "struct State {\n};\n\n{{ GENERATED_CODE }}\n\nvoid evaluate(Context ctx) {\n    // The node responds only if there is an input pulse\n    if (!isInputDirty<input_INIT>(ctx))\n        return;\n\n    // Get our custom type, that is a pointer on the `Adafruit_PN532` class instance\n    auto nfc = getValue<input_DEV>(ctx);\n\n    // Initialize RFID/NFC module\n    nfc->begin();\n\n    uint32_t versiondata = nfc->getFirmwareVersion();\n    if (!versiondata) {\n      // If the module did not respond with its version,\n      // it's a connection error or something wrong with the module\n      emitValue<output_ERR>(ctx, 1);\n      return;\n    }\n\n    // Set the max number of retry attempts to read from a card\n    // This prevents us from waiting forever for a card, which is\n    // the default behavior of the PN532.\n    nfc->setPassiveActivationRetries(1);\n\n    // Configure the board to read an RFID/NFC tags\n    nfc->SAMConfig();\n\n    // Pulse that module initialized successfully\n    emitValue<output_OK>(ctx, 1);\n}\n",
-          "encoding": "utf8",
+          "content": "struct State {\n};\n\n{{ GENERATED_CODE }}\n\nvoid evaluate(Context ctx) {\n    // The node responds only if there is an input pulse\n    if (!isInputDirty<input_INIT>(ctx))\n        return;\n\n    // Get our custom type, that is a pointer on the `Adafruit_PN532` class instance\n    auto nfc = getValue<input_DEV>(ctx);\n\n    // Initialize RFID/NFC module\n    nfc->begin();\n\n    uint32_t versiondata = nfc->getFirmwareVersion();\n    if (!versiondata) {\n      // If the module did not respond with its version,\n      // it's a connection error or something wrong with the module\n      raiseError(ctx); // Initialization error\n      return;\n    }\n\n    // Set the max number of retry attempts to read from a card\n    // This prevents us from waiting forever for a card, which is\n    // the default behavior of the PN532.\n    nfc->setPassiveActivationRetries(1);\n\n    // Configure the board to read an RFID/NFC tags\n    nfc->SAMConfig();\n\n    // Pulse that module initialized successfully\n    emitValue<output_OK>(ctx, 1);\n}\n",
+          "encoding": "utf-8",
           "filename": "patch.cpp"
         }
       ],
       "nodes": {
-        "S118pGVOX": {
-          "id": "S118pGVOX",
-          "label": "ERR",
-          "position": {
-            "x": -3,
-            "y": 0,
-            "units": "slots"
-          },
-          "type": "xod/patch-nodes/output-pulse"
-        },
         "rJTxhzN_7": {
           "id": "rJTxhzN_7",
           "label": "INIT",
@@ -873,6 +863,17 @@
             "pinKey": "BJ25Rf4u7"
           }
         },
+        "H1sluSSJB": {
+          "id": "H1sluSSJB",
+          "input": {
+            "nodeId": "rJgeG7Nd7",
+            "pinKey": "B1RU0OrDkb"
+          },
+          "output": {
+            "nodeId": "r1Mpb7NOQ",
+            "pinKey": "BydV-mNdQ"
+          }
+        },
         "HkLH3ISu7": {
           "id": "HkLH3ISu7",
           "input": {
@@ -884,17 +885,6 @@
             "pinKey": "__out__"
           }
         },
-        "Hy2FjIru7": {
-          "id": "Hy2FjIru7",
-          "input": {
-            "nodeId": "Sk0gMX4dQ",
-            "pinKey": "ryv7IRdSP1b"
-          },
-          "output": {
-            "nodeId": "r1Mpb7NOQ",
-            "pinKey": "BydV-mNdQ"
-          }
-        },
         "SJOQEXEdm": {
           "id": "SJOQEXEdm",
           "input": {
@@ -904,17 +894,6 @@
           "output": {
             "nodeId": "r1Mpb7NOQ",
             "pinKey": "BJE4WX4u7"
-          }
-        },
-        "SJUXNm4_X": {
-          "id": "SJUXNm4_X",
-          "input": {
-            "nodeId": "rJgeG7Nd7",
-            "pinKey": "B1RU0OrDkb"
-          },
-          "output": {
-            "nodeId": "r1Mpb7NOQ",
-            "pinKey": "BydV-mNdQ"
           }
         },
         "Sy4QVmV_X": {
@@ -950,17 +929,6 @@
             "pinKey": "HkyxURuSPyW"
           }
         },
-        "rJeJ9i8SOm": {
-          "id": "rJeJ9i8SOm",
-          "input": {
-            "nodeId": "Sk0gMX4dQ",
-            "pinKey": "ByU7LRuSPkW"
-          },
-          "output": {
-            "nodeId": "rkJcjISOm",
-            "pinKey": "__out__"
-          }
-        },
         "rJwr3Ur_m": {
           "id": "rJwr3Ur_m",
           "input": {
@@ -972,17 +940,6 @@
             "pinKey": "OkPg7GDaW"
           }
         },
-        "rJxZMmVO7": {
-          "id": "rJxZMmVO7",
-          "input": {
-            "nodeId": "BkjdW7EuX",
-            "pinKey": "__in__"
-          },
-          "output": {
-            "nodeId": "Sk0gMX4dQ",
-            "pinKey": "ByHmL0uHPk-"
-          }
-        },
         "rkkS3UHOm": {
           "id": "rkkS3UHOm",
           "input": {
@@ -992,17 +949,6 @@
           "output": {
             "nodeId": "HysKZmV_7",
             "pinKey": "rJYraMEdX"
-          }
-        },
-        "rkl7H4Q4dX": {
-          "id": "rkl7H4Q4dX",
-          "input": {
-            "nodeId": "HkQHEm4dQ",
-            "pinKey": "__in__"
-          },
-          "output": {
-            "nodeId": "HysKZmV_7",
-            "pinKey": "S118pGVOX"
           }
         },
         "ryoO3ISum": {
@@ -1037,16 +983,6 @@
           },
           "type": "xod/patch-nodes/output-boolean"
         },
-        "BkjdW7EuX": {
-          "id": "BkjdW7EuX",
-          "label": "ERR",
-          "position": {
-            "x": 6,
-            "y": 6,
-            "units": "slots"
-          },
-          "type": "xod/patch-nodes/output-pulse"
-        },
         "By0Hh8SOX": {
           "id": "By0Hh8SOX",
           "label": "INTD",
@@ -1065,16 +1001,6 @@
             "units": "slots"
           },
           "type": "@/pn532-device"
-        },
-        "HkQHEm4dQ": {
-          "id": "HkQHEm4dQ",
-          "label": "ERR",
-          "position": {
-            "x": 2,
-            "y": 3,
-            "units": "slots"
-          },
-          "type": "xod/patch-nodes/to-bus"
         },
         "HyGBn8Bum": {
           "id": "HyGBn8Bum",
@@ -1102,15 +1028,6 @@
             "units": "slots"
           },
           "type": "xod/core/flip-flop"
-        },
-        "Sk0gMX4dQ": {
-          "id": "Sk0gMX4dQ",
-          "position": {
-            "x": 6,
-            "y": 5,
-            "units": "slots"
-          },
-          "type": "xod/core/any"
         },
         "SyZRSh8BOX": {
           "id": "SyZRSh8BOX",
@@ -1159,16 +1076,6 @@
             "units": "slots"
           },
           "type": "xod/patch-nodes/input-port"
-        },
-        "rkJcjISOm": {
-          "id": "rkJcjISOm",
-          "label": "ERR",
-          "position": {
-            "x": 7,
-            "y": 4,
-            "units": "slots"
-          },
-          "type": "xod/patch-nodes/from-bus"
         },
         "rkdd-QNdX": {
           "id": "rkdd-QNdX",
@@ -1298,7 +1205,7 @@
     "@/pair-tag": {
       "attachments": [
         {
-          "content": "struct State {\n};\n\n{{ GENERATED_CODE }}\n\nvoid evaluate(Context ctx) {\n    if (!isInputDirty<input_READ>(ctx))\n        return;\n\n    auto nfc = getValue<input_DEV>(ctx);\n\n    // Create a variable of a custom type by getting the type from output terminal\n    ValueType<output_UID>::T uid;\n    // Create a variable to store length of the UID\n    uint8_t uidLength;\n\n    // Replace UID with zeros\n    memset(uid.items, 0, sizeof(uid));\n    // Detect the tag and read the UID\n    bool res = nfc->readPassiveTargetID(PN532_MIFARE_ISO14443A, uid.items, &uidLength);\n\n    if (res) {\n        emitValue<output_UID>(ctx, uid);\n        emitValue<output_OK>(ctx, 1);\n    } else {\n        emitValue<output_ERR>(ctx, 1);\n    }\n}\n",
+          "content": "struct State {\n};\n\n{{ GENERATED_CODE }}\n\nvoid evaluate(Context ctx) {\n    if (!isInputDirty<input_READ>(ctx))\n        return;\n\n    auto nfc = getValue<input_DEV>(ctx);\n\n    // Create a variable of a custom type by getting the type from output terminal\n    ValueType<output_UID>::T uid;\n    // Create a variable to store length of the UID\n    uint8_t uidLength;\n\n    // Replace UID with zeros\n    memset(uid.items, 0, sizeof(uid));\n    // Detect the tag and read the UID\n    bool res = nfc->readPassiveTargetID(PN532_MIFARE_ISO14443A, uid.items, &uidLength);\n\n    if (res) {\n        emitValue<output_UID>(ctx, uid);\n        emitValue<output_OK>(ctx, 1);\n    } else {\n        emitValue<output_NA>(ctx, 1);\n    }\n}\n",
           "encoding": "utf-8",
           "filename": "patch.cpp"
         }
@@ -1325,7 +1232,7 @@
         },
         "BydV-mNdQ": {
           "id": "BydV-mNdQ",
-          "label": "ERR",
+          "label": "NA",
           "position": {
             "x": 4,
             "y": 2,

@@ -1,0 +1,96 @@
+{
+  "name": "",
+  "patches": {
+    "@/catcher": {
+      "attachments": [
+        {
+          "content": "\n#pragma XOD error_catch enable\n\nstruct State {\n};\n\n{{ GENERATED_CODE }}\n\nvoid evaluate(Context ctx) {\n    if (getError<input_IN>(ctx)) {\n        emitValue<output_OUT>(ctx, 1);\n    }\n}\n",
+          "encoding": "utf-8",
+          "filename": "patch.cpp"
+        }
+      ],
+      "nodes": {
+        "H1bLytTj-S": {
+          "id": "H1bLytTj-S",
+          "position": {
+            "x": -6,
+            "y": -1,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/not-implemented-in-xod"
+        },
+        "S1x8kY6oZr": {
+          "id": "S1x8kY6oZr",
+          "position": {
+            "x": -6,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/output-pulse"
+        },
+        "SkIyYTo-r": {
+          "id": "SkIyYTo-r",
+          "position": {
+            "x": -6,
+            "y": -2,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/input-t1"
+        }
+      },
+      "path": "@/catcher"
+    },
+    "@/raiser": {
+      "attachments": [
+        {
+          "content": "#pragma XOD error_raise enable\n\nstruct State {\n};\n\n{{ GENERATED_CODE }}\n\nvoid evaluate(Context ctx) {\n    if (getValue<input_ERR>(ctx)) {\n        raiseError<output_OUT>(ctx);\n    } else {\n        emitValue<output_OUT>(ctx, getValue<input_IN>(ctx));\n    }\n}\n",
+          "encoding": "utf-8",
+          "filename": "patch.cpp"
+        }
+      ],
+      "nodes": {
+        "BJmCO6sbr": {
+          "description": "The value passed through the node.",
+          "id": "BJmCO6sbr",
+          "position": {
+            "x": 0,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/output-t1"
+        },
+        "BkbXRdajZr": {
+          "id": "BkbXRdajZr",
+          "position": {
+            "x": 0,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/not-implemented-in-xod"
+        },
+        "rJMXAd6iWB": {
+          "description": "A value to pass through the node.",
+          "id": "rJMXAd6iWB",
+          "position": {
+            "x": 0,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/input-t1"
+        },
+        "rygXCdTsZB": {
+          "description": "The node raises an error on the `True` value.",
+          "id": "rygXCdTsZB",
+          "label": "ERR",
+          "position": {
+            "x": 3,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/input-boolean"
+        }
+      },
+      "path": "@/raiser"
+    }
+  }
+}

@@ -30,16 +30,18 @@
         "By3-bPz7Q": {
           "id": "By3-bPz7Q",
           "position": {
-            "x": 68,
-            "y": 0
+            "x": 2,
+            "y": 0,
+            "units": "slots"
           },
           "type": "@/internet"
         },
         "S1QGZPzXm": {
           "id": "S1QGZPzXm",
           "position": {
-            "x": 68,
-            "y": 204
+            "x": 2,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/net/http-get"
         }
@@ -163,16 +165,18 @@
         "B19U-DMmQ": {
           "id": "B19U-DMmQ",
           "position": {
-            "x": 68,
-            "y": 0
+            "x": 2,
+            "y": 0,
+            "units": "slots"
           },
           "type": "@/internet"
         },
         "BkN5ZvGXX": {
           "id": "BkN5ZvGXX",
           "position": {
-            "x": 34,
-            "y": 510
+            "x": 1,
+            "y": 5,
+            "units": "slots"
           },
           "type": "xod/stream/accumulate-string"
         },
@@ -182,8 +186,9 @@
           },
           "id": "ByTO-PM7Q",
           "position": {
-            "x": 68,
-            "y": 408
+            "x": 2,
+            "y": 4,
+            "units": "slots"
           },
           "type": "xod/stream/pass-until"
         },
@@ -194,8 +199,9 @@
           },
           "id": "Skeq8ZDMX7",
           "position": {
-            "x": 68,
-            "y": 204
+            "x": 2,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/net/http-get"
         },
@@ -205,8 +211,9 @@
           },
           "id": "SyiDbvMmQ",
           "position": {
-            "x": 68,
-            "y": 306
+            "x": 2,
+            "y": 3,
+            "units": "slots"
           },
           "type": "xod/stream/pass-from-sequence"
         },
@@ -216,8 +223,9 @@
           },
           "id": "rJbjWvGmQ",
           "position": {
-            "x": -68,
-            "y": 612
+            "x": -2,
+            "y": 6,
+            "units": "slots"
           },
           "type": "xod/common-hardware/text-lcd-16x2-i2c"
         }
@@ -226,17 +234,6 @@
     },
     "@/internet": {
       "links": {
-        "B1p0gvzQm": {
-          "id": "B1p0gvzQm",
-          "input": {
-            "nodeId": "HJcRgDzXm",
-            "pinKey": "__in__"
-          },
-          "output": {
-            "nodeId": "Sy56lPfmQ",
-            "pinKey": "HyrGXPmMQ7"
-          }
-        },
         "H1-RlDG7X": {
           "id": "H1-RlDG7X",
           "input": {
@@ -261,29 +258,22 @@
         }
       },
       "nodes": {
-        "HJcRgDzXm": {
-          "id": "HJcRgDzXm",
-          "label": "ERR",
-          "position": {
-            "x": 136,
-            "y": 204
-          },
-          "type": "xod/patch-nodes/output-pulse"
-        },
         "HJyRlwzQX": {
           "id": "HJyRlwzQX",
           "label": "INET",
           "position": {
-            "x": 68,
-            "y": 204
+            "x": 2,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod-dev/w5500/output-w5500-inet"
         },
         "Sy56lPfmQ": {
           "id": "Sy56lPfmQ",
           "position": {
-            "x": 68,
-            "y": 102
+            "x": 2,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod-dev/w5500/ethernet-shield"
         },
@@ -291,8 +281,9 @@
           "id": "ryDCgvzXQ",
           "label": "OK",
           "position": {
-            "x": 102,
-            "y": 204
+            "x": 3,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/output-pulse"
         }

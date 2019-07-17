@@ -68,7 +68,7 @@ for the `ethernet-shield` node:
 
 - `CONN` initiates the connection process with the DHCP negotiation
 - `INET` represents the resulting internet connection
-- `OK` or `ERR` pulse on success or failure
+- `OK` pulses on success
 
 To check the connection you can use `lan-ip`, `format-ip`, and `format-progress`
 nodes:

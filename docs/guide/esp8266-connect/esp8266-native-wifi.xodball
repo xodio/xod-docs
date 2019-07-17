@@ -6,8 +6,9 @@
         "r12zaWzcm": {
           "id": "r12zaWzcm",
           "position": {
-            "x": -1,
-            "y": -1
+            "x": -0.05,
+            "y": -0.05,
+            "units": "slots"
           },
           "type": "xod-dev/esp8266-mcu/connect"
         }
@@ -16,6 +17,17 @@
     },
     "@/2-connecting-to-wifi": {
       "links": {
+        "BJd3X5ckH": {
+          "id": "BJd3X5ckH",
+          "input": {
+            "nodeId": "BJN2m95JS",
+            "pinKey": "BypMC6riE"
+          },
+          "output": {
+            "nodeId": "H1WasWGq7",
+            "pinKey": "HyLAraK8Km"
+          }
+        },
         "BkgbnWGqQ": {
           "id": "BkgbnWGqQ",
           "input": {
@@ -25,17 +37,6 @@
           "output": {
             "nodeId": "H1WasWGq7",
             "pinKey": "HyLAraK8Km"
-          }
-        },
-        "HyW-nWM9m": {
-          "id": "HyW-nWM9m",
-          "input": {
-            "nodeId": "Hyx12bMcQ",
-            "pinKey": "rJUjrCTUb-$1"
-          },
-          "output": {
-            "nodeId": "H1WasWGq7",
-            "pinKey": "HJ7RrpFUY7"
           }
         },
         "SJWg2WMcm": {
@@ -71,6 +72,17 @@
             "pinKey": "H1Gd15UFQ"
           }
         },
+        "SyrhQqqkS": {
+          "id": "SyrhQqqkS",
+          "input": {
+            "nodeId": "Hyx12bMcQ",
+            "pinKey": "rJUjrCTUb-$1"
+          },
+          "output": {
+            "nodeId": "BJN2m95JS",
+            "pinKey": "HkPQCTHiE"
+          }
+        },
         "rkjAsWMc7": {
           "id": "rkjAsWMc7",
           "input": {
@@ -98,32 +110,45 @@
         "B1YRiWfqQ": {
           "id": "B1YRiWfqQ",
           "position": {
-            "x": 170,
-            "y": 306
+            "x": 5,
+            "y": 3,
+            "units": "slots"
           },
           "type": "xod/net/format-ip"
+        },
+        "BJN2m95JS": {
+          "id": "BJN2m95JS",
+          "position": {
+            "x": 8,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod/core/pulse-on-error"
         },
         "ByOb2ZfqQ": {
           "id": "ByOb2ZfqQ",
           "position": {
-            "x": 102,
-            "y": 510
+            "x": 3,
+            "y": 5,
+            "units": "slots"
           },
           "type": "xod/debug/console-log"
         },
         "H1WasWGq7": {
           "id": "H1WasWGq7",
           "position": {
-            "x": 170,
-            "y": 102
+            "x": 5,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod-dev/esp8266-mcu/connect"
         },
         "HyKpoZGc7": {
           "id": "HyKpoZGc7",
           "position": {
-            "x": 170,
-            "y": 204
+            "x": 5,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod-dev/esp8266-mcu/lan-ip"
         },
@@ -135,8 +160,9 @@
           },
           "id": "Hyx12bMcQ",
           "position": {
-            "x": 102,
-            "y": 408
+            "x": 3,
+            "y": 4,
+            "units": "slots"
           },
           "type": "xod/core/select"
         }
