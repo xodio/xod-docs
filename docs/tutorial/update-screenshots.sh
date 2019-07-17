@@ -78,6 +78,4 @@ SRC=welcome-to-xod.xodball
 
 "$SHOT" "$SRC" 305-document-it ./305-document-it/305-document-it.patch.png
 
-"$SHOT" "$SRC" 306-next-steps ./306-next-steps/306-next-steps.patch.png
-
 "$SHOT" "$SRC" 999-the-end ./999-the-end/999-the-end.patch.png
