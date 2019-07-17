@@ -121,6 +121,24 @@ Cancels scheduled evaluation of a node (if present). Safe to call even if the up
 
 Returns `true` if node’s schedule timed out right at the current transaction. Unless scheduled again will return `false` since the next transaction.
 
+<a name="raiseError"></a>
+
+#### `void raiseError<output_$$$>(Context ctx)`
+
+Raises an error on an output pin.
+
+<a name="raiseError_for_all"></a>
+
+#### `void raiseError(Context ctx)`
+
+Raises errors on all output pins.
+
+<a name="getError"></a>
+
+#### `bool getError<input_$$$>(Context ctx)`
+
+Returns `true` if a pin has an upstream error, and `false` if it has none.
+
 ## List objects
 
 Lists in XOD are not classical linked lists, nor vectors. They are smart (or dumb) _views_ over existing data. The only useful thing a list can do is to create an `Iterator<T>` allowing to enumerate list values from the head to the tail.
