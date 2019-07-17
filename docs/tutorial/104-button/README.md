@@ -1,6 +1,6 @@
 ---
 title: Buttons
-version: 2.0.0
+version: 2.1.0
 ---
 
 <!--
@@ -30,10 +30,7 @@ To get a better learning experience we recommend to install the
 
 Here is a `button` node from `xod/common-hardware`.
 
-Take a look at button outputs. It has a `PRS` pin, which is true whenever it is pressed. On each `UPD` input pulse either of output pulses is emitted:
-
-- `DONE` if the reading is done, wherever the button is pressed or not
-- `ERR` if the reading of hardware port is impossible, for example, the incorrect port number defined in the `PORT` pin
+Take a look at button outputs. It has a `PRS` pin, which is true whenever it is pressed. And `DONE` pin, which pulses when reading is done, wherever the button is pressed or not.
 
 This is a standard idiom for side-effect nodes representing hardware or, for example, the Internet.
 

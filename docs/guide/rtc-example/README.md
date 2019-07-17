@@ -84,7 +84,7 @@ current time to the memory of RTC module so that it has a proper base point.
   `xod-dev/ds-rtc` library onto the patch. This node’s function is to write time
   and date to the permanent memory of the RTC board. The `DT` pin inputs a
   `datetime` type value to be written. The `UPD` pin triggers a new write. The
-  `DONE` and `ERR` output pins notify about the state of writing.
+  `DONE` output pin notifies writing complete.
 - Link the `DEV` pin of the `write` node with the `DEV` pin of the `rtc-device`
   node.
 - The `On boot` value at the `UPD` pin means that we write the `datetime` once
@@ -141,9 +141,8 @@ the obtained values for further work.
 
 - Add the [`rtc`](https://xod.io/libs/xod-dev/ds-rtc/rtc/) node onto the patch.
   This node represents an RTC clock. A pulse at the `UPD` pin triggers a new
-  reading of a `datetime` type value. The `DONE` and `ERR` output pins notify
-  about was the read successful or not. By default, the I2C device address at
-  the `ADDR` pin is `68h`.
+  reading of a `datetime` type value. The `DONE` output pin fires on successful
+  read. By default, the I2C device address at the `ADDR` pin is `68h`.
 - For the continuous reading of date and time set the `UPD` pin value to
   `Continuous`.
 - Add the [`unpack-datetime`](https://xod.io/libs/xod/datetime/unpack-datetime/)

@@ -6,8 +6,9 @@
         "r1ZN38GmQ": {
           "id": "r1ZN38GmQ",
           "position": {
-            "x": 102,
-            "y": 102
+            "x": 3,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod-dev/w5500/ethernet-shield"
         }
@@ -25,17 +26,6 @@
           "output": {
             "nodeId": "ryfO3IM77",
             "pinKey": "HJEOEHzm7"
-          }
-        },
-        "Byvun8MmX": {
-          "id": "Byvun8MmX",
-          "input": {
-            "nodeId": "ryfO3IM77",
-            "pinKey": "r1X4NSMXm"
-          },
-          "output": {
-            "nodeId": "r1qHnIzQQ",
-            "pinKey": "HyrGXPmMQ7"
           }
         },
         "H1O_2UMQ7": {
@@ -82,11 +72,33 @@
             "pinKey": "SJmf7PmzX7"
           }
         },
+        "r1D6UHrkH": {
+          "id": "r1D6UHrkH",
+          "input": {
+            "nodeId": "ryfO3IM77",
+            "pinKey": "r1X4NSMXm"
+          },
+          "output": {
+            "nodeId": "SySaIHBkH",
+            "pinKey": "HkPQCTHiE"
+          }
+        },
         "rJr_2Uf7m": {
           "id": "rJr_2Uf7m",
           "input": {
             "nodeId": "ryfO3IM77",
             "pinKey": "rJgVVBzQm"
+          },
+          "output": {
+            "nodeId": "r1qHnIzQQ",
+            "pinKey": "B1eGmvQMQm"
+          }
+        },
+        "ryuaIBHyr": {
+          "id": "ryuaIBHyr",
+          "input": {
+            "nodeId": "SySaIHBkH",
+            "pinKey": "BypMC6riE"
           },
           "output": {
             "nodeId": "r1qHnIzQQ",
@@ -98,8 +110,9 @@
         "BkMPnIf7Q": {
           "id": "BkMPnIf7Q",
           "position": {
-            "x": 136,
-            "y": 306
+            "x": 4,
+            "y": 3,
+            "units": "slots"
           },
           "type": "xod/net/format-ip"
         },
@@ -109,32 +122,45 @@
           },
           "id": "H1xLhLf7m",
           "position": {
-            "x": 68,
-            "y": 408
+            "x": 2,
+            "y": 4,
+            "units": "slots"
           },
           "type": "xod/common-hardware/text-lcd-16x2-i2c"
+        },
+        "SySaIHBkH": {
+          "id": "SySaIHBkH",
+          "position": {
+            "x": 6,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/core/pulse-on-error"
         },
         "r1qHnIzQQ": {
           "id": "r1qHnIzQQ",
           "position": {
-            "x": 136,
-            "y": 102
+            "x": 4,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod-dev/w5500/ethernet-shield"
         },
         "rki8n8Mm7": {
           "id": "rki8n8Mm7",
           "position": {
-            "x": 136,
-            "y": 204
+            "x": 4,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod-dev/w5500/lan-ip"
         },
         "ryfO3IM77": {
           "id": "ryfO3IM77",
           "position": {
-            "x": 170,
-            "y": 306
+            "x": 5,
+            "y": 3,
+            "units": "slots"
           },
           "type": "xod/core/format-progress"
         }

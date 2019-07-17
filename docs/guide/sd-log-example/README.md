@@ -198,9 +198,7 @@ With the microSD card, you can store a significant amount of data that can not
 be stored in the memory of the controller. You can use any other sensor or even
 several different sensors to log and observe a physical process of your choice.
 
-To improve a logger, use some
-[`led`](https://xod.io/libs/xod/common-hardware/led/) and
-[`delay`](https://xod.io/libs/xod/core/delay) nodes linked to `ERR` and `DONE`
-outputs so that your device clearly shows whether the records are coming in
-without any problems or logging fails due to, for example, out of space, bad SD
-card or wrong connection.
+To improve a logger and get notifications about occurred errors, use
+[`has-error`](https://xod.io/libs/xod/core/has-error/) node linked between
+the `DONE` output and the `LUM` input pin of the
+[`led`](https://xod.io/libs/xod/common-hardware/led/) node.
