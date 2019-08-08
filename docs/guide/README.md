@@ -41,6 +41,7 @@ The most straightforward way to extend XOD and add support for new hardware.
   visualizing data
 - [Simple traffic light example](./simple-traffic-light/) — doing things
   sequentially
+- [NFC smart lock](./nfc-lock-example/) — working with RFID/NFC module and text LCD
 
 Interfaces and protocols:
 
