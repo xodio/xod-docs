@@ -150,6 +150,14 @@ You can find nodes for the basic streaming processing in the
 [`xod/stream`](https://xod.io/libs/xod/stream/) library. We will use
 `pass-from-sequence`, `accumulate-string`, and `pass-until`.
 
+<div class="ui segment note">
+<span class="ui ribbon label">Note</span>
+
+The metod described above is only suitable for extracting a single value from a small response.
+Check out [Reading JSON Data](../reading-json-data/) to learn how to handle more complex cases.
+
+</div>
+
 Putting all things together, here is the patch to print the external IP address
 of your IoT device on an LCD:
 
