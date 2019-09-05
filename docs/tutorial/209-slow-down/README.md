@@ -1,6 +1,6 @@
 ---
 title: Slow Down
-version: 2.0.0
+version: 2.1.0
 ---
 
 <!--
@@ -42,8 +42,7 @@ Make the temperature display less sporadic.
 
 1.  Place a `clock` node.
 2.  Link it with the `UPD` pin of the `thermometer-tmp36` node.
-3.  Place `pulse-on-change` between `Tc` and `UPD` of the text LCD.
-4.  Upload the program.
+3.  Upload the program.
 
 Heat and cool down the thermometer and observe the incremental changes of the data shown.
 

@@ -1,6 +1,6 @@
 ---
 title: Thermometer
-version: 2.0.0
+version: 2.1.0
 ---
 
 <!--
@@ -46,7 +46,7 @@ Showing static text on the LCD is boring. So let's make a smarter device and sho
 
 2.  Ensure the correct `PORT` for the `thermometer-tmp36` node.
 
-3.  Link `Tc` of `thermometer-tmp36` with `L1` of `text-lcd-16x2-i2c`.
+3.  Link `Tc` of `thermometer-tmp36` with `L1` of `text-lcd-i2c-16x2`.
 
 4.  Upload your patch.
 
