@@ -329,7 +329,7 @@ display, and time at the second line.
 ![RTC read example step 3](./rtc-example-read.step3.patch.png)
 
 - For the I2C 16x2 display, put the
-  [`text-lcd-16x2-i2c`](https://xod.io/libs/xod/common-hardware/text-lcd-16x2-i2c/)
+  [`text-lcd-i2c-16x2`](https://xod.io/libs/xod-dev/text-lcd/text-lcd-i2c-16x2/)
   node onto the patch.
 - The screen of the display in this example has 16x2 digits capacity. We align
   both display lines to the center to make the clock looks better. For this, we

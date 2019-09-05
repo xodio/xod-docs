@@ -50,17 +50,6 @@
     },
     "@/20-print-ip": {
       "links": {
-        "ByOvdDz7X": {
-          "id": "ByOvdDz7X",
-          "input": {
-            "nodeId": "rJbjWvGmQ",
-            "pinKey": "HkMi4t8xX"
-          },
-          "output": {
-            "nodeId": "BkN5ZvGXX",
-            "pinKey": "S1K4pADWX"
-          }
-        },
         "H1ytZwM7Q": {
           "id": "H1ytZwM7Q",
           "input": {
@@ -92,6 +81,17 @@
           "output": {
             "nodeId": "SyiDbvMmQ",
             "pinKey": "SkYZwiRbm"
+          }
+        },
+        "S1P3n2ASH": {
+          "id": "S1P3n2ASH",
+          "input": {
+            "nodeId": "rJbjWvGmQ",
+            "pinKey": "BJ3DAE1QS"
+          },
+          "output": {
+            "nodeId": "BkN5ZvGXX",
+            "pinKey": "S1s7pCDbQ"
           }
         },
         "S1aDbDMmQ": {
@@ -147,17 +147,6 @@
           "output": {
             "nodeId": "B19U-DMmQ",
             "pinKey": "ryDCgvzXQ"
-          }
-        },
-        "rypCDwzXQ": {
-          "id": "rypCDwzXQ",
-          "input": {
-            "nodeId": "rJbjWvGmQ",
-            "pinKey": "H1bLN9F-b"
-          },
-          "output": {
-            "nodeId": "BkN5ZvGXX",
-            "pinKey": "S1s7pCDbQ"
           }
         }
       },
@@ -223,11 +212,11 @@
           },
           "id": "rJbjWvGmQ",
           "position": {
-            "x": -2,
+            "x": -1,
             "y": 6,
             "units": "slots"
           },
-          "type": "xod/common-hardware/text-lcd-16x2-i2c"
+          "type": "xod-dev/text-lcd/text-lcd-i2c-16x2"
         }
       },
       "path": "@/20-print-ip"

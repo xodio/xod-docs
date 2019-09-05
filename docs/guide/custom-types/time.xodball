@@ -97,16 +97,18 @@
         "BygZbaRkQ": {
           "id": "BygZbaRkQ",
           "position": {
-            "x": 68,
-            "y": 102
+            "x": 2,
+            "y": 1,
+            "units": "slots"
           },
           "type": "@/unpack"
         },
         "H1lxbpRJm": {
           "id": "H1lxbpRJm",
           "position": {
-            "x": 68,
-            "y": 0
+            "x": 2,
+            "y": 0,
+            "units": "slots"
           },
           "type": "@/input-time"
         },
@@ -117,40 +119,45 @@
           },
           "id": "HJ4Xbp0k7",
           "position": {
-            "x": 34,
-            "y": 306
+            "x": 1,
+            "y": 3,
+            "units": "slots"
           },
           "type": "xod/core/join"
         },
         "HJlcGWT0yQ": {
           "id": "HJlcGWT0yQ",
           "position": {
-            "x": 136,
-            "y": 204
+            "x": 4,
+            "y": 2,
+            "units": "slots"
           },
           "type": "@/format-two-digits"
         },
         "HyqM-pR1X": {
           "id": "HyqM-pR1X",
           "position": {
-            "x": 102,
-            "y": 204
+            "x": 3,
+            "y": 2,
+            "units": "slots"
           },
           "type": "@/format-two-digits"
         },
         "Sk_VZ601Q": {
           "id": "Sk_VZ601Q",
           "position": {
-            "x": 34,
-            "y": 408
+            "x": 1,
+            "y": 4,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/output-string"
         },
         "SyLM-aA1Q": {
           "id": "SyLM-aA1Q",
           "position": {
-            "x": 68,
-            "y": 204
+            "x": 2,
+            "y": 2,
+            "units": "slots"
           },
           "type": "@/format-two-digits"
         }
@@ -170,6 +177,17 @@
             "pinKey": "rk_JkoRyX"
           }
         },
+        "r105inABB": {
+          "id": "r105inABB",
+          "input": {
+            "nodeId": "ByghA0Gg7",
+            "pinKey": "BJ3DAE1QS"
+          },
+          "output": {
+            "nodeId": "SJHUb6Akm",
+            "pinKey": "Sk_VZ601Q"
+          }
+        },
         "r1AnRAfx7": {
           "id": "r1AnRAfx7",
           "input": {
@@ -180,49 +198,42 @@
             "nodeId": "H16rb6Rym",
             "pinKey": "BkEVI0uHwJb"
           }
-        },
-        "rJf3CAGxQ": {
-          "id": "rJf3CAGxQ",
-          "input": {
-            "nodeId": "ByghA0Gg7",
-            "pinKey": "B1TSE9tZ-"
-          },
-          "output": {
-            "nodeId": "SJHUb6Akm",
-            "pinKey": "Sk_VZ601Q"
-          }
         }
       },
       "nodes": {
         "B1uB-6AJQ": {
           "id": "B1uB-6AJQ",
           "position": {
-            "x": 238,
-            "y": 306
+            "x": 7,
+            "y": 3,
+            "units": "slots"
           },
           "type": "@/time"
         },
         "ByghA0Gg7": {
           "id": "ByghA0Gg7",
           "position": {
-            "x": 170,
-            "y": 510
+            "x": 5,
+            "y": 5,
+            "units": "slots"
           },
-          "type": "xod/common-hardware/text-lcd-16x2-i2c"
+          "type": "xod-dev/text-lcd/text-lcd-i2c-16x2"
         },
         "H16rb6Rym": {
           "id": "H16rb6Rym",
           "position": {
-            "x": 238,
-            "y": 204
+            "x": 7,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/core/system-time"
         },
         "SJHUb6Akm": {
           "id": "SJHUb6Akm",
           "position": {
-            "x": 238,
-            "y": 408
+            "x": 7,
+            "y": 4,
+            "units": "slots"
           },
           "type": "@/format-iso"
         }
@@ -241,32 +252,36 @@
         "BJJ-JTA1m": {
           "id": "BJJ-JTA1m",
           "position": {
-            "x": 34,
-            "y": 102
+            "x": 1,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/not-implemented-in-xod"
         },
         "BkB-kaAyX": {
           "id": "BkB-kaAyX",
           "position": {
-            "x": 102,
-            "y": 102
+            "x": 3,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/utility"
         },
         "H1lxkp01m": {
           "id": "H1lxkp01m",
           "position": {
-            "x": 34,
-            "y": 204
+            "x": 1,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/output-string"
         },
         "SkOyyaAyQ": {
           "id": "SkOyyaAyQ",
           "position": {
-            "x": 34,
-            "y": 0
+            "x": 1,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-number"
         }
@@ -368,16 +383,18 @@
         "B1q0v2A17": {
           "id": "B1q0v2A17",
           "position": {
-            "x": 136,
-            "y": 612
+            "x": 4,
+            "y": 6,
+            "units": "slots"
           },
           "type": "@/output-time"
         },
         "BJEADn0k7": {
           "id": "BJEADn0k7",
           "position": {
-            "x": 136,
-            "y": 510
+            "x": 4,
+            "y": 5,
+            "units": "slots"
           },
           "type": "@/time"
         },
@@ -387,8 +404,9 @@
           },
           "id": "HJmFIh0kQ",
           "position": {
-            "x": 34,
-            "y": 102
+            "x": 1,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/core/multiply"
         },
@@ -396,8 +414,9 @@
           "id": "HyAUIhA17",
           "label": "HOUR",
           "position": {
-            "x": 34,
-            "y": 0
+            "x": 1,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-number"
         },
@@ -405,16 +424,18 @@
           "id": "SkCD8nAJ7",
           "label": "MIN",
           "position": {
-            "x": 102,
-            "y": 0
+            "x": 3,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-number"
         },
         "r1JBw3R17": {
           "id": "r1JBw3R17",
           "position": {
-            "x": 136,
-            "y": 408
+            "x": 4,
+            "y": 4,
+            "units": "slots"
           },
           "type": "xod/core/add"
         },
@@ -422,8 +443,9 @@
           "id": "rJsd82RyX",
           "label": "SEC",
           "position": {
-            "x": 170,
-            "y": 0
+            "x": 5,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-number"
         },
@@ -433,16 +455,18 @@
           },
           "id": "rkbNPhRJ7",
           "position": {
-            "x": 102,
-            "y": 306
+            "x": 3,
+            "y": 3,
+            "units": "slots"
           },
           "type": "xod/core/multiply"
         },
         "rkv7P3A1m": {
           "id": "rkv7P3A1m",
           "position": {
-            "x": 68,
-            "y": 204
+            "x": 2,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/core/add"
         }
@@ -462,8 +486,9 @@
           "id": "BJ3_uJXxm",
           "label": "HOUR",
           "position": {
-            "x": 34,
-            "y": 0
+            "x": 1,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-number"
         },
@@ -471,16 +496,18 @@
           "id": "BJl3OOy7gQ",
           "label": "MIN",
           "position": {
-            "x": 67,
-            "y": -1
+            "x": 2,
+            "y": -0.05,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-number"
         },
         "ByEt_yQgX": {
           "id": "ByEt_yQgX",
           "position": {
-            "x": 68,
-            "y": 102
+            "x": 2,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/not-implemented-in-xod"
         },
@@ -488,16 +515,18 @@
           "id": "SJZh_dJmxQ",
           "label": "SEC",
           "position": {
-            "x": 102,
-            "y": 0
+            "x": 3,
+            "y": 0,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-number"
         },
         "r1z2__J7lX": {
           "id": "r1z2__J7lX",
           "position": {
-            "x": 68,
-            "y": 204
+            "x": 2,
+            "y": 2,
+            "units": "slots"
           },
           "type": "@/output-time"
         }
@@ -533,16 +562,18 @@
         "ByaWFJ7gQ": {
           "id": "ByaWFJ7gQ",
           "position": {
-            "x": 136,
-            "y": 408
+            "x": 4,
+            "y": 4,
+            "units": "slots"
           },
           "type": "xod/debug/watch"
         },
         "H1O-Fy7gQ": {
           "id": "H1O-Fy7gQ",
           "position": {
-            "x": 136,
-            "y": 306
+            "x": 4,
+            "y": 3,
+            "units": "slots"
           },
           "type": "@/format-iso"
         },
@@ -554,8 +585,9 @@
           },
           "id": "r1ylF1mx7",
           "position": {
-            "x": 136,
-            "y": 204
+            "x": 4,
+            "y": 2,
+            "units": "slots"
           },
           "type": "@/pack-cpp"
         }
@@ -574,8 +606,9 @@
         "HJLgys0yQ": {
           "id": "HJLgys0yQ",
           "position": {
-            "x": 136,
-            "y": 204
+            "x": 4,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/not-implemented-in-xod"
         },
@@ -583,16 +616,18 @@
           "id": "S1cRC5R1X",
           "label": "SEC",
           "position": {
-            "x": 136,
-            "y": 102
+            "x": 4,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/input-number"
         },
         "rk_JkoRyX": {
           "id": "rk_JkoRyX",
           "position": {
-            "x": 136,
-            "y": 306
+            "x": 4,
+            "y": 3,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/output-self"
         }
@@ -612,16 +647,18 @@
           "id": "BJ7m_hCJX",
           "label": "SEC",
           "position": {
-            "x": 102,
-            "y": 204
+            "x": 3,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/output-number"
         },
         "BJnZdh0k7": {
           "id": "BJnZdh0k7",
           "position": {
-            "x": 68,
-            "y": 0
+            "x": 2,
+            "y": 0,
+            "units": "slots"
           },
           "type": "@/input-time"
         },
@@ -629,16 +666,18 @@
           "id": "Bk1mu30yX",
           "label": "HOUR",
           "position": {
-            "x": 34,
-            "y": 204
+            "x": 1,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/output-number"
         },
         "Sku4OhAyX": {
           "id": "Sku4OhAyX",
           "position": {
-            "x": 68,
-            "y": 102
+            "x": 2,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/not-implemented-in-xod"
         },
@@ -646,8 +685,9 @@
           "id": "rk-Xd2C1m",
           "label": "MIN",
           "position": {
-            "x": 68,
-            "y": 204
+            "x": 2,
+            "y": 2,
+            "units": "slots"
           },
           "type": "xod/patch-nodes/output-number"
         }
@@ -656,28 +696,6 @@
     },
     "@/unpack-example": {
       "links": {
-        "BJlwaCMxm": {
-          "id": "BJlwaCMxm",
-          "input": {
-            "nodeId": "BJqIaRMxm",
-            "pinKey": "H1bLN9F-b"
-          },
-          "output": {
-            "nodeId": "B1b8p0MgQ",
-            "pinKey": "BJ7m_hCJX"
-          }
-        },
-        "SJALTCflm": {
-          "id": "SJALTCflm",
-          "input": {
-            "nodeId": "BJqIaRMxm",
-            "pinKey": "B1TSE9tZ-"
-          },
-          "output": {
-            "nodeId": "B1b8p0MgQ",
-            "pinKey": "rk-Xd2C1m"
-          }
-        },
         "SJILTCGlX": {
           "id": "SJILTCGlX",
           "input": {
@@ -699,38 +717,64 @@
             "nodeId": "rkpBpRze7",
             "pinKey": "rk_JkoRyX"
           }
+        },
+        "rJ4io2AHS": {
+          "id": "rJ4io2AHS",
+          "input": {
+            "nodeId": "BJqIaRMxm",
+            "pinKey": "BJ3DAE1QS"
+          },
+          "output": {
+            "nodeId": "B1b8p0MgQ",
+            "pinKey": "rk-Xd2C1m"
+          }
+        },
+        "rJSoj2RBr": {
+          "id": "rJSoj2RBr",
+          "input": {
+            "nodeId": "BJqIaRMxm",
+            "pinKey": "rJgnw0417B"
+          },
+          "output": {
+            "nodeId": "B1b8p0MgQ",
+            "pinKey": "BJ7m_hCJX"
+          }
         }
       },
       "nodes": {
         "B1b8p0MgQ": {
           "id": "B1b8p0MgQ",
           "position": {
-            "x": 136,
-            "y": 306
+            "x": 4,
+            "y": 3,
+            "units": "slots"
           },
           "type": "@/unpack"
         },
         "BJqIaRMxm": {
           "id": "BJqIaRMxm",
           "position": {
-            "x": 102,
-            "y": 408
+            "x": 3,
+            "y": 4,
+            "units": "slots"
           },
-          "type": "xod/common-hardware/text-lcd-16x2-i2c"
+          "type": "xod-dev/text-lcd/text-lcd-i2c-16x2"
         },
         "HyOSaRflX": {
           "id": "HyOSaRflX",
           "position": {
-            "x": 136,
-            "y": 102
+            "x": 4,
+            "y": 1,
+            "units": "slots"
           },
           "type": "xod/core/system-time"
         },
         "rkpBpRze7": {
           "id": "rkpBpRze7",
           "position": {
-            "x": 136,
-            "y": 204
+            "x": 4,
+            "y": 2,
+            "units": "slots"
           },
           "type": "@/time"
         }

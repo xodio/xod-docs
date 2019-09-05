@@ -485,7 +485,7 @@
       kind: Parallel interface text LCD
       vendor: Hitachi, Samsung
       nodes:
-        - xod/common-hardware/text-lcd-16x2
+        - xod-dev/text-lcd/text-lcd-parallel-16x2
       shopping:
         - shop: Adafruit
           sku: "#181"
@@ -507,7 +507,7 @@
       kind: I²C expander driven text LCD
       vendor: NXP
       nodes:
-        - xod/common-hardware/text-lcd-16x2-i2c
+        - xod-dev/text-lcd/text-lcd-i2c-16x2
       shopping:
         - shop: DFRobot
           sku: DFR0063

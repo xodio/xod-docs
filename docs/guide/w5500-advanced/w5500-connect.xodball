@@ -125,17 +125,6 @@
     },
     "@/40-connect-out": {
       "links": {
-        "BJFbOSz7X": {
-          "id": "BJFbOSz7X",
-          "input": {
-            "nodeId": "SJRiD0g77",
-            "pinKey": "H1bLN9F-b"
-          },
-          "output": {
-            "nodeId": "SJiyuBfmm",
-            "pinKey": "rysPErzmm"
-          }
-        },
         "BJP3XrByr": {
           "id": "BJP3XrByr",
           "input": {
@@ -145,17 +134,6 @@
           "output": {
             "nodeId": "rJL2mSHkS",
             "pinKey": "HkPQCTHiE"
-          }
-        },
-        "BJfRwCg7Q": {
-          "id": "BJfRwCg7Q",
-          "input": {
-            "nodeId": "SJRiD0g77",
-            "pinKey": "B1TSE9tZ-"
-          },
-          "output": {
-            "nodeId": "rythDClX7",
-            "pinKey": "By1xaQb-m"
           }
         },
         "BkfXjDRgm7": {
@@ -180,6 +158,17 @@
             "pinKey": "SJqcJZSW7"
           }
         },
+        "H1t6p3CrS": {
+          "id": "H1t6p3CrS",
+          "input": {
+            "nodeId": "SJRiD0g77",
+            "pinKey": "rJgnw0417B"
+          },
+          "output": {
+            "nodeId": "SJiyuBfmm",
+            "pinKey": "rysPErzmm"
+          }
+        },
         "HJYnQHHkB": {
           "id": "HJYnQHHkB",
           "input": {
@@ -202,15 +191,15 @@
             "pinKey": "H1b7LrDPGm"
           }
         },
-        "rJjW_HzXQ": {
-          "id": "rJjW_HzXQ",
+        "r1_T6nCHH": {
+          "id": "r1_T6nCHH",
           "input": {
             "nodeId": "SJRiD0g77",
-            "pinKey": "HkMi4t8xX"
+            "pinKey": "BJ3DAE1QS"
           },
           "output": {
-            "nodeId": "SJiyuBfmm",
-            "pinKey": "HJEOEHzm7"
+            "nodeId": "rythDClX7",
+            "pinKey": "By1xaQb-m"
           }
         },
         "rJl0DRxX7": {
@@ -265,7 +254,7 @@
             "y": 5,
             "units": "slots"
           },
-          "type": "xod/common-hardware/text-lcd-16x2-i2c"
+          "type": "xod-dev/text-lcd/text-lcd-i2c-16x2"
         },
         "SJiyuBfmm": {
           "id": "SJiyuBfmm",
@@ -347,11 +336,11 @@
             "pinKey": "HkPQCTHiE"
           }
         },
-        "BJIZYBG77": {
-          "id": "BJIZYBG77",
+        "Hk10T20rH": {
+          "id": "Hk10T20rH",
           "input": {
             "nodeId": "SkMht7JZ7X",
-            "pinKey": "H1bLN9F-b"
+            "pinKey": "rJgnw0417B"
           },
           "output": {
             "nodeId": "S11ZKHzmX",
@@ -367,17 +356,6 @@
           "output": {
             "nodeId": "HyHsmyb7m",
             "pinKey": "B1UUEfYMX"
-          }
-        },
-        "S1O-KBzmm": {
-          "id": "S1O-KBzmm",
-          "input": {
-            "nodeId": "SkMht7JZ7X",
-            "pinKey": "HkMi4t8xX"
-          },
-          "output": {
-            "nodeId": "S11ZKHzmX",
-            "pinKey": "HJEOEHzm7"
           }
         },
         "Sk2hYQyZQX": {
@@ -413,17 +391,6 @@
             "pinKey": "SJfNS0XfX"
           }
         },
-        "rk097JWX7": {
-          "id": "rk097JWX7",
-          "input": {
-            "nodeId": "SkMht7JZ7X",
-            "pinKey": "B1TSE9tZ-"
-          },
-          "output": {
-            "nodeId": "rkxFqXkb77",
-            "pinKey": "By1xaQb-m"
-          }
-        },
         "rkzZKBGXm": {
           "id": "rkzZKBGXm",
           "input": {
@@ -433,6 +400,17 @@
           "output": {
             "nodeId": "HyHsmyb7m",
             "pinKey": "H1ZLMdSLWQ"
+          }
+        },
+        "ryxAan0HB": {
+          "id": "ryxAan0HB",
+          "input": {
+            "nodeId": "SkMht7JZ7X",
+            "pinKey": "BJ3DAE1QS"
+          },
+          "output": {
+            "nodeId": "rkxFqXkb77",
+            "pinKey": "By1xaQb-m"
           }
         }
       },
@@ -509,7 +487,7 @@
             "y": 5,
             "units": "slots"
           },
-          "type": "xod/common-hardware/text-lcd-16x2-i2c"
+          "type": "xod-dev/text-lcd/text-lcd-i2c-16x2"
         },
         "rkxFqXkb77": {
           "id": "rkxFqXkb77",
@@ -547,6 +525,17 @@
             "pinKey": "rJkt2WxZm"
           }
         },
+        "B1LAp2CHH": {
+          "id": "B1LAp2CHH",
+          "input": {
+            "nodeId": "HyzN0Q1b7Q",
+            "pinKey": "BJ3DAE1QS"
+          },
+          "output": {
+            "nodeId": "HyuNRXJb7X",
+            "pinKey": "By1xaQb-m"
+          }
+        },
         "BkEZVyb77": {
           "id": "BkEZVyb77",
           "input": {
@@ -580,17 +569,6 @@
             "pinKey": "SJqcJZSW7"
           }
         },
-        "ByFXFHMQX": {
-          "id": "ByFXFHMQX",
-          "input": {
-            "nodeId": "HyzN0Q1b7Q",
-            "pinKey": "HkMi4t8xX"
-          },
-          "output": {
-            "nodeId": "Hkz7tHMQ7",
-            "pinKey": "HJEOEHzm7"
-          }
-        },
         "ByQx4R7yZQm": {
           "id": "ByQx4R7yZQm",
           "input": {
@@ -600,17 +578,6 @@
           "output": {
             "nodeId": "ByERmyZQm",
             "pinKey": "SJfNS0XfX"
-          }
-        },
-        "H1fxNRX1bmQ": {
-          "id": "H1fxNRX1bmQ",
-          "input": {
-            "nodeId": "HyzN0Q1b7Q",
-            "pinKey": "B1TSE9tZ-"
-          },
-          "output": {
-            "nodeId": "HyuNRXJb7X",
-            "pinKey": "By1xaQb-m"
           }
         },
         "HyQZVHB1S": {
@@ -635,11 +602,11 @@
             "pinKey": "rJkt2WxZm"
           }
         },
-        "SyoXYBfQ7": {
-          "id": "SyoXYBfQ7",
+        "rJHCahABr": {
+          "id": "rJHCahABr",
           "input": {
             "nodeId": "HyzN0Q1b7Q",
-            "pinKey": "H1bLN9F-b"
+            "pinKey": "rJgnw0417B"
           },
           "output": {
             "nodeId": "Hkz7tHMQ7",
@@ -742,7 +709,7 @@
             "y": 8,
             "units": "slots"
           },
-          "type": "xod/common-hardware/text-lcd-16x2-i2c"
+          "type": "xod-dev/text-lcd/text-lcd-i2c-16x2"
         },
         "SkGx4yWX7": {
           "boundLiterals": {

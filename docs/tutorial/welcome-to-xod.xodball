@@ -1656,7 +1656,7 @@
             "y": 4,
             "units": "slots"
           },
-          "type": "xod/common-hardware/text-lcd-16x2-i2c"
+          "type": "xod-dev/text-lcd/text-lcd-i2c-16x2"
         }
       },
       "path": "@/108-text-lcd"
@@ -1670,7 +1670,7 @@
             "y": 4,
             "units": "slots"
           },
-          "type": "xod/common-hardware/text-lcd-16x2-i2c"
+          "type": "xod-dev/text-lcd/text-lcd-i2c-16x2"
         },
         "SJOT7K1dE": {
           "id": "SJOT7K1dE",
@@ -2864,7 +2864,7 @@
             "y": 3,
             "units": "slots"
           },
-          "type": "xod/common-hardware/text-lcd-16x2-i2c"
+          "type": "xod-dev/text-lcd/text-lcd-i2c-16x2"
         }
       },
       "links": {
@@ -2891,7 +2891,7 @@
             "y": 4,
             "units": "slots"
           },
-          "type": "xod/common-hardware/text-lcd-16x2-i2c"
+          "type": "xod-dev/text-lcd/text-lcd-i2c-16x2"
         },
         "HkNkC5yKV": {
           "boundLiterals": {
@@ -3008,7 +3008,7 @@
             "y": 4,
             "units": "slots"
           },
-          "type": "xod/common-hardware/text-lcd-16x2-i2c"
+          "type": "xod-dev/text-lcd/text-lcd-i2c-16x2"
         },
         "HkRTG31KE": {
           "boundLiterals": {
