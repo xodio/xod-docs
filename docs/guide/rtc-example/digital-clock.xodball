@@ -26,17 +26,6 @@
             "pinKey": "SJgsCeQvm"
           }
         },
-        "BkyxSm1RIwX": {
-          "id": "BkyxSm1RIwX",
-          "input": {
-            "nodeId": "BJZr7k08wX",
-            "pinKey": "H1bLN9F-b"
-          },
-          "output": {
-            "nodeId": "HyHH7kCLvm",
-            "pinKey": "rksccsp-W"
-          }
-        },
         "ByE_1cHL_Q": {
           "id": "ByE_1cHL_Q",
           "input": {
@@ -48,6 +37,17 @@
             "pinKey": "BklE_1edQ"
           }
         },
+        "HkGJ630Hr": {
+          "id": "HkGJ630Hr",
+          "input": {
+            "nodeId": "BJZr7k08wX",
+            "pinKey": "rJgnw0417B"
+          },
+          "output": {
+            "nodeId": "HyHH7kCLvm",
+            "pinKey": "rksccsp-W"
+          }
+        },
         "Hyjd1crLuX": {
           "id": "Hyjd1crLuX",
           "input": {
@@ -57,6 +57,17 @@
           "output": {
             "nodeId": "BJGuJ5HIOQ",
             "pinKey": "BkbiCl7v7"
+          }
+        },
+        "Hymkan0HB": {
+          "id": "Hymkan0HB",
+          "input": {
+            "nodeId": "BJZr7k08wX",
+            "pinKey": "BJ3DAE1QS"
+          },
+          "output": {
+            "nodeId": "ByIHQy0Iv7",
+            "pinKey": "rksccsp-W"
           }
         },
         "S1Du1qSIdm": {
@@ -135,17 +146,6 @@
             "nodeId": "B17_15HUdm",
             "pinKey": "BJqJ3eZnPm"
           }
-        },
-        "rkXgr7y0IvQ": {
-          "id": "rkXgr7y0IvQ",
-          "input": {
-            "nodeId": "BJZr7k08wX",
-            "pinKey": "B1TSE9tZ-"
-          },
-          "output": {
-            "nodeId": "ByIHQy0Iv7",
-            "pinKey": "rksccsp-W"
-          }
         }
       },
       "nodes": {
@@ -173,11 +173,11 @@
           },
           "id": "BJZr7k08wX",
           "position": {
-            "x": 2,
+            "x": 1,
             "y": 1,
             "units": "slots"
           },
-          "type": "xod/common-hardware/text-lcd-16x2-i2c"
+          "type": "xod-dev/text-lcd/text-lcd-i2c-16x2"
         },
         "ByIHQy0Iv7": {
           "arityLevel": 3,

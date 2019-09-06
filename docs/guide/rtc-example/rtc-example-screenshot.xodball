@@ -858,6 +858,17 @@
             "pinKey": "H1QG0p8DQ"
           }
         },
+        "Bk1b6hRrr": {
+          "id": "Bk1b6hRrr",
+          "input": {
+            "nodeId": "BJZr7k08wX",
+            "pinKey": "BJ3DAE1QS"
+          },
+          "output": {
+            "nodeId": "ByIHQy0Iv7",
+            "pinKey": "rksccsp-W"
+          }
+        },
         "Bk8uk5B8dQ": {
           "id": "Bk8uk5B8dQ",
           "input": {
@@ -867,17 +878,6 @@
           "output": {
             "nodeId": "BJGuJ5HIOQ",
             "pinKey": "SJgsCeQvm"
-          }
-        },
-        "BkyxSm1RIwX": {
-          "id": "BkyxSm1RIwX",
-          "input": {
-            "nodeId": "BJZr7k08wX",
-            "pinKey": "H1bLN9F-b"
-          },
-          "output": {
-            "nodeId": "HyHH7kCLvm",
-            "pinKey": "rksccsp-W"
           }
         },
         "ByE_1cHL_Q": {
@@ -968,6 +968,17 @@
             "pinKey": "SJsshTUPX"
           }
         },
+        "Sy0gan0rH": {
+          "id": "Sy0gan0rH",
+          "input": {
+            "nodeId": "BJZr7k08wX",
+            "pinKey": "rJgnw0417B"
+          },
+          "output": {
+            "nodeId": "HyHH7kCLvm",
+            "pinKey": "rksccsp-W"
+          }
+        },
         "rJegcH8dm": {
           "id": "rJegcH8dm",
           "input": {
@@ -977,17 +988,6 @@
           "output": {
             "nodeId": "B17_15HUdm",
             "pinKey": "BJqJ3eZnPm"
-          }
-        },
-        "rkXgr7y0IvQ": {
-          "id": "rkXgr7y0IvQ",
-          "input": {
-            "nodeId": "BJZr7k08wX",
-            "pinKey": "B1TSE9tZ-"
-          },
-          "output": {
-            "nodeId": "ByIHQy0Iv7",
-            "pinKey": "rksccsp-W"
           }
         }
       },
@@ -1016,11 +1016,11 @@
           },
           "id": "BJZr7k08wX",
           "position": {
-            "x": 2,
+            "x": 1,
             "y": 1,
             "units": "slots"
           },
-          "type": "xod/common-hardware/text-lcd-16x2-i2c"
+          "type": "xod-dev/text-lcd/text-lcd-i2c-16x2"
         },
         "ByIHQy0Iv7": {
           "arityLevel": 3,
