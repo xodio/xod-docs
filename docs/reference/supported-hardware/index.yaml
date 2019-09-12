@@ -358,8 +358,7 @@
     - part: HC-SR04
       kind: Ultrasonic range meter
       nodes:
-        - xod/common-hardware/hc-sr04-ultrasonic-range
-        - xod/common-hardware/hc-sr04-ultrasonic-time
+        - xod-dev/hc-sr04/hc-sr04-range-meter
       shopping:
         - shop: SparkFun
           sku: SEN-13959
