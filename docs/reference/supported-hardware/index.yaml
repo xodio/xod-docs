@@ -195,7 +195,7 @@
       kind: Thermometer, Hydrometer
       vendor: Aosong
       nodes:
-        - xod/common-hardware/dht11-thermometer
+        - xod-dev/dht/dht11-hygrometer
       shopping:
         - shop: Adafruit
           sku: "#386"
@@ -214,7 +214,7 @@
       kind: Thermometer, Hydrometer
       vendor: Aosong
       nodes:
-        - xod/common-hardware/dht2x-thermometer
+        - xod-dev/dht/dht2x-hygrometer
 
     - part: DHT22, RHT03, AM2302
       kind: Thermometer, Hydrometer
@@ -247,13 +247,13 @@
       kind: Thermometer, Hydrometer
       vendor: Aosong
       nodes:
-        - xod/common-hardware/dht2x-thermometer
+        - xod-dev/dht/dht2x-hygrometer
 
     - part: DHT44, RHT05
       kind: Thermometer, Hydrometer
       vendor: Aosong
       nodes:
-        - xod/common-hardware/dht2x-thermometer
+        - xod-dev/dht/dht2x-hygrometer
 
     - part: DS18B20
       kind: Thermometer
