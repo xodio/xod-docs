@@ -74,7 +74,7 @@ there are nodes that help to convert between types explicitly.
       <td class="disabled">no</td>
       <td class="disabled">no</td>
       <td></td>
-      <td class="disabled">no</td>
+      <td>yes</td>
     </tr>
     <tr>
       <td>String →</td>
@@ -164,6 +164,15 @@ takes place.
       <td>
         Converts as a two-digit hexadecimal number with h-suffix, e.g.
         <code>0000 1101</code> → <code>0Dh</code>.
+      </td>
+    </tr>
+    <tr>
+      <td>Port</td>
+      <td>String</td>
+      <td>
+        Converts port as it shown in the XOD IDE.
+        <code>D13</code> → <code>"D13"</code> and
+        <code>A3</code> → <code>"A3"</code>.
       </td>
     </tr>
   </tbody>
