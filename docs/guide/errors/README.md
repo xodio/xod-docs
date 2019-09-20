@@ -1,6 +1,6 @@
 ---
 title: Errors
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Errors
@@ -24,7 +24,14 @@ When an error is raised, it propagates down to all linked nodes. The affected no
 
 Errors on value typed pins persist across transactions. Only the node that raised an error can remove it by overwriting the errored output pin with a valid non-error value. Pay attention to the fact that the node which originally raised an error is handled normally: it gets evaluated on inputs change, incoming pulses, timeouts, and other triggers.
 
-Errors on the pulse type work differently though. As the pulse type, they are reactive too. It means that all errors propagated through pulse links are get cleared at the end of the transaction.
+Errors on the pulse type work differently though. As the pulse type, they are reactive too. Errors from pulse outputs are cleared before the node's evaluation. Even if a new pulse was not emitted from the cleared output, downstream nodes will be evaluated to get a chance to react to the error cleaning.
+
+<div class="ui segment note">
+<span class="ui ribbon label">Note</span>
+
+When implementing a C++ node, always use [`isTimedOut`](../../reference/node-cpp-api#isTimedOut), [`isInputDirty`](../../reference/node-cpp-api#isInputDirty), [`isSettingUp`](../../reference/node-cpp-api#isSettingUp) to explicitly check the reason of the node evaluation. Guessing is a bad idea.
+
+</div>
 
 ## Detecting errors
 
