@@ -72,7 +72,9 @@
 - username: nick
   activities:
     videos: 1
-
+- username: nickprogramm
+  activities:
+    libs: 1
 - username: nkrkv
   activities:
     onsite: 1
