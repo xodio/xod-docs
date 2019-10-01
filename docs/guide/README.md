@@ -55,6 +55,7 @@ IoT and network communication:
 - [Advanced setup of W5500](./w5500-advanced/)
 - [Connecting to Internet with ESP8266-based MCUs](./esp8266-connect/)
 - [Fetching data from web API’s with HTTP GET requests](./http-get/)
+- [Reading JSON data](./reading-json-data/)
 
 <a name="projects-and-libraries"><!-- Old anchor name --></a>
 ## Development
