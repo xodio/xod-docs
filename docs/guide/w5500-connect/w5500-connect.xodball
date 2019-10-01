@@ -17,33 +17,11 @@
     },
     "@/20-lan-ip-output": {
       "links": {
-        "ByY_hUzQX": {
-          "id": "ByY_hUzQX",
+        "Bk0JAhArB": {
+          "id": "Bk0JAhArB",
           "input": {
             "nodeId": "H1xLhLf7m",
-            "pinKey": "HkMi4t8xX"
-          },
-          "output": {
-            "nodeId": "ryfO3IM77",
-            "pinKey": "HJEOEHzm7"
-          }
-        },
-        "H1O_2UMQ7": {
-          "id": "H1O_2UMQ7",
-          "input": {
-            "nodeId": "H1xLhLf7m",
-            "pinKey": "H1bLN9F-b"
-          },
-          "output": {
-            "nodeId": "ryfO3IM77",
-            "pinKey": "rysPErzmm"
-          }
-        },
-        "H1vPnLzmX": {
-          "id": "H1vPnLzmX",
-          "input": {
-            "nodeId": "H1xLhLf7m",
-            "pinKey": "B1TSE9tZ-"
+            "pinKey": "BJ3DAE1QS"
           },
           "output": {
             "nodeId": "BkMPnIf7Q",
@@ -94,6 +72,17 @@
             "pinKey": "B1eGmvQMQm"
           }
         },
+        "ryaJChCHB": {
+          "id": "ryaJChCHB",
+          "input": {
+            "nodeId": "H1xLhLf7m",
+            "pinKey": "rJgnw0417B"
+          },
+          "output": {
+            "nodeId": "ryfO3IM77",
+            "pinKey": "rysPErzmm"
+          }
+        },
         "ryuaIBHyr": {
           "id": "ryuaIBHyr",
           "input": {
@@ -126,7 +115,7 @@
             "y": 4,
             "units": "slots"
           },
-          "type": "xod/common-hardware/text-lcd-16x2-i2c"
+          "type": "xod-dev/text-lcd/text-lcd-i2c-16x2"
         },
         "SySaIHBkH": {
           "id": "SySaIHBkH",

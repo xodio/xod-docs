@@ -1,7 +1,8 @@
 ---
 title: Tutorial
-version: 2.0.0
+version: 2.1.0
 ---
+
 
 <!--
 This file is auto-generated from the 'welcome-to-xod' project.
@@ -15,6 +16,7 @@ If you want to change a Fritzing scheme or comments for it, change the
 
 Then run auto-generator tool (xod/tools/generate-tutorial-docs.js).
 -->
+
 
 # Tutorial
 

@@ -1,6 +1,6 @@
 ---
 title: Congratulations!
-version: 2.0.0
+version: 2.1.0
 ---
 
 <!--
@@ -50,6 +50,6 @@ If you would like to give more detailed feedback, we’ll happy to hear it on th
     <a href="../">Index</a>
   </div>
   <div class="five wide column right aligned ">
-
+    
   </div>
 </div>

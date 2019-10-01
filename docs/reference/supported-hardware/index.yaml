@@ -195,7 +195,7 @@
       kind: Thermometer, Hydrometer
       vendor: Aosong
       nodes:
-        - xod/common-hardware/dht11-thermometer
+        - xod-dev/dht/dht11-hygrometer
       shopping:
         - shop: Adafruit
           sku: "#386"
@@ -214,7 +214,7 @@
       kind: Thermometer, Hydrometer
       vendor: Aosong
       nodes:
-        - xod/common-hardware/dht2x-thermometer
+        - xod-dev/dht/dht2x-hygrometer
 
     - part: DHT22, RHT03, AM2302
       kind: Thermometer, Hydrometer
@@ -247,13 +247,13 @@
       kind: Thermometer, Hydrometer
       vendor: Aosong
       nodes:
-        - xod/common-hardware/dht2x-thermometer
+        - xod-dev/dht/dht2x-hygrometer
 
     - part: DHT44, RHT05
       kind: Thermometer, Hydrometer
       vendor: Aosong
       nodes:
-        - xod/common-hardware/dht2x-thermometer
+        - xod-dev/dht/dht2x-hygrometer
 
     - part: DS18B20
       kind: Thermometer
@@ -290,7 +290,7 @@
       kind: Barometer, Altimeter
       vendor: ST
       nodes:
-        - xod/common-hardware/lps331-barometer
+        - xod-dev/st-mems/lps331-barometer
       shopping:
         - shop: Pololu
           sku: 2126
@@ -358,8 +358,7 @@
     - part: HC-SR04
       kind: Ultrasonic range meter
       nodes:
-        - xod/common-hardware/hc-sr04-ultrasonic-range
-        - xod/common-hardware/hc-sr04-ultrasonic-time
+        - xod-dev/hc-sr04/hc-sr04-range-meter
       shopping:
         - shop: SparkFun
           sku: SEN-13959
@@ -395,13 +394,13 @@
       kind: Gyroscope, IMU
       vendor: ST
       nodes:
-        - xod/common-hardware/l3g4200-gyro
+        - xod-dev/st-mems/l3g4200-gyro
 
     - part: L3GD20H
       kind: Gyroscope, IMU
       vendor: ST
       nodes:
-        - xod/common-hardware/l3gd20h-gyro
+        - xod-dev/st-mems/l3gd20h-gyro
       shopping:
         - shop: Adafruit
           sku: "#1032"
@@ -412,13 +411,13 @@
       kind: Accelerometer, IMU
       vendor: ST
       nodes:
-        - xod/common-hardware/lis331dlh-accelerometer
+        - xod-dev/st-mems/lis331dlh-accelerometer
 
     - part: LIS331HH
       kind: Accelerometer, IMU
       vendor: ST
       nodes:
-        - xod/common-hardware/lis331hh-accelerometer
+        - xod-dev/st-mems/lis331hh-accelerometer
       shopping:
         - shop: SparkFun
           sku: SEN-10345
@@ -433,7 +432,7 @@
       kind: Accelerometer, IMU
       vendor: ST
       nodes:
-        - xod/common-hardware/lis3dh-accelerometer
+        - xod-dev/st-mems/lis3dh-accelerometer
       shopping:
         - shop: Adafruit
           sku: "#2809"
@@ -485,7 +484,7 @@
       kind: Parallel interface text LCD
       vendor: Hitachi, Samsung
       nodes:
-        - xod/common-hardware/text-lcd-16x2
+        - xod-dev/text-lcd/text-lcd-parallel-16x2
       shopping:
         - shop: Adafruit
           sku: "#181"
@@ -507,7 +506,7 @@
       kind: I²C expander driven text LCD
       vendor: NXP
       nodes:
-        - xod/common-hardware/text-lcd-16x2-i2c
+        - xod-dev/text-lcd/text-lcd-i2c-16x2
       shopping:
         - shop: DFRobot
           sku: DFR0063
