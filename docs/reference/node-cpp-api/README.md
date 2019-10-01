@@ -1,6 +1,6 @@
 ---
 title: C++ Node API Reference
-version: 0.26.0
+version: 0.31.0
 ---
 
 # C++ Node API Reference
@@ -125,7 +125,7 @@ Returns `true` if node’s schedule timed out right at the current transaction. 
 
 #### `void raiseError<output_$$$>(Context ctx)`
 
-Raises an error on an output pin.
+Raises an error on an output pin. For value types, the error will persist until a valid value will be emitted with [`emitValue`](#emitValue). For pulse types, the error will be cleared right before the node's next evaluation.
 
 <a name="raiseError_for_all"></a>
 
