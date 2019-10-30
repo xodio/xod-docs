@@ -81,6 +81,10 @@
   activities:
     articles: 1
 
+- username: wayland
+  activities:
+    libs: 1
+
 # Uncomment to see all badges at once
 #- username: __test__
   #activities:
