@@ -116,6 +116,7 @@ and sharing programs in XOD.
 - [Data types reference](./reference/data-types/)
 - [C++ node API reference](./reference/node-cpp-api/)
 - [Tabtest reference](./reference/tabtests/)
+- [Global literals reference](./reference/globals/)
 
 </div>
 <h3 class="ui header">Standard library nodes</h3>
