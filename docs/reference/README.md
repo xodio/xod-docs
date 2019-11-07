@@ -9,6 +9,7 @@ title: Reference
 - [Data types reference](./data-types/)
 - [C++ node API reference](./node-cpp-api/)
 - [Tabtest reference](./tabtests/)
+- [Global literals reference](./globals/)
 
 ## Standard library nodes
 
