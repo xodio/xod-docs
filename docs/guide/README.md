@@ -36,6 +36,7 @@ The most straightforward way to extend XOD and add support for new hardware.
 
 ## Case studies
 
+- [Working with servo motors](./servo/)
 - [Working with text displays](./text-lcd/)
 - [Digital clock example](./rtc-example/) — working with RTC modules
 - [Temperature log example](./sd-log-example/) — logging to SD card and
