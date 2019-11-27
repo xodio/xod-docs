@@ -1,6 +1,6 @@
 ---
 title: XOD Documentation
-version: 1.1.0
+version: 1.2.0
 ---
 
 <style>
@@ -90,6 +90,8 @@ detail.
 
 [Making your own nodes](./guide/#making-your-own-nodes) — the most
 straightforward way to extend XOD and add support for new hardware.
+
+[XOD Cloud](./guide/#xod-cloud) — cloud services for IoT development.
 
 [Case studies](./guide/#case-studies) — how-to’s for common scenarios.
 
