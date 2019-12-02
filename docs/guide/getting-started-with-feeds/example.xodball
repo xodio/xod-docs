@@ -1,0 +1,122 @@
+{
+  "name": "example",
+  "patches": {
+    "@/logging": {
+      "links": {
+        "BkYdfG23B": {
+          "id": "BkYdfG23B",
+          "input": {
+            "nodeId": "H1d8ffhhH",
+            "pinKey": "r1m2IKiY5r"
+          },
+          "output": {
+            "nodeId": "ry8_Mf32r",
+            "pinKey": "__out__"
+          }
+        },
+        "Bkk_ffh2r": {
+          "id": "Bkk_ffh2r",
+          "input": {
+            "nodeId": "r1fPffnhH",
+            "pinKey": "Hk_1fUaMW"
+          },
+          "output": {
+            "nodeId": "BkDPGfh3S",
+            "pinKey": "HJU8CE2lW"
+          }
+        },
+        "H1cUfM3hB": {
+          "id": "H1cUfM3hB",
+          "input": {
+            "nodeId": "H1d8ffhhH",
+            "pinKey": "rJgh8tjF9r"
+          },
+          "output": {
+            "nodeId": "BJAffz23r",
+            "pinKey": "H1Gd15UFQ"
+          }
+        },
+        "Sy__Mz32H": {
+          "id": "Sy__Mz32H",
+          "input": {
+            "nodeId": "ry8_Mf32r",
+            "pinKey": "__in__"
+          },
+          "output": {
+            "nodeId": "BkDPGfh3S",
+            "pinKey": "HJU8CE2lW"
+          }
+        },
+        "ryVwffnnr": {
+          "id": "ryVwffnnr",
+          "input": {
+            "nodeId": "H1d8ffhhH",
+            "pinKey": "rJfEHhF5r"
+          },
+          "output": {
+            "nodeId": "r1fPffnhH",
+            "pinKey": "rkFgMITM-"
+          }
+        }
+      },
+      "nodes": {
+        "BJAffz23r": {
+          "boundLiterals": {
+            "H1z0HpF8Km": "\"password\"",
+            "HJZCrpKLYX": "\"MyWiFi\""
+          },
+          "id": "BJAffz23r",
+          "position": {
+            "x": -2,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod-dev/esp8266-mcu/connect"
+        },
+        "BkDPGfh3S": {
+          "boundLiterals": {
+            "B13SCNhl-": "5"
+          },
+          "id": "BkDPGfh3S",
+          "position": {
+            "x": 3,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/core/clock"
+        },
+        "H1d8ffhhH": {
+          "boundLiterals": {
+            "ryZ28tst5B": "\"room1/temperature\""
+          },
+          "id": "H1d8ffhhH",
+          "position": {
+            "x": -2,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod-cloud/messaging/cloud-store"
+        },
+        "r1fPffnhH": {
+          "id": "r1fPffnhH",
+          "position": {
+            "x": 0,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/thermometer-tmp36"
+        },
+        "ry8_Mf32r": {
+          "id": "ry8_Mf32r",
+          "position": {
+            "x": 2,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/jumper"
+        }
+      },
+      "path": "@/logging"
+    }
+  }
+}
