@@ -73,7 +73,7 @@ Also, that data may contain values of different types. Suppose you want to log t
   </tbody>
 </table>
 
-To store the bundled data, use the same node, as usual, that is [`xod-cloud/messaging/cloud-store`](https://xod.io/libs/xod-cloud/messaging/cloud-store). What changes is that you have to send values in the so-called JSON format. If the string passed to `IN` contains a valid JSON, it would be parsed and stored as bundled data.
+To store the bundled data, use the same node, as usual, that is [`xod-cloud/feeds/cloud-store`](https://xod.io/libs/xod-cloud/feeds/cloud-store). What changes is that you have to send values in the so-called JSON format. If the string passed to `IN` contains a valid JSON, it would be parsed and stored as bundled data.
 
 ## JSON format
 
