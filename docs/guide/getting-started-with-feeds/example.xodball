@@ -95,7 +95,7 @@
             "y": 3,
             "units": "slots"
           },
-          "type": "xod-cloud/messaging/cloud-store"
+          "type": "xod-cloud/feeds/cloud-store"
         },
         "r1fPffnhH": {
           "id": "r1fPffnhH",

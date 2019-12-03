@@ -51,7 +51,7 @@ You can paste an API key from the [IoT Keys](https://xod.io/settings/iotkeys/) p
 
 ## Logging data
 
-XOD has a standard library [`xod-cloud/messaging`](https://xod.io/libs/xod-cloud/messaging) for dealing with the XOD Cloud Feeds. In our case, we need a [`cloud-store`](https://xod.io/libs/xod-cloud/messaging/cloud-store) node. This node takes care of XOD Cloud connection and authorization. This node needs a few things on input pins to work:
+XOD has a standard library [`xod-cloud/feeds`](https://xod.io/libs/xod-cloud/feeds) for dealing with the XOD Cloud Feeds. In our case, we need a [`cloud-store`](https://xod.io/libs/xod-cloud/feeds/cloud-store) node. This node takes care of XOD Cloud connection and authorization. This node needs a few things on input pins to work:
 
 - `FEED` — the feed name suffix; a prefix of the form `<username>/<project-name>/` is prepended automatically.
 - `IN` — data to send to the cloud. It may be one of these [data types](../data-types/): numbers, booleans, bytes, strings.
