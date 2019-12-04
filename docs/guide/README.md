@@ -1,6 +1,6 @@
 ---
 title: User Guide
-version: 1.4.0
+version: 1.5.0
 ---
 
 # User Guide
@@ -33,6 +33,13 @@ The most straightforward way to extend XOD and add support for new hardware.
 - [Defining custom types](./custom-types/)
 - [Wrapping class-based Arduino libraries](./wrapping-arduino-libraries/)
 - [Testing patches](./testing-patches/)
+
+## XOD Cloud
+
+Cloud services for IoT development.
+
+- [Getting started with feeds](./getting-started-with-feeds/)
+- [Multiple time series](./multiple-time-series/)
 
 ## Case studies
 

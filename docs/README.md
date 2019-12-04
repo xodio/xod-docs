@@ -1,6 +1,6 @@
 ---
 title: XOD Documentation
-version: 1.1.0
+version: 1.2.0
 ---
 
 <style>
@@ -91,6 +91,8 @@ detail.
 [Making your own nodes](./guide/#making-your-own-nodes) — the most
 straightforward way to extend XOD and add support for new hardware.
 
+[XOD Cloud](./guide/#xod-cloud) — cloud services for IoT development.
+
 [Case studies](./guide/#case-studies) — how-to’s for common scenarios.
 
 [Development](./guide/#development) — creating, managing,
@@ -116,6 +118,7 @@ and sharing programs in XOD.
 - [Data types reference](./reference/data-types/)
 - [C++ node API reference](./reference/node-cpp-api/)
 - [Tabtest reference](./reference/tabtests/)
+- [Global literals reference](./reference/globals/)
 
 </div>
 <h3 class="ui header">Standard library nodes</h3>
