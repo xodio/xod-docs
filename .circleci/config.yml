@@ -1,0 +1,41 @@
+# External environment variables:
+# GCLOUD_SERVICE_KEY - The gcloud service key
+# GOOGLE_COMPUTE_ZONE - The Google compute zone to connect
+# GOOGLE_PROJECT_ID - The Google project ID to connect
+# IMAGE_NAME - docker image name like 'site-docs'
+# WEBHOOK_URL - url address, that will be posted after build
+#   like: https://circleci.com/api/v2/project/github/{org}/{repo}/pipeline?circle-token={token}
+
+version: 2.1
+executors: { gloud: { docker: [image: google/cloud-sdk:slim] } }
+orbs:
+  gcp-gcr: circleci/gcp-gcr@0.6.1
+  jq: circleci/jq@1.9.0
+
+jobs:
+  build-and-publish-docker-image:
+    executor: gloud
+    steps:
+      - checkout
+      - jq/install
+      - run:
+          name: Get image version from package.json
+          command: |
+            IMAGE_TAG=$(jq -r '.version' package.json).$CIRCLE_BUILD_NUM
+            echo "export IMAGE_TAG=\"$IMAGE_TAG\"" >> $BASH_ENV
+      - setup_remote_docker
+      - gcp-gcr/build-image: { image: $IMAGE_NAME, tag: $IMAGE_TAG }
+      - run:
+          name: Exit when not on master branch
+          command: |
+            [ "${CIRCLE_BRANCH}" == "master" ] || circleci step halt
+      - gcp-gcr/gcr-auth
+      - gcp-gcr/push-image: { image: $IMAGE_NAME, tag: $IMAGE_TAG }
+      - run:
+          name: Webhook
+          command: curl -X POST $WEBHOOK_URL
+
+workflows:
+  version: 2
+  build-and-publish-docker-image:
+    jobs: [build-and-publish-docker-image]

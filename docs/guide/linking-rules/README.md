@@ -9,8 +9,8 @@ linked.
 
 ## Outputs and inputs
 
-You’re are not allowed to link two input pins, nor are you allowed to link two
-output pins. It doesn’t makes much sense.
+You’re not allowed to link two input pins, nor are you allowed to link two
+output pins. It doesn’t make much sense.
 
 A link must always connect an output and an input.
 
