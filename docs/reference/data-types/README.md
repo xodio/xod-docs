@@ -1,6 +1,6 @@
 ---
 title: Data Types Reference
-version: 1.1.0
+version: 1.2.0
 ---
 
 # Data Types Reference
@@ -395,3 +395,9 @@ will be coerced to `D4` by the runtime engine.
     </tr>
   </tbody>
 </table>
+
+### Color literals
+
+Values for `xod/color/color` type can be entered in `#RRGGBB` format. There, `RR` is amount of Red (using two hexadecimal digits), `GG` is amount of Green, and `BB` is amount of Blue.
+
+For example, `#00BFFF` will be displayed as a light blue color.
