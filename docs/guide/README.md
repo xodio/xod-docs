@@ -51,6 +51,7 @@ Cloud services for IoT development.
 - [Simple traffic light example](./simple-traffic-light/) — doing things
   sequentially
 - [NFC smart lock](./nfc-lock-example/) — working with RFID/NFC module and text LCD
+- [Coloring WS2812 LEDs](./ws2812-neopixel/) — working with WS2812 RGB LEDs, also known as NeoPixel
 
 Interfaces and protocols:
 
