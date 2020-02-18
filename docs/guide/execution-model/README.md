@@ -79,10 +79,10 @@ also known as graph cycle. Such links break the rules because having them
 makes evaluation order ambiguous: each node in the cycle depends on itself
 in the final turn.
 
-To solve the problem a special `defer` node exists. It breaks the deadlock
+To solve the problem a special [`defer`](https://xod.io/libs/xod/core/defer/) node exists. It breaks the deadlock
 and passes a received value through the outgoing link on the next transaction.
 In other words, XOD supports the feedback loops, but the cycle path must
-have at least one `defer` node in it to clarify the correct evaluation order.
+have at least one [`defer`](https://xod.io/libs/xod/core/defer/) node in it to clarify the correct evaluation order.
 
 ### Errors
 
