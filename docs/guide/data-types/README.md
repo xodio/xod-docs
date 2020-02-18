@@ -1,5 +1,6 @@
 ---
 title: Data Types
+version: 1.1.0
 ---
 
 # Data Types
@@ -200,6 +201,10 @@ or updating the values.
 
 Read [Defining Custom Types](../custom-types/) to learn how to introduce your
 own types.
+
+### Color type
+
+The `color` type is a custom type defined in the `xod/color` library. However, it has extended support in XOD. Its values can be defined using hex literals (e.g. `#FACE8D`). Also, Inspector in XOD IDE provides a color picker widget to choose colors with an intuitive wheel control.
 
 ## Generic types
 
