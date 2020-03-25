@@ -1,0 +1,704 @@
+{
+  "name": "st7735-screen",
+  "patches": {
+    "@/advanced-device-nodes": {
+      "nodes": {
+        "BJ-kXTyrL": {
+          "id": "BJ-kXTyrL",
+          "position": {
+            "x": 4,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod-dev/st7735-display/st7735-128x160-b-device"
+        },
+        "SkA1X6yHI": {
+          "id": "SkA1X6yHI",
+          "position": {
+            "x": 8,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod-dev/st7735-display/st7735-128x160-rr-device"
+        },
+        "SkSJXTyHU": {
+          "id": "SkSJXTyHU",
+          "position": {
+            "x": 4,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod-dev/st7735-display/st7735-128x160-g-device"
+        },
+        "rktk7ayrL": {
+          "id": "rktk7ayrL",
+          "position": {
+            "x": 8,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod-dev/st7735-display/st7735-128x160-rg-device"
+        }
+      },
+      "path": "@/advanced-device-nodes"
+    },
+    "@/quickstart-example": {
+      "links": {
+        "BJtA4PLS8": {
+          "id": "BJtA4PLS8",
+          "input": {
+            "nodeId": "BkPRVDUB8",
+            "pinKey": "S17K6Bd2ZU"
+          },
+          "output": {
+            "nodeId": "By3IGayrU",
+            "pinKey": "H1wRGzm-U"
+          }
+        },
+        "HJcRVPLS8": {
+          "id": "HJcRVPLS8",
+          "input": {
+            "nodeId": "B16BMTyrL",
+            "pinKey": "B1i2yMxXI"
+          },
+          "output": {
+            "nodeId": "BkPRVDUB8",
+            "pinKey": "H1ZK6H_2-U"
+          }
+        }
+      },
+      "nodes": {
+        "B16BMTyrL": {
+          "boundLiterals": {
+            "B1aKDIWQU": "D8",
+            "rJZpFPI-XL": "D9",
+            "rkx6Fv8ZmU": "D10"
+          },
+          "id": "B16BMTyrL",
+          "position": {
+            "x": 2,
+            "y": 4,
+            "units": "slots"
+          },
+          "type": "xod-dev/st7735-display/st7735-128x160-g"
+        },
+        "BkPRVDUB8": {
+          "boundLiterals": {
+            "H1ZZDN5-fL": "33",
+            "Hk-P49-fL": "64",
+            "HyeZv49ZGU": "80"
+          },
+          "id": "BkPRVDUB8",
+          "position": {
+            "x": 5,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod/graphics/circle-solid"
+        },
+        "By3IGayrU": {
+          "boundLiterals": {
+            "SJCd0mhbU": "128",
+            "Skx0dA7nWI": "160",
+            "ryyuAQnWL": "#FF00FF"
+          },
+          "id": "By3IGayrU",
+          "position": {
+            "x": 5,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/graphics/canvas"
+        }
+      },
+      "path": "@/quickstart-example"
+    },
+    "@/quickstart-example-with-nodes": {
+      "links": {
+        "BJIFW_UBU": {
+          "id": "BJIFW_UBU",
+          "input": {
+            "nodeId": "By56AwUBL",
+            "pinKey": "B1i2yMxXI"
+          },
+          "output": {
+            "nodeId": "SJ-9a0DLSI",
+            "pinKey": "H1ZK6H_2-U"
+          }
+        },
+        "ByYvg_UHI": {
+          "id": "ByYvg_UHI",
+          "input": {
+            "nodeId": "SJ-9a0DLSI",
+            "pinKey": "S17K6Bd2ZU"
+          },
+          "output": {
+            "nodeId": "rkgc60DUHI",
+            "pinKey": "H1wRGzm-U"
+          }
+        },
+        "Hyk3WuLr8": {
+          "id": "Hyk3WuLr8",
+          "input": {
+            "nodeId": "r1dsWdIHU",
+            "pinKey": "HJgyhboim"
+          },
+          "output": {
+            "nodeId": "S1S5pCvIBU",
+            "pinKey": "H1sM2A12-"
+          }
+        },
+        "Sk49buIBL": {
+          "id": "Sk49buIBL",
+          "input": {
+            "nodeId": "SJ-9a0DLSI",
+            "pinKey": "H1ZZDN5-fL"
+          },
+          "output": {
+            "nodeId": "Hk0KZOLHL",
+            "pinKey": "BkQzLCurwJZ"
+          }
+        },
+        "SyqjWO8S8": {
+          "id": "SyqjWO8S8",
+          "input": {
+            "nodeId": "rkgc60DUHI",
+            "pinKey": "ryyuAQnWL"
+          },
+          "output": {
+            "nodeId": "r1dsWdIHU",
+            "pinKey": "BJyghZosm"
+          }
+        },
+        "r1eq-_UrL": {
+          "id": "r1eq-_UrL",
+          "input": {
+            "nodeId": "Hk0KZOLHL",
+            "pinKey": "B1GfLR_SPk-"
+          },
+          "output": {
+            "nodeId": "S1S5pCvIBU",
+            "pinKey": "H1sM2A12-"
+          }
+        }
+      },
+      "nodes": {
+        "By56AwUBL": {
+          "boundLiterals": {
+            "B1aKDIWQU": "D8",
+            "rJZpFPI-XL": "D9",
+            "rkx6Fv8ZmU": "D10"
+          },
+          "id": "By56AwUBL",
+          "position": {
+            "x": 0,
+            "y": 5,
+            "units": "slots"
+          },
+          "type": "xod-dev/st7735-display/st7735-128x160-g"
+        },
+        "Hk0KZOLHL": {
+          "boundLiterals": {
+            "SJ4zUC_BD1-": "33"
+          },
+          "id": "Hk0KZOLHL",
+          "position": {
+            "x": 10,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod/core/multiply"
+        },
+        "S1S5pCvIBU": {
+          "id": "S1S5pCvIBU",
+          "position": {
+            "x": 7,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/pot"
+        },
+        "SJ-9a0DLSI": {
+          "boundLiterals": {
+            "H1ZZDN5-fL": "33",
+            "Hk-P49-fL": "64",
+            "HyeZv49ZGU": "80"
+          },
+          "id": "SJ-9a0DLSI",
+          "position": {
+            "x": 3,
+            "y": 4,
+            "units": "slots"
+          },
+          "type": "xod/graphics/circle-solid"
+        },
+        "r1dsWdIHU": {
+          "id": "r1dsWdIHU",
+          "position": {
+            "x": 4,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/color/color-hsl"
+        },
+        "rkgc60DUHI": {
+          "boundLiterals": {
+            "SJCd0mhbU": "128",
+            "Skx0dA7nWI": "160",
+            "ryyuAQnWL": "#FF00FF"
+          },
+          "id": "rkgc60DUHI",
+          "position": {
+            "x": 3,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod/graphics/canvas"
+        }
+      },
+      "path": "@/quickstart-example-with-nodes"
+    },
+    "@/quickstart-example-with-tweaks": {
+      "links": {
+        "HkfO_Hv8SI": {
+          "id": "HkfO_Hv8SI",
+          "input": {
+            "nodeId": "ry-_OrvUH8",
+            "pinKey": "S17K6Bd2ZU"
+          },
+          "output": {
+            "nodeId": "r1lddSvIH8",
+            "pinKey": "H1wRGzm-U"
+          }
+        },
+        "HyXu_BvLSL": {
+          "id": "HyXu_BvLSL",
+          "input": {
+            "nodeId": "ryddBP8S8",
+            "pinKey": "B1i2yMxXI"
+          },
+          "output": {
+            "nodeId": "ry-_OrvUH8",
+            "pinKey": "H1ZK6H_2-U"
+          }
+        },
+        "S1syr0RqU": {
+          "id": "S1syr0RqU",
+          "input": {
+            "nodeId": "r1lddSvIH8",
+            "pinKey": "HJiLQ5ATB"
+          },
+          "output": {
+            "nodeId": "BJYyHRCq8",
+            "pinKey": "SykJ8wjXN"
+          }
+        },
+        "rk1THPIrU": {
+          "id": "rk1THPIrU",
+          "input": {
+            "nodeId": "ry-_OrvUH8",
+            "pinKey": "Hk-P49-fL"
+          },
+          "output": {
+            "nodeId": "HyqhBv8BU",
+            "pinKey": "ByfGSDjQE"
+          }
+        },
+        "rkeyTrP8HI": {
+          "id": "rkeyTrP8HI",
+          "input": {
+            "nodeId": "ry-_OrvUH8",
+            "pinKey": "HyeZv49ZGU"
+          },
+          "output": {
+            "nodeId": "ryp3Sw8B8",
+            "pinKey": "ByfGSDjQE"
+          }
+        }
+      },
+      "nodes": {
+        "BJYyHRCq8": {
+          "boundLiterals": {
+            "SykJ8wjXN": "#0000FF"
+          },
+          "id": "BJYyHRCq8",
+          "position": {
+            "x": 3,
+            "y": -2,
+            "units": "slots"
+          },
+          "size": {
+            "height": 1,
+            "width": 2,
+            "units": "slots"
+          },
+          "type": "xod/debug/tweak-color"
+        },
+        "HyqhBv8BU": {
+          "boundLiterals": {
+            "ByfGSDjQE": "84"
+          },
+          "id": "HyqhBv8BU",
+          "position": {
+            "x": 4,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/debug/tweak-number"
+        },
+        "r1lddSvIH8": {
+          "boundLiterals": {
+            "SJCd0mhbU": "128",
+            "Skx0dA7nWI": "160",
+            "ryyuAQnWL": "#FF00FF"
+          },
+          "id": "r1lddSvIH8",
+          "position": {
+            "x": 3,
+            "y": -1,
+            "units": "slots"
+          },
+          "type": "xod/graphics/canvas"
+        },
+        "ry-_OrvUH8": {
+          "boundLiterals": {
+            "H1ZZDN5-fL": "33",
+            "Hk-P49-fL": "64",
+            "HyeZv49ZGU": "80"
+          },
+          "id": "ry-_OrvUH8",
+          "position": {
+            "x": 3,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/graphics/circle-solid"
+        },
+        "ryddBP8S8": {
+          "boundLiterals": {
+            "B1aKDIWQU": "D8",
+            "rJZpFPI-XL": "D9",
+            "rkx6Fv8ZmU": "D10"
+          },
+          "id": "ryddBP8S8",
+          "position": {
+            "x": 0,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod-dev/st7735-display/st7735-128x160-g"
+        },
+        "ryp3Sw8B8": {
+          "boundLiterals": {
+            "ByfGSDjQE": "120"
+          },
+          "id": "ryp3Sw8B8",
+          "position": {
+            "x": 5,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/debug/tweak-number"
+        }
+      },
+      "path": "@/quickstart-example-with-tweaks"
+    },
+    "@/quickstart-nodes": {
+      "nodes": {
+        "Byex1a1H8": {
+          "id": "Byex1a1H8",
+          "position": {
+            "x": 2,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod-dev/st7735-display/st7735-128x160-g"
+        },
+        "H19xk61SU": {
+          "id": "H19xk61SU",
+          "position": {
+            "x": 8,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod-dev/st7735-display/st7735-128x160-rr"
+        },
+        "HJIJJTySU": {
+          "id": "HJIJJTySU",
+          "position": {
+            "x": 2,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod-dev/st7735-display/st7735-128x160-b"
+        },
+        "HyVx1pJBL": {
+          "id": "HyVx1pJBL",
+          "position": {
+            "x": 8,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod-dev/st7735-display/st7735-128x160-rg"
+        }
+      },
+      "path": "@/quickstart-nodes"
+    },
+    "@/render-daisy-chain": {
+      "links": {
+        "Bk3YRlKII": {
+          "id": "Bk3YRlKII",
+          "input": {
+            "nodeId": "Byelv0lY8L",
+            "pinKey": "rJRQX8QbU"
+          },
+          "output": {
+            "nodeId": "HJ-HUAgY8L",
+            "pinKey": "H1wRGzm-U"
+          }
+        },
+        "ByGxJ-FU8": {
+          "id": "ByGxJ-FU8",
+          "input": {
+            "nodeId": "SkKJJWKUU",
+            "pinKey": "rJlMGmfQZU"
+          },
+          "output": {
+            "nodeId": "HJ-HUAgY8L",
+            "pinKey": "H1wRGzm-U"
+          }
+        },
+        "Hk5_RlFLL": {
+          "id": "Hk5_RlFLL",
+          "input": {
+            "nodeId": "HyH_0gtII",
+            "pinKey": "B1A5A05iS"
+          },
+          "output": {
+            "nodeId": "Byelv0lY8L",
+            "pinKey": "rkq5A0qsS"
+          }
+        },
+        "HyiuAlFUL": {
+          "id": "HyiuAlFUL",
+          "input": {
+            "nodeId": "HJ8dAgYIU",
+            "pinKey": "B1A5A05iS"
+          },
+          "output": {
+            "nodeId": "HyH_0gtII",
+            "pinKey": "rkq5A0qsS"
+          }
+        },
+        "SJlxy-KLU": {
+          "id": "SJlxy-KLU",
+          "input": {
+            "nodeId": "HJ8dAgYIU",
+            "pinKey": "rJRQX8QbU"
+          },
+          "output": {
+            "nodeId": "SkKJJWKUU",
+            "pinKey": "ByMfQzXb8"
+          }
+        },
+        "r1-ev0lYIU": {
+          "id": "r1-ev0lYIU",
+          "input": {
+            "nodeId": "Byelv0lY8L",
+            "pinKey": "B1A5A05iS"
+          },
+          "output": {
+            "nodeId": "BklvRgKIL",
+            "pinKey": "rkbUg1feQI"
+          }
+        },
+        "rJKp0gYII": {
+          "id": "rJKp0gYII",
+          "input": {
+            "nodeId": "r1Z6AeKUL",
+            "pinKey": "BkjI-COLb"
+          },
+          "output": {
+            "nodeId": "ryDT0xYIU",
+            "pinKey": "BJ--G1tI-"
+          }
+        },
+        "rk81ybKUI": {
+          "id": "rk81ybKUI",
+          "input": {
+            "nodeId": "BJZJJbtLU",
+            "pinKey": "rJlMGmfQZU"
+          },
+          "output": {
+            "nodeId": "HJ-HUAgY8L",
+            "pinKey": "H1wRGzm-U"
+          }
+        },
+        "rkDy1ZKUL": {
+          "id": "rkDy1ZKUL",
+          "input": {
+            "nodeId": "HyH_0gtII",
+            "pinKey": "rJRQX8QbU"
+          },
+          "output": {
+            "nodeId": "BJZJJbtLU",
+            "pinKey": "ByMfQzXb8"
+          }
+        },
+        "rkQp0lK8L": {
+          "id": "rkQp0lK8L",
+          "input": {
+            "nodeId": "HJ8dAgYIU",
+            "pinKey": "B1-SZGw-I"
+          },
+          "output": {
+            "nodeId": "r1Z6AeKUL",
+            "pinKey": "ByAIWR_UZ"
+          }
+        }
+      },
+      "nodes": {
+        "BJZJJbtLU": {
+          "boundLiterals": {
+            "BJlNyZ2UaS": "20",
+            "S1EV1-2I6H": "20"
+          },
+          "id": "BJZJJbtLU",
+          "label": "point 1",
+          "position": {
+            "x": 6,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/graphics/point"
+        },
+        "BklvRgKIL": {
+          "boundLiterals": {
+            "H1e4tJvb7L": "D10",
+            "Skw8gJzlQ8": "On Boot",
+            "SybVYJv-XU": "D9",
+            "rJNFkvbm8": "D8"
+          },
+          "id": "BklvRgKIL",
+          "position": {
+            "x": 1,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod-dev/st7735-display/st7735-128x160-g-device"
+        },
+        "Byelv0lY8L": {
+          "boundLiterals": {
+            "B1-SZGw-I": "On Boot"
+          },
+          "id": "Byelv0lY8L",
+          "position": {
+            "x": 3,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod-dev/st7735-display/render"
+        },
+        "HJ-HUAgY8L": {
+          "boundLiterals": {
+            "SJCd0mhbU": "128",
+            "Skx0dA7nWI": "160",
+            "ryyuAQnWL": "#FF00FF"
+          },
+          "id": "HJ-HUAgY8L",
+          "position": {
+            "x": 4,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/graphics/canvas"
+        },
+        "HJ8dAgYIU": {
+          "id": "HJ8dAgYIU",
+          "position": {
+            "x": 11,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod-dev/st7735-display/render"
+        },
+        "HyH_0gtII": {
+          "boundLiterals": {
+            "B1-SZGw-I": "Continuously"
+          },
+          "id": "HyH_0gtII",
+          "position": {
+            "x": 7,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod-dev/st7735-display/render"
+        },
+        "SkKJJWKUU": {
+          "boundLiterals": {
+            "BJlNyZ2UaS": "30",
+            "S1EV1-2I6H": "30"
+          },
+          "id": "SkKJJWKUU",
+          "label": "point 2",
+          "position": {
+            "x": 11,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/graphics/point"
+        },
+        "r1Z6AeKUL": {
+          "id": "r1Z6AeKUL",
+          "position": {
+            "x": 15,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/core/pulse-on-change"
+        },
+        "ryDT0xYIU": {
+          "boundLiterals": {
+            "ByNiWkt8Z": "D7"
+          },
+          "id": "ryDT0xYIU",
+          "position": {
+            "x": 13,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/button"
+        }
+      },
+      "path": "@/render-daisy-chain"
+    },
+    "@/render-node": {
+      "nodes": {
+        "B11zXpkBI": {
+          "id": "B11zXpkBI",
+          "position": {
+            "x": 6,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod-dev/st7735-display/render"
+        }
+      },
+      "path": "@/render-node"
+    },
+    "@/rotate-node": {
+      "nodes": {
+        "HkxNwyxB8": {
+          "id": "HkxNwyxB8",
+          "position": {
+            "x": 1,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod-dev/st7735-display/rotate"
+        }
+      },
+      "path": "@/rotate-node"
+    }
+  }
+}
