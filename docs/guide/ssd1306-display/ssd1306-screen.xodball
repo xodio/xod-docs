@@ -1,0 +1,555 @@
+{
+  "name": "st7735-screen",
+  "patches": {
+    "@/advanced-device-node": {
+      "nodes": {
+        "HyKApHkDU": {
+          "id": "HyKApHkDU",
+          "position": {
+            "x": 4,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod-dev/ssd1306-display/ssd1306-128x64-i2c-device"
+        }
+      },
+      "path": "@/advanced-device-node"
+    },
+    "@/quickstart-example": {
+      "links": {
+        "BJtA4PLS8": {
+          "id": "BJtA4PLS8",
+          "input": {
+            "nodeId": "BkPRVDUB8",
+            "pinKey": "S17K6Bd2ZU"
+          },
+          "output": {
+            "nodeId": "By3IGayrU",
+            "pinKey": "H1wRGzm-U"
+          }
+        },
+        "Byr22BkPU": {
+          "id": "Byr22BkPU",
+          "input": {
+            "nodeId": "Sybn3rkP8",
+            "pinKey": "HksZIhWQI"
+          },
+          "output": {
+            "nodeId": "BkPRVDUB8",
+            "pinKey": "H1ZK6H_2-U"
+          }
+        }
+      },
+      "nodes": {
+        "BkPRVDUB8": {
+          "boundLiterals": {
+            "H1ZZDN5-fL": "15",
+            "Hk-P49-fL": "64",
+            "HyeZv49ZGU": "32"
+          },
+          "id": "BkPRVDUB8",
+          "position": {
+            "x": 5,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod/graphics/circle-solid"
+        },
+        "By3IGayrU": {
+          "boundLiterals": {
+            "SJCd0mhbU": "128",
+            "Skx0dA7nWI": "64",
+            "ryyuAQnWL": "#FFFFFF"
+          },
+          "id": "By3IGayrU",
+          "position": {
+            "x": 5,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/graphics/canvas"
+        },
+        "Sybn3rkP8": {
+          "id": "Sybn3rkP8",
+          "position": {
+            "x": 3,
+            "y": 4,
+            "units": "slots"
+          },
+          "type": "xod-dev/ssd1306-display/ssd1306-128x64-i2c"
+        }
+      },
+      "path": "@/quickstart-example"
+    },
+    "@/quickstart-example-with-nodes": {
+      "links": {
+        "SJDxt5ywU": {
+          "id": "SJDxt5ywU",
+          "input": {
+            "nodeId": "HkQsOqJD8",
+            "pinKey": "ByXhkbqFz8"
+          },
+          "output": {
+            "nodeId": "HJgu9uqkvU",
+            "pinKey": "H1wRGzm-U"
+          }
+        },
+        "SyKxY9JPI": {
+          "id": "SyKxY9JPI",
+          "input": {
+            "nodeId": "HJZdq_9kvU",
+            "pinKey": "HksZIhWQI"
+          },
+          "output": {
+            "nodeId": "HkQsOqJD8",
+            "pinKey": "Bklhkb9KfU"
+          }
+        },
+        "rJGXQCAq8": {
+          "id": "rJGXQCAq8",
+          "input": {
+            "nodeId": "SJukKqJvU",
+            "pinKey": "B1GfLR_SPk-"
+          },
+          "output": {
+            "nodeId": "BkV0_cyvI",
+            "pinKey": "H1sM2A12-"
+          }
+        },
+        "rkZBfA05L": {
+          "id": "rkZBfA05L",
+          "input": {
+            "nodeId": "HkQsOqJD8",
+            "pinKey": "Byg9Q7WJ7U"
+          },
+          "output": {
+            "nodeId": "SJukKqJvU",
+            "pinKey": "BkQzLCurwJZ"
+          }
+        }
+      },
+      "nodes": {
+        "BkV0_cyvI": {
+          "id": "BkV0_cyvI",
+          "position": {
+            "x": 12,
+            "y": -1,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/pot"
+        },
+        "HJZdq_9kvU": {
+          "id": "HJZdq_9kvU",
+          "position": {
+            "x": 7,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod-dev/ssd1306-display/ssd1306-128x64-i2c"
+        },
+        "HJgu9uqkvU": {
+          "boundLiterals": {
+            "SJCd0mhbU": "128",
+            "Skx0dA7nWI": "64",
+            "ryyuAQnWL": "#FFFFFF"
+          },
+          "id": "HJgu9uqkvU",
+          "position": {
+            "x": 9,
+            "y": -2,
+            "units": "slots"
+          },
+          "type": "xod/graphics/canvas"
+        },
+        "HkQsOqJD8": {
+          "boundLiterals": {
+            "By9QmbJ78": "\"Hello world!\"",
+            "H1b9mmW1mL": "5",
+            "Skz5QQWJQU": "5"
+          },
+          "id": "HkQsOqJD8",
+          "position": {
+            "x": 9,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/graphics/text"
+        },
+        "SJukKqJvU": {
+          "boundLiterals": {
+            "SJ4zUC_BD1-": "10"
+          },
+          "id": "SJukKqJvU",
+          "position": {
+            "x": 12,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/core/multiply"
+        }
+      },
+      "path": "@/quickstart-example-with-nodes"
+    },
+    "@/quickstart-example-with-tweaks": {
+      "links": {
+        "B1f9AyCC5L": {
+          "id": "B1f9AyCC5L",
+          "input": {
+            "nodeId": "rkcRkAC9I",
+            "pinKey": "S17K6Bd2ZU"
+          },
+          "output": {
+            "nodeId": "rJec0100qU",
+            "pinKey": "H1wRGzm-U"
+          }
+        },
+        "BJI1gC0cU": {
+          "id": "BJI1gC0cU",
+          "input": {
+            "nodeId": "rkcRkAC9I",
+            "pinKey": "Hk-P49-fL"
+          },
+          "output": {
+            "nodeId": "ry71lC0cL",
+            "pinKey": "ByfGSDjQE"
+          }
+        },
+        "SkO1gC0cU": {
+          "id": "SkO1gC0cU",
+          "input": {
+            "nodeId": "rkcRkAC9I",
+            "pinKey": "HyeZv49ZGU"
+          },
+          "output": {
+            "nodeId": "r1vJx0R9L",
+            "pinKey": "ByfGSDjQE"
+          }
+        },
+        "rkXcR1R058": {
+          "id": "rkXcR1R058",
+          "input": {
+            "nodeId": "S1Z50kAC58",
+            "pinKey": "HksZIhWQI"
+          },
+          "output": {
+            "nodeId": "rkcRkAC9I",
+            "pinKey": "H1ZK6H_2-U"
+          }
+        }
+      },
+      "nodes": {
+        "S1Z50kAC58": {
+          "id": "S1Z50kAC58",
+          "position": {
+            "x": 0,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod-dev/ssd1306-display/ssd1306-128x64-i2c"
+        },
+        "r1vJx0R9L": {
+          "boundLiterals": {
+            "ByfGSDjQE": "32"
+          },
+          "id": "r1vJx0R9L",
+          "position": {
+            "x": 4,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/debug/tweak-number"
+        },
+        "rJec0100qU": {
+          "boundLiterals": {
+            "SJCd0mhbU": "128",
+            "Skx0dA7nWI": "64",
+            "ryyuAQnWL": "#FFFFFF"
+          },
+          "id": "rJec0100qU",
+          "position": {
+            "x": 2,
+            "y": -1,
+            "units": "slots"
+          },
+          "type": "xod/graphics/canvas"
+        },
+        "rkcRkAC9I": {
+          "boundLiterals": {
+            "H1ZZDN5-fL": "15",
+            "Hk-P49-fL": "64",
+            "HyeZv49ZGU": "32"
+          },
+          "id": "rkcRkAC9I",
+          "position": {
+            "x": 2,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/graphics/circle-solid"
+        },
+        "ry71lC0cL": {
+          "boundLiterals": {
+            "ByfGSDjQE": "64"
+          },
+          "id": "ry71lC0cL",
+          "position": {
+            "x": 3,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/debug/tweak-number"
+        }
+      },
+      "path": "@/quickstart-example-with-tweaks"
+    },
+    "@/quickstart-node": {
+      "nodes": {
+        "r1dYhSJP8": {
+          "id": "r1dYhSJP8",
+          "position": {
+            "x": 2,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod-dev/ssd1306-display/ssd1306-128x64-i2c"
+        }
+      },
+      "path": "@/quickstart-node"
+    },
+    "@/render-daisy-chain": {
+      "links": {
+        "B1SXShGsL": {
+          "id": "B1SXShGsL",
+          "input": {
+            "nodeId": "BJKeHhzjL",
+            "pinKey": "HJ6Zd_J8L"
+          },
+          "output": {
+            "nodeId": "BkverhzjL",
+            "pinKey": "ryqMOOkLI"
+          }
+        },
+        "ByKPrnGoL": {
+          "id": "ByKPrnGoL",
+          "input": {
+            "nodeId": "Bk3LBnMjL",
+            "pinKey": "BkjI-COLb"
+          },
+          "output": {
+            "nodeId": "ByVwrhzj8",
+            "pinKey": "BJ--G1tI-"
+          }
+        },
+        "H1zIShGjI": {
+          "id": "H1zIShGjI",
+          "input": {
+            "nodeId": "BJKeHhzjL",
+            "pinKey": "Sk-lm42W7I"
+          },
+          "output": {
+            "nodeId": "SkVGr2GjI",
+            "pinKey": "ByMfQzXb8"
+          }
+        },
+        "HJGVH3fi8": {
+          "id": "HJGVH3fi8",
+          "input": {
+            "nodeId": "SkVGr2GjI",
+            "pinKey": "rJlMGmfQZU"
+          },
+          "output": {
+            "nodeId": "rJHbB2zoI",
+            "pinKey": "H1wRGzm-U"
+          }
+        },
+        "Hk0VS2foL": {
+          "id": "Hk0VS2foL",
+          "input": {
+            "nodeId": "S1Slr3Ms8",
+            "pinKey": "Sk-lm42W7I"
+          },
+          "output": {
+            "nodeId": "rJHbB2zoI",
+            "pinKey": "H1wRGzm-U"
+          }
+        },
+        "HyaMrhzjU": {
+          "id": "HyaMrhzjU",
+          "input": {
+            "nodeId": "SJzMB3zsI",
+            "pinKey": "rJlMGmfQZU"
+          },
+          "output": {
+            "nodeId": "rJHbB2zoI",
+            "pinKey": "H1wRGzm-U"
+          }
+        },
+        "SJlwBhzoL": {
+          "id": "SJlwBhzoL",
+          "input": {
+            "nodeId": "BJKeHhzjL",
+            "pinKey": "BJgmVh-7I"
+          },
+          "output": {
+            "nodeId": "Bk3LBnMjL",
+            "pinKey": "ByAIWR_UZ"
+          }
+        },
+        "Sk4QBhzoI": {
+          "id": "Sk4QBhzoI",
+          "input": {
+            "nodeId": "BkverhzjL",
+            "pinKey": "HJ6Zd_J8L"
+          },
+          "output": {
+            "nodeId": "S1Slr3Ms8",
+            "pinKey": "ryqMOOkLI"
+          }
+        },
+        "SktGr2Gs8": {
+          "id": "SktGr2Gs8",
+          "input": {
+            "nodeId": "S1Slr3Ms8",
+            "pinKey": "HJ6Zd_J8L"
+          },
+          "output": {
+            "nodeId": "r1CgB2GjL",
+            "pinKey": "HyzldOJI8"
+          }
+        },
+        "r1GrBnMiU": {
+          "id": "r1GrBnMiU",
+          "input": {
+            "nodeId": "BkverhzjL",
+            "pinKey": "Sk-lm42W7I"
+          },
+          "output": {
+            "nodeId": "SJzMB3zsI",
+            "pinKey": "ByMfQzXb8"
+          }
+        }
+      },
+      "nodes": {
+        "BJKeHhzjL": {
+          "id": "BJKeHhzjL",
+          "position": {
+            "x": 13,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod-dev/ssd1306-display/render"
+        },
+        "Bk3LBnMjL": {
+          "id": "Bk3LBnMjL",
+          "position": {
+            "x": 16,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/core/pulse-on-change"
+        },
+        "BkverhzjL": {
+          "boundLiterals": {
+            "BJgmVh-7I": "Continuously"
+          },
+          "id": "BkverhzjL",
+          "position": {
+            "x": 9,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod-dev/ssd1306-display/render"
+        },
+        "ByVwrhzj8": {
+          "boundLiterals": {
+            "ByNiWkt8Z": "D7"
+          },
+          "id": "ByVwrhzj8",
+          "position": {
+            "x": 15,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/button"
+        },
+        "S1Slr3Ms8": {
+          "boundLiterals": {
+            "BJgmVh-7I": "On Boot"
+          },
+          "id": "S1Slr3Ms8",
+          "position": {
+            "x": 5,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod-dev/ssd1306-display/render"
+        },
+        "SJzMB3zsI": {
+          "boundLiterals": {
+            "BJlNyZ2UaS": "20",
+            "S1EV1-2I6H": "20"
+          },
+          "id": "SJzMB3zsI",
+          "label": "point 1",
+          "position": {
+            "x": 8,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/graphics/point"
+        },
+        "SkVGr2GjI": {
+          "boundLiterals": {
+            "BJlNyZ2UaS": "30",
+            "S1EV1-2I6H": "30"
+          },
+          "id": "SkVGr2GjI",
+          "label": "point 2",
+          "position": {
+            "x": 12,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/graphics/point"
+        },
+        "r1CgB2GjL": {
+          "id": "r1CgB2GjL",
+          "position": {
+            "x": 4,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod-dev/ssd1306-display/ssd1306-128x64-i2c-device"
+        },
+        "rJHbB2zoI": {
+          "boundLiterals": {
+            "SJCd0mhbU": "128",
+            "Skx0dA7nWI": "64"
+          },
+          "id": "rJHbB2zoI",
+          "position": {
+            "x": 6,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/graphics/canvas"
+        }
+      },
+      "path": "@/render-daisy-chain"
+    },
+    "@/render-node": {
+      "nodes": {
+        "B1nY6HyP8": {
+          "id": "B1nY6HyP8",
+          "position": {
+            "x": 5,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod-dev/ssd1306-display/render"
+        }
+      },
+      "path": "@/render-node"
+    }
+  }
+}
