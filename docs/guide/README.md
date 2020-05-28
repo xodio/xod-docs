@@ -82,5 +82,6 @@ How to create, manage, and share programs in XOD.
 
 - [Working on projects](./projects/)
 - [Debugging programs](./debugging/)
+- [Sharing Internet from PC](./tethering-inet/)
 - [Using libraries](./using-libraries/)
 - [Creating libraries](./creating-libraries/)
