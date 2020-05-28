@@ -1,0 +1,419 @@
+{
+  "name": "examples",
+  "patches": {
+    "@/logging": {
+      "links": {
+        "ByvM2szsI": {
+          "id": "ByvM2szsI",
+          "input": {
+            "nodeId": "SyZMnsGiU",
+            "pinKey": "r1m2IKiY5r"
+          },
+          "output": {
+            "nodeId": "HJwW2oMiL",
+            "pinKey": "rkoSQYUxm"
+          }
+        },
+        "HJ9fhiMo8": {
+          "id": "HJ9fhiMo8",
+          "input": {
+            "nodeId": "SyZMnsGiU",
+            "pinKey": "rJgh8tjF9r"
+          },
+          "output": {
+            "nodeId": "Hkce2szsI",
+            "pinKey": "SyveJHHBL"
+          }
+        },
+        "HkK-2iGjI": {
+          "id": "HkK-2iGjI",
+          "input": {
+            "nodeId": "HJwW2oMiL",
+            "pinKey": "Hk_1fUaMW"
+          },
+          "output": {
+            "nodeId": "Sy0l2sfo8",
+            "pinKey": "HJU8CE2lW"
+          }
+        },
+        "r1IG2oMjU": {
+          "id": "r1IG2oMjU",
+          "input": {
+            "nodeId": "SyZMnsGiU",
+            "pinKey": "rJfEHhF5r"
+          },
+          "output": {
+            "nodeId": "HJwW2oMiL",
+            "pinKey": "rkFgMITM-"
+          }
+        }
+      },
+      "nodes": {
+        "HJwW2oMiL": {
+          "id": "HJwW2oMiL",
+          "position": {
+            "x": 5,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/thermometer-tmp36"
+        },
+        "Hkce2szsI": {
+          "id": "Hkce2szsI",
+          "position": {
+            "x": 3,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/debug/tethering-inet"
+        },
+        "Sy0l2sfo8": {
+          "boundLiterals": {
+            "B13SCNhl-": "5"
+          },
+          "id": "Sy0l2sfo8",
+          "position": {
+            "x": 6,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/core/clock"
+        },
+        "SyZMnsGiU": {
+          "boundLiterals": {
+            "ryZ28tst5B": "\"room1/temperature\""
+          },
+          "id": "SyZMnsGiU",
+          "position": {
+            "x": 3,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod-cloud/feeds/cloud-store"
+        }
+      },
+      "path": "@/logging"
+    },
+    "@/print-ip": {
+      "links": {
+        "BkM3ssfj8": {
+          "id": "BkM3ssfj8",
+          "input": {
+            "nodeId": "S1GIjjsGs8",
+            "pinKey": "Bk5vjCxW7Q"
+          },
+          "output": {
+            "nodeId": "HJbnoizoI",
+            "pinKey": "SyveJHHBL"
+          }
+        },
+        "ByY8jsjzs8": {
+          "id": "ByY8jsjzs8",
+          "input": {
+            "nodeId": "S1XLsooMj8",
+            "pinKey": "B18iIoA-m"
+          },
+          "output": {
+            "nodeId": "S1GIjjsGs8",
+            "pinKey": "SkDiRgZQX"
+          }
+        },
+        "Hy2UiiizsU": {
+          "id": "Hy2UiiizsU",
+          "input": {
+            "nodeId": "BkgIjisfo8",
+            "pinKey": "HJi_30PZX"
+          },
+          "output": {
+            "nodeId": "H1-LiojfiL",
+            "pinKey": "By5Vv7C-7"
+          }
+        },
+        "S1cUsoizsL": {
+          "id": "S1cUsoizsL",
+          "input": {
+            "nodeId": "BkgIjisfo8",
+            "pinKey": "r1NYhRDZ7"
+          },
+          "output": {
+            "nodeId": "H1-LiojfiL",
+            "pinKey": "r1XBwQCWQ"
+          }
+        },
+        "SJwIijoMjI": {
+          "id": "SJwIijoMjI",
+          "input": {
+            "nodeId": "H1-LiojfiL",
+            "pinKey": "r1CWwm0b7"
+          },
+          "output": {
+            "nodeId": "S1XLsooMj8",
+            "pinKey": "SkYZwiRbm"
+          }
+        },
+        "rkBLijozj8": {
+          "id": "rkBLijozj8",
+          "input": {
+            "nodeId": "H1-LiojfiL",
+            "pinKey": "BJYbP7CZm"
+          },
+          "output": {
+            "nodeId": "S1XLsooMj8",
+            "pinKey": "SkSGwoAZQ"
+          }
+        },
+        "ryiUjisfiL": {
+          "id": "ryiUjisfiL",
+          "input": {
+            "nodeId": "S1XLsooMj8",
+            "pinKey": "rklUo8jA-Q"
+          },
+          "output": {
+            "nodeId": "S1GIjjsGs8",
+            "pinKey": "rJrPsAgWXm"
+          }
+        },
+        "ryqTosMs8": {
+          "id": "ryqTosMs8",
+          "input": {
+            "nodeId": "BkUTijfjI",
+            "pinKey": "HkXK-dGob"
+          },
+          "output": {
+            "nodeId": "BkgIjisfo8",
+            "pinKey": "S1s7pCDbQ"
+          }
+        }
+      },
+      "nodes": {
+        "BkUTijfjI": {
+          "id": "BkUTijfjI",
+          "position": {
+            "x": 1,
+            "y": 6,
+            "units": "slots"
+          },
+          "size": {
+            "height": 1,
+            "width": 4,
+            "units": "slots"
+          },
+          "type": "xod/debug/watch"
+        },
+        "BkgIjisfo8": {
+          "id": "BkgIjisfo8",
+          "position": {
+            "x": 1,
+            "y": 5,
+            "units": "slots"
+          },
+          "type": "xod/stream/accumulate-string"
+        },
+        "H1-LiojfiL": {
+          "boundLiterals": {
+            "S1bGvmAWQ": "'\"'"
+          },
+          "id": "H1-LiojfiL",
+          "position": {
+            "x": 2,
+            "y": 4,
+            "units": "slots"
+          },
+          "type": "xod/stream/pass-until"
+        },
+        "HJbnoizoI": {
+          "id": "HJbnoizoI",
+          "position": {
+            "x": 2,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/debug/tethering-inet"
+        },
+        "S1GIjjsGs8": {
+          "boundLiterals": {
+            "HkPwjCgZmX": "\"api.xod.io\"",
+            "SkWvi0lWQ7": "\"/httpbin/ip\"",
+            "rkxwo0lWmm": "On Boot"
+          },
+          "id": "S1GIjjsGs8",
+          "position": {
+            "x": 2,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/net/http-get"
+        },
+        "S1XLsooMj8": {
+          "boundLiterals": {
+            "rkZ8oIj0-m": "\"\"origin\":\"\""
+          },
+          "id": "S1XLsooMj8",
+          "position": {
+            "x": 2,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod/stream/pass-from-sequence"
+        }
+      },
+      "path": "@/print-ip"
+    },
+    "@/w5500": {
+      "links": {
+        "BJh9r2sGo8": {
+          "id": "BJh9r2sGo8",
+          "input": {
+            "nodeId": "H19rhofiU",
+            "pinKey": "B18iIoA-m"
+          },
+          "output": {
+            "nodeId": "ryV5rnoGsU",
+            "pinKey": "H15S9xWQX"
+          }
+        },
+        "HJL5rhsGi8": {
+          "id": "HJL5rhsGi8",
+          "input": {
+            "nodeId": "S1Q5HnoziU",
+            "pinKey": "HJi_30PZX"
+          },
+          "output": {
+            "nodeId": "H19rhofiU",
+            "pinKey": "SkSGwoAZQ"
+          }
+        },
+        "SJzvhsziI": {
+          "id": "SJzvhsziI",
+          "input": {
+            "nodeId": "ryV5rnoGsU",
+            "pinKey": "H1e9S9e-mQ"
+          },
+          "output": {
+            "nodeId": "rkjU3jziL",
+            "pinKey": "B1eGmvQMQm"
+          }
+        },
+        "SyBqS3ifoU": {
+          "id": "SyBqS3ifoU",
+          "input": {
+            "nodeId": "H19rhofiU",
+            "pinKey": "rklUo8jA-Q"
+          },
+          "output": {
+            "nodeId": "ryV5rnoGsU",
+            "pinKey": "S1sqHqebm7"
+          }
+        },
+        "rJO9SnsGoU": {
+          "id": "rJO9SnsGoU",
+          "input": {
+            "nodeId": "B1ZcH3iGjU",
+            "pinKey": "HkXK-dGob"
+          },
+          "output": {
+            "nodeId": "S1Q5HnoziU",
+            "pinKey": "S1s7pCDbQ"
+          }
+        },
+        "rkPqr3sfiI": {
+          "id": "rkPqr3sfiI",
+          "input": {
+            "nodeId": "S1Q5HnoziU",
+            "pinKey": "r1NYhRDZ7"
+          },
+          "output": {
+            "nodeId": "H19rhofiU",
+            "pinKey": "SkYZwiRbm"
+          }
+        },
+        "rynL3jMi8": {
+          "id": "rynL3jMi8",
+          "input": {
+            "nodeId": "ryV5rnoGsU",
+            "pinKey": "S1SP9lW7X"
+          },
+          "output": {
+            "nodeId": "rkjU3jziL",
+            "pinKey": "SJmf7PmzX7"
+          }
+        },
+        "ryp5r2jGi8": {
+          "id": "ryp5r2jGi8",
+          "input": {
+            "nodeId": "H19rhofiU",
+            "pinKey": "BJhHwoRb7"
+          },
+          "output": {
+            "nodeId": "ryV5rnoGsU",
+            "pinKey": "SJGl9r9l-m7"
+          }
+        }
+      },
+      "nodes": {
+        "B1ZcH3iGjU": {
+          "id": "B1ZcH3iGjU",
+          "position": {
+            "x": 0,
+            "y": 3,
+            "units": "slots"
+          },
+          "size": {
+            "height": 1,
+            "width": 4,
+            "units": "slots"
+          },
+          "type": "xod/debug/watch"
+        },
+        "H19rhofiU": {
+          "boundLiterals": {
+            "rkZ8oIj0-m": "\"{\"iso\":\"\""
+          },
+          "id": "H19rhofiU",
+          "position": {
+            "x": 1,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/stream/pass-from-sequence"
+        },
+        "S1Q5HnoziU": {
+          "boundLiterals": {
+            "HkAv2Av-X": "24"
+          },
+          "id": "S1Q5HnoziU",
+          "position": {
+            "x": 0,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/stream/accumulate-string"
+        },
+        "rkjU3jziL": {
+          "id": "rkjU3jziL",
+          "position": {
+            "x": 1,
+            "y": -1,
+            "units": "slots"
+          },
+          "type": "xod-dev/w5500/ethernet-shield"
+        },
+        "ryV5rnoGsU": {
+          "boundLiterals": {
+            "H1e9S9e-mQ": "On Boot",
+            "HJzqrceZQm": "\"/httpbin/now\"",
+            "S1geqrqgWmX": "\"api.xod.io\""
+          },
+          "id": "ryV5rnoGsU",
+          "position": {
+            "x": 1,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/net/http-request"
+        }
+      },
+      "path": "@/w5500"
+    }
+  }
+}

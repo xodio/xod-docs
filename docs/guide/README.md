@@ -41,22 +41,29 @@ Cloud services for IoT development.
 - [Getting started with feeds](./getting-started-with-feeds/)
 - [Multiple time series](./multiple-time-series/)
 
+## XOD Graphics
+
+- [Graphics library](./graphics-library/)
+- [Loading images](./graphics-images/)
+
+LCD and OLED graphic displays:
+
+- [ST7735 display](./st7735-display/)
+- [SSD1306 display](./ssd1306-display/)
+
 ## Case studies
 
 - [Working with servo motors](./servo/)
 - [Working with text displays](./text-lcd/)
 - [Digital clock example](./rtc-example/) — working with RTC modules
-- [Temperature log example](./sd-log-example/) — logging to SD card and
-  visualizing data
-- [Simple traffic light example](./simple-traffic-light/) — doing things
-  sequentially
+- [Temperature log example](./sd-log-example/) — logging to SD card and visualizing data
+- [Simple traffic light example](./simple-traffic-light/) — doing things sequentially
 - [NFC smart lock](./nfc-lock-example/) — working with RFID/NFC module and text LCD
 - [Coloring WS2812 LEDs](./ws2812-neopixel/) — working with WS2812 RGB LEDs, also known as NeoPixel
 
 Interfaces and protocols:
 
-- [Controlling LEDs via UART](./uart-led-control) — exchanging text-based data
-  between two boards
+- [Controlling LEDs via UART](./uart-led-control) — exchanging text-based data between two boards
 - [I²C communication basics](./i2c/)
 
 IoT and network communication:
@@ -68,11 +75,13 @@ IoT and network communication:
 - [Reading JSON data](./reading-json-data/)
 
 <a name="projects-and-libraries"><!-- Old anchor name --></a>
+
 ## Development
 
 How to create, manage, and share programs in XOD.
 
 - [Working on projects](./projects/)
 - [Debugging programs](./debugging/)
+- [Sharing Internet from PC](./tethering-inet/)
 - [Using libraries](./using-libraries/)
 - [Creating libraries](./creating-libraries/)

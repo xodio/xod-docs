@@ -1,0 +1,81 @@
+@startuml
+
+skinparam shadowing false
+
+skinparam defaultFontSize 12
+skinparam TitleFontSize 14
+
+skinparam sequence {
+ArrowColor #21ba45
+
+LifeLineBorderThickness 1
+LifeLineBorderColor #21ba45
+LifeLineBackgroundColor #21ba45
+
+ParticipantBorderColor #21ba45
+ParticipantBackgroundColor #21ba45
+ParticipantFontName Roboto
+ParticipantFontSize 14
+ParticipantFontColor #fff
+
+GroupBorderThickness 1
+GroupBorderColor #626cb9
+GroupBackgroundColor #626cb9
+GroupFontColor #626cb9
+'GroupFontStyle normal
+GroupHeaderFontColor #fff
+GroupHeaderFontSize 11
+'GroupHeaderFontStyle normal
+}
+
+
+
+title "Tethering Internet under the hood"
+
+'entity Program
+'control PC
+'database Internet
+
+Program -> PC: Open TCP
+activate Program
+activate PC
+PC ->> Internet: Open TCP socket
+activate Internet
+Internet -->> PC: Soket opened
+deactivate Internet
+PC --> Program: OK
+deactivate PC
+deactivate Program
+
+|||
+
+Program -> PC: Send request command
+activate Program
+activate PC
+PC --> Program: Ready to collect request
+
+loop until request end
+  Program -> PC: Send request line
+end
+
+PC -> Program: SEND OK
+deactivate Program
+PC ->> Internet: Send request
+activate Internet
+Internet -->> PC: Response
+deactivate Internet
+
+loop until EOT received
+  PC ->> Program: Chunk of response
+  loop until all bytes has been read
+    Program -> Program: Emits byte per byte into output of `receive` node in the program loop
+  end
+  Program -->> PC: Chunk read
+end
+
+PC ->> Program: End of Transmission
+deactivate PC
+
+Program -> Program: Connection closed
+
+@enduml
