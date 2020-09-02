@@ -1,6 +1,6 @@
 ---
 title: Contributing to XOD
-version: 1.0.0
+version: 1.1.0
 ---
 
 # Contributing to XOD

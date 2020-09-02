@@ -1,6 +1,6 @@
 ---
 title: Loading Images
-version: 1.0.0
+version: 1.1.0
 image: ./graphics-images.jpg
 ---
 
@@ -21,20 +21,20 @@ In XOD, any bitmap image is a node.
 This node has a patch with the output terminal of the `Bitmap` type. And the `not-implemented-in-xod` marker node with the following template C++ code inside:
 
 ```cpp
-static const unsigned char bitmap[] PROGMEM = {};
+// define `bitmap` inside node's namespace to avoid clashes
+nodespace {
+    static const unsigned char bitmap[] PROGMEM = {};
+}
 
-struct State {
-    uint8_t mem[sizeof(Bitmap)];
-    Bitmap* myBitmap;
-};
+node {
+    Bitmap myBitmap = Bitmap(bitmap, colorDepth, width, height, keyColor);
 
-void evaluate(Context ctx) {
-    auto state = getState(ctx);
-    state->myBitmap = new (state->mem) Bitmap(bitmap, colorDepth, width, height, keyColor);
-    emitValue<output_OUT>(ctx, state->myBitmap);
+    void evaluate(Context ctx) {
+        emitValue<output_OUT>(ctx, &myBitmap);
+    }
 }
 ```
-A new image is created by calling `state->myBitmap = new (state->mem) Bitmap(bitmap, colorDepth, width, height, keyColor);` constructor which awaits five parameters:
+A new image is created by calling `Bitmap myBitmap = Bitmap(bitmap, colorDepth, width, height, keyColor);` constructor which awaits five parameters:
 - `bitmap`, a pointer to the raw bitmap array of the image;
 - `colorDepth`, an integer value that sets the color depth of the bitmap image. It can be `0` - black and white image, `1` - color image, and `2` - color image with the key color specified;
 - `width`, a width of the bitmap image in pixels;
@@ -108,10 +108,14 @@ static const unsigned char bitmap[] PROGMEM = {
 Then set the necessary parameters in the bitmap constructor. The first parameter, a pointer to the array, can be left untouched. The second parameter is `colorDepth`. We have a color image without a color mask, so choose `1`. The third and fourth parameter defines bitmap width - `100` pixels and height - `100` pixels. We can skip the fifth parameter because we don't use the color mask.
 
 ```cpp
-void evaluate(Context ctx) {
-    auto state = getState(ctx);
-    state->myBitmap = new (state->mem) Bitmap(bitmap, 1, 100, 100);
-    emitValue<output_OUT>(ctx, state->myBitmap);
+// ...
+
+node {
+    Bitmap myBitmap = Bitmap(bitmap, 1, 100, 100);
+
+    void evaluate(Context ctx) {
+        emitValue<output_OUT>(ctx, &myBitmap);
+    }
 }
 ```
 
@@ -146,10 +150,14 @@ As you can see, this image has a red color (`#FF0000`) along the outline of the 
 Create one more `bitmap` image node and name it `logo`. Convert the source file to the array of bytes as we did making the `cat` node. But this time, we change some parameters in the `Bitmap` constructor.
 
 ```cpp
-void evaluate(Context ctx) {
-    auto state = getState(ctx);
-    state->myBitmap = new (state->mem) Bitmap(bitmap, 2, 100, 100, 0xF800);
-    emitValue<output_OUT>(ctx, state->myBitmap);
+// ...
+
+node {
+    Bitmap myBitmap = Bitmap(bitmap, 2, 100, 100, 0xF800);
+
+    void evaluate(Context ctx) {
+        emitValue<output_OUT>(ctx, &myBitmap);
+    }
 }
 ```
 

@@ -1,5 +1,6 @@
 ---
 title: Dealing with Time in C++
+version: 0.35.0
 ---
 
 # Dealing with Time in C++
@@ -39,20 +40,18 @@ First, we should handle pulses on `SET` input. When set, we’ll use
 engine to call `evaluate` again after given timeout:
 
 ```cpp
-struct State { };
+node {
+    void evaluate(Context ctx) {
+        if (isInputDirty<input_SET>(ctx)) {
+            // Get T-input value. Conventionally it should be expressed in seconds
+            Number t = getValue<input_T>(ctx);
 
-\{{ GENERATED_CODE }}
+            // However, XOD API works with millisecond values, so convert
+            TimeMs milliseconds = t * 1000;
 
-void evaluate(Context ctx) {
-    if (isInputDirty<input_SET>(ctx)) {
-        // Get T-input value. Conventionally it should be expressed in seconds
-        Number t = getValue<input_T>(ctx);
-
-        // However, XOD API works with millisecond values, so convert
-        TimeMs milliseconds = t * 1000;
-
-        // Schedule re-evaluation after calculated number of milliseconds
-        setTimeout(ctx, milliseconds);
+            // Schedule re-evaluation after calculated number of milliseconds
+            setTimeout(ctx, milliseconds);
+        }
     }
 }
 ```
@@ -66,29 +65,27 @@ because the reasons for `evaluate` calls differ. It could be an input value
 update before the time interval elapsed.
 
 ```cpp
-struct State { };
-
-\{{ GENERATED_CODE }}
-
-// Note, we extracted a function to read `T` input and set timeout
-// with that value. The function helps us to avoid code duplication
-// in `evaluate` since we need the code twice.
-void charge(Context ctx) {
-    Number t = getValue<input_T>(ctx);
-    TimeMs milliseconds = t * 1000;
-    setTimeout(ctx, milliseconds);
-}
-
-void evaluate(Context ctx) {
-    if (isInputDirty<input_SET>(ctx)) {
-        charge(ctx);
+node {
+    // Note, we extracted a function to read `T` input and set timeout
+    // with that value. The function helps us to avoid code duplication
+    // in `evaluate` since we need the code twice.
+    void charge(Context ctx) {
+        Number t = getValue<input_T>(ctx);
+        TimeMs milliseconds = t * 1000;
+        setTimeout(ctx, milliseconds);
     }
 
-    if (isTimedOut(ctx)) {
-        // Timeout has been elapsed, emit an output pulse
-        emitValue<output_OUT>(ctx, true);
-        // To be re-evaluated next time we need to set timeout again
-        charge(ctx);
+    void evaluate(Context ctx) {
+        if (isInputDirty<input_SET>(ctx)) {
+            charge(ctx);
+        }
+
+        if (isTimedOut(ctx)) {
+            // Timeout has been elapsed, emit an output pulse
+            emitValue<output_OUT>(ctx, true);
+            // To be re-evaluated next time we need to set timeout again
+            charge(ctx);
+        }
     }
 }
 ```
@@ -100,34 +97,32 @@ we’ll use [`clearTimeout`](/docs/reference/node-cpp-api/#clearTimeout) functio
 to stop counting.
 
 ```cpp
-struct State { };
-
-\{{ GENERATED_CODE }}
-
-void charge(Context ctx) {
-    Number t = getValue<input_T>(ctx);
-    TimeMs milliseconds = t * 1000;
-    setTimeout(ctx, milliseconds);
-}
-
-void evaluate(Context ctx) {
-    if (isInputDirty<input_RST>(ctx)) {
-        // When pulsed on `RST` we cancel the timeout countdown regardless
-        // whether it was set or not
-        clearTimeout(ctx);
-        // Return from `evaluate` early giving priority to `RST` so that
-        // pulse on `SET` and timeout will not be even checked at this
-        // evaluation pass
-        return;
+node {
+    void charge(Context ctx) {
+        Number t = getValue<input_T>(ctx);
+        TimeMs milliseconds = t * 1000;
+        setTimeout(ctx, milliseconds);
     }
 
-    if (isInputDirty<input_SET>(ctx)) {
-        charge(ctx);
-    }
+    void evaluate(Context ctx) {
+        if (isInputDirty<input_RST>(ctx)) {
+            // When pulsed on `RST` we cancel the timeout countdown regardless
+            // whether it was set or not
+            clearTimeout(ctx);
+            // Return from `evaluate` early giving priority to `RST` so that
+            // pulse on `SET` and timeout will not be even checked at this
+            // evaluation pass
+            return;
+        }
 
-    if (isTimedOut(ctx)) {
-        emitValue<output_OUT>(ctx, true);
-        charge(ctx);
+        if (isInputDirty<input_SET>(ctx)) {
+            charge(ctx);
+        }
+
+        if (isTimedOut(ctx)) {
+            emitValue<output_OUT>(ctx, true);
+            charge(ctx);
+        }
     }
 }
 ```

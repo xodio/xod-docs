@@ -1,5 +1,6 @@
 ---
 title: Dealing with State in C++
+version: 0.35.0
 ---
 
 # Dealing with State in C++
@@ -40,14 +41,18 @@ Double-click on `not-implemented-in-xod` node to open the code editor.
 
 ## Define a state shape
 
-You define the persistent state using the `State` struct in C\++. In our case,
-we need to store a single counter value, so our struct will have a single field.
+You can define the persistent state in the `node` struct just like you would define fields in a regular C\++ struct.
+In our case, we need to store a single counter value, so we'll add a single field.
 Let’s call it `counterValue`:
 
 ```cpp
-struct State {
+node {
     Number counterValue = 0;
-};
+
+    void evaluate(Context ctx) {
+        // ...
+    }
+}
 ```
 
 All state values, regardless of type, start with their default values. The
@@ -58,27 +63,25 @@ possibility to initialize with another value like `42`.
 
 ## Accessing state
 
-Now you can use `getState(Context ctx)` function to access the persistent state
-instance associated with the context node. The outline is:
+Now you can use defined fields just like in a regular C\++ struct. The outline is:
 
 ```cpp
-// ...
+node {
+    Number counterValue = 0;
 
-void evaluate(Context ctx) {
-    State* state = getState(ctx);
+    void evaluate(Context ctx) {
+        // Read
+        Number x = counterValue;
 
-    // Read
-    Number x = state->counterValue;
+        // Do some magic with `x`
 
-    // Do some magic with `myCounter`
-
-    // Write
-    state->counterValue = x;
+        // Write
+        counterValue = x;
+    }
 }
 ```
 
-The `state` is just a plain pointer to the `State` instance. Of course, you may
-use its fields directly without any intermediate variables.
+Of course, you may use the fields directly without any intermediate variables.
 
 ## Put all together
 
@@ -91,60 +94,55 @@ node just emitted a new value for the pin specified.
 Finally, here is an example implementation of our counter:
 
 ```cpp
-struct State {
+node {
     Number counterValue;
-};
 
-\{{ GENERATED_CODE }}
+    void evaluate(Context ctx) {
+        if (isInputDirty<input_INC>(ctx)) {
+            // Update the state
+            Number step = getValue<input_STEP>(ctx);
+            counterValue += step;
+        } else if (isInputDirty<input_RST>(ctx)) {
+            // Reset the state
+            counterValue = 0;
+        } else {
+            // The evaluation caused by `STEP` update. Do nothing, return early to
+            // avoid emission of a duplicate value.
+            return;
+        }
 
-void evaluate(Context ctx) {
-    State* state = getState(ctx);
-
-    if (isInputDirty<input_INC>(ctx)) {
-        // Update the state
-        Number step = getValue<input_STEP>(ctx);
-        state->counterValue += step;
-    } else if (isInputDirty<input_RST>(ctx)) {
-        // Reset the state
-        state->counterValue = 0;
-    } else {
-        // The evaluation caused by `STEP` update. Do nothing, return early to
-        // avoid emission of a duplicate value.
-        return;
+        // Emit the updated value
+        emitValue<output_OUT>(ctx, counterValue);
     }
-
-    // Emit the updated value accessing the field directly.
-    emitValue<output_OUT>(ctx, state->counterValue);
 }
 ```
 
 ## Moving state to outputs
 
-The `State` struct is not the only thing which keeps data across transactions.
+The user-defined fields are not the only thing which keeps data across transactions.
 Any node owns its output value as well. And the
 [`getValue`](/docs/reference/cpp-node-api/#getValue) function is allowed to
 access the most recent values set on outputs.
 
-In our case, the `OUT` value always matches the value we store in `State`. So
+In our case, the `OUT` value always matches the value we store in `counterValue`. So
 it’s a duplication we can get rid off to save few bytes of RAM and make the code
 more compact:
 
 ```cpp
-// The internal state is no longer required
-struct State { };
+node {
+    // The internal state is no longer required
 
-\{{ GENERATED_CODE }}
-
-void evaluate(Context ctx) {
-    if (isInputDirty<input_RST>(ctx)) {
-        // On reset unconditonally emit 0
-        emitValue<output_OUT>(ctx, 0);
-    } else if (isInputDirty<input_INC>(ctx)) {
-        Number step = getValue<input_STEP>(ctx);
-        // Read the most recent value...
-        Number counterValue = getValue<output_OUT>(ctx);
-        // ...and immediately emit a new one
-        emitValue<output_OUT>(ctx, counterValue + step);
+    void evaluate(Context ctx) {
+        if (isInputDirty<input_RST>(ctx)) {
+            // On reset unconditonally emit 0
+            emitValue<output_OUT>(ctx, 0);
+        } else if (isInputDirty<input_INC>(ctx)) {
+            Number step = getValue<input_STEP>(ctx);
+            // Read the most recent value...
+            Number counterValue = getValue<output_OUT>(ctx);
+            // ...and immediately emit a new one
+            emitValue<output_OUT>(ctx, counterValue + step);
+        }
     }
 }
 ```

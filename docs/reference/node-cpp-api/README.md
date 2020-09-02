@@ -1,6 +1,6 @@
 ---
 title: C++ Node API Reference
-version: 0.31.0
+version: 0.35.0
 ---
 
 # C++ Node API Reference
@@ -25,7 +25,7 @@ An opaque type to distinguish a particular instance of node among other nodes of
 
 Required as an argument for most node functions. Can be thought as an explicit `this` in many OOP languages, or like the `self` in Python.
 
-#### `State`
+#### `State` (deprecated since 0.35)
 
 A user-defined struct to store node’s data for a lifetime of the program. Each node type has its own `State` definition.
 
@@ -46,6 +46,14 @@ Automatically generated descriptor for each of node’s outputs. Never instantia
 `$$$` gets replaced by a pin label as is. For example, `output_BAR`, `output_Tc`. If a node has a single unlabeled output, `output_OUT` is generated for it. If a node has multiple unlabeled outputs, they are referred as `output_OUT1`, `output_OUT2`,…, `output_OUT7`.
 
 XOD runtime supports no more than seven outputs on C\++ nodes.
+
+<a name="typeof_xxx"></a>
+
+#### `typeof_$$$`
+
+A type for each of node's pins. Useful to access the type of a pin if its symbol is hardly accessible in other ways.
+
+`$$$` gets replaced by a pin label as is. For example, `typeof_IN`, `typeof_OUT`. Since pin names are unique, there is no destinction between inputs and outputs.
 
 ## Node functions
 
@@ -83,7 +91,7 @@ Returns `true` if and only if the input pin specified has got a newly emitted va
 
 <a name="getState"></a>
 
-#### `State* getState(Context ctx)`
+#### `State* getState(Context ctx)` (deprecated since 0.35)
 
 Returns a pointer to the persistent state storage for the current node. The [`State`](#State) structure is defined by the node author. Fields could be updated directly, with the pointer returned, no commit is required after a change.
 
