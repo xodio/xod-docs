@@ -26,6 +26,12 @@ SRC=welcome-to-xod.xodball
 
 "$SHOT" "$SRC" 012-strings ./012-strings/012-strings.patch.png
 
+"$SHOT" "$SRC" 013-custom-types ./013-custom-types/013-custom-types.patch.png
+
+"$SHOT" "$SRC" 014-internet-tethering ./014-internet-tethering/014-internet-tethering.patch.png
+
+"$SHOT" "$SRC" 015-xod-cloud-feeds ./015-xod-cloud-feeds/015-xod-cloud-feeds.patch.png
+
 "$SHOT" "$SRC" 101-upload ./101-upload/101-upload.patch.png
 
 "$SHOT" "$SRC" 102-interactive ./102-interactive/102-interactive.patch.png
@@ -45,6 +51,10 @@ SRC=welcome-to-xod.xodball
 "$SHOT" "$SRC" 109-thermometer ./109-thermometer/109-thermometer.patch.png
 
 "$SHOT" "$SRC" 110-ldr ./110-ldr/110-ldr.patch.png
+
+"$SHOT" "$SRC" 111-feed-messaging ./111-feed-messaging/111-feed-messaging.patch.png
+
+"$SHOT" "$SRC" 112-standalone-internet ./112-standalone-internet/112-standalone-internet.patch.png
 
 "$SHOT" "$SRC" 201-matching-ranges ./201-matching-ranges/201-matching-ranges.patch.png
 
