@@ -4,7 +4,7 @@
     "@/equal(nfc-uid)": {
       "attachments": [
         {
-          "content": "struct State {\n};\n\n{{ GENERATED_CODE }}\n\nvoid evaluate(Context ctx) {\n    auto uidA = getValue<input_IN1>(ctx);\n    auto uidB = getValue<input_IN2>(ctx);\n\n    // Function `memcmp` compares data by two pointers\n    // and returns `0` if they are equal\n    bool eq = memcmp(uidA.items, uidB.items, sizeof(uidA.items)) == 0;\n\n    emitValue<output_OUT>(ctx, eq);\n}\n",
+          "content": "node {\n    void evaluate(Context ctx) {\n        auto uidA = getValue<input_IN1>(ctx);\n        auto uidB = getValue<input_IN2>(ctx);\n\n        // Function `memcmp` compares data by two pointers\n        // and returns `0` if they are equal\n        bool eq = memcmp(uidA.items, uidB.items, sizeof(uidA.items)) == 0;\n\n        emitValue<output_OUT>(ctx, eq);\n    }\n}\n",
           "encoding": "utf-8",
           "filename": "patch.cpp"
         }
@@ -708,7 +708,7 @@
     "@/init": {
       "attachments": [
         {
-          "content": "struct State {\n};\n\n{{ GENERATED_CODE }}\n\nvoid evaluate(Context ctx) {\n    // The node responds only if there is an input pulse\n    if (!isInputDirty<input_INIT>(ctx))\n        return;\n\n    // Get our custom type, that is a pointer on the `Adafruit_PN532` class instance\n    auto nfc = getValue<input_DEV>(ctx);\n\n    // Initialize RFID/NFC module\n    nfc->begin();\n\n    uint32_t versiondata = nfc->getFirmwareVersion();\n    if (!versiondata) {\n      // If the module did not respond with its version,\n      // it's a connection error or something wrong with the module\n      raiseError(ctx); // Initialization error\n      return;\n    }\n\n    // Set the max number of retry attempts to read from a card\n    // This prevents us from waiting forever for a card, which is\n    // the default behavior of the PN532.\n    nfc->setPassiveActivationRetries(1);\n\n    // Configure the board to read an RFID/NFC tags\n    nfc->SAMConfig();\n\n    // Pulse that module initialized successfully\n    emitValue<output_OK>(ctx, 1);\n}\n",
+          "content": "node {\n    void evaluate(Context ctx) {\n        // The node responds only if there is an input pulse\n        if (!isInputDirty<input_INIT>(ctx))\n            return;\n\n        // Get a pointer to the `Adafruit_PN532` class instance\n        auto nfc = getValue<input_DEV>(ctx);\n\n        // Initialize RFID/NFC module\n        nfc->begin();\n\n        uint32_t versiondata = nfc->getFirmwareVersion();\n        if (!versiondata) {\n            // If the module did not respond with its version,\n            // it's a connection error or something wrong with the module\n            raiseError(ctx); // Initialization error\n            return;\n        }\n\n        // Set the max number of retry attempts to read from a card\n        // This prevents us from waiting forever for a card, which is\n        // the default behavior of the PN532.\n        nfc->setPassiveActivationRetries(1);\n\n        // Configure the board to read an RFID/NFC tags\n        nfc->SAMConfig();\n\n        // Pulse that module initialized successfully\n        emitValue<output_OK>(ctx, 1);\n    }\n}\n",
           "encoding": "utf-8",
           "filename": "patch.cpp"
         }
@@ -1106,8 +1106,8 @@
     "@/nfc-uid": {
       "attachments": [
         {
-          "content": "struct State {\n};\n\n// Declare out custom type as a struct,\n// in which we will store an array of bytes\nstruct Type {\n    uint8_t items[7];\n};\n\n{{ GENERATED_CODE }}\n\nvoid evaluate(Context ctx) {\n    auto state = getState(ctx);\n\n    Type uid;\n    // Put each value from input terminal into the array of bytes\n    uid.items[0] = (uint8_t)getValue<input_IN1>(ctx);\n    uid.items[1] = (uint8_t)getValue<input_IN2>(ctx);\n    uid.items[2] = (uint8_t)getValue<input_IN3>(ctx);\n    uid.items[3] = (uint8_t)getValue<input_IN4>(ctx);\n    uid.items[4] = (uint8_t)getValue<input_IN5>(ctx);\n    uid.items[5] = (uint8_t)getValue<input_IN6>(ctx);\n    uid.items[6] = (uint8_t)getValue<input_IN7>(ctx);\n\n    emitValue<output_OUT>(ctx, uid);\n}\n",
-          "encoding": "utf8",
+          "content": "node {\n    meta {\n        // Declare custom type as a struct\n        // in which we will store an array of bytes\n        struct Type {\n            uint8_t items[7];\n        };\n    }\n\n    void evaluate(Context ctx) {\n        Type uid;\n        // Put each value from input terminal into the array of bytes\n        uid.items[0] = (uint8_t)getValue<input_IN1>(ctx);\n        uid.items[1] = (uint8_t)getValue<input_IN2>(ctx);\n        uid.items[2] = (uint8_t)getValue<input_IN3>(ctx);\n        uid.items[3] = (uint8_t)getValue<input_IN4>(ctx);\n        uid.items[4] = (uint8_t)getValue<input_IN5>(ctx);\n        uid.items[5] = (uint8_t)getValue<input_IN6>(ctx);\n        uid.items[6] = (uint8_t)getValue<input_IN7>(ctx);\n\n        emitValue<output_OUT>(ctx, uid);\n    }\n}\n",
+          "encoding": "utf-8",
           "filename": "patch.cpp"
         }
       ],
@@ -1205,7 +1205,7 @@
     "@/pair-tag": {
       "attachments": [
         {
-          "content": "struct State {\n};\n\n{{ GENERATED_CODE }}\n\nvoid evaluate(Context ctx) {\n    if (!isInputDirty<input_READ>(ctx))\n        return;\n\n    auto nfc = getValue<input_DEV>(ctx);\n\n    // Create a variable of a custom type by getting the type from output terminal\n    ValueType<output_UID>::T uid;\n    // Create a variable to store length of the UID\n    uint8_t uidLength;\n\n    // Replace UID with zeros\n    memset(uid.items, 0, sizeof(uid));\n    // Detect the tag and read the UID\n    bool res = nfc->readPassiveTargetID(PN532_MIFARE_ISO14443A, uid.items, &uidLength);\n\n    if (res) {\n        emitValue<output_UID>(ctx, uid);\n        emitValue<output_OK>(ctx, 1);\n    } else {\n        emitValue<output_NA>(ctx, 1);\n    }\n}\n",
+          "content": "node {\n    void evaluate(Context ctx) {\n        if (!isInputDirty<input_READ>(ctx))\n            return;\n\n        auto nfc = getValue<input_DEV>(ctx);\n\n        // Create a variable of a custom type\n        // by getting the type from output terminal\n        typeof_UID uid;\n        // Create a variable to store length of the UID\n        uint8_t uidLength;\n\n        // Fill UID with zeroes\n        memset(uid.items, 0, sizeof(uid.items));\n        // Detect the tag and read the UID\n        bool res = nfc->readPassiveTargetID(\n            PN532_MIFARE_ISO14443A,\n            uid.items,\n            &uidLength\n        );\n\n        if (res) {\n            emitValue<output_UID>(ctx, uid);\n            emitValue<output_OK>(ctx, 1);\n        } else {\n            emitValue<output_NA>(ctx, 1);\n        }\n    }\n\n}\n",
           "encoding": "utf-8",
           "filename": "patch.cpp"
         }
@@ -1276,8 +1276,8 @@
     "@/pn532-device": {
       "attachments": [
         {
-          "content": "// Tell XOD where it could download the library:\n#pragma XOD require \"https://github.com/adafruit/Adafruit-PN532\"\n\n// Include C++ library:\n{{#global}}\n#include <Adafruit_PN532.h>\n{{/global}}\n\n// Adafruit_PN532 class wants to know ports in the moment of instantiating\n// but we don't know it at this moment.\n// Therefore, we reserve memory to store an instance of the class,\n// and create an instance later:\nstruct State {\n    uint8_t mem[sizeof(Adafruit_PN532)];\n};\n\n// Define our custom type as a pointer on the class instance.\nusing Type = Adafruit_PN532*;\n\n{{ GENERATED_CODE }}\n\nvoid evaluate(Context ctx) {\n    auto state = getState(ctx);\n    auto irq = getValue<input_IRQ>(ctx);\n\n    // Create an instance of the class with specifying prepared place to store it\n    // using the pointer in parentheses.\n    // Instead of the `reset` port, specify `NOT_A_PORT`, since it is not needed\n    Type nfc = new (state->mem) Adafruit_PN532(irq, NOT_A_PORT);\n\n    emitValue<output_DEV>(ctx, nfc);\n}\n",
-          "encoding": "utf8",
+          "content": "// Tell XOD where it could download the library and its dependencies:\n#pragma XOD require \"https://github.com/adafruit/Adafruit-PN532\"\n#pragma XOD require \"https://github.com/adafruit/Adafruit_BusIO\"\n\n// Include C++ library:\n#include <Adafruit_PN532.h>\n\nnode {\n    meta {\n        // Define our custom type as a pointer on the class instance.\n        using Type = Adafruit_PN532*;\n    }\n\n    // Keep Adafruit_PN532 object in state.\n    // Instead of the `reset` port, specify `NOT_A_PORT`, since it is not needed\n    Adafruit_PN532 nfc = Adafruit_PN532(constant_input_IRQ, NOT_A_PORT);\n\n    void evaluate(Context ctx) {\n        // It should be evaluated only once on the first (setup) transaction\n        if (!isSettingUp())\n            return;\n\n        emitValue<output_DEV>(ctx, &nfc);\n    }\n}\n",
+          "encoding": "utf-8",
           "filename": "patch.cpp"
         }
       ],

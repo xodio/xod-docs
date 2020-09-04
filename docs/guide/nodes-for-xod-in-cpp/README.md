@@ -1,5 +1,6 @@
 ---
 title: Creating Nodes for XOD in C++
+version: 0.35.0
 ---
 
 # Creating Nodes for XOD in C++
@@ -67,31 +68,26 @@ communicate with inputs and outputs, XOD provides C\++ functions `getValue` and
 implementation:
 
 ```cpp
-// Ignore this for now. The definition is required by XOD but we
-// not use it for cos
-struct State { };
+node {
+    // The `evaluate` function is the node’s entry point. It is the only
+    // function XOD requires to implement. The context parameter is a
+    // black-box object you’ll pass to various API functions.
+    void evaluate(Context ctx) {
+        // `getValue` function reads a pin. In angle brackets, it takes a
+        // name of the pin in form input_PINLABEL (input_RAD in our case)
+        Number x = getValue<input_RAD>(ctx);
 
-// This is an obligatory marker. XOD will put pin definitions there
-\{{ GENERATED_CODE }}
+        // Next, we use regular C++ to perform some actions. Our case is trivial.
+        // All we have to do is to call the standard C++ cos function.
+        // Note the data type `Number`. It’s the type XOD uses to represent numbers
+        // on the current platform.
+        Number result = cos(x);
 
-// The `evaluate` function is the node’s entry point. It is the only
-// function XOD requires to implement. The context parameter is a
-// black-box object you’ll pass to various API functions.
-void evaluate(Context ctx) {
-    // `getValue` function reads a pin. In angle brackets, it takes a
-    // name of the pin in form input_PINLABEL (input_RAD in our case)
-    Number x = getValue<input_RAD>(ctx);
-
-    // Next, we use regular C++ to perform some actions. Our case is trivial.
-    // All we have to do is to call the standard C++ cos function.
-    // Note the data type `Number`. It’s the type XOD uses to represent numbers
-    // on the current platform.
-    Number result = cos(x);
-
-    // `emitValue` is like `getValue`, but it writes values rather than read.
-    // Note we use `OUT` label to access our unlabeled output terminal.
-    // `OUT` is the default name when you omit the label.
-    emitValue<output_OUT>(ctx, result);
+        // `emitValue` is like `getValue`, but it writes values rather than read.
+        // Note we use `OUT` label to access our unlabeled output terminal.
+        // `OUT` is the default name when you omit the label.
+        emitValue<output_OUT>(ctx, result);
+    }
 }
 ```
 
