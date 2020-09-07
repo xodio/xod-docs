@@ -1,6 +1,6 @@
 ---
 title: User Guide
-version: 1.5.0
+version: 1.6.0
 ---
 
 # User Guide
@@ -28,6 +28,7 @@ The most straightforward way to extend XOD and add support for new hardware.
 - [Creating nodes for XOD in C++](./nodes-for-xod-in-cpp/)
 - [Dealing with state in C++](./cpp-state/)
 - [Dealing with time in C++](./cpp-time/)
+- [Migrating C++ nodes to v0.35](./migrating-to-v035/)
 - [Creating variadic patch nodes](./creating-variadics/)
 - [Creating generic patch nodes](./creating-generics/)
 - [Defining custom types](./custom-types/)
