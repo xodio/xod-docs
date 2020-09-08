@@ -1,6 +1,6 @@
 ---
 title: Wrapping Class-based Arduino Libraries
-version: 1.1.0
+version: 1.2.0
 ---
 
 # Wrapping Class-based Arduino Libraries
@@ -100,41 +100,32 @@ So we installed library and now we are able to use it. Let's include it and
 create an instance of the class:
 
 ```cpp
-// Tell XOD where it could download the library:
+// Tell XOD where it could download the library and its dependencies:
 #pragma XOD require "https://github.com/adafruit/Adafruit-PN532"
+#pragma XOD require "https://github.com/adafruit/Adafruit_BusIO"
 
 // Include C++ library:
-\{{#global}}
 #include <Adafruit_PN532.h>
-\{{/global}}
 
-// Adafruit_PN532 class wants to know ports in the moment of instantiation
-// but we don't know them at this moment.
-// Therefore, we reserve memory to store an instance of the class,
-// and create the instance later:
-struct State {
-    uint8_t mem[sizeof(Adafruit_PN532)];
-};
+node {
+    meta {
+        // Define our custom type as a pointer on the class instance.
+        using Type = Adafruit_PN532*;
+    }
 
-// Define our custom type as a pointer on the class instance.
-using Type = Adafruit_PN532*;
-
-\{{ GENERATED_CODE }}
-
-void evaluate(Context ctx) {
-    // It should be evaluated only once on the first (setup) transaction
-    if (!isSettingUp())
-        return;
-
-    auto state = getState(ctx);
-    auto irq = getValue<input_IRQ>(ctx);
-
-    // Create a new object in the memory area reserved previously.
+    // Keep Adafruit_PN532 object in state.
     // Instead of the `reset` port, specify `NOT_A_PORT`, since it is not needed
-    Type nfc = new (state->mem) Adafruit_PN532(irq, NOT_A_PORT);
+    Adafruit_PN532 nfc = Adafruit_PN532(constant_input_IRQ, NOT_A_PORT)
 
-    emitValue<output_DEV>(ctx, nfc);
+    void evaluate(Context ctx) {
+        // It should be evaluated only once on the first (setup) transaction
+        if (!isSettingUp())
+            return;
+
+        emitValue<output_DEV>(ctx, &nfc);
+    }
 }
+
 ```
 
 We included the library and created the instance of the class. Let's create
@@ -185,40 +176,37 @@ terminal to the `pn532-device` patch. You can find it in the Project Browser.
 Follow comments in the C++ code:
 
 ```cpp
-struct State {
-};
+node {
+    void evaluate(Context ctx) {
+        // The node responds only if there is an input pulse
+        if (!isInputDirty<input_INIT>(ctx))
+            return;
 
-\{{ GENERATED_CODE }}
+        // Get a pointer to the `Adafruit_PN532` class instance
+        auto nfc = getValue<input_DEV>(ctx);
 
-void evaluate(Context ctx) {
-    // The node responds only if there is an input pulse
-    if (!isInputDirty<input_INIT>(ctx))
-        return;
+        // Initialize RFID/NFC module
+        nfc->begin();
 
-    // Get a pointer to the `Adafruit_PN532` class instance
-    auto nfc = getValue<input_DEV>(ctx);
+        uint32_t versiondata = nfc->getFirmwareVersion();
+        if (!versiondata) {
+            // If the module did not respond with its version,
+            // it's a connection error or something wrong with the module
+            raiseError(ctx); // Initialization error
+            return;
+        }
 
-    // Initialize RFID/NFC module
-    nfc->begin();
+        // Set the max number of retry attempts to read from a card
+        // This prevents us from waiting forever for a card, which is
+        // the default behavior of the PN532.
+        nfc->setPassiveActivationRetries(1);
 
-    uint32_t versiondata = nfc->getFirmwareVersion();
-    if (!versiondata) {
-      // If the module did not respond with its version,
-      // it's a connection error or something wrong with the module
-      raiseError(ctx); // Initialization error
-      return;
+        // Configure the board to read an RFID/NFC tags
+        nfc->SAMConfig();
+
+        // Pulse that module initialized successfully
+        emitValue<output_OK>(ctx, 1);
     }
-
-    // Set the max number of retry attempts to read from a card
-    // This prevents us from waiting forever for a card, which is
-    // the default behavior of the PN532.
-    nfc->setPassiveActivationRetries(1);
-
-    // Configure the board to read an RFID/NFC tags
-    nfc->SAMConfig();
-
-    // Pulse that module initialized successfully
-    emitValue<output_OK>(ctx, 1);
 }
 ```
 
@@ -248,31 +236,28 @@ tag and the UID of our activation tag.
 Let's write C++ code:
 
 ```cpp
-struct State {
-};
+node {
+    meta {
+        // Declare custom type as a struct
+        // in which we will store an array of bytes
+        struct Type {
+            uint8_t items[7];
+        };
+    }
 
-// Declare custom type as a struct
-// in which we will store an array of bytes
-struct Type {
-    uint8_t items[7];
-};
+    void evaluate(Context ctx) {
+        Type uid;
+        // Put each value from input terminal into the array of bytes
+        uid.items[0] = (uint8_t)getValue<input_IN1>(ctx);
+        uid.items[1] = (uint8_t)getValue<input_IN2>(ctx);
+        uid.items[2] = (uint8_t)getValue<input_IN3>(ctx);
+        uid.items[3] = (uint8_t)getValue<input_IN4>(ctx);
+        uid.items[4] = (uint8_t)getValue<input_IN5>(ctx);
+        uid.items[5] = (uint8_t)getValue<input_IN6>(ctx);
+        uid.items[6] = (uint8_t)getValue<input_IN7>(ctx);
 
-\{{ GENERATED_CODE }}
-
-void evaluate(Context ctx) {
-    auto state = getState(ctx);
-
-    Type uid;
-    // Put each value from input terminal into the array of bytes
-    uid.items[0] = (uint8_t)getValue<input_IN1>(ctx);
-    uid.items[1] = (uint8_t)getValue<input_IN2>(ctx);
-    uid.items[2] = (uint8_t)getValue<input_IN3>(ctx);
-    uid.items[3] = (uint8_t)getValue<input_IN4>(ctx);
-    uid.items[4] = (uint8_t)getValue<input_IN5>(ctx);
-    uid.items[5] = (uint8_t)getValue<input_IN6>(ctx);
-    uid.items[6] = (uint8_t)getValue<input_IN7>(ctx);
-
-    emitValue<output_OUT>(ctx, uid);
+        emitValue<output_OUT>(ctx, uid);
+    }
 }
 ```
 
@@ -298,20 +283,17 @@ xoder can use the familiar `xod/core/equal` node even to compare UIDs.
 To compare two byte arrays we use the standard function `memcmp`:
 
 ```cpp
-struct State {
-};
+node {
+    void evaluate(Context ctx) {
+        auto uidA = getValue<input_IN1>(ctx);
+        auto uidB = getValue<input_IN2>(ctx);
 
-\{{ GENERATED_CODE }}
+        // Function `memcmp` compares data by two pointers
+        // and returns `0` if they are equal
+        bool eq = memcmp(uidA.items, uidB.items, sizeof(uidA.items)) == 0;
 
-void evaluate(Context ctx) {
-    auto uidA = getValue<input_IN1>(ctx);
-    auto uidB = getValue<input_IN2>(ctx);
-
-    // Function `memcmp` compares data by two pointers
-    // and returns `0` if they are equal
-    bool eq = memcmp(uidA.items, uidB.items, sizeof(uidA.items)) == 0;
-
-    emitValue<output_OUT>(ctx, eq);
+        emitValue<output_OUT>(ctx, eq);
+    }
 }
 ```
 
@@ -333,38 +315,36 @@ why the node is not called `read-uid`, but `pair-tag`.
 Follow the C++ code:
 
 ```cpp
-struct State {
-};
+node {
+    void evaluate(Context ctx) {
+        if (!isInputDirty<input_READ>(ctx))
+            return;
 
-\{{ GENERATED_CODE }}
+        auto nfc = getValue<input_DEV>(ctx);
 
-void evaluate(Context ctx) {
-    if (!isInputDirty<input_READ>(ctx))
-        return;
+        // Create a variable of a custom type
+        // by getting the type from output terminal
+        typeof_UID uid;
+        // Create a variable to store length of the UID
+        uint8_t uidLength;
 
-    auto nfc = getValue<input_DEV>(ctx);
+        // Fill UID with zeroes
+        memset(uid.items, 0, sizeof(uid.items));
+        // Detect the tag and read the UID
+        bool res = nfc->readPassiveTargetID(
+            PN532_MIFARE_ISO14443A,
+            uid.items,
+            &uidLength
+        );
 
-    // Create a variable of a custom type
-    // by getting the type from output terminal
-    ValueType<output_UID>::T uid;
-    // Create a variable to store length of the UID
-    uint8_t uidLength;
-
-    // Fill UID with zeroes
-    memset(uid.items, 0, sizeof(uid.items));
-    // Detect the tag and read the UID
-    bool res = nfc->readPassiveTargetID(
-      PN532_MIFARE_ISO14443A,
-      uid.items,
-      &uidLength
-    );
-
-    if (res) {
-        emitValue<output_UID>(ctx, uid);
-        emitValue<output_OK>(ctx, 1);
-    } else {
-        emitValue<output_NA>(ctx, 1);
+        if (res) {
+            emitValue<output_UID>(ctx, uid);
+            emitValue<output_OK>(ctx, 1);
+        } else {
+            emitValue<output_NA>(ctx, 1);
+        }
     }
+
 }
 ```
 
@@ -420,9 +400,7 @@ Well done!
     it in the code:
 
     ```cpp
-        \{{#global}}
         #include <SomeLibrary.h>
-        \{{/global}}
     ```
 
 3.  When you wrapping methods in nodes use verbs in their names (`pair-tag`,

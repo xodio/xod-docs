@@ -1,5 +1,6 @@
 ---
 title: Dealing with Errors in C++
+version: 0.35.0
 ---
 
 # Dealing with Errors in C++
@@ -25,13 +26,11 @@ C++ implementation is quite brief:
 ```cpp
 #pragma XOD error_catch enable
 
-struct State {};
-
-\{{ GENERATED_CODE }}
-
-void evaluate(Context ctx) {
-    if (getError<input_IN>(ctx)) {
-        emitValue<output_OUT>(ctx, 1);
+node {
+    void evaluate(Context ctx) {
+        if (getError<input_IN>(ctx)) {
+            emitValue<output_OUT>(ctx, 1);
+        }
     }
 }
 ```
@@ -51,15 +50,13 @@ If `ERR` is false, a value from `IN` will be passed through. If `ERR` is true, a
 ```cpp
 #pragma XOD error_raise enable
 
-struct State {};
-
-\{{ GENERATED_CODE }}
-
-void evaluate(Context ctx) {
-    if (getValue<input_ERR>(ctx)) {
-        raiseError<output_OUT>(ctx);
-    } else {
-        emitValue<output_OUT>(ctx, getValue<input_IN>(ctx));
+node {
+    void evaluate(Context ctx) {
+        if (getValue<input_ERR>(ctx)) {
+            raiseError<output_OUT>(ctx);
+        } else {
+            emitValue<output_OUT>(ctx, getValue<input_IN>(ctx));
+        }
     }
 }
 ```

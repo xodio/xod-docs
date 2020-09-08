@@ -183,21 +183,3 @@ Example:
 3. Observe the result with the `watch` node
 
 Using the footnote-style commenting makes it possible to translate the originally-English article without XOD patches duplication and adjustments.
-
-## Escape double curly brackets
-
-XOD C++ transpiler uses the Handlebars template engine for preprocessing. The engine treats double curly brackets special. The same engine is used on the xod.io site. So, placing an expression surrounded with `\{{` and `}}` in a code example will effectively make it invisible for a reader because the site engine will eat the content.
-
-To fix the problem place a backslash right before the first brace when typing two left curly brackets in a row:
-
-<pre class="language-markdown">
-Here is a code example:
-
-```cpp
-&#92;\{{#global}}
-#include "SomeLib.h"
-&#92;\{{/global}}
-
-// ...
-```
-</pre>

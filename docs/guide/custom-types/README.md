@@ -1,5 +1,6 @@
 ---
 title: Defining Custom Types
+version: 0.35.0
 ---
 
 # Defining Custom Types
@@ -50,28 +51,29 @@ Now, let’s write down the code. Follow the comments to understand essential
 parts:
 
 ```cpp
-// When defining a custom type you must declare a C++ type with name `Type`.
-// It will be used by the system to store and pass values of the new custom
-// type in C++ land.
-// In our case the Type is a simple alias for a single number. However, you
-// might use a complex struct or class for this role.
-using Type = Number;
+node {
+    // When defining a custom type you must declare a C++ type with name `Type`
+    // inside the `meta` block.
+    // It will be used by the system to store and pass values of the new custom
+    // type in C++ land.
+    // In our case the Type is a simple alias for a single number. However, you
+    // might use a complex struct or class for this role.
+    meta {
+        using Type = Number;
+    }
 
-struct State { };
+    void evaluate(Context ctx) {
+        auto sec = getValue<input_SEC>(ctx);
+        auto secsInDay = 24 * 60 * 60;
 
-\{{ GENERATED_CODE }}
+        // Use the `Type` type to define a new variable that will be
+        // later output as the result. We use `fmod` to perform day-wrap
+        // and be sure the value is in valid range
+        Type out = fmod(sec, secsInDay);
 
-void evaluate(Context ctx) {
-    auto sec = getValue<input_SEC>(ctx);
-    auto secsInDay = 24 * 60 * 60;
-
-    // Use the `Type` type to define a new variable that will be
-    // later output as the result. We use `fmod` to perform day-wrap
-    // and be sure the value is in valid range
-    Type out = fmod(sec, secsInDay);
-
-    // Then we can output the new type value like a regular one
-    emitValue<output_OUT>(ctx, out);
+        // Then we can output the new type value like a regular one
+        emitValue<output_OUT>(ctx, out);
+    }
 }
 ```
 
@@ -97,23 +99,22 @@ We use an `input-time` and three `output-number` to build the interface of our
 Now, the C++ part. Follow the comments:
 
 ```cpp
-struct State { };
+node {
+    void evaluate(Context ctx) {
+        // We use `auto` C++ keyword because the `Type` we defined earlier is in
+        // another namespace. The `auto` type instructs the C++ compiler to infer
+        // the actual type from a right-hand side expression and it will always
+        // match the custom type, be it an alias, struct, or class.
+        auto t = getValue<input_IN>(ctx);
 
-\{{ GENERATED_CODE }}
-
-void evaluate(Context ctx) {
-    // We use `auto` C++ keyword because the `Type` we defined earlier is in
-    // another namespace. The `auto` type instructs the C++ compiler to infer
-    // the actual type from a right-hand side expression and it will always
-    // match the custom type, be it an alias, struct, or class.
-    auto t = getValue<input_IN>(ctx);
-
-    // Now we can use the fetched value as usual. Perform some truncations
-    // and modulo divisions to convert seconds to hours, minutes, and seconds
-    emitValue<output_SEC>(ctx, fmod(t, 60));
-    emitValue<output_MIN>(ctx, fmod(trunc(t / 60), 60));
-    emitValue<output_HOUR>(ctx, trunc(t / 3600));
+        // Now we can use the fetched value as usual. Perform some truncations
+        // and modulo divisions to convert seconds to hours, minutes, and seconds
+        emitValue<output_SEC>(ctx, fmod(t, 60));
+        emitValue<output_MIN>(ctx, fmod(trunc(t / 60), 60));
+        emitValue<output_HOUR>(ctx, trunc(t / 3600));
+    }
 }
+
 ```
 
 Good. Now we have a way to construct and “destruct” time values. See it in
@@ -137,31 +138,26 @@ number and outputs a two-digit string enforcing leading zero for values
 below 10. Without diving into details much, here’s its code:
 
 ```cpp
-struct State {
+node {
     char buff[3];
-    CStringView view;
+    CStringView view = CStringView(buff);
 
-    State() : view(buff) {}
-};
+    void evaluate(Context ctx) {
+        auto n = getValue<input_IN>(ctx);
 
-\{{ GENERATED_CODE }}
+        // convert to an integer in range 0-99
+        uint8_t ndec =
+            (n < 0) ? 0 :
+            (n > 99) ? 99 :
+            (uint8_t)n;
 
-void evaluate(Context ctx) {
-    auto state = getState(ctx);
-    auto n = getValue<input_IN>(ctx);
+        // convert to characters, leave the last
+        // char intact as it always \x00
+        buff[0] = '0' + ndec / 10;
+        buff[1] = '0' + ndec % 10;
 
-    // convert to an integer in range 0-99
-    uint8_t ndec =
-        (n < 0) ? 0 :
-        (n > 99) ? 99 :
-        (uint8_t)n;
-
-    // convert to characters, leave the last
-    // char intact as it always \x00
-    state->buff[0] = '0' + ndec / 10;
-    state->buff[1] = '0' + ndec % 10;
-
-    emitValue<output_OUT>(ctx, XString(&state->view));
+        emitValue<output_OUT>(ctx, XString(&view));
+    }
 }
 ```
 
@@ -203,22 +199,20 @@ an output and thus the `auto` C++ keyword cannot be used to define a variable
 type:
 
 ```cpp
-struct State { };
+node {
+    void evaluate(Context ctx) {
+        auto h = getValue<input_HOUR>(ctx);
+        auto m = getValue<input_MIN>(ctx);
+        auto s = getValue<input_SEC>(ctx);
 
-\{{ GENERATED_CODE }}
+        // Use typeof_... to access the type of a pin
+        // if its symbol is hardly accessible in other ways.
+        // In our case `typeof_OUT` refers to the
+        // `Type` we defined in the constructor.
+        typeof_OUT result = h * 3600 + m * 60 + s;
 
-void evaluate(Context ctx) {
-    auto h = getValue<input_HOUR>(ctx);
-    auto m = getValue<input_MIN>(ctx);
-    auto s = getValue<input_SEC>(ctx);
-
-    // Use ValueType<...>::T metaprogramming construct to access the type of
-    // an input if its symbol is hardly accessible in other ways. In our case
-    // `ValueType<output_OUT>::T` refers to the `Type` we defined in the
-    // constructor.
-    ValueType<output_OUT>::T result = h * 3600 + m * 60 + s;
-
-    emitValue<output_OUT>(ctx, result);
+        emitValue<output_OUT>(ctx, result);
+    }
 }
 ```
 
