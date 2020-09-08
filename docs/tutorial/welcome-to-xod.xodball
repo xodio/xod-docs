@@ -1,8 +1,4 @@
 {
-  "description": "A crash course tutorial baked as a project",
-  "license": "MIT",
-  "version": "0.29.0",
-  "name": "welcome-to-xod",
   "patches": {
     "@/001-hello": {
       "nodes": {
@@ -1192,6 +1188,356 @@
       },
       "path": "@/012-strings"
     },
+    "@/013-custom-types": {
+      "nodes": {
+        "Bk5TsqI2U": {
+          "id": "Bk5TsqI2U",
+          "position": {
+            "x": 9,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod/datetime/add-seconds"
+        },
+        "Bye0sqL3U": {
+          "size": {
+            "height": 1,
+            "width": 3,
+            "units": "slots"
+          },
+          "id": "Bye0sqL3U",
+          "position": {
+            "x": 10,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/debug/tweak-number"
+        },
+        "HJwCjcL28": {
+          "boundLiterals": {
+            "SJ4zUC_BD1-": "3600"
+          },
+          "id": "HJwCjcL28",
+          "position": {
+            "x": 10,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/core/multiply"
+        },
+        "S1Ddh5L2L": {
+          "size": {
+            "height": 1,
+            "width": 4,
+            "units": "slots"
+          },
+          "id": "S1Ddh5L2L",
+          "position": {
+            "x": 9,
+            "y": 6,
+            "units": "slots"
+          },
+          "type": "xod/debug/watch"
+        },
+        "rJM499I3L": {
+          "boundLiterals": {
+            "r1f2FeXP7": "1",
+            "ryjoteXwm": "1970"
+          },
+          "id": "rJM499I3L",
+          "position": {
+            "x": 9,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/datetime/datetime"
+        },
+        "rkV_hc8hU": {
+          "id": "rkV_hc8hU",
+          "position": {
+            "x": 9,
+            "y": 4,
+            "units": "slots"
+          },
+          "type": "xod/datetime/format-timestamp"
+        }
+      },
+      "links": {
+        "H1c0s5L2L": {
+          "id": "H1c0s5L2L",
+          "input": {
+            "nodeId": "Bk5TsqI2U",
+            "pinKey": "HJRLHWQw7"
+          },
+          "output": {
+            "nodeId": "HJwCjcL28",
+            "pinKey": "BkQzLCurwJZ"
+          }
+        },
+        "HyHu2cLh8": {
+          "id": "HyHu2cLh8",
+          "input": {
+            "nodeId": "rkV_hc8hU",
+            "pinKey": "Hy_D4G0JOX"
+          },
+          "output": {
+            "nodeId": "Bk5TsqI2U",
+            "pinKey": "Sk18BWmwX"
+          }
+        },
+        "Hysaj5I3U": {
+          "id": "Hysaj5I3U",
+          "input": {
+            "nodeId": "Bk5TsqI2U",
+            "pinKey": "Syb8BW7wm"
+          },
+          "output": {
+            "nodeId": "rJM499I3L",
+            "pinKey": "r1ZqKlXPX"
+          }
+        },
+        "SydCj5Ln8": {
+          "id": "SydCj5Ln8",
+          "input": {
+            "nodeId": "HJwCjcL28",
+            "pinKey": "B1GfLR_SPk-"
+          },
+          "output": {
+            "nodeId": "Bye0sqL3U",
+            "pinKey": "ByfGSDjQE"
+          }
+        },
+        "SyqOhq8hI": {
+          "id": "SyqOhq8hI",
+          "input": {
+            "nodeId": "S1Ddh5L2L",
+            "pinKey": "HkXK-dGob"
+          },
+          "output": {
+            "nodeId": "rkV_hc8hU",
+            "pinKey": "BkvDEzR1Om"
+          }
+        }
+      },
+      "path": "@/013-custom-types"
+    },
+    "@/015-xod-cloud-feeds": {
+      "nodes": {
+        "HyMoFEThU": {
+          "id": "HyMoFEThU",
+          "position": {
+            "x": 12,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/core/pulse-on-change"
+        },
+        "Hyg5KV63I": {
+          "boundLiterals": {
+            "ByfGSDjQE": "1"
+          },
+          "size": {
+            "height": 1,
+            "width": 2,
+            "units": "slots"
+          },
+          "id": "Hyg5KV63I",
+          "position": {
+            "x": 11,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/debug/tweak-number"
+        },
+        "SyDrb703I": {
+          "boundLiterals": {
+            "ryZ28tst5B": "\"moisture\""
+          },
+          "id": "SyDrb703I",
+          "position": {
+            "x": 9,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod-cloud/feeds/cloud-store"
+        },
+        "ryCXuTIn8": {
+          "id": "ryCXuTIn8",
+          "position": {
+            "x": 9,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/debug/tethering-inet"
+        }
+      },
+      "links": {
+        "BJQitEpnI": {
+          "id": "BJQitEpnI",
+          "input": {
+            "nodeId": "HyMoFEThU",
+            "pinKey": "BkjI-COLb"
+          },
+          "output": {
+            "nodeId": "Hyg5KV63I",
+            "pinKey": "ByfGSDjQE"
+          }
+        },
+        "BkB0-mRnL": {
+          "id": "BkB0-mRnL",
+          "input": {
+            "nodeId": "SyDrb703I",
+            "pinKey": "r1m2IKiY5r"
+          },
+          "output": {
+            "nodeId": "HyMoFEThU",
+            "pinKey": "ByAIWR_UZ"
+          }
+        },
+        "HJ5BWXA2I": {
+          "id": "HJ5BWXA2I",
+          "input": {
+            "nodeId": "SyDrb703I",
+            "pinKey": "rJfEHhF5r"
+          },
+          "output": {
+            "nodeId": "Hyg5KV63I",
+            "pinKey": "ByfGSDjQE"
+          }
+        },
+        "SkKr-7ChI": {
+          "id": "SkKr-7ChI",
+          "input": {
+            "nodeId": "SyDrb703I",
+            "pinKey": "rJgh8tjF9r"
+          },
+          "output": {
+            "nodeId": "ryCXuTIn8",
+            "pinKey": "SyveJHHBL"
+          }
+        }
+      },
+      "path": "@/015-xod-cloud-feeds"
+    },
+    "@/014-internet-tethering": {
+      "nodes": {
+        "B1an3hU3L": {
+          "size": {
+            "height": 1,
+            "width": 5,
+            "units": "slots"
+          },
+          "id": "B1an3hU3L",
+          "position": {
+            "x": 10,
+            "y": 4,
+            "units": "slots"
+          },
+          "type": "xod/debug/watch"
+        },
+        "H1Bjn28h8": {
+          "boundLiterals": {
+            "HyF4Hq828": "On Boot"
+          },
+          "id": "H1Bjn28h8",
+          "position": {
+            "x": 10,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod-cloud/basics/now"
+        },
+        "H1v2hnL3L": {
+          "id": "H1v2hnL3L",
+          "position": {
+            "x": 10,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/datetime/format-timestamp"
+        },
+        "HyhhS5wR8": {
+          "id": "HyhhS5wR8",
+          "position": {
+            "x": 10,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/debug/tethering-inet"
+        },
+        "SkxnjWOp8": {
+          "boundLiterals": {
+            "rJUjrCTUb": "On Boot",
+            "rygjH06LW": "\"Fetching...\""
+          },
+          "id": "SkxnjWOp8",
+          "position": {
+            "x": 10,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod/core/select"
+        }
+      },
+      "links": {
+        "Ska3H5DCL": {
+          "id": "Ska3H5DCL",
+          "input": {
+            "nodeId": "H1Bjn28h8",
+            "pinKey": "r1lFErc828"
+          },
+          "output": {
+            "nodeId": "HyhhS5wR8",
+            "pinKey": "SyveJHHBL"
+          }
+        },
+        "r1Mpo-_TI": {
+          "id": "r1Mpo-_TI",
+          "input": {
+            "nodeId": "SkxnjWOp8",
+            "pinKey": "S10qrR6UZ"
+          },
+          "output": {
+            "nodeId": "H1v2hnL3L",
+            "pinKey": "BkvDEzR1Om"
+          }
+        },
+        "rJX6sWdpU": {
+          "id": "rJX6sWdpU",
+          "input": {
+            "nodeId": "SkxnjWOp8",
+            "pinKey": "rkmiHCaIZ"
+          },
+          "output": {
+            "nodeId": "H1Bjn28h8",
+            "pinKey": "Sk0OelypI"
+          }
+        },
+        "ry9nn2Lh8": {
+          "id": "ry9nn2Lh8",
+          "input": {
+            "nodeId": "H1v2hnL3L",
+            "pinKey": "Hy_D4G0JOX"
+          },
+          "output": {
+            "nodeId": "H1Bjn28h8",
+            "pinKey": "ryFe8qI3U"
+          }
+        },
+        "ryH3oW_68": {
+          "id": "ryH3oW_68",
+          "input": {
+            "nodeId": "B1an3hU3L",
+            "pinKey": "HkXK-dGob"
+          },
+          "output": {
+            "nodeId": "SkxnjWOp8",
+            "pinKey": "S1yaHC6UW"
+          }
+        }
+      },
+      "path": "@/014-internet-tethering"
+    },
     "@/100-hardware": {
       "path": "@/100-hardware"
     },
@@ -1293,45 +1639,6 @@
       },
       "path": "@/102-interactive"
     },
-    "@/103-led": {
-      "nodes": {
-        "B1xDqnBCvV": {
-          "id": "B1xDqnBCvV",
-          "position": {
-            "x": 9,
-            "y": 1,
-            "units": "slots"
-          },
-          "type": "xod/debug/tweak-boolean"
-        },
-        "Byw5hBADE": {
-          "boundLiterals": {
-            "B1oqkTnIb": "D13"
-          },
-          "id": "Byw5hBADE",
-          "position": {
-            "x": 8,
-            "y": 2,
-            "units": "slots"
-          },
-          "type": "xod/common-hardware/led"
-        }
-      },
-      "links": {
-        "BybD5nH0wN": {
-          "id": "BybD5nH0wN",
-          "input": {
-            "nodeId": "Byw5hBADE",
-            "pinKey": "HyYh1a3LZ"
-          },
-          "output": {
-            "nodeId": "B1xDqnBCvV",
-            "pinKey": "Sk1e_NIVE"
-          }
-        }
-      },
-      "path": "@/103-led"
-    },
     "@/104-button": {
       "nodes": {
         "Hyn_aukuV": {
@@ -1379,6 +1686,45 @@
         }
       },
       "path": "@/104-button"
+    },
+    "@/103-led": {
+      "nodes": {
+        "B1xDqnBCvV": {
+          "id": "B1xDqnBCvV",
+          "position": {
+            "x": 9,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/debug/tweak-boolean"
+        },
+        "Byw5hBADE": {
+          "boundLiterals": {
+            "B1oqkTnIb": "D13"
+          },
+          "id": "Byw5hBADE",
+          "position": {
+            "x": 8,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/common-hardware/led"
+        }
+      },
+      "links": {
+        "BybD5nH0wN": {
+          "id": "BybD5nH0wN",
+          "input": {
+            "nodeId": "Byw5hBADE",
+            "pinKey": "HyYh1a3LZ"
+          },
+          "output": {
+            "nodeId": "B1xDqnBCvV",
+            "pinKey": "Sk1e_NIVE"
+          }
+        }
+      },
+      "path": "@/103-led"
     },
     "@/105-pot": {
       "nodes": {
@@ -1753,6 +2099,287 @@
         }
       },
       "path": "@/110-ldr"
+    },
+    "@/111-feed-messaging": {
+      "nodes": {
+        "BkM-rq702I": {
+          "boundLiterals": {
+            "ryZ28tst5B": "\"moisture\""
+          },
+          "id": "BkM-rq702I",
+          "position": {
+            "x": 15,
+            "y": 4,
+            "units": "slots"
+          },
+          "type": "xod-cloud/feeds/cloud-store"
+        },
+        "BkWS5mCn8": {
+          "id": "BkWS5mCn8",
+          "position": {
+            "x": 18,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod/core/pulse-on-change"
+        },
+        "Hk_Aq9DAU": {
+          "boundLiterals": {
+            "H1GSAN40nI": "\"moisture\""
+          },
+          "id": "Hk_Aq9DAU",
+          "position": {
+            "x": 9,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod-cloud/feeds/cloud-number"
+        },
+        "Hy-WB9Q038": {
+          "id": "Hy-WB9Q038",
+          "position": {
+            "x": 15,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/debug/tethering-inet"
+        },
+        "S1co57ChU": {
+          "boundLiterals": {
+            "B13SCNhl-": "30"
+          },
+          "id": "S1co57ChU",
+          "position": {
+            "x": 11,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/core/clock"
+        },
+        "S1dnUITnL": {
+          "id": "S1dnUITnL",
+          "position": {
+            "x": 9,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/debug/tethering-inet"
+        },
+        "SJxbH97AnL": {
+          "boundLiterals": {
+            "ByfGSDjQE": "0.25"
+          },
+          "size": {
+            "height": 1,
+            "width": 2,
+            "units": "slots"
+          },
+          "id": "SJxbH97AnL",
+          "position": {
+            "x": 17,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/debug/tweak-number"
+        },
+        "SySEqQA28": {
+          "id": "SySEqQA28",
+          "position": {
+            "x": 8,
+            "y": 4,
+            "units": "slots"
+          },
+          "type": "xod-dev/servo/servo"
+        },
+        "rJPiAqPCI": {
+          "boundLiterals": {
+            "ByU7LRuSPkW": "On Boot"
+          },
+          "id": "rJPiAqPCI",
+          "position": {
+            "x": 11,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/core/any"
+        }
+      },
+      "links": {
+        "B1BWr57RhU": {
+          "id": "B1BWr57RhU",
+          "input": {
+            "nodeId": "BkM-rq702I",
+            "pinKey": "rJfEHhF5r"
+          },
+          "output": {
+            "nodeId": "SJxbH97AnL",
+            "pinKey": "ByfGSDjQE"
+          }
+        },
+        "ByG9CqwRU": {
+          "id": "ByG9CqwRU",
+          "input": {
+            "nodeId": "Hk_Aq9DAU",
+            "pinKey": "r1bBAVNAh8"
+          },
+          "output": {
+            "nodeId": "S1dnUITnL",
+            "pinKey": "SyveJHHBL"
+          }
+        },
+        "ByXbH5XR38": {
+          "id": "ByXbH5XR38",
+          "input": {
+            "nodeId": "BkWS5mCn8",
+            "pinKey": "BkjI-COLb"
+          },
+          "output": {
+            "nodeId": "SJxbH97AnL",
+            "pinKey": "ByfGSDjQE"
+          }
+        },
+        "S1I-r5X0h8": {
+          "id": "S1I-r5X0h8",
+          "input": {
+            "nodeId": "BkM-rq702I",
+            "pinKey": "r1m2IKiY5r"
+          },
+          "output": {
+            "nodeId": "BkWS5mCn8",
+            "pinKey": "ByAIWR_UZ"
+          }
+        },
+        "S1_oC9PCI": {
+          "id": "S1_oC9PCI",
+          "input": {
+            "nodeId": "Hk_Aq9DAU",
+            "pinKey": "S1rCENRnL"
+          },
+          "output": {
+            "nodeId": "rJPiAqPCI",
+            "pinKey": "ByHmL0uHPk-"
+          }
+        },
+        "SJtiRqwRL": {
+          "id": "SJtiRqwRL",
+          "input": {
+            "nodeId": "rJPiAqPCI",
+            "pinKey": "ryv7IRdSP1b"
+          },
+          "output": {
+            "nodeId": "S1co57ChU",
+            "pinKey": "HJU8CE2lW"
+          }
+        },
+        "SkCt05wRL": {
+          "id": "SkCt05wRL",
+          "input": {
+            "nodeId": "SySEqQA28",
+            "pinKey": "Bk5lexBtE"
+          },
+          "output": {
+            "nodeId": "Hk_Aq9DAU",
+            "pinKey": "BJHJB4R2U"
+          }
+        },
+        "rJ4ZS57RhU": {
+          "id": "rJ4ZS57RhU",
+          "input": {
+            "nodeId": "BkM-rq702I",
+            "pinKey": "rJgh8tjF9r"
+          },
+          "output": {
+            "nodeId": "Hy-WB9Q038",
+            "pinKey": "SyveJHHBL"
+          }
+        }
+      },
+      "path": "@/111-feed-messaging"
+    },
+    "@/112-standalone-internet": {
+      "nodes": {
+        "BJZ3lNAh8": {
+          "id": "BJZ3lNAh8",
+          "position": {
+            "x": 9,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/debug/tethering-inet"
+        },
+        "Bkg-heN028": {
+          "boundLiterals": {
+            "BkXK1eBYV": "D5"
+          },
+          "id": "Bkg-heN028",
+          "position": {
+            "x": 8,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod-dev/servo/servo"
+        },
+        "HJbZ2eN03U": {
+          "boundLiterals": {
+            "B13SCNhl-": "5"
+          },
+          "id": "HJbZ2eN03U",
+          "position": {
+            "x": 11,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/core/clock"
+        },
+        "r1KwvpChI": {
+          "boundLiterals": {
+            "H1GSAN40nI": "\"moisture\""
+          },
+          "id": "r1KwvpChI",
+          "position": {
+            "x": 9,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod-cloud/feeds/cloud-number"
+        }
+      },
+      "links": {
+        "BJlOvpA2U": {
+          "id": "BJlOvpA2U",
+          "input": {
+            "nodeId": "r1KwvpChI",
+            "pinKey": "r1bBAVNAh8"
+          },
+          "output": {
+            "nodeId": "BJZ3lNAh8",
+            "pinKey": "SyveJHHBL"
+          }
+        },
+        "SknPwaChL": {
+          "id": "SknPwaChL",
+          "input": {
+            "nodeId": "Bkg-heN028",
+            "pinKey": "Bk5lexBtE"
+          },
+          "output": {
+            "nodeId": "r1KwvpChI",
+            "pinKey": "BJHJB4R2U"
+          }
+        },
+        "SyUuwTRnL": {
+          "id": "SyUuwTRnL",
+          "input": {
+            "nodeId": "r1KwvpChI",
+            "pinKey": "S1rCENRnL"
+          },
+          "output": {
+            "nodeId": "HJbZ2eN03U",
+            "pinKey": "HJU8CE2lW"
+          }
+        }
+      },
+      "path": "@/112-standalone-internet"
     },
     "@/200-patterns": {
       "path": "@/200-patterns"
@@ -3734,5 +4361,9 @@
       },
       "path": "@/999-the-end"
     }
-  }
+  },
+  "license": "MIT",
+  "version": "0.29.0",
+  "description": "A crash course tutorial baked as a project",
+  "name": "welcome-to-xod"
 }

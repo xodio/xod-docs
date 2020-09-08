@@ -1,8 +1,7 @@
 ---
 title: Tutorial
-version: 2.1.0
+version: 2.2.0
 ---
-
 
 <!--
 This file is auto-generated from the 'welcome-to-xod' project.
@@ -16,7 +15,6 @@ If you want to change a Fritzing scheme or comments for it, change the
 
 Then run auto-generator tool (xod/tools/generate-tutorial-docs.js).
 -->
-
 
 # Tutorial
 
@@ -58,6 +56,15 @@ Then run auto-generator tool (xod/tools/generate-tutorial-docs.js).
 </li>
 <li value="012">
   <a href="./012-strings/">Strings</a>
+</li>
+<li value="013">
+  <a href="./013-custom-types/">Custom Types</a>
+</li>
+<li value="014">
+  <a href="./014-internet-tethering/">Internet Tethering</a>
+</li>
+<li value="015">
+  <a href="./015-xod-cloud-feeds/">XOD Cloud Feeds</a>
 </li></ol>
 <ol class="ui list"><li value="100">
   <a href="./100-hardware/">Working with Hardware</a>
@@ -91,6 +98,12 @@ Then run auto-generator tool (xod/tools/generate-tutorial-docs.js).
 </li>
 <li value="110">
   <a href="./110-ldr/">Ambient Light Sensor</a>
+</li>
+<li value="111">
+  <a href="./111-feed-messaging/">Feed Messaging</a>
+</li>
+<li value="112">
+  <a href="./112-standalone-internet/">Stand-alone Internet</a>
 </li></ol>
 <ol class="ui list"><li value="200">
   <a href="./200-patterns/">Patterns</a>
