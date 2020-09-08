@@ -58,7 +58,13 @@ Let’s elaborate on each of concepts mentioned.
 
 ## Specializations
 
-A specialization is a regular patch having a distinctive name like:
+A specialization is a regular patch either having a distinctive name containing
+types in parentheses or having the same basename as an abstract patch if it’s a
+specialization for a type defined in the same library.
+
+### Specializations with types specification
+
+For example,
 
 - `if-else(number)`
 - `if-else(string)`
@@ -70,18 +76,28 @@ If a generic node has two or more generic types, the types in parens should be
 comma-separated, e.g., `foo(string,number,pulse)`.
 
 In most cases, you should not bother on the specialization patches and nodes as
-you’re interfacing with the base abstraction (`if-else`) and that’s enough. The
+you’re interfacing with the base abstraction (`if-else`), and that’s enough. The
 specializations don’t even appear in the quick-search suggester by default.
 
+### Specialization for custom type within the same library
+
+For example, `xod-dev/w5500/open-tcp` is a specialization for `xod/net/open-tcp`,
+which uses a `xod-dev/w5500/w5500-inet` type for `t1`.
+
+If such specialization use types from other libraries or base types, it should
+have a type specification in the name, like `open-tcp(w5500-inet, number)`.
+
+### Manual resolution of specializations
+
 However, sometimes you will want to be specific and use a specialization
-directly, like a regular node. That’s called _manual resolution_. To access a
+directly as a regular node. That’s called _manual resolution_. To access a
 particular specialization, use one of the following methods:
 
 1.  Find the specialization in the Project Browser and drag-n-drop it on your
     patch as you would do with any regular node.
 2.  Double-click your patch, type a part of the node name and add a left
     parenthesis to see the specializations (e.g., type `if-el(`).
-3.  Select a generic node to resolve manually, then in the inspector choose the
+3.  Select a generic node to resolve manually, then in the inspector, choose the
     desired specialization in the drop-down below the node name.
 
 ![Screencast](./screencast.gif)

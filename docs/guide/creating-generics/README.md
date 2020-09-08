@@ -70,16 +70,20 @@ details.
 
 For a generic patch, you may provide several specialization patches. XOD
 searches for a matching specialization every time it encounters a generic node.
-It replaces the generic node with specialized one if found.
+It replaces the generic node with a specialized one if found.
 
-The specialization patch is a regular patch conventionally named
-`<basename>(<t1>,<t2>,<t3>)` where `basename` defines the base generic patch
-name and `t𝑛` define particular types for which the specialization was created.
-For example `if-else(number)` is a specialization for a generic patch `if-else`
-for cases when a `number` is bound to its inputs.
+The specialization patch is a regular patch, which either:
+- conventionally named `<basename>(<t1>,<t2>,<t3>)` where `basename` defines the base generic patch
+  name and `t𝑛` define particular types for which the specialization was created.
+  For example `if-else(number)` is a specialization for a generic patch `if-else`
+  for cases when a `number` is bound to its inputs.
+- named just `<basename>`, when it’s a specialization for a custom type defined within the
+  same library.
+  For example `xod-dev/w5500/open-tcp` is a specialization for a generic patch `xod/net/open-tcp`
+  for cases when a `xod-dev/w5500/w5500-inet` is bound to one of the inputs.
 
 Note, you can create specialization patches for generic patches created in other
-libraries, and XOD will pick up them correctly. That way you can improve others’
+libraries, and XOD will pick them up correctly. That way, you can improve others’
 work by making missing or optimized implementations.
 
 ## Rules
