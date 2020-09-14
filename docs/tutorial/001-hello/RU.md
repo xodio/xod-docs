@@ -17,7 +17,7 @@ Then run auto-generator tool (xod/tools/generate-tutorial-docs.js).
 -->
 
 <div class="ui segment note">
-<span class="ui ribbon label">Примечания</span>
+<span class="ui ribbon label">Примечание:</span>
 Это Веб-версия учебника встроенная прямо в XOD IDE. Чтобы обучение проходило лучше, мы рекомендуем установить
 <a href="/downloads/">стационарную версию IDE для ПК</a> или запустить
 <a href="/ide/">браузерную версию IDE</a>, и вы увидите там это же руководство.
