@@ -275,7 +275,7 @@ For our task it is important to compare a UID of the detected tag with the UID
 of our tag: we don't want anyone to turn our led on and off, right? Let's create
 a new node `equal(nfc-uid)`. Note that we defined our data type `nfc-uid` in the
 parentheses. It is a
-[specialization](../../creating-generics/#specialization-patches) node, so any
+[specialization](../../generics/#specializations) node, so any
 xoder can use the familiar `xod/core/equal` node even to compare UIDs.
 
 ![Equal node for nfc-uid type](./equal-nfc-uid.patch.png)
