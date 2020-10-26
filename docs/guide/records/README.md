@@ -36,6 +36,11 @@ The [`xod/json`](https://xod.io/libs/xod/json) standard library has an abstract 
 
 ![Send JSON-serialized record to the feeds](./record-to-feeds.patch.png)
 
+<div class="ui segment note">
+<span class="ui ribbon label">Note</span>
+The serialization to JSON format requires some free dynamic memory. The patch from the example above compiles for the Arduino Uno without errors, but it cannot be serialized due to stack overflow, which causes the microcontroller's resetting. The same patch will work fine on microcontrollers with a larger amount of dynamic memory, such as Arduino Mega, ESP8266, etc.
+</div>
+
 ## Custom types and nesting
 
 Records can contain any custom types, including other records, without any limitation on the nesting level. It also makes it possible to send complex data structures in JSON format.
