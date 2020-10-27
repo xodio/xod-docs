@@ -1,6 +1,6 @@
 ---
 title: C++ Node API Reference
-version: 0.35.0
+version: 0.36.0
 ---
 
 # C++ Node API Reference
@@ -115,7 +115,7 @@ Schedules a forced re-evaluation of a node past `timeout` milliseconds after the
 
 A node may have at most one scheduled update. If called multiple times, the subsequent calls cancel the previous schedule for the node.
 
-Pass `0` for `timeout` to schedule evaluation right after the current transaction completes. Effectively it forces a new transaction trigger after the current.
+If you need to schedule evaluation right after the current transaction completes, use [`setImmediate`](#setImmediate) instead.
 
 <a name="clearTimeout"></a>
 
@@ -128,6 +128,12 @@ Cancels scheduled evaluation of a node (if present). Safe to call even if the up
 #### `bool isTimedOut(Context ctx)`
 
 Returns `true` if node’s schedule timed out right at the current transaction. Unless scheduled again will return `false` since the next transaction.
+
+<a name="setImmediate"></a>
+
+#### `void setImmediate()`
+
+Schedules a forced re-evaluation of the node at the next transaction.
 
 <a name="raiseError"></a>
 
