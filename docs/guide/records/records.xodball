@@ -1,0 +1,558 @@
+{
+  "apiKey": "d1da96f3-fd8f-4d9a-9b1d-71aff2b60d0a",
+  "name": "records",
+  "patches": {
+    "@/3d-acceleration": {
+      "attachments": [
+        {
+          "content": "",
+          "encoding": "utf-8",
+          "filename": "patch.cpp"
+        }
+      ],
+      "nodes": {
+        "B1F0E4owP": {
+          "id": "B1F0E4owP",
+          "label": "Y",
+          "position": {
+            "x": -7,
+            "y": -2,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/input-number"
+        },
+        "Byo5ANEiPD": {
+          "id": "Byo5ANEiPD",
+          "label": "Z",
+          "position": {
+            "x": -5,
+            "y": -2,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/input-number"
+        },
+        "HJNANNowv": {
+          "id": "HJNANNowv",
+          "label": "X",
+          "position": {
+            "x": -9,
+            "y": -2,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/input-number"
+        },
+        "HkPyS4iPw": {
+          "id": "HkPyS4iPw",
+          "position": {
+            "x": -9,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/output-self"
+        },
+        "ry7yB4jwv": {
+          "id": "ry7yB4jwv",
+          "position": {
+            "x": -9,
+            "y": -1,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/record"
+        }
+      },
+      "path": "@/3d-acceleration"
+    },
+    "@/hand": {
+      "attachments": [
+        {
+          "content": "",
+          "encoding": "utf-8",
+          "filename": "patch.cpp"
+        }
+      ],
+      "nodes": {
+        "B1RnPqjwv": {
+          "id": "B1RnPqjwv",
+          "label": "a2",
+          "position": {
+            "x": 5,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "@/input-joint"
+        },
+        "ByaSDcoDP": {
+          "id": "ByaSDcoDP",
+          "label": "a0",
+          "position": {
+            "x": 1,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "@/input-joint"
+        },
+        "ryCFvcjDD": {
+          "id": "ryCFvcjDD",
+          "position": {
+            "x": 1,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/record"
+        },
+        "ryG9vcjDP": {
+          "id": "ryG9vcjDP",
+          "position": {
+            "x": 1,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/output-self"
+        },
+        "ryr8DcivD": {
+          "id": "ryr8DcivD",
+          "label": "a1",
+          "position": {
+            "x": 3,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "@/input-joint"
+        }
+      },
+      "path": "@/hand"
+    },
+    "@/joint": {
+      "attachments": [
+        {
+          "content": "",
+          "encoding": "utf-8",
+          "filename": "patch.cpp"
+        }
+      ],
+      "nodes": {
+        "BkZNDcoDP": {
+          "id": "BkZNDcoDP",
+          "label": "ACC",
+          "position": {
+            "x": 3,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "@/input-3d-acceleration"
+        },
+        "H1KmwqiwP": {
+          "id": "H1KmwqiwP",
+          "label": "Y",
+          "position": {
+            "x": 2,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/input-number"
+        },
+        "H1jEDqjwv": {
+          "id": "H1jEDqjwv",
+          "position": {
+            "x": 1,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/output-self"
+        },
+        "H1w4w9jvD": {
+          "id": "H1w4w9jvD",
+          "position": {
+            "x": 1,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/record"
+        },
+        "r1_mP9iwD": {
+          "id": "r1_mP9iwD",
+          "label": "X",
+          "position": {
+            "x": 1,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "xod/patch-nodes/input-number"
+        }
+      },
+      "path": "@/joint"
+    },
+    "@/nested-records": {
+      "links": {
+        "BJHJdciww": {
+          "id": "BJHJdciww",
+          "input": {
+            "nodeId": "Hks2w5sPP",
+            "pinKey": "ryr8DcivD"
+          },
+          "output": {
+            "nodeId": "r19pv9swD",
+            "pinKey": "H1jEDqjwv"
+          }
+        },
+        "BJYed9swP": {
+          "id": "BJYed9swP",
+          "input": {
+            "nodeId": "S1WeO9owD",
+            "pinKey": "HkXK-dGob"
+          },
+          "output": {
+            "nodeId": "ryayu5oDD",
+            "pinKey": "rk7uQih8v"
+          }
+        },
+        "By8kOqsPP": {
+          "id": "By8kOqsPP",
+          "input": {
+            "nodeId": "Hks2w5sPP",
+            "pinKey": "B1RnPqjwv"
+          },
+          "output": {
+            "nodeId": "ryp0vqjvv",
+            "pinKey": "H1jEDqjwv"
+          }
+        },
+        "HJVk_ciPv": {
+          "id": "HJVk_ciPv",
+          "input": {
+            "nodeId": "Hks2w5sPP",
+            "pinKey": "ByaSDcoDP"
+          },
+          "output": {
+            "nodeId": "ryasDcsPP",
+            "pinKey": "H1jEDqjwv"
+          }
+        },
+        "SkCJuqjvw": {
+          "id": "SkCJuqjvw",
+          "input": {
+            "nodeId": "ryayu5oDD",
+            "pinKey": "SJpDQonLw"
+          },
+          "output": {
+            "nodeId": "Hks2w5sPP",
+            "pinKey": "ryG9vcjDP"
+          }
+        },
+        "SylnwqiDD": {
+          "id": "SylnwqiDD",
+          "input": {
+            "nodeId": "ryasDcsPP",
+            "pinKey": "BkZNDcoDP"
+          },
+          "output": {
+            "nodeId": "rJOqw9jww",
+            "pinKey": "HkPyS4iPw"
+          }
+        },
+        "r1n6D5iDP": {
+          "id": "r1n6D5iDP",
+          "input": {
+            "nodeId": "r19pv9swD",
+            "pinKey": "BkZNDcoDP"
+          },
+          "output": {
+            "nodeId": "rJ05wqiDv",
+            "pinKey": "HkPyS4iPw"
+          }
+        },
+        "rJJJd9iDD": {
+          "id": "rJJJd9iDD",
+          "input": {
+            "nodeId": "ryp0vqjvv",
+            "pinKey": "BkZNDcoDP"
+          },
+          "output": {
+            "nodeId": "HkfTD9svP",
+            "pinKey": "HkPyS4iPw"
+          }
+        }
+      },
+      "nodes": {
+        "HkfTD9svP": {
+          "boundLiterals": {
+            "B1F0E4owP": "-1",
+            "Byo5ANEiPD": "0",
+            "HJNANNowv": "0.5"
+          },
+          "id": "HkfTD9svP",
+          "position": {
+            "x": 8,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "@/3d-acceleration"
+        },
+        "Hks2w5sPP": {
+          "id": "Hks2w5sPP",
+          "position": {
+            "x": 1,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "@/hand"
+        },
+        "S1WeO9owD": {
+          "id": "S1WeO9owD",
+          "position": {
+            "x": 1,
+            "y": 4,
+            "units": "slots"
+          },
+          "size": {
+            "height": 1,
+            "width": 10,
+            "units": "slots"
+          },
+          "type": "xod/debug/watch"
+        },
+        "r19pv9swD": {
+          "boundLiterals": {
+            "H1KmwqiwP": "0",
+            "r1_mP9iwD": "20"
+          },
+          "id": "r19pv9swD",
+          "position": {
+            "x": 2,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "@/joint"
+        },
+        "rJ05wqiDv": {
+          "boundLiterals": {
+            "B1F0E4owP": "-1",
+            "Byo5ANEiPD": "0"
+          },
+          "id": "rJ05wqiDv",
+          "position": {
+            "x": 4,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "@/3d-acceleration"
+        },
+        "rJOqw9jww": {
+          "boundLiterals": {
+            "Byo5ANEiPD": "-1"
+          },
+          "id": "rJOqw9jww",
+          "position": {
+            "x": 0,
+            "y": 0,
+            "units": "slots"
+          },
+          "type": "@/3d-acceleration"
+        },
+        "ryasDcsPP": {
+          "id": "ryasDcsPP",
+          "position": {
+            "x": -2,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "@/joint"
+        },
+        "ryayu5oDD": {
+          "id": "ryayu5oDD",
+          "position": {
+            "x": 1,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod/json/to-json"
+        },
+        "ryp0vqjvv": {
+          "boundLiterals": {
+            "H1KmwqiwP": "45",
+            "r1_mP9iwD": "20"
+          },
+          "id": "ryp0vqjvv",
+          "position": {
+            "x": 6,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "@/joint"
+        }
+      },
+      "path": "@/nested-records"
+    },
+    "@/record-to-feeds": {
+      "links": {
+        "HJ2oPVowv": {
+          "id": "HJ2oPVowv",
+          "input": {
+            "nodeId": "B15svEsDD",
+            "pinKey": "SJpDQonLw"
+          },
+          "output": {
+            "nodeId": "rJQYv4jPw",
+            "pinKey": "HkPyS4iPw"
+          }
+        },
+        "HkLRVcswD": {
+          "id": "HkLRVcswD",
+          "input": {
+            "nodeId": "HJLnvEivw",
+            "pinKey": "r1m2IKiY5r"
+          },
+          "output": {
+            "nodeId": "By40Eqswv",
+            "pinKey": "HJU8CE2lW"
+          }
+        },
+        "S1GzV9sPw": {
+          "id": "S1GzV9sPw",
+          "input": {
+            "nodeId": "rJQYv4jPw",
+            "pinKey": "B1F0E4owP"
+          },
+          "output": {
+            "nodeId": "SJbfVciDP",
+            "pinKey": "ByfGSDjQE"
+          }
+        },
+        "S1qADVsDv": {
+          "id": "S1qADVsDv",
+          "input": {
+            "nodeId": "HJLnvEivw",
+            "pinKey": "rJgh8tjF9r"
+          },
+          "output": {
+            "nodeId": "BkYRDVsvv",
+            "pinKey": "SyveJHHBL"
+          }
+        },
+        "SkcnwNsvP": {
+          "id": "SkcnwNsvP",
+          "input": {
+            "nodeId": "HJLnvEivw",
+            "pinKey": "rJfEHhF5r"
+          },
+          "output": {
+            "nodeId": "B15svEsDD",
+            "pinKey": "rk7uQih8v"
+          }
+        },
+        "Sy6WV5jvw": {
+          "id": "Sy6WV5jvw",
+          "input": {
+            "nodeId": "rJQYv4jPw",
+            "pinKey": "HJNANNowv"
+          },
+          "output": {
+            "nodeId": "HkhZV5jvw",
+            "pinKey": "ByfGSDjQE"
+          }
+        },
+        "SywM45svP": {
+          "id": "SywM45svP",
+          "input": {
+            "nodeId": "rJQYv4jPw",
+            "pinKey": "Byo5ANEiPD"
+          },
+          "output": {
+            "nodeId": "rJrfE9jDP",
+            "pinKey": "ByfGSDjQE"
+          }
+        }
+      },
+      "nodes": {
+        "B15svEsDD": {
+          "id": "B15svEsDD",
+          "position": {
+            "x": 1,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod/json/to-json"
+        },
+        "BkYRDVsvv": {
+          "id": "BkYRDVsvv",
+          "position": {
+            "x": -1,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod/debug/tethering-inet"
+        },
+        "By40Eqswv": {
+          "boundLiterals": {
+            "B13SCNhl-": "5"
+          },
+          "id": "By40Eqswv",
+          "position": {
+            "x": 2,
+            "y": 3,
+            "units": "slots"
+          },
+          "type": "xod/core/clock"
+        },
+        "HJLnvEivw": {
+          "boundLiterals": {
+            "ryZ28tst5B": "\"accelerometer\""
+          },
+          "id": "HJLnvEivw",
+          "position": {
+            "x": -1,
+            "y": 4,
+            "units": "slots"
+          },
+          "type": "xod-cloud/feeds/cloud-store"
+        },
+        "HkhZV5jvw": {
+          "boundLiterals": {
+            "ByfGSDjQE": "0.06"
+          },
+          "id": "HkhZV5jvw",
+          "position": {
+            "x": 1,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/debug/tweak-number"
+        },
+        "SJbfVciDP": {
+          "boundLiterals": {
+            "ByfGSDjQE": "-0.2"
+          },
+          "id": "SJbfVciDP",
+          "position": {
+            "x": 2,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/debug/tweak-number"
+        },
+        "rJQYv4jPw": {
+          "id": "rJQYv4jPw",
+          "position": {
+            "x": 1,
+            "y": 2,
+            "units": "slots"
+          },
+          "type": "@/3d-acceleration"
+        },
+        "rJrfE9jDP": {
+          "boundLiterals": {
+            "ByfGSDjQE": "1.25"
+          },
+          "id": "rJrfE9jDP",
+          "position": {
+            "x": 3,
+            "y": 1,
+            "units": "slots"
+          },
+          "type": "xod/debug/tweak-number"
+        }
+      },
+      "path": "@/record-to-feeds"
+    }
+  }
+}
