@@ -57,6 +57,51 @@ h2.icon.header {
 - [Get started](./tutorial/install/)
 - [Full index](./tutorial/) (42 chapters)
 
+<style>
+  .banner-colony-kit {
+    position: relative;
+    display: block;
+
+    width: 100%;
+    height: auto;
+    background: rgb(55,55,55);
+    background: linear-gradient(0deg, rgba(36,36,36,1) 0%, rgba(55,55,55,1) 50%, rgba(59,59,59,1) 100%);
+
+    border-radius: 4px;
+    padding: .5em .5em 1em 5em;
+    cursor: pointer;
+  }
+  .banner-colony-kit:before {
+    position: absolute;
+    content: '';
+    display: block;
+    z-index: 0;
+    width: 90px;
+    height: 90px;
+    left: .5em;
+    top: .5em;
+
+    background-image: url(./__img__/colony-kit.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .banner-colony-kit * {
+    color: #fff;
+    font-size: .8em;
+  }
+  .banner-colony-kit p {
+    font-size: .66em;
+  }
+
+</style>
+<a href="https://my.amperka.com/kits/colony-kit?utm_source=site&utm_medium=docs&utm_campaign=tutorial" class="banner-colony-kit">
+  <h3>Amperka Colony Kit</h3>
+  <p>
+    Alternative XOD tutorial with a microcontroller, sensors, actuators, and a colorful guide with an exciting story inside.
+  </p>
+</a>
+
+
 <h3>For video lovers</h3>
 
 <div class="ui relaxed list">

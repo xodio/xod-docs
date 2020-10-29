@@ -1,6 +1,6 @@
 ---
 title: Welcome to XOD, Maker!
-version: 2.1.0
+version: 2.1.1
 ---
 
 <!--
@@ -45,6 +45,16 @@ Let’s learn how to navigate a project.
 ## 👆 Web hints
 
 If anything goes wrong or you have no idea what to do, we have [hints for every patch](https://xod.io/docs/tutorial/001-hello/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial) on the web.
+
+## Alternative tutorial
+
+If you want to learn programming microcontrollers with XOD by making a smart and pretty looking tabletop device, check out the [Amperka&nbsp;Colony Kit](https://my.amperka.com/kits/colony-kit?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial).
+
+[![Colony Kit from Amperka](https://xod.io/docs/tutorial/001-hello/colony-kit.png)](https://my.amperka.com/kits/colony-kit?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial)
+
+It contains a mictocontroller, sensots, actuators, and a paper guide with an exciting story inside.
+
+
 
 <div class="ui grid">
   <div class="five wide column left aligned ">
