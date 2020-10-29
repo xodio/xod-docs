@@ -1,6 +1,6 @@
 ---
 title: C++ Node API Reference
-version: 0.35.0
+version: 0.36.0
 ---
 
 # C++ Node API Reference
@@ -19,6 +19,16 @@ Represents a big integer to store time values expressed in milliseconds. Typedef
 
 Represents XOD string. Typedef’ed to [`List<char>`](#List), so the same methods and functions may be used to manipulate it.
 
+## Inside `node {}`
+
+The `node` block describes the state and behaviour of a node. Under the hood, it is converted to a regular C++ `struct`, and should be treated as such. You can add fields and methods to it.
+
+#### `meta {}`
+
+The `meta` block used to group some part of code that will be placed inside a `struct Node` before the generated code.
+
+Usually used to define a custom type.
+
 #### `Context`
 
 An opaque type to distinguish a particular instance of node among other nodes of the same type.
@@ -29,31 +39,66 @@ Required as an argument for most node functions. Can be thought as an explicit `
 
 A user-defined struct to store node’s data for a lifetime of the program. Each node type has its own `State` definition.
 
-<a name="input_xxx"></a>
-
-#### `input_$$$`
-
-Automatically generated descriptor for each of node’s inputs. Never instantiated. Used as a template argument in functions to access input data.
-
-`$$$` gets replaced by a pin label as is. For example, `input_FOO`, `input_Smin`. If a node has a single unlabeled input, `input_IN` is generated for it. If a node has multiple unlabeled inputs, they are referred as `input_IN1`, `input_IN2`,…, `input_IN7`.
-
-<a name="output_xxx"></a>
-
-#### `output_$$$`
-
-Automatically generated descriptor for each of node’s outputs. Never instantiated. Used as a template argument in functions to access output data.
-
-`$$$` gets replaced by a pin label as is. For example, `output_BAR`, `output_Tc`. If a node has a single unlabeled output, `output_OUT` is generated for it. If a node has multiple unlabeled outputs, they are referred as `output_OUT1`, `output_OUT2`,…, `output_OUT7`.
-
-XOD runtime supports no more than seven outputs on C\++ nodes.
-
-<a name="typeof_xxx"></a>
-
 #### `typeof_$$$`
 
 A type for each of node's pins. Useful to access the type of a pin if its symbol is hardly accessible in other ways.
 
 `$$$` gets replaced by a pin label as is. For example, `typeof_IN`, `typeof_OUT`. Since pin names are unique, there is no destinction between inputs and outputs.
+
+### Pin descriptors
+
+Automatically generated descriptor for each of node’s pins. Never instantiated. Used as a template argument in functions to access data.
+
+`$$$` gets replaced by a pin label as is. For example, `input_Smin`, `output_FOO`.
+
+<a name="input_xxx"></a>
+
+#### `input_$$$`
+
+If a node has a single unlabeled input, `input_IN` is generated for it.
+
+If a node has multiple unlabeled inputs, they are referred as `input_IN1`, `input_IN2`,…, `input_IN7`.
+
+<a name="output_xxx"></a>
+
+#### `output_$$$`
+
+XOD runtime supports no more than seven outputs on C\++ nodes.
+
+If a node has a single unlabeled output, `output_OUT` is generated for it.
+
+If a node has multiple unlabeled outputs, they are referred as `output_OUT1`, `output_OUT2`,…, `output_OUT7`.
+
+### Constant pin values
+
+Known at a compile time. Might be used in static asserts to ensure correctness.
+
+#### `constant_input_$$$`
+
+A value of a constant input pin.
+
+#### `constant_output_$$$`
+
+The descriptor for constant output of the node.
+
+Should be defined manually as
+
+```cpp
+static constexpr typeof_OUT constant_output_OUT = $$$;
+```
+
+`$$$` should be replaced with a valid value for the output.
+
+In case of creating an "unpack" node for the custom type, which is a struct that contains a constant value (such as PORT), you might define it as:
+```cpp
+static constexpr typeof_OUT constant_output_OUT = typeof_DEV::port;
+```
+
+## `nodespace {}`
+
+The `nodespace` block is used to place some code outside the `struct Node {}`, but inside a node namespace, so this code will be accessible only with that node.
+
+It's a good place to [store some constants in PROGMEM](/libs/xod/graphics/heart-16x16-rgba/), make an [alias for a shared type](/libs/xod/json/number-value/) and so on.
 
 ## Node functions
 
@@ -115,7 +160,7 @@ Schedules a forced re-evaluation of a node past `timeout` milliseconds after the
 
 A node may have at most one scheduled update. If called multiple times, the subsequent calls cancel the previous schedule for the node.
 
-Pass `0` for `timeout` to schedule evaluation right after the current transaction completes. Effectively it forces a new transaction trigger after the current.
+If you need to schedule evaluation right after the current transaction completes, use [`setImmediate`](#setImmediate) instead.
 
 <a name="clearTimeout"></a>
 
@@ -128,6 +173,12 @@ Cancels scheduled evaluation of a node (if present). Safe to call even if the up
 #### `bool isTimedOut(Context ctx)`
 
 Returns `true` if node’s schedule timed out right at the current transaction. Unless scheduled again will return `false` since the next transaction.
+
+<a name="setImmediate"></a>
+
+#### `void setImmediate()`
+
+Schedules a forced re-evaluation of the node at the next transaction.
 
 <a name="raiseError"></a>
 

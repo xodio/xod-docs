@@ -222,7 +222,7 @@ Now you’ve learned how to introduce custom types. Use them wisely to create ne
 powerful abstractions. Think about more complicated applications to get even
 more power from custom types:
 
-- Use own `struct` as `Type` to hold composite data
+- Use own `struct` as `Type` to hold composite data or use [records](../records) instead
 - Use a pointer to a C++ object as `Type` to provide wrappers around C++ classes
 - Build custom types based on other custom types
 - Combine custom types with [generics](../generics/) to build unified interfaces
