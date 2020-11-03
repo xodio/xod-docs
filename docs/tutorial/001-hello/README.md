@@ -52,13 +52,13 @@ If you want to learn programming microcontrollers with XOD by making a smart and
 
 [![Colony Kit from Amperka](https://xod.io/docs/tutorial/001-hello/colony-kit.png)](https://my.amperka.com/kits/colony-kit?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial)
 
-It contains a mictocontroller, sensots, actuators, and a paper guide with an exciting story inside.
+It contains a microcontroller, sensors, actuators, and a paper guide with an exciting story inside.
 
 
 
 <div class="ui grid">
   <div class="five wide column left aligned ">
-    
+
   </div>
   <div class="six wide column center aligned ">
     <a href="../">Index</a>
