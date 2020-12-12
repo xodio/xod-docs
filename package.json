@@ -4,9 +4,9 @@
   "description": "XOD documentation",
   "scripts": {
     "prettier": "prettier --write",
-    "prettier-check": "prettier-check",
+    "prettier-check": "prettier -c",
     "prettier:all": "prettier --write '**/*.md'",
-    "prettier-check:all": "prettier-check '**/*.md'"
+    "prettier-check:all": "prettier -c '**/*.md'"
   },
   "repository": {
     "type": "git",
@@ -24,11 +24,9 @@
   },
   "homepage": "https://github.com/xodio/xod-docs#readme",
   "prettier": {
-    "parser": "markdown",
     "proseWrap": "never"
   },
   "devDependencies": {
-    "prettier": "^1.19.1",
-    "prettier-check": "^2.0.0"
+    "prettier": "^2.2.1"
   }
 }
