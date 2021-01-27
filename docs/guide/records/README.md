@@ -45,7 +45,6 @@ The serialization to JSON format requires some free dynamic memory. The patch fr
 
 Records can contain any custom types, including other records, without any limitation on the nesting level. It also makes it possible to send complex data structures in JSON format.
 
-
 ![Nested records example](./nested-records.patch.png)
 
 However, most of the custom types have no `to-json` specializations, so you'll get a compilation error if you try to serialize a record, which contains, for example, an `i2c` type. But, if you really need to serialize some custom type you can create `to-json` [specialization](../generics/#specializations) manually. It should output a JSON-serialized string.

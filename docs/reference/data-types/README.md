@@ -5,8 +5,7 @@ version: 1.2.0
 
 # Data Types Reference
 
-This reference briefly describes properties of built-in XOD types. To learn
-about the types see [Data types guide](/docs/guide/data-types/).
+This reference briefly describes properties of built-in XOD types. To learn about the types see [Data types guide](/docs/guide/data-types/).
 
 ## Color code
 
@@ -14,9 +13,7 @@ about the types see [Data types guide](/docs/guide/data-types/).
 
 ## Casting rules
 
-The following table shows _implicit_ casts possible. That is, when a direct link
-between two various data types is valid. Even if the direct link is forbidden,
-there are nodes that help to convert between types explicitly.
+The following table shows _implicit_ casts possible. That is, when a direct link between two various data types is valid. Even if the direct link is forbidden, there are nodes that help to convert between types explicitly.
 
 <table class="ui definition single line table">
   <thead>
@@ -88,8 +85,7 @@ there are nodes that help to convert between types explicitly.
   </tbody>
 </table>
 
-Here are details on how the data is transformed exactly when an implicit cast
-takes place.
+Here are details on how the data is transformed exactly when an implicit cast takes place.
 
 <table class="ui table">
   <thead>
@@ -180,8 +176,7 @@ takes place.
 
 ## Literals
 
-This section summarizes valid text input (i.e., grammar) for various data types.
-It matters, for example, when you enter values in IDE with Inspector.
+This section summarizes valid text input (i.e., grammar) for various data types. It matters, for example, when you enter values in IDE with Inspector.
 
 ### Number literals
 
@@ -259,8 +254,7 @@ Valid literals are:
 - `True`
 - `False`
 
-In some inputs IDE or CLI can normalize almost valid literals like lower-cased
-`true` or `false`, however the canonical form is as shown.
+In some inputs IDE or CLI can normalize almost valid literals like lower-cased `true` or `false`, however the canonical form is as shown.
 
 ### Byte literals
 
@@ -303,9 +297,7 @@ In some inputs IDE or CLI can normalize almost valid literals like lower-cased
   </tbody>
 </table>
 
-In some inputs IDE or CLI can normalize almost valid literals like `3h` (no
-leading zero), `0x03` (customary hexadecimal for C\++, JavaScript, and Python
-programmers), `3` (implied decimal 3), however the canonical form is as shown.
+In some inputs IDE or CLI can normalize almost valid literals like `3h` (no leading zero), `0x03` (customary hexadecimal for C\++, JavaScript, and Python programmers), `3` (implied decimal 3), however the canonical form is as shown.
 
 ### Port literals
 
@@ -328,11 +320,7 @@ programmers), `3` (implied decimal 3), however the canonical form is as shown.
   </tbody>
 </table>
 
-Note that analog port values can be converted to digital port values, but not
-vice versa. So, in cases when an analog channel and a digital port share the
-same physical board pin (e.g., A6 and D4 on Arduino Leonardo) you must choose A6
-for ADC reading, albeit for digital operations either will be suitable: `A6`
-will be coerced to `D4` by the runtime engine.
+Note that analog port values can be converted to digital port values, but not vice versa. So, in cases when an analog channel and a digital port share the same physical board pin (e.g., A6 and D4 on Arduino Leonardo) you must choose A6 for ADC reading, albeit for digital operations either will be suitable: `A6` will be coerced to `D4` by the runtime engine.
 
 ### String literals
 

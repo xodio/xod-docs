@@ -2,7 +2,7 @@
 title: SSD1306 display
 version: 1.0.0
 description: |
-    How to work with SSD1306 displays in the XOD programming language.
+  How to work with SSD1306 displays in the XOD programming language.
 image: ./ssd1306-displays.jpg
 ---
 
@@ -33,7 +33,7 @@ At the moment, the library allows to work only with displays with a resolution o
 
 ## Quick start node
 
-The library provides the quickstart node [`ssd1306-128x64-i2c`](/libs/xod-dev/ssd1306-display/ssd1306-128x64-i2c) for the SSD1306 I²C display with the 128x64 pixels resolution. 
+The library provides the quickstart node [`ssd1306-128x64-i2c`](/libs/xod-dev/ssd1306-display/ssd1306-128x64-i2c) for the SSD1306 I²C display with the 128x64 pixels resolution.
 
 ![Quickstart node](./quickstart-node.png)
 
@@ -49,8 +49,7 @@ Here is a simple example of using the quick-start node. Connect the display to a
 
 Let's display a white filled circle in the center of the screen.
 
-Create an empty patch and put the [`ssd1306-128x64-i2c`](/libs/xod-dev/ssd1306-display/ssd1306-128x64-i2c) quickstart node onto it.
-The display from this example has the `3C` hexadecimal I²C address so we put the `3Ch` value to the `ADDR` pin.
+Create an empty patch and put the [`ssd1306-128x64-i2c`](/libs/xod-dev/ssd1306-display/ssd1306-128x64-i2c) quickstart node onto it. The display from this example has the `3C` hexadecimal I²C address so we put the `3Ch` value to the `ADDR` pin.
 
 Using the [XOD graphics library](/docs/guide/graphics-library), create a new `canvas` with the size of a display screen. The width `W` of the canvas is `128` and the height `H` is `64`. The display is monochrome, and you can leave the default colors of the scene untouched. The background color `BG` is black (`#000000`) and the foreground color `FG` is white (`#FFFFFF`).
 
@@ -72,7 +71,7 @@ You can change the position of the circle on the canvas using tweaks. For exampl
 
 The parameters of graphic nodes can be changed using other nodes. For example, let's replace the filled circle with a text field and control its size on the screen with a potentiometer.
 
-Remove tweak nodes from the patch. Replace the `circle-solid` node with the `text` node from the `xod/graphics` library. Next, set the text string, let it be `"Hello world!"`. Enter it at the `S` pin of the `text` node.  Add the `pot` nodes and `multiply` node to control the scale of the text. The potentiometer is connected to the `A0` Arduino port. Link the `multiply` output with the `SCL` pin.
+Remove tweak nodes from the patch. Replace the `circle-solid` node with the `text` node from the `xod/graphics` library. Next, set the text string, let it be `"Hello world!"`. Enter it at the `S` pin of the `text` node. Add the `pot` nodes and `multiply` node to control the scale of the text. The potentiometer is connected to the `A0` Arduino port. Link the `multiply` output with the `SCL` pin.
 
 ![Quickstart example with nodes](./quickstart-example-with-nodes.png)
 
@@ -90,11 +89,11 @@ If the quickstart nodes doesn’t suit your task try to operate developer nodes 
 
 ## Render the scene
 
-The `render` node is your main tool to display [graphic scenes](/docs/guide/graphics-library/#scene-as-a-tree). The `render` processes a single branch of the graphic tree created using the [graphics library](/docs/guide/graphics-library), renders it, and displays at the device. 
+The `render` node is your main tool to display [graphic scenes](/docs/guide/graphics-library/#scene-as-a-tree). The `render` processes a single branch of the graphic tree created using the [graphics library](/docs/guide/graphics-library), renders it, and displays at the device.
 
 ![Render node](./render-node.png)
 
-A graphic tree branch to render links to the input `GFX` pin. A pulse signal at the `DO` pin is a trigger to process the graphic scene and display it. If the scene is rendered, a pulse comes to the `DONE` output pin. 
+A graphic tree branch to render links to the input `GFX` pin. A pulse signal at the `DO` pin is a trigger to process the graphic scene and display it. If the scene is rendered, a pulse comes to the `DONE` output pin.
 
 Use multiple `render` nodes simultaneously. Processing various branches of the graphic tree at a different time, you can show dynamic graphic scenes at the screen.
 
@@ -102,6 +101,4 @@ Here is the example of a three `render` nodes use. The tree of graphic elements 
 
 ![Render daisy chain](./render-daisy-chain.png)
 
-The first `render` is on `boot`; it fills the display screen with a specified `canvas` only once — after powering the device.
-The second `render` is responsible for `point 1` on the canvas. Its trigger is set to `loop`. It means that any changes in the `point 1` position are immediately shown on the screen.
-The third `render` is responsible for displaying the `point 2` and its trigger is linked to the `button`. Here you can also change the `point 2` position, but the changes are displayed only after the button click.
+The first `render` is on `boot`; it fills the display screen with a specified `canvas` only once — after powering the device. The second `render` is responsible for `point 1` on the canvas. Its trigger is set to `loop`. It means that any changes in the `point 1` position are immediately shown on the screen. The third `render` is responsible for displaying the `point 2` and its trigger is linked to the `button`. Here you can also change the `point 2` position, but the changes are displayed only after the button click.

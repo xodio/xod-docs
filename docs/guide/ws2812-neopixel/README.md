@@ -9,7 +9,7 @@ version: 1.0.0
     <source src="./heading.mp4" type="video/mp4">
 </video>
 
-*Arduino Uno fills 1024 RGB LEDs with a two-color pattern*
+_Arduino Uno fills 1024 RGB LEDs with a two-color pattern_
 
 WS2812 (also known as Adafruit NeoPixel) is an intelligent light source that combines RGB LED and a controlling chip in a single component. The components come in various forms and sizes but the principle is kept the same. The chip is receiving data over the one wire `Din`, takes the first bytes needed for itself, and passes the rest to the `Dout` pin. That makes it possible to daisy chain such LEDs into a long strip, or assemble into any form-factor like matrix, circle, or whatever.
 
@@ -17,12 +17,10 @@ WS2812 (also known as Adafruit NeoPixel) is an intelligent light source that com
 
 XOD offers a [`xod-dev/ws2812`](https://xod.io/libs/xod-dev/ws2812) library to work with NeoPixel LEDs.
 
-
 <div class="ui segment note">
 <span class="ui ribbon label">Note</span>
 This library differs from many other Arduino libraries for NeoPixel in that it allows controlling a huge amount of LEDs with constant and low memory footprint. For example, with most of the libraries, Arduino Uno can control no more than 552 LEDs using a program with no other logic. The XOD library places no such limits.
 </div>
-
 
 ## Wiring
 
@@ -36,16 +34,12 @@ Here is a very basic example of the WS2812 LED strip connection to Arduino Uno:
 
 ![Uno connected to WS2812 LED strip](./uno-with-strip.fz.png)
 
-
 <div class="ui segment note">
 <span class="ui ribbon label">Note</span>
 
-
 In this example, strips' `Vcc` and `Gnd` pins are connected directly to the Arduino Uno. However, if you have a long strip (more than 16 LEDs), you have to power it up from an external power source. Moreover, if your strip is very long, you have to cut it in several places and solder additional power and ground wires and connect two parts of the LED strip: `Dout` and `Din`.
 
-
 </div>
-
 
 In our examples below, we're using the 8x8 matrix. The data wire is connected to a digital pin `D4` of Arduino Uno. The matrix is controlled exactly the same way as a strip. You might consider it a strip that is funky-twisted in ZZZZ-order. The matrix is powered up from an external source and then it powers the controller.
 
@@ -120,16 +114,12 @@ The library also provides a feature to fill the LEDs with a repetitive pattern. 
 3. [Expand the variadic node](/docs/guide/variadics/) `pattern` and bind different colors.
 4. Upload the program.
 
-
 <div class="ui segment note">
 <span class="ui ribbon label">Note</span>
 
-
 A pattern fill is only one of the possible ways to fill the LEDs with not just solid colors. However, it's only one implemented way right now. Feel free to [contribute](/docs/contributing/).
 
-
 </div>
-
 
 ### Shifting pattern
 
