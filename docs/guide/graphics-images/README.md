@@ -14,7 +14,7 @@ By now, [`xod/graphics`](https://xod.io/libs/xod/graphics) supports only one way
 
 ## Bitmap node
 
-In XOD, any bitmap image is a node. 
+In XOD, any bitmap image is a node.
 
 ![Bitmap node](./bitmap-node.png)
 
@@ -34,7 +34,9 @@ node {
     }
 }
 ```
+
 A new image is created by calling `Bitmap myBitmap = Bitmap(bitmap, colorDepth, width, height, keyColor);` constructor which awaits five parameters:
+
 - `bitmap`, a pointer to the raw bitmap array of the image;
 - `colorDepth`, an integer value that sets the color depth of the bitmap image. It can be `0` - black and white image, `1` - color image, and `2` - color image with the key color specified;
 - `width`, a width of the bitmap image in pixels;
@@ -71,7 +73,7 @@ Ten 16x16 color icons, five of them with the `colorDepth` equal `2` and `0x0000`
 - The "Warning" icon. `warning-16x16-rgb` and `warning-16x16-rgba` with mask color;
 - The "Wi-Fi" icon. `wifi-16x16-rgb` and `wifi-16x16-rgba` with mask color.
 
-Five 16x16 black and white icons: 
+Five 16x16 black and white icons:
 
 ![BW icons](./bw-icons.jpg)
 
@@ -85,7 +87,7 @@ You can study the structure of these icons to create your images.
 
 ## Making own bitmap node
 
-How to create your own `Bitmap` node for an icon or image? Let's assume that you want to make a node containing the 100x100 pixels image of a cat. 
+How to create your own `Bitmap` node for an icon or image? Let's assume that you want to make a node containing the 100x100 pixels image of a cat.
 
 First of all, make a new patch for the image and name it, for example `cat`. Put the `not-implemented-in-xod` node and `output-bitmap` node from the `xod/graphics` library onto the patch. Edit the `not-implemented-in-xod` node. Use the C++ [template code](#bitmap-node) above as the starting point.
 
@@ -119,16 +121,17 @@ node {
 }
 ```
 
-That it! The node with the image is ready. 
+That it! The node with the image is ready.
 
 <div class="ui segment note">
 <span class="ui ribbon label">Note</span>
-It is worth calculating how much space the image takes up in the controller's flash memory. 
+It is worth calculating how much space the image takes up in the controller's flash memory.
 
-- For a color image; Find out the total number of pixels (bitmap width * bitmap height) and multiply it by two since, in XOD, a colored pixel is stored as a two-byte (RGB565) color.
+- For a color image; Find out the total number of pixels (bitmap width \* bitmap height) and multiply it by two since, in XOD, a colored pixel is stored as a two-byte (RGB565) color.
 - For a black and white image; First, calculate how many bytes a single row of pixels takes up. In a black and white image, pixels are stored in bits. Divide the image width by eight and round the result to a larger integer. Multiply the rounded value by the image height.
 
 For example, the `cat` bitmap is a color image that is `100` pixels wide and `100` pixels high. Let's calculate how much space this image takes in memory, 100 × 100 × 2 = 20 KB of flash memory. It is a huge chunk, and you can't display such an image on the Arduino Uno. But for high capacity controllers as Arduino Mega 2560 or ESP8266 controllers, it is suitable.
+
 </div>
 
 Let's show the created image on the [ST7735 display](/docs/guide/st7735-display) screen. For this, create a new patch and put the `st7735-128x160-g-device` and `render` nodes from the `xod-dev/st7735-display`library. Then make a tree of graphic elements. Put the `canvas` and `image` nodes from the `xod/graphics` library. Set up canvas width to `128` pixels and height to `160` pixels to fit the device screen. Link the created bitmap `cat` node with the `BMP` pin of the `image` node. Set the width and height of the `image` field to `100` pixels. Put the `image` in the middle of the `canvas`. For this, set the coordinates of the upper-left corner of the image to (`14`, `30`).
@@ -145,7 +148,7 @@ Now let's try to make and display the image with a color mask. As a source file,
 
 ![Source image Arduino logo](./arduino-logo.png)
 
-As you can see, this image has a red color (`#FF0000`) along the outline of the logo. It's the color that we use as a mask, making red part of the image "invisible" on the display screen. 
+As you can see, this image has a red color (`#FF0000`) along the outline of the logo. It's the color that we use as a mask, making red part of the image "invisible" on the display screen.
 
 Create one more `bitmap` image node and name it `logo`. Convert the source file to the array of bytes as we did making the `cat` node. But this time, we change some parameters in the `Bitmap` constructor.
 
@@ -165,7 +168,7 @@ If we want to make an image with a mask, we set the `colorDepth` value to `2`. A
 
 Let's expand our previous patch to display images on the [ST7735](/docs/guide/st7735-display) screen.
 
-Change the `BG` background color of the scene on the `canvas` node. For example, to the `#FF00FF` pink. It gives us a better view of the outline of the masked image on the screen. Add the `logo` image node onto the patch. Also, add the `button` and [generic](/docs/guide/generics) `if-else` node. Link the nodes, as shown below. 
+Change the `BG` background color of the scene on the `canvas` node. For example, to the `#FF00FF` pink. It gives us a better view of the outline of the masked image on the screen. Add the `logo` image node onto the patch. Also, add the `button` and [generic](/docs/guide/generics) `if-else` node. Link the nodes, as shown below.
 
 ![Cat and logo patch](./cat-and-logo-patch.png)
 

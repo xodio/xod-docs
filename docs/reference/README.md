@@ -15,8 +15,7 @@ title: Reference
 
 - [`xod/bits`](https://xod.io/libs/xod/bits/)
 - [`xod/common-hardware`](https://xod.io/libs/xod/common-hardware/)
-- [`xod/core`](https://xod.io/libs/xod/core/)
-  <i class="ui small yellow star outline icon"></i>
+- [`xod/core`](https://xod.io/libs/xod/core/) <i class="ui small yellow star outline icon"></i>
 - [`xod/gpio`](https://xod.io/libs/xod/gpio/)
 - [`xod/i2c`](https://xod.io/libs/xod/i2c/)
 - [`xod/math`](https://xod.io/libs/xod/math/)

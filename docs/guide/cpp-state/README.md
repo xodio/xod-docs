@@ -5,20 +5,13 @@ version: 0.35.0
 
 # Dealing with State in C++
 
-Nodes outputs of which depend _solely_ on their inputs in at any point of time
-are cool. They easy to understand, test, and compose. But building a useful
-device using only such pure nodes is not realistic. Someone needs to keep state
-along program run time.
+Nodes outputs of which depend _solely_ on their inputs in at any point of time are cool. They easy to understand, test, and compose. But building a useful device using only such pure nodes is not realistic. Someone needs to keep state along program run time.
 
-A node can define state data that will persist for the time the program
-executes. In other words, a node can put some value to the state in `evaluate`
-call and retrieve that value in any of subsequent `evaluate` invocations.
+A node can define state data that will persist for the time the program executes. In other words, a node can put some value to the state in `evaluate` call and retrieve that value in any of subsequent `evaluate` invocations.
 
 ## The task
 
-Let’s make a simple `count` node that will increment a value by one each time a
-pulse is sent to it. Also, we’ll make the step size configurable and provide a
-pulse input to reset the counter to zero.
+Let’s make a simple `count` node that will increment a value by one each time a pulse is sent to it. Also, we’ll make the step size configurable and provide a pulse input to reset the counter to zero.
 
 <div class="ui segment note">
 <span class="ui ribbon label">Note</span>
@@ -29,21 +22,17 @@ node with similar functionality. But let’s forget about it for a moment.
 
 ## Prepare the node
 
-As always, when you [make a C\++ node](../nodes-for-xod-in-cpp), start with a
-new patch, add required terminals, and the `not-implemented-in-xod` node.
+As always, when you [make a C\++ node](../nodes-for-xod-in-cpp), start with a new patch, add required terminals, and the `not-implemented-in-xod` node.
 
 ![Patch outline](./outline.patch.png)
 
-It’s a good idea to provide a resonable default value for `STEP`. We’ll set it
-to 1.
+It’s a good idea to provide a resonable default value for `STEP`. We’ll set it to 1.
 
 Double-click on `not-implemented-in-xod` node to open the code editor.
 
 ## Define a state shape
 
-You can define the persistent state in the `node` struct just like you would define fields in a regular C\++ struct.
-In our case, we need to store a single counter value, so we'll add a single field.
-Let’s call it `counterValue`:
+You can define the persistent state in the `node` struct just like you would define fields in a regular C\++ struct. In our case, we need to store a single counter value, so we'll add a single field. Let’s call it `counterValue`:
 
 ```cpp
 node {
@@ -55,11 +44,7 @@ node {
 }
 ```
 
-All state values, regardless of type, start with their default values. The
-default value for numbers is `0` anyway, so this initialization of
-`counterValue` through assignment is not required. Although the definition of
-the field is necessary, of course. We set it to `0` here just to demonstrate a
-possibility to initialize with another value like `42`.
+All state values, regardless of type, start with their default values. The default value for numbers is `0` anyway, so this initialization of `counterValue` through assignment is not required. Although the definition of the field is necessary, of course. We set it to `0` here just to demonstrate a possibility to initialize with another value like `42`.
 
 ## Accessing state
 
@@ -85,11 +70,7 @@ Of course, you may use the fields directly without any intermediate variables.
 
 ## Put all together
 
-As you know from [Data types](../data-types/) article pulses have no values. To
-check whether a pulse on the pin was fired in the current transaction we should
-use [`isInputDirty`](/docs/reference/node-cpp-api/#isInputDirty) function, not
-`getValue`. It doesn’t read values, instead it returns `true` if an upstream
-node just emitted a new value for the pin specified.
+As you know from [Data types](../data-types/) article pulses have no values. To check whether a pulse on the pin was fired in the current transaction we should use [`isInputDirty`](/docs/reference/node-cpp-api/#isInputDirty) function, not `getValue`. It doesn’t read values, instead it returns `true` if an upstream node just emitted a new value for the pin specified.
 
 Finally, here is an example implementation of our counter:
 
@@ -119,14 +100,9 @@ node {
 
 ## Moving state to outputs
 
-The user-defined fields are not the only thing which keeps data across transactions.
-Any node owns its output value as well. And the
-[`getValue`](/docs/reference/cpp-node-api/#getValue) function is allowed to
-access the most recent values set on outputs.
+The user-defined fields are not the only thing which keeps data across transactions. Any node owns its output value as well. And the [`getValue`](/docs/reference/cpp-node-api/#getValue) function is allowed to access the most recent values set on outputs.
 
-In our case, the `OUT` value always matches the value we store in `counterValue`. So
-it’s a duplication we can get rid off to save few bytes of RAM and make the code
-more compact:
+In our case, the `OUT` value always matches the value we store in `counterValue`. So it’s a duplication we can get rid off to save few bytes of RAM and make the code more compact:
 
 ```cpp
 node {
@@ -147,22 +123,16 @@ node {
 }
 ```
 
-Note how we changed the order of pulse checks to preserve the priority of `RST`
-pulse over the `INC` pulse.
+Note how we changed the order of pulse checks to preserve the priority of `RST` pulse over the `INC` pulse.
 
 ## Test it
 
-Well done! The node is ready. Use a couple of buttons and a `watch` node to test
-and play with it.
+Well done! The node is ready. Use a couple of buttons and a `watch` node to test and play with it.
 
 ![Test patch](./test.gif)
 
 ## Conclusion
 
-Using persistent state is easy. Remember though, data stored in it consumes RAM.
-Also, stateful nodes in many cases are more complicated than their pure
-counterparts; it’s easier to seed a bug in it. Use them with care.
+Using persistent state is easy. Remember though, data stored in it consumes RAM. Also, stateful nodes in many cases are more complicated than their pure counterparts; it’s easier to seed a bug in it. Use them with care.
 
-When possible, split a big stateful node into two smaller nodes: a stateful thin
-node and pure fat node. In other words, try to keep the most functionality in
-stateless nodes.
+When possible, split a big stateful node into two smaller nodes: a stateful thin node and pure fat node. In other words, try to keep the most functionality in stateless nodes.

@@ -101,7 +101,6 @@ h2.icon.header {
   </p>
 </a>
 
-
 <h3>For video lovers</h3>
 
 <div class="ui relaxed list">
@@ -130,18 +129,15 @@ h2.icon.header {
   </div>
 </h2>
 
-[Concepts](./guide/#concepts) — XOD language objects and processes described in
-detail.
+[Concepts](./guide/#concepts) — XOD language objects and processes described in detail.
 
-[Making your own nodes](./guide/#making-your-own-nodes) — the most
-straightforward way to extend XOD and add support for new hardware.
+[Making your own nodes](./guide/#making-your-own-nodes) — the most straightforward way to extend XOD and add support for new hardware.
 
 [XOD Cloud](./guide/#xod-cloud) — cloud services for IoT development.
 
 [Case studies](./guide/#case-studies) — how-to’s for common scenarios.
 
-[Development](./guide/#development) — creating, managing,
-and sharing programs in XOD.
+[Development](./guide/#development) — creating, managing, and sharing programs in XOD.
 
 </div><!-- column -->
 
@@ -157,8 +153,7 @@ and sharing programs in XOD.
 </h2>
 <div><!-- A div to force the following list to be the first-child and suppress margins -->
 
-- [Supported hardware](./reference/supported-hardware/)
-  <i class="ui large green microchip icon"></i>
+- [Supported hardware](./reference/supported-hardware/) <i class="ui large green microchip icon"></i>
 - [Mouse and keyboard shortcuts](./reference/shortcuts/)
 - [Data types reference](./reference/data-types/)
 - [C++ node API reference](./reference/node-cpp-api/)
@@ -170,8 +165,7 @@ and sharing programs in XOD.
 
 - [`xod/bits`](https://xod.io/libs/xod/bits/)
 - [`xod/common-hardware`](https://xod.io/libs/xod/common-hardware/)
-- [`xod/core`](https://xod.io/libs/xod/core/)
-  <i class="ui small yellow star outline icon"></i>
+- [`xod/core`](https://xod.io/libs/xod/core/) <i class="ui small yellow star outline icon"></i>
 - [`xod/gpio`](https://xod.io/libs/xod/gpio/)
 - [`xod/i2c`](https://xod.io/libs/xod/i2c/)
 - [`xod/math`](https://xod.io/libs/xod/math/)
@@ -211,6 +205,4 @@ and sharing programs in XOD.
 
 <h2 id="contributing" class="ui header"><a href="./contributing/">Contributing</a></h2>
 
-Looking for the ways to improve the documentation, XOD language, or the
-ecosystem? There are many opportunities and we’re happy to accept any help. Read
-the summary in the [Contributor’s guide](./contributing/).
+Looking for the ways to improve the documentation, XOD language, or the ecosystem? There are many opportunities and we’re happy to accept any help. Read the summary in the [Contributor’s guide](./contributing/).

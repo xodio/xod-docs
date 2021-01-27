@@ -60,7 +60,6 @@ The solid filled rectangles on the “Program” lifeline indicate that the proc
 - Then the PC takes the next chunk from the queue and sends it.
 - The previous two actions repeating until the program receives an `EOT` command from the PC. It indicates that the response is end and connection is closed.
 
-
 ## Production
 
 After you wrote and test the program with the `tethering-inet` node, you might want to use your device without a connected PC. It’s time to replace `tethering-inet` with the suitable node for module or microcontroller, which you have at your hands.

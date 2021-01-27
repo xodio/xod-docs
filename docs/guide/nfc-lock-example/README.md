@@ -3,7 +3,7 @@ title: NFC Smart Lock
 version: 1.0.0
 image: ./nfc-smart-lock-xod.jpg
 description: |
-    How to create an NFC smart lock using the XOD programming language.
+  How to create an NFC smart lock using the XOD programming language.
 ---
 
 # NFC Smart Lock
@@ -122,10 +122,5 @@ Create a few more patches like a `key-token`, validate each of them and combine 
 
 You've got a working smart NFC lock. You can improve it or make something different using the same modules or parts of the program. But we have some ideas to improve the same lock, which can help you get a deeper knowledge of programming in XOD:
 
-1. Add an SD logger.
-   So you can check out is there anybody tried to open the lock with invalid cards?
-   Or maybe someone opened it up with the valid one?
-   You'll need an SD-card module and the [`sd-log`](https://xod.io/libs/xod/common-hardware/sd-log/) node.
-2. Add human-friendly date to the logs.
-   You can get know the time when someone tried to open the lock.
-   You'll need an RTC (Real-time clock) module and some nodes from the [`xod-dev/ds-rtc`](https://xod.io/libs/xod-dev/ds-rtc/) standard library.
+1. Add an SD logger. So you can check out is there anybody tried to open the lock with invalid cards? Or maybe someone opened it up with the valid one? You'll need an SD-card module and the [`sd-log`](https://xod.io/libs/xod/common-hardware/sd-log/) node.
+2. Add human-friendly date to the logs. You can get know the time when someone tried to open the lock. You'll need an RTC (Real-time clock) module and some nodes from the [`xod-dev/ds-rtc`](https://xod.io/libs/xod-dev/ds-rtc/) standard library.

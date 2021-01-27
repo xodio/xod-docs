@@ -90,6 +90,7 @@ static constexpr typeof_OUT constant_output_OUT = $$$;
 `$$$` should be replaced with a valid value for the output.
 
 In case of creating an "unpack" node for the custom type, which is a struct that contains a constant value (such as PORT), you might define it as:
+
 ```cpp
 static constexpr typeof_OUT constant_output_OUT = typeof_DEV::port;
 ```

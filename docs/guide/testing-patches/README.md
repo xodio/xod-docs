@@ -39,13 +39,11 @@ Here’s how a typical tabtest looks like:
 <div class="ui segment">
 <span class="ui ribbon label">Input values and expected outputs</span>
 
-Input values and expected outputs defined by tabtest literals, which generally is the same as literals in Inspector, but have some special literals.
-See the full list of tabtest literals in the [reference](/docs/reference/tabtests/).
+Input values and expected outputs defined by tabtest literals, which generally is the same as literals in Inspector, but have some special literals. See the full list of tabtest literals in the [reference](/docs/reference/tabtests/).
 
 </div>
 
 When you run tests, they either pass or fail with an error describing the difference between actual and expected outputs.
-
 
 ## Primitive types
 
@@ -148,7 +146,6 @@ You can write tabtests for the nodes with C++ implementation in the same way, ju
 
 </div>
 
-
 ## State keeping
 
 We just tested a pure node. That is a node which depends only on its input values when producing output. But how to deal with impure nodes, like `count`, which also depend on the internal state and past?
@@ -203,7 +200,6 @@ All right, we did not tighten the nuts so that we can test these nodes too, but 
 Do not forget to test edge cases like pulses in both pulse pins `INC` and `RST`, inject `NaN` or `Inf` as steps in counter and so on. It helps to catch bugs, make the behavior of the node more obvious, and provide better documentation.
 
 </div>
-
 
 ## Time flow
 
@@ -277,7 +273,6 @@ You can checkout tabtests in these nodes to understand how it looks and works: `
 We recommend placing `__time(ms)` column at first place to keep it clear and see what time is it. However, you can place it in any place of the table.
 
 </div>
-
 
 ## Variadics, generics, custom types
 
