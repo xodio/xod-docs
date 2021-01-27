@@ -4,14 +4,10 @@ title: List of Supported Hardware
 
 # List of Supported Hardware
 
-- <span class="ui tiny horizontal label">Raw</span> — a raw component.
-  Soldering/breadboard and supporting components would be required.
-- <span class="ui tiny horizontal label">Brk</span> — a breakout board.
-  Components are ready, requires only soldering wires or connectors.
-- <span class="ui tiny horizontal label">Wear</span> — a module designed to be
-  used in wearable electronics projects. Sewed to fabrics.
-- <span class="ui tiny horizontal label">Mod</span> — a ready-to-use module that
-  could be used out of the box without soldering.
+- <span class="ui tiny horizontal label">Raw</span> — a raw component. Soldering/breadboard and supporting components would be required.
+- <span class="ui tiny horizontal label">Brk</span> — a breakout board. Components are ready, requires only soldering wires or connectors.
+- <span class="ui tiny horizontal label">Wear</span> — a module designed to be used in wearable electronics projects. Sewed to fabrics.
+- <span class="ui tiny horizontal label">Mod</span> — a ready-to-use module that could be used out of the box without soldering.
 - <span class="ui tiny horizontal label">Sh</span> — an Arduino shield board.
 
 {{#each index}}

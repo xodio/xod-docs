@@ -54,8 +54,6 @@ If you want to learn programming microcontrollers with XOD by making a smart and
 
 It contains a microcontroller, sensors, actuators, and a paper guide with an exciting story inside.
 
-
-
 <div class="ui grid">
   <div class="five wide column left aligned ">
 

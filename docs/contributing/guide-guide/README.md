@@ -1,8 +1,8 @@
 ---
 title: Guide Writing Guidelines
 description: |
-    General recommendations for creating articles which appear
-    in XOD User’s Guide
+  General recommendations for creating articles which appear
+  in XOD User’s Guide
 version: 1.0.0
 ---
 
@@ -107,8 +107,7 @@ Now it is a good idea to [document your node](../documenting-nodes/).
 In cases of deep nesting, it is OK to use the absolute path starting with `/docs/`:
 
 ```markdown
-All built-in [data types](/docs/reference/data-types/) support
-the feature.
+All built-in [data types](/docs/reference/data-types/) support the feature.
 ```
 
 When placing hyperlinks to pages of xod.io which are not under `/docs/`, use the full URL:

@@ -2,7 +2,7 @@
 title: Working with Servo Motors
 version: 1.0.0
 description: |
-    How to work with hobby servo motors in the XOD programming language.
+  How to work with hobby servo motors in the XOD programming language.
 image: ./hobby-servo-motors.jpg
 ---
 
@@ -10,7 +10,7 @@ image: ./hobby-servo-motors.jpg
 
 ![Hobby servo-motors](./hobby-servo-motors.jpg)
 
-A servo is a special electromechanical device that uses error-sensing negative feedback to correct the action of a mechanism. Servos can be pneumatic, hydraulic and even piezo, but the most common are electric motorized servos or servo motors. 
+A servo is a special electromechanical device that uses error-sensing negative feedback to correct the action of a mechanism. Servos can be pneumatic, hydraulic and even piezo, but the most common are electric motorized servos or servo motors.
 
 Servo motors are servos with an output rotating shaft. The main purpose of a servo motor is to maintain the output shaft at a given angle or at a certain rotation speed. In general, a servo motor consists of three components: a motor, a position or angle sensor, and a control electronic board. These components vary widely depending on the application type and the required accuracy. A motor can have a gearbox, be DC or AC or even stepper. The angular positioning can be performed by inexpensive potentiometers or high-precision industrial rotary encoders. The control board can perform only basic servo functions or be intelligent and provide detailed feedback containing torque, motor temperature, and other data.
 
@@ -32,7 +32,7 @@ The `true` [boolean](/docs/reference/data-types/#boolean-literals) type value at
 
 ## Quick start examples
 
-For the `servo` node the shaft position value can be set in different ways. 
+For the `servo` node the shaft position value can be set in different ways.
 
 You can set it to a constant using the [`constant-number`](/libs/xod/core/constant-number/) node.
 
@@ -110,11 +110,11 @@ The last step is to loop the program using the [`defer`](/libs/xod/core/defer/) 
 
 ## Current position
 
-You can find out what position the servo shaft is expected to be at a particular moment. For this there is the [`position-value`](/libs/xod-dev/servo/position-value/) node. Use it to obtain the current servo angle from the `servo-device`. 
+You can find out what position the servo shaft is expected to be at a particular moment. For this there is the [`position-value`](/libs/xod-dev/servo/position-value/) node. Use it to obtain the current servo angle from the `servo-device`.
 
 Let's extend the previous example with the `position-value` node.
 
-Add it onto the patch and link it with the `DEV` bus. The `UPD` pin sets the update frequency for the current `VAL` angle. You can monitor the current servo angle continuosly using the [`watch`](/libs/xod/debug/watch/) node together with the [debug mode](/docs/guide/debugging/). Upload the improved patch. 
+Add it onto the patch and link it with the `DEV` bus. The `UPD` pin sets the update frequency for the current `VAL` angle. You can monitor the current servo angle continuosly using the [`watch`](/libs/xod/debug/watch/) node together with the [debug mode](/docs/guide/debugging/). Upload the improved patch.
 
 ![Advanced servo current position](./advanced-servo-current-position.gif)
 

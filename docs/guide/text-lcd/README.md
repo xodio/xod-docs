@@ -2,7 +2,7 @@
 title: Working with Text Displays
 version: 1.0.0
 description: |
-    How to work with LCD text displays in the XOD programming language.
+  How to work with LCD text displays in the XOD programming language.
 image: ./text-lcd-displays.jpg
 ---
 
@@ -20,9 +20,9 @@ In XOD there is a special [`xod-dev/text-lcd`](/libs/xod-dev/text-lcd) library o
 
 The library provides quick start nodes for the text LCD displays with the most popular formats:
 
-- [`text-lcd-i2c-16x2`](/libs/xod-dev/text-lcd/text-lcd-i2c-16x2) - for a display with 2 rows, 16 columns, and I2C interface; 
-- [`text-lcd-i2c-20x4`](/libs/xod-dev/text-lcd/text-lcd-i2c-20x4) - for a display with 4 rows, 20 columns, and I2C interface; 
-- [`text-lcd-parallel-16x2`](/libs/xod-dev/text-lcd/text-lcd-parallel-16x2) - for a display with 2 rows, 16 columns, and 4-bit parallel interface; 
+- [`text-lcd-i2c-16x2`](/libs/xod-dev/text-lcd/text-lcd-i2c-16x2) - for a display with 2 rows, 16 columns, and I2C interface;
+- [`text-lcd-i2c-20x4`](/libs/xod-dev/text-lcd/text-lcd-i2c-20x4) - for a display with 4 rows, 20 columns, and I2C interface;
+- [`text-lcd-parallel-16x2`](/libs/xod-dev/text-lcd/text-lcd-parallel-16x2) - for a display with 2 rows, 16 columns, and 4-bit parallel interface;
 - [`text-lcd-parallel-20x4`](/libs/xod-dev/text-lcd/text-lcd-parallel-20x4) - for a display with 4 rows, 20 columns, and 4-bit parallel interface.
 
 ![Text LCD device nodes](./text-lcd-quick-start-device-nodes.png)
@@ -50,7 +50,7 @@ Upload the patch to see how the word appears on the display screen.
 ![Text LCD quick start example 2 result](./text-lcd-quick-start-example-2-result.png)
 
 A text can be entered directly into a value field of the input pin. To demonstrate it, let's print the "WORLD" word on the second line of the display. Put the `"WORLD"` string value into the `L2` pin of the [`text-lcd-i2c-16x2`](/libs/xod-dev/text-lcd/text-lcd-i2c-16x2/) quick start node.
- 
+
 ![Text LCD quick start example 3](./text-lcd-quick-start-example-3.png)
 
 Flash the patch and look how the new word appears.
@@ -75,11 +75,11 @@ Define the display you want to use to start working with it in XOD. Find out how
 
 ![Text LCD device nodes](./text-lcd-device-nodes.png)
 
-Use the [`text-lcd-parallel-device`](/libs/xod-dev/text-lcd/text-lcd-parallel-device/) node if the display is controlled using a parallel interface. This node allows the display connection only through a 4-bit parallel interface. Here enter the pin values `RS`, `EN`, `D4`, `D5`, `D6`, `D7`. These values correspond to the microcontroller ports through which the display is connected. 
+Use the [`text-lcd-parallel-device`](/libs/xod-dev/text-lcd/text-lcd-parallel-device/) node if the display is controlled using a parallel interface. This node allows the display connection only through a 4-bit parallel interface. Here enter the pin values `RS`, `EN`, `D4`, `D5`, `D6`, `D7`. These values correspond to the microcontroller ports through which the display is connected.
 
 Use the [`text-lcd-i2c-device`](/libs/xod-dev/text-lcd/text-lcd-i2c-device/) node if the display communicates via an I2C bus. For this node, the input parameter is the device address. Enter the I2C address of your display to the `ADDR` pin value.
 
-Find out what format your display has. Fill in the `COLS` and `ROWS` pin values according to your format. 
+Find out what format your display has. Fill in the `COLS` and `ROWS` pin values according to your format.
 
 ## Advanced text print
 
@@ -103,7 +103,7 @@ Flash the patch look at the result.
 
 ![Text LCD advanced example 1 result](./text-lcd-advanced-example-1-result.png)
 
-Now let's move out the `HELLO` text to some other place on the screen. Set the beginning of the text to row 2 and column 5. The numbering of rows and columns starts with `0` so put the `1` into the `ROW` field and `4` into the `POS` field. 
+Now let's move out the `HELLO` text to some other place on the screen. Set the beginning of the text to row 2 and column 5. The numbering of rows and columns starts with `0` so put the `1` into the `ROW` field and `4` into the `POS` field.
 
 ![Text LCD advanced example 2](./text-lcd-advanced-example-2.png)
 
@@ -121,14 +121,13 @@ Also, it is necessary to change the `LEN` value for the “HELLO” text. It is 
 
 If you flash the patch the new text appears.
 
-![TText LCD advanced example 3](./text-lcd-advanced-example-3-result.png) 
+![TText LCD advanced example 3](./text-lcd-advanced-example-3-result.png)
 
 ## Special characters
 
-Text displays contain a table of images for each character in their memory. These tables are used to generate letters, numbers and other symbols. Almost always a full list of all available characters can be found in the manufacturer's datasheet. To display a specific symbol, it is necessary to transfer its hexadecimal number from the sign generator table.   Use the `\x##` sequence to embed the character code in the string.
+Text displays contain a table of images for each character in their memory. These tables are used to generate letters, numbers and other symbols. Almost always a full list of all available characters can be found in the manufacturer's datasheet. To display a specific symbol, it is necessary to transfer its hexadecimal number from the sign generator table. Use the `\x##` sequence to embed the character code in the string.
 
-For example, the display that is used for this example contains five symbols which can indicate a battery capacity level. Hexadecimal codes for these symbols are `9B`,`9C`,`9D`,`9E`, and `9F`.
-Let's try to display these symbols on the 3rd line of the display. Let's change the previous example patch. Leave one `print-at` node and set up new printing coordinates. Put the `2` value into the  `ROW` pin and let the `POS` be `7`. Then, put the `"\x9B\x9C\x9D\x9E\x9F"` sequence of the character codes into the `VAL` pin..
+For example, the display that is used for this example contains five symbols which can indicate a battery capacity level. Hexadecimal codes for these symbols are `9B`,`9C`,`9D`,`9E`, and `9F`. Let's try to display these symbols on the 3rd line of the display. Let's change the previous example patch. Leave one `print-at` node and set up new printing coordinates. Put the `2` value into the `ROW` pin and let the `POS` be `7`. Then, put the `"\x9B\x9C\x9D\x9E\x9F"` sequence of the character codes into the `VAL` pin..
 
 ![Text LCD special characters example 1](./text-special-characters-example-1.png)
 

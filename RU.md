@@ -26,12 +26,11 @@ version: 1.0.0
 ```html
 {{#each index}}
 <h2>{{ section }}</h2>
-  {{#each parts}}
-  <div>
-    {{ part }} {{ kind }} {{#if vendor}}от {{ vendor }}{{/if}}.
-  </div>
-  {{/each}}
-{{/each}}
+{{#each parts}}
+<div>
+  {{ part }} {{ kind }} {{#if vendor}}от {{ vendor }}{{/if}}.
+</div>
+{{/each}} {{/each}}
 ```
 
 Обратите внимание на теги `{{ xxx }}`. Это инструкции для [Handlebars](https://handlebarsjs.com/). Любой `.yaml` файл, расположенный рядом с `README.md`, доступен из шаблонов по имени (`index` для [`index.yaml`](./docs/reference/supported-hardware/index.yaml), как указано в примере выше).

@@ -44,6 +44,7 @@ Let's take a look at a few cases.
 ## Stateless nodes
 
 Before 0.35:
+
 ```cpp
 // `State` struct must be declared even if it's not used
 struct State {};
@@ -56,6 +57,7 @@ void evaluate(Context ctx) {
 ```
 
 After:
+
 ```cpp
 // no separate `State` struct
 
@@ -71,6 +73,7 @@ node {
 ## Nodes with state
 
 Before:
+
 ```cpp
 struct State {
     Number foo;
@@ -86,6 +89,7 @@ void evaluate(Context ctx) {
 ```
 
 After:
+
 ```cpp
 node {
     // just like fields in a regular C++ struct
@@ -102,6 +106,7 @@ node {
 ## Global scope and including libraries
 
 Before:
+
 ```cpp
 // all code in the implementation was inside node namespace by default
 
@@ -121,6 +126,7 @@ void evaluate(Context ctx) {
 ```
 
 After:
+
 ```cpp
 // everything outside `node` is global by default,
 // no special markers needed
@@ -144,9 +150,10 @@ node {
 ## Accessing pin types
 
 Before:
+
 ```cpp
 struct State {
-    // `ValueType<output_OUT>::T` was not available 
+    // `ValueType<output_OUT>::T` was not available
     // before GENERATED_CODE marker
     // and could not be used to declare state
 };
@@ -160,6 +167,7 @@ void evaluate(Context ctx) {
 ```
 
 After:
+
 ```cpp
 node {
     // much simpler syntax,
@@ -176,6 +184,7 @@ node {
 ## Defining custom types
 
 Before:
+
 ```cpp
 struct State {};
 
@@ -190,6 +199,7 @@ void evaluate(Context ctx) {
 ```
 
 After:
+
 ```cpp
 node {
     // Type definition is moved inside `node` and is wrapped in `meta`
