@@ -2,8 +2,8 @@
 title: I²C Communication Basics
 image: ./i2c-object.patch.png
 description: |
-    How to use XOD nodes from the standard i2c library
-    to talk to I2C/TWI devices
+  How to use XOD nodes from the standard i2c library
+  to talk to I2C/TWI devices
 version: 1.0.0
 ---
 

@@ -82,7 +82,6 @@ It's much faster to click on the "bug" icon in the Deployment pane. The checkbox
 
 </div>
 
-
 The debugger performs serial USB communication between your board and computer. When you stop the debug session the program still runs on the board and sends debug protocol messages via serial but XOD IDE no longer cares. To debug again, upload the program to the board one more time.
 
 Try on-board debugging with the example:

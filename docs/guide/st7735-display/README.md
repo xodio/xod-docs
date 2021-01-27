@@ -2,7 +2,7 @@
 title: ST7735 display
 version: 1.0.0
 description: |
-    How to work with ST7735 displays in the XOD programming language.
+  How to work with ST7735 displays in the XOD programming language.
 image: ./st7735-displays.jpg
 ---
 
@@ -20,7 +20,7 @@ The displays breakout boards belong to the ST7735 family can have the following 
   - 1.8" (128x160 pixels);
 - Display colors (Color mode):
   - 16-bit "High color", 65,536 colors;
-  - 18-bit, 262,144 colors; 
+  - 18-bit, 262,144 colors;
 - Interfaces:
   - SPI interface (software of hardware);
   - Parallel MCU interface (8-bit, 9-bit, 16-bit & 18-bit);
@@ -92,7 +92,7 @@ As the quickstart nodes, these device nodes init a display of a particular type 
 
 ## Rotate the screen
 
-You can change the screen position and the origin of the [display coordinate system](/docs/guide/graphics-library/#coordinate-system-and-units) with the [`rotate`](/libs/xod-dev/st7735-display/rotate) node. 
+You can change the screen position and the origin of the [display coordinate system](/docs/guide/graphics-library/#coordinate-system-and-units) with the [`rotate`](/libs/xod-dev/st7735-display/rotate) node.
 
 ![Rotate node](./rotate-node.png)
 
@@ -104,11 +104,11 @@ A `pulse` type signal at the `DO` pin triggers a new screen rotation and the coo
 
 ## Render the scene
 
-The `render` node is your main tool to display [graphic scenes](/docs/guide/graphics-library/#scene-as-a-tree). The `render` processes a single branch of the graphic tree created using the [graphics library](/docs/guide/graphics-library), renders it, and displays at the device. 
+The `render` node is your main tool to display [graphic scenes](/docs/guide/graphics-library/#scene-as-a-tree). The `render` processes a single branch of the graphic tree created using the [graphics library](/docs/guide/graphics-library), renders it, and displays at the device.
 
 ![Render node](./render-node.png)
 
-A graphic tree branch to render links to the input `GFX` pin. A pulse signal at the `DO` pin is a trigger to process the graphic scene and display it. If the scene is rendered, a pulse comes to the `DONE` output pin. 
+A graphic tree branch to render links to the input `GFX` pin. A pulse signal at the `DO` pin is a trigger to process the graphic scene and display it. If the scene is rendered, a pulse comes to the `DONE` output pin.
 
 Use multiple `render` nodes simultaneously. Processing various branches of the graphic tree at a different time, you can show dynamic graphic scenes at the screen.
 
@@ -116,6 +116,4 @@ Here is the example of a three `render` nodes use. The tree of graphic elements 
 
 ![Render daisy chain](./render-daisy-chain.png)
 
-The first `render` is on `boot`; it fills the display screen with a specified `canvas` only once — after powering the device.
-The second `render` is responsible for `point 1` on the canvas. Its trigger is set to `loop`. It means that any changes in the `point 1` position are immediately shown on the screen.
-The third `render` is responsible for displaying the `point 2` and its trigger is linked to the `button`. Here you can also change the `point 2` position, but the changes are displayed only after the button click.
+The first `render` is on `boot`; it fills the display screen with a specified `canvas` only once — after powering the device. The second `render` is responsible for `point 1` on the canvas. Its trigger is set to `loop`. It means that any changes in the `point 1` position are immediately shown on the screen. The third `render` is responsible for displaying the `point 2` and its trigger is linked to the `button`. Here you can also change the `point 2` position, but the changes are displayed only after the button click.

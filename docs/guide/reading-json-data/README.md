@@ -17,13 +17,11 @@ JSON uses a few basic data types which allow describing arbitrary complex struct
 - Boolean: either of the values `true` or `false`
 - null: An empty value, using the word `null`
 
-![object](./object.gif)
-![array](./array.gif)
-![value](./value.gif)
+![object](./object.gif) ![array](./array.gif) ![value](./value.gif)
 
 ## Getting data
 
-To easily fetch JSON documents from the internet, use [`xod/net/http-get-json`](/libs/xod/net/http-get-json/) node. It is very similar to [`xod/net/http-get`](/libs/xod/net/http-get/) described in [Fetching Data from Web API’s with HTTP GET requests](../http-get/), but instead of the byte-stream outputs a stream of parsed JSON *chunks*. Stream processing allows handling even very large responses that would not fit into the controller's memory.
+To easily fetch JSON documents from the internet, use [`xod/net/http-get-json`](/libs/xod/net/http-get-json/) node. It is very similar to [`xod/net/http-get`](/libs/xod/net/http-get/) described in [Fetching Data from Web API’s with HTTP GET requests](../http-get/), but instead of the byte-stream outputs a stream of parsed JSON _chunks_. Stream processing allows handling even very large responses that would not fit into the controller's memory.
 
 If you want to process JSON from another source, use the low-level [`xod/json/parse-json`](/libs/xod/json/parse-json/) node instead.
 

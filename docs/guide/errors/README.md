@@ -38,6 +38,7 @@ When implementing a C++ node, always use [`isTimedOut`](../../reference/node-cpp
 Run the program in the simulation or debug mode, and XOD IDE will outline nodes which currently raise errors with the red color. Moreover, it will mark all affected downstream pins red too. So when you make the program, you can ensure that you handle all errors.
 
 To handle errors, you have to use error catcher nodes. There a few error catchers in the standard library:
+
 - [`xod/core/if-error`](/libs/xod/core/if-error/) — fall back to the default value from the errored one or pass the valid value through without changes
 - [`xod/core/pulse-on-error`](/libs/xod/core/pulse-on-error/) — pulses when an error has occurred
 - [`xod/core/has-error`](/libs/xod/core/has-error/) — outputs `True` when the upstream pin is in the error state

@@ -23,7 +23,6 @@ Then run auto-generator tool (xod/tools/generate-tutorial-docs.js).
 <a href="/ide/">браузерную версию IDE</a>, и вы увидите там это же руководство.
 </div>
 
-
 # Запуск симулятора
 
 ![Screenshot of 002-simulate](./002-simulate.patch.png)

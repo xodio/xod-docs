@@ -12,7 +12,6 @@ Each tabtest is represented as a table, where:
 - each row is one test case that executes within one [transaction](/docs/guide/execution-model/) of a XOD program
 - if the tested node contains some state inside it [will be shared](/docs/guide/testing-patches/#state-keeping) between all test cases
 
-
 ## Literals
 
 Generally, literals for tabtests are the same that are used in the Inspector. But also there are few special literals for tabtests only.
@@ -127,7 +126,6 @@ Generally, literals for tabtests are the same that are used in the Inspector. Bu
     </tr>
   </tbody>
 </table>
-
 
 ## Time flow column
 

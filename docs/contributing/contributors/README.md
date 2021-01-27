@@ -4,8 +4,7 @@ title: Contributors
 
 # Contributors
 
-These people have spent their time and energy to make XOD a better system.
-Thank you, folks, your contribution is precious!
+These people have spent their time and energy to make XOD a better system. Thank you, folks, your contribution is precious!
 
 <div class="ui four cards">
   {{#each people}}
@@ -53,9 +52,7 @@ Thank you, folks, your contribution is precious!
 
 ---
 
-You can help XOD too in [numerous of ways](../) not necessarily related to
-writing code. Feel free to [add yourself to the list][1], or we’ll ask you to
-do it otherwise.
+You can help XOD too in [numerous of ways](../) not necessarily related to writing code. Feel free to [add yourself to the list][1], or we’ll ask you to do it otherwise.
 
 [1]: https://github.com/xodio/xod-docs/edit/master/docs/contributing/contributors/people.yaml "Edit on GitHub"
 

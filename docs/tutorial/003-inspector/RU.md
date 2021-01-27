@@ -23,7 +23,6 @@ Then run auto-generator tool (xod/tools/generate-tutorial-docs.js).
 <a href="/ide/">браузерную версию IDE</a>, и вы увидите там это же руководство.
 </div>
 
-
 # Ноды, пины, инспектор
 
 ![Screenshot of 003-inspector](./003-inspector.patch.png)
