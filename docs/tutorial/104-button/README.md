@@ -45,7 +45,7 @@ This is a standard idiom for side-effect nodes representing hardware or, for exa
 Let's make the LED glow while the button is pressed.
 
 1. Assemble the [circuit with a button and LED](https://xod.io/docs/tutorial/104-button/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial#circuit).
-2. Set the `PORT` value of the `button` node.
+2. Set the `PORT` value of the `button` node to `D13` because it’s connected to the board's digital port 13.
 3. Link `PRS` to `LUM`.
 4. Upload your patch.
 
