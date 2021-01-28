@@ -1,6 +1,6 @@
 ---
 title: Booleans
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -28,7 +28,7 @@ To get a better learning experience we recommend to install the
 
 ![Screenshot of 007-booleans](./007-booleans.patch.png)
 
-In previous lessons we mostly dealt with numbers adjusting counter step and clock interval. Now let's talk about _booleans_. They have only who possible values:
+In previous lessons we mostly dealt with numbers adjusting counter step and clock interval. Now let's talk about _booleans_. They have only two possible values:
 
 - _True_ (aka logic one, high signal)
 - _False_ (aka logic zero, low signal)
@@ -39,10 +39,10 @@ Booleans are extremely useful and common. They may be used to indicate whether s
 
 Let’s learn how boolean values can be combined.
 
-1.  Read the descriptions for `and`, `or` and `not` nodes.
-2.  Guess what the output value of `and` will be.
-3.  Run the simulation to confirm it.
-4.  Use `tweak-boolean` nodes to change it to the opposite value.
+1. Read the descriptions for `and`, `or` and `not` nodes.
+2. Guess what the output value of `and` will be.
+3. Run the simulation to confirm it.
+4. Use `tweak-boolean` nodes to change it to the opposite value.
 
 Check out descriptions for `nand`, `nor` and `xor` nodes. Add them onto the patch along with some additional tweaks to make a more complex processing.
 

@@ -1,6 +1,6 @@
 ---
 title: Terminals
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -34,11 +34,11 @@ On this patch, we already placed an `input-number` and `output-boolean` instead 
 
 ## Instructions
 
-1.  Reflect the changes to your `between` patch: copy/paste the `IN` and `OUT` terminals there and link them accordingly.
-1.  Add two more `input-number`s.
-1.  Connect them to `less` and `greater`'s pins instead of hardcoded `0.4` and `0.7` values.
-1.  Label the new terminals as `MIN` and `MAX` using Inspector.
-1.  Check how the node looks now in the help panel.
+1. Reflect the changes to your `between` patch: copy/paste the `IN` and `OUT` terminals there and link them accordingly.
+1. Add two more `input-number`s.
+1. Connect them to `less` and `greater`'s pins instead of hardcoded `0.4` and `0.7` values.
+1. Label the new terminals as `MIN` and `MAX` using Inspector.
+1. Check how the node looks now in the help panel.
 
 Note that node's pin order is determined by the order of respective terminals. Try to reorder the input terminals and look how it affects the preview in the help panel.
 

@@ -44,14 +44,16 @@ This type contains a so-called POSIX timestamp inside. The `xod/datetime` librar
 
 Bind the current time and start the simulation.
 
+^ Add/Subtract hours
+
 ## Excercise
 
 Format the same datetime as "24.03.2019 9:47 am".
 
-1.  Replace `format-timestamp` with the `unpack-datetime` node.
-2.  Place an `am-pm` node and link it with the `HOUR` output.
-3.  Place `if-else` node, link it with `AM` output and bind strings: "am" for `T` and "pm" for `F`.
-4.  Construct a new datetime format using `concat` nodes as it is inside the `format-timestamp` node, including the "am"/"pm" suffix feature.
+1. Replace `format-timestamp` with the `unpack-datetime` node.
+2. Place an `am-pm` node and link it with the `HOUR` output.
+3. Place `if-else` node, link it with `AM` output and bind strings: "am" for `T` and "pm" for `F`.
+4. Construct a new datetime format using `concat` nodes as it is inside the `format-timestamp` node, including the "am"/"pm" suffix feature.
 
 Run the simulation and check it out.
 

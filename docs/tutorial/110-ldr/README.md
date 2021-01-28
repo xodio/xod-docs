@@ -1,6 +1,6 @@
 ---
 title: Ambient Light Sensor
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -42,11 +42,11 @@ We have basic nodes for working with digital and analog ports though. The photor
 
 Let’s make a smart (or dumb) light bulb.
 
-1.  Assemble the [circuit with an LDR and LED](https://xod.io/docs/tutorial/110-ldr/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial#circuit).
+1. Assemble the [circuit with an LDR and LED](https://xod.io/docs/tutorial/110-ldr/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial#circuit).
 
-2.  Link the `VAL` output pin of the `analog-sensor` node to the `LUM` pin of the `led` node.
+2. Link the `VAL` output pin of the `analog-sensor` node to the `LUM` pin of the `led` node.
 
-3.  Upload the patch to the board.
+3. Upload the patch to the board.
 
 Cover the photoresistor with your hand and watch how the brightness of the LED changes.
 
@@ -58,6 +58,6 @@ Cover the photoresistor with your hand and watch how the brightness of the LED c
     <a href="../">Index</a>
   </div>
   <div class="five wide column right aligned ">
-    <a href="../200-patterns/">Next lesson →</a>
+    <a href="../111-feed-messaging/">Next lesson →</a>
   </div>
 </div>

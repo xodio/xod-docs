@@ -1,6 +1,6 @@
 ---
 title: Servo
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -42,11 +42,11 @@ The `servo` node accepts a number in the range from 0.0 to 1.0 and maps it to th
 
 Let's link `pot` with `servo` to control the servo angle with the potentiometer.
 
-1.  Connect a servo to the Arduino board as shown on the [scheme](https://xod.io/docs/tutorial/106-servo/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial#circuit).
+1. Connect a servo to the Arduino board as shown on the [scheme](https://xod.io/docs/tutorial/106-servo/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial#circuit).
 
-2.  Link the `VAL` pin of the `pot` node to the `VAL` pin of the `servo` node.
+2. Link the `VAL` pin of the `pot` node to the `VAL` pin of the `servo` node.
 
-3.  Upload the patch to the board.
+3. Upload the patch to the board.
 
 Turn the potentiometer knob, and watch the servo turns.
 

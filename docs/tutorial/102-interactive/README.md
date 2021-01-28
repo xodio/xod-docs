@@ -1,6 +1,6 @@
 ---
 title: Interactive Session
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -34,11 +34,11 @@ As you run the simulation, you can run an _interactive session_ on the board als
 
 Let’s control our LED in real time.
 
-1.  Connect the Arduino board to your computer.
+1. Connect the Arduino board to your computer.
 
-2.  Upload the program with the interactive session enabled: hit Deploy → Upload to Arduino and check "Debug after upload".
+2. Upload the program with the interactive session enabled: hit Deploy → Upload to Arduino and check "Debug after upload".
 
-3.  Once the interactive session has been started, select `tweak-boolean` and change its value; see how the built-in LED on the board reacts to these changes.
+3. Once the interactive session has been started, select `tweak-boolean` and change its value; see how the built-in LED on the board reacts to these changes.
 
 To stop the interactive session press "Stop" button on the green panel above. To start the interactive session again, you have to re-upload the program.
 

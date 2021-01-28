@@ -1,6 +1,6 @@
 ---
 title: Accumulator
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -42,11 +42,11 @@ In this example we're using the `add` node, but the calculation may be arbitrary
 
 Examine how the input value and pulses affect the stored result.
 
-1.  Upload the program.
-2.  Change the `tweak-number` value.
-3.  Send pulse from the "ADD" node.
-4.  Repeat the second and third steps a few times.
-5.  Send pulse from "RESET".
+1. Upload the program.
+2. Change the `tweak-number` value.
+3. Send pulse from the "ADD" node.
+4. Repeat the second and third steps a few times.
+5. Send pulse from "RESET".
 
 Replace tweak nodes with a coin acceptor and button to make a ticket system or photo booth.
 

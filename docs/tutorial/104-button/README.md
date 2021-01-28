@@ -1,6 +1,6 @@
 ---
 title: Buttons
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -44,10 +44,10 @@ This is a standard idiom for side-effect nodes representing hardware or, for exa
 
 Let's make the LED glow while the button is pressed.
 
-1.  Assemble the [circuit with a button and LED](https://xod.io/docs/tutorial/104-button/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial#circuit).
-2.  Set the `PORT` value of the `button` node.
-3.  Link `PRS` to `LUM`.
-4.  Upload your patch.
+1. Assemble the [circuit with a button and LED](https://xod.io/docs/tutorial/104-button/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial#circuit).
+2. Set the `PORT` value of the `button` node.
+3. Link `PRS` to `LUM`.
+4. Upload your patch.
 
 Hold the button to turn the LED on.
 

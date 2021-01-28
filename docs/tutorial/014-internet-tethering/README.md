@@ -46,12 +46,12 @@ Note, we’ve placed a `select` node here to get a reasonable value until we rec
 
 Update the current datetime value by sending pulses.
 
-1.  Place a `tweak-pulse` node.
-2.  Link it to the `INIT` pin
-3.  To make a value in the `watch` node properly, you need to provide the third possible value `"Waiting pulse"`. Drag the handle of the `select` node to the right to add one more pair of input pins
-4.  Bind `"Waiting pulse"` and "On Boot" to the latest pair of pins.
-5.  Link `tweak-pulse` to the `S2` pin
-6.  Simulate the patch and send pulse using the `tweak-pulse` node.
+1. Place a `tweak-pulse` node.
+2. Link it to the `INIT` pin
+3. To make a value in the `watch` node properly, you need to provide the third possible value `"Waiting pulse"`. Drag the handle of the `select` node to the right to add one more pair of input pins
+4. Bind `"Waiting pulse"` and "On Boot" to the latest pair of pins.
+5. Link `tweak-pulse` to the `S2` pin
+6. Simulate the patch and send pulse using the `tweak-pulse` node.
 
 <div class="ui grid">
   <div class="five wide column left aligned ">

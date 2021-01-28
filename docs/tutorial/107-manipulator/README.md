@@ -1,6 +1,6 @@
 ---
 title: Manipulator
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -55,10 +55,10 @@ The circuit is the same as for the previous lesson.
 
 Let's change the servo trajectory.
 
-1.  Add two more `rotate-slow` nodes.
-2.  Link all nodes in the same way.
-3.  Adjust pin values of `rotate-slow`.
-4.  Upload the program.
+1. Add two more `rotate-slow` nodes.
+2. Link all nodes in the same way.
+3. Adjust pin values of `rotate-slow`.
+4. Upload the program.
 
 Press the button and see how the servo fulfills your order.
 

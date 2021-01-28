@@ -1,6 +1,6 @@
 ---
 title: Run for X Seconds
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -36,10 +36,10 @@ The `delay` node helps us with this task. Generally, this node is used to postpo
 
 Let’s modify the device so that the LED turns on for three seconds on a button press.
 
-1.  Replace `boot` with the a `button` node and bind the corresponding `PORT`.
-2.  Link it with the `SET` pin of the `delay` node.
-3.  Change the `T` value to 3.
-4.  Upload the program
+1. Replace `boot` with the a `button` node and bind the corresponding `PORT`.
+2. Link it with the `SET` pin of the `delay` node.
+3. Change the `T` value to 3.
+4. Upload the program
 
 Press the button and see how the LED behaves. Try to press the button many times while the LED glows and see how each press postpones the delay to be elapsed three seconds after the _last_ press.
 
