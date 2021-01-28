@@ -2074,6 +2074,9 @@
           "type": "xod/debug/watch"
         },
         "SkSOIt1ON": {
+          "boundLiterals": {
+            "r1l3XcR17": "A2"
+          },
           "id": "SkSOIt1ON",
           "position": {
             "x": 8,
@@ -2083,6 +2086,9 @@
           "type": "xod/common-hardware/analog-sensor"
         },
         "rJJbwKy_E": {
+          "boundLiterals": {
+            "B1oqkTnIb": "D11"
+          },
           "id": "rJJbwKy_E",
           "position": {
             "x": 8,
