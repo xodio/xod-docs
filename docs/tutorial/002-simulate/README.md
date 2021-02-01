@@ -1,6 +1,6 @@
 ---
 title: Running Simulation
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -36,9 +36,9 @@ It's useful to quickly test some ideas or just play around.
 
 Let's learn how to run our program!
 
-1.  Hit Deploy → Simulate from the main menu.
-2.  Observe how your current patch opens in a special “Debugger” tab, and the `watch` node becomes alive demonstrating the current counter value.
-3.  To finish the simulation session press the “Stop” button in the upper right corner or close the debugger tab.
+1. Hit Deploy → Simulate from the main menu.
+2. Observe how your current patch opens in a special “Debugger” tab, and the `watch` node becomes alive demonstrating the current counter value.
+3. To finish the simulation session press the “Stop” button in the upper right corner or close the debugger tab.
 
 ## 👆 Shortcut
 

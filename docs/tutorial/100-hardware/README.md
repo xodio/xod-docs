@@ -1,6 +1,6 @@
 ---
 title: Working with Hardware
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -34,7 +34,7 @@ If you have no hardware on hand, don’t give up. Skip to the `200-patterns` par
 
 <div class="ui grid">
   <div class="five wide column left aligned ">
-    <a href="../012-strings/">← Previous lesson</a>
+    <a href="../015-xod-cloud-feeds/">← Previous lesson</a>
   </div>
   <div class="six wide column center aligned ">
     <a href="../">Index</a>

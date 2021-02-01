@@ -1,6 +1,6 @@
 ---
 title: Strings
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -38,10 +38,10 @@ The standard library contains a few nodes to work with strings and text. One use
 
 Try strings in runtime.
 
-1.  Run the Simulation.
-2.  Observe how the message alternates between "Hello World" and "Hello XOD".
-3.  Change values of `tweak-string-16`s to change the message.
-4.  Add a third pin to `concat` and bind an exclamation point to it.
+1. Run the Simulation.
+2. Observe how the message alternates between "Hello World" and "Hello XOD".
+3. Change values of `tweak-string-16`s to change the message.
+4. Add a third pin to `concat` and bind an exclamation point to it.
 
 ## 👆 Generics
 
@@ -57,6 +57,6 @@ If you want to bind a string value to a generic pin, you should enquote it becau
     <a href="../">Index</a>
   </div>
   <div class="five wide column right aligned ">
-    <a href="../100-hardware/">Next lesson →</a>
+    <a href="../013-custom-types/">Next lesson →</a>
   </div>
 </div>

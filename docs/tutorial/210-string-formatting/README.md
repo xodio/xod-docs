@@ -1,6 +1,6 @@
 ---
 title: String Formatting
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -40,11 +40,11 @@ To show non-ASCII characters you should specify its hexadecimal character code i
 
 Let's improve the thermometer to show the degree character on the LCD.
 
-1.  Bind 2 to `DIG`.
-2.  Add one more input pin for the `concat` node by grabbing the handle.
-3.  Bind "\x99" instead of "C".
-4.  Bind "C" to the latest pin of `concat`.
-5.  Upload the program.
+1. Bind 2 to `DIG`.
+2. Add one more input pin for the `concat` node by grabbing the handle.
+3. Bind "\x99" instead of "C".
+4. Bind "C" to the latest pin of `concat`.
+5. Upload the program.
 
 <div class="ui grid">
   <div class="five wide column left aligned ">

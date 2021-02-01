@@ -1,6 +1,6 @@
 ---
 title: Fade
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -38,11 +38,11 @@ In some cases this node helps to reduce bouncing or power bursts. For example, w
 
 Test the `fade` node with `servo`.
 
-1.  Add a `servo` next to `led` and link it with `fade` too.
+1. Add a `servo` next to `led` and link it with `fade` too.
 
-2.  Bind 2.0 to the `RATE` pin to get a faster transition.
+2. Bind 2.0 to the `RATE` pin to get a faster transition.
 
-3.  Upload the program.
+3. Upload the program.
 
 Press and hold the button a few times. Observe how `fade` smoothens the transition and changes the direction if the re-targeted in the middle of the process.
 

@@ -1,6 +1,6 @@
 ---
 title: Nodes, Pins, Inspector
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -42,9 +42,9 @@ Nodes process the values from input pins and take some action or give a result. 
 
 Let’s learn how to bind values to input pins with the Inspector pane.
 
-1.  Click on the `clock` node. You will see the Inspector pane under Project Browser.
+1. Click on the `clock` node. You will see the Inspector pane under Project Browser.
 
-2.  In the Inspector, change the `IVAL` value from `1` to `0.1`.
+2. In the Inspector, change the `IVAL` value from `1` to `0.1`.
 
 Run the simulation. Notice that the counter value increments much faster. Try to bind another value to counter’s `STEP` and see how it affects the behavior.
 

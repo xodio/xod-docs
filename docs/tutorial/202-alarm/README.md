@@ -1,6 +1,6 @@
 ---
 title: Alarm
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -36,15 +36,15 @@ As you can note, we use the `greater` node, one of the comparison nodes from the
 
 Change the logic to make the alarm working whenever the temperature gets _lower_ than the threshold. Let the user to set this value using a potentiometer.
 
-1.  Replace the `greater` node with `less`.
+1. Replace the `greater` node with `less`.
 
-2.  Place the `map` node and bind values to map 0.0...1.0 range to 15...30 degrees Celsius.
+2. Place the `map` node and bind values to map 0.0...1.0 range to 15...30 degrees Celsius.
 
-3.  Place `pot` and bind the corresponding `PORT`.
+3. Place `pot` and bind the corresponding `PORT`.
 
-4.  Link `pot`, `map`, and `less` nodes.
+4. Link `pot`, `map`, and `less` nodes.
 
-5.  Upload the program.
+5. Upload the program.
 
 Rotate the potentiometer knob to set the threshold. Heat and cool down the thermometer to see how it works.
 

@@ -1,6 +1,6 @@
 ---
 title: Pulses
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -38,11 +38,11 @@ And of course, XOD offers a `tweak-pulse` node to send pulses manually during si
 
 Let’s play with pulses using `tweak-pulse`.
 
-1.  Run the simulation.
-2.  Select the `tweak-pulse` node.
-3.  Press the “pulse” button in the Inspector; the counter will reset back to 0.
-4.  Replace the `clock` node with an another `tweak-pulse` and restart the simulation.
-5.  Increment the counter by manually sending pulses to `INC` pin.
+1. Run the simulation.
+2. Select the `tweak-pulse` node.
+3. Press the “pulse” button in the Inspector; the counter will reset back to 0.
+4. Replace the `clock` node with an another `tweak-pulse` and restart the simulation.
+5. Increment the counter by manually sending pulses to `INC` pin.
 
 <div class="ui grid">
   <div class="five wide column left aligned ">

@@ -46,10 +46,10 @@ The program is ready, but to make it work, you have to do a few things related t
 
 ## Excercise
 
-1.  Log in into your XOD account in the Account Pane (hit View → Toggle Account Pane).
-2.  Open Project Preferences (hit Edit → Project Preferences). Ensure that the project has a name and click the "Generate" button next to the "XOD Cloud API Key" input.
-3.  Run a simulation and change the value of a `tweak-number` node several times.
-4.  Open the [feeds](https://xod.io/feeds/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial) page and check out the data stored in the feed named `YOUR_USERNAME/welcome-to-xod/moisture`.
+1. Log in into your XOD account in the Account Pane (hit View → Toggle Account Pane).
+2. Open Project Preferences (hit Edit → Project Preferences). Ensure that the project has a name and click the "Generate" button next to the "XOD Cloud API Key" input.
+3. Run a simulation and change the value of a `tweak-number` node several times.
+4. Open the [feeds](https://xod.io/feeds/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial) page and check out the data stored in the feed named `YOUR_USERNAME/welcome-to-xod/moisture`.
 
 <div class="ui grid">
   <div class="five wide column left aligned ">

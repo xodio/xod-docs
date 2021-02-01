@@ -1,6 +1,6 @@
 ---
 title: Branching
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -36,9 +36,9 @@ The `COND` pin of this node checks the boolean input value. If `COND` receives t
 
 Learn how `if-else` behaves.
 
-1.  Run the simulation.
-2.  Change the value of the `tweak-boolean` node, observe how `if-else` output chenges.
-3.  Replace `tweak-boolean` with a `flop-flop` with `TGL` pin connected to a `clock`.
+1. Run the simulation.
+2. Change the value of the `tweak-boolean` node, observe how `if-else` output chenges.
+3. Replace `tweak-boolean` with a `flop-flop` with `TGL` pin connected to a `clock`.
 
 <div class="ui grid">
   <div class="five wide column left aligned ">

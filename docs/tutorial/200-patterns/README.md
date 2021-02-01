@@ -1,6 +1,6 @@
 ---
 title: Patterns
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -32,7 +32,7 @@ This part of the tutorial is a handbook that can be useful for your projects in 
 
 <div class="ui grid">
   <div class="five wide column left aligned ">
-    <a href="../110-ldr/">← Previous lesson</a>
+    <a href="../112-standalone-internet/">← Previous lesson</a>
   </div>
   <div class="six wide column center aligned ">
     <a href="../">Index</a>
