@@ -30,6 +30,7 @@ The most straightforward way to extend XOD and add support for new hardware.
 - [Dealing with time in C++](./cpp-time/)
 - [Migrating C++ nodes to v0.35](./migrating-to-v035/)
 - [Creating variadic patch nodes](./creating-variadics/)
+- [Creating variadic-pass nodes](./variadic-pass/)
 - [Creating generic patch nodes](./creating-generics/)
 - [Defining custom types](./custom-types/)
 - [Creating records](./records/)
