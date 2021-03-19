@@ -5,7 +5,7 @@ version: 0.38.0
 
 # Creating variadic-pass Nodes
 
-`variadic-pass` nodes allow to create wrappers around ["real" variadic nodes](../variadics). Such wrappers have much less strict requirements for input and output pins and allow to hide implementation details from the end user.
+`variadic-pass` nodes allow to create wrappers around [other variadic nodes](../variadics). Such wrappers have much less strict requirements for input and output pins and allow to hide implementation details from the end user.
 
 Let's create the `average` node that looks like this:
 
