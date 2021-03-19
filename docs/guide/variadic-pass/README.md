@@ -7,7 +7,7 @@ version: 0.38.0
 
 `variadic-pass` nodes allow to create wrappers around ["real" variadic nodes](../variadics). Such wrappers have much less strict requirements for input and output pins and allow to hide implementation details from the end user.
 
-Let's create the `average` node that would look like this:
+Let's create the `average` node that looks like this:
 
 ![xod/core/average usage example](./average-usage-example.png)
 
