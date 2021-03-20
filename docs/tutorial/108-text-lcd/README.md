@@ -1,6 +1,6 @@
 ---
 title: Display Text on LCD
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -51,14 +51,14 @@ XOD supports both.
 
 Let’s show some text on an LCD.
 
-1.  Examine your LCD and decide which node fits it. Remove another one.
-2.  Assemble the [circuit](https://xod.io/docs/tutorial/108-text-lcd/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial#circuit) that matches your LCD model.
-3.  Bind pins or set the I2C address.
-4.  Bind "Wuzzup!" to the `L1` pin.
-5.  Link `tweak-string` with `L2`.
-6.  Upload the patch with the interactive session enabled.
-7.  Select `tweak-string`.
-8.  Type some text and press the Enter key.
+1. Examine your LCD and decide which node fits it. Remove another one.
+2. Assemble the [circuit](https://xod.io/docs/tutorial/108-text-lcd/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial#circuit) that matches your LCD model.
+3. Bind pins or set the I2C address.
+4. Bind "Wuzzup!" to the `L1` pin.
+5. Link `tweak-string` with `L2`.
+6. Upload the patch with the interactive session enabled.
+7. Select `tweak-string`.
+8. Type some text and press the Enter key.
 
 ## 👆 Too many variations
 

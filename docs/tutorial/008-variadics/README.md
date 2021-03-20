@@ -1,6 +1,6 @@
 ---
 title: Variadic Nodes
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -36,9 +36,9 @@ Variadic nodes can be recognized by the handle on the right side. Also, their pi
 
 Let’s learn how to adjust the number of inputs.
 
-1.  Hover over the right side of the `add` node. Your cursor should become a double arrow.
-2.  Click and drag to the right to add more inputs.
-3.  Use the new inputs to link the “11” `tweak-number`, bind some values to others.
+1. Hover over the right side of the `add` node. Your cursor should become a double arrow.
+2. Click and drag to the right to add more inputs.
+3. Use the new inputs to link the “11” `tweak-number`, bind some values to others.
 
 As you guess, `add` will sum all the inputs it got. Run the simulation to verify.
 

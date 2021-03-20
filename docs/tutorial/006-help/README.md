@@ -1,6 +1,6 @@
 ---
 title: Getting Help
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -34,10 +34,10 @@ By now you should be a bit bored by the `clock` and `counter`. XOD offers many m
 
 Let's learn a few ways to see nodes’ descriptions.
 
-1.  Scroll to the `xod/math` section in the Project Browser and click to expand it.
-2.  Click on the `clip` patch, and then press the H key. A help box with the description will appear.
-3.  Click on another patch. Help panel will move and show a description for it.
-4.  Select some node on the patch board and press the H key. Quick Help panel will appear at the right side of the patch board.
+1. Scroll to the `xod/math` section in the Project Browser and click to expand it.
+2. Click on the `clip` patch, and then press the H key. A help box with the description will appear.
+3. Click on another patch. Help panel will move and show a description for it.
+4. Select some node on the patch board and press the H key. Quick Help panel will appear at the right side of the patch board.
 
 Discover a few more nodes bundled within the XOD standard library.
 

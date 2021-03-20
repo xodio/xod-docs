@@ -1,5 +1,6 @@
 ---
 title: Creating Variadic Patch Nodes
+version: 0.38.0
 ---
 
 # Creating Variadic Patch Nodes
@@ -52,3 +53,7 @@ On the patch board, the variadic marker nodes either render usually or in red co
 ![Marker error](./marker-error.png)
 
 Hover the node to see the error. You have to resolve all issues or remove the marker node to make the program compile successfully.
+
+## Hiding implementation details with variadic-pass nodes
+
+The rules for pin placement and types are necessary for properly expanding your variadic node, but you may not want to show all the pins to the end user. With [`variadic-pass` nodes](../variadic-pass), you can sweep all the implementation details under the rug.

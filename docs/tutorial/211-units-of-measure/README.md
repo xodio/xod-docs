@@ -1,6 +1,6 @@
 ---
 title: Units of Measure
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -36,20 +36,20 @@ One of these nodes (`c-to-f`) is already on the patch and the program shows temp
 
 Let's improve the program to see a temperature in Fahrenheit only when the button is pressed.
 
-1.  Add `if-else` below `button`.
-2.  Link `PRS` with `COND`.
-3.  Link `Tc` with `F`.
-4.  Link output from `c-to-f` with `T`.
-5.  Link `R` with the second pin of `concat`.
-6.  Upload the program.
+1. Add `if-else` below `button`.
+2. Link `PRS` with `COND`.
+3. Link `Tc` with `F`.
+4. Link output from `c-to-f` with `T`.
+5. Link `R` with the second pin of `concat`.
+6. Upload the program.
 
 Great! However, we still get a "C" on the LCD, even when the temperature converted to the Fahrenheit. Let's fix it.
 
-1.  Add one more `if-else`.
-2.  Link `PRS` to the new `COND` pin.
-3.  Bind `"F"` to the `T` pin, and `"C"` to the `F` pin.
-4.  Link `R` with the latest pin of the `concat` node.
-5.  Upload the program again.
+1. Add one more `if-else`.
+2. Link `PRS` to the new `COND` pin.
+3. Bind `"F"` to the `T` pin, and `"C"` to the `F` pin.
+4. Link `R` with the latest pin of the `concat` node.
+5. Upload the program again.
 
 ## 👆 Remember the quotes
 

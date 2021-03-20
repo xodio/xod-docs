@@ -1,6 +1,6 @@
 ---
 title: Congratulations!
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -30,15 +30,7 @@ To get a better learning experience we recommend to install the
 
 You have completed the tutorial. Hope you enjoyed it. May we ask to rate it?
 
-[★★★★★ Excellent!](https://forum.xod.io/t/tutorial-feedback/457/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial_99&utm_term=5_stars)
-
-[★★★★ Very Good](https://forum.xod.io/t/tutorial-feedback/457/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial_99&utm_term=4_stars)
-
-[★★★ Okay](https://forum.xod.io/t/tutorial-feedback/457/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial_99&utm_term=3_stars)
-
-[★★ So-so](https://forum.xod.io/t/tutorial-feedback/457/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial_99&utm_term=2_stars)
-
-[★ Poor](https://forum.xod.io/t/tutorial-feedback/457/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial_99&utm_term=1_star)
+[★★★★★ Excellent!](https://forum.xod.io/t/tutorial-feedback/457/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial_99&utm_term=5_stars) [★★★★ Very Good](https://forum.xod.io/t/tutorial-feedback/457/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial_99&utm_term=4_stars) [★★★ Okay](https://forum.xod.io/t/tutorial-feedback/457/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial_99&utm_term=3_stars) [★★ So-so](https://forum.xod.io/t/tutorial-feedback/457/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial_99&utm_term=2_stars) [★ Poor](https://forum.xod.io/t/tutorial-feedback/457/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial_99&utm_term=1_star)
 
 If you would like to give more detailed feedback, we’ll happy to hear it on the rating page.
 

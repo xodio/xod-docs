@@ -1,6 +1,6 @@
 ---
 title: Uploading Programs
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -36,9 +36,9 @@ The process is automated and runs behind the scenes once you hit “Upload”. H
 
 Let's upload this patch to the Arduino board to see the built-in LED blinking.
 
-1.  Connect the Arduino board to your computer with a USB cable.
-2.  Upload the program. To do this, hit Deploy → Upload to Arduino from the main menu.
-3.  If some tools are missing, confirm the installation by clicking Download & Install in the message appeared.
+1. Connect the Arduino board to your computer with a USB cable.
+2. Upload the program. To do this, hit Deploy → Upload to Arduino from the main menu.
+3. If some tools are missing, confirm the installation by clicking Download & Install in the message appeared.
 
 See the on-board LED usually marked with the `L` letter blinking.
 

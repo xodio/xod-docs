@@ -38,10 +38,10 @@ Note that on both sides, we named the feed as "moisture", they should match. Usu
 
 ## Excercise
 
-1.  Bind a proper `PORT` to the `servo` node
-2.  Upload the program with the debug mode turned on.
-3.  Update `tweak-number` value and check out how your servo responds.
-4.  Place a `map` node between `cloud-number` and `servo` if needed.
+1. Bind a proper `PORT` to the `servo` node
+2. Upload the program with the debug mode turned on.
+3. Update `tweak-number` value and check out how your servo responds.
+4. Place a `map` node between `cloud-number` and `servo` if needed.
 
 Now you got a remote analog gauge for the data that you send to the cloud. You can place it on your desktop and watch for the moisture in your greenhouse located far away.
 

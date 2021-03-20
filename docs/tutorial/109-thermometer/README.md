@@ -1,6 +1,6 @@
 ---
 title: Thermometer
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -42,13 +42,13 @@ A popular chip to measure temperature is TMP36 thermometer. XOD has a node `ther
 
 Showing static text on the LCD is boring. So let's make a smarter device and show the temperature on the LCD.
 
-1.  Add a thermometer to your [circuit as shown](https://xod.io/docs/tutorial/109-thermometer/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial#circuit).
+1. Add a thermometer to your [circuit as shown](https://xod.io/docs/tutorial/109-thermometer/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial#circuit).
 
-2.  Ensure the correct `PORT` for the `thermometer-tmp36` node.
+2. Ensure the correct `PORT` for the `thermometer-tmp36` node.
 
-3.  Link `Tc` of `thermometer-tmp36` with `L1` of `text-lcd-i2c-16x2`.
+3. Link `Tc` of `thermometer-tmp36` with `L1` of `text-lcd-i2c-16x2`.
 
-4.  Upload your patch.
+4. Upload your patch.
 
 Now you have a portable thermometer.
 

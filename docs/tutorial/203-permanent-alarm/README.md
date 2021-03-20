@@ -1,6 +1,6 @@
 ---
 title: Permanent Alarm
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -36,10 +36,10 @@ When the value gets out of the range, the `or` node sends a pulse to the `SET` p
 
 Let's make the alarm resettable.
 
-1.  Add a `button` node.
-2.  Set the corresponding `PORT`.
-3.  Link `PRS` with the `RST` pin.
-4.  Upload the program.
+1. Add a `button` node.
+2. Set the corresponding `PORT`.
+3. Link `PRS` with the `RST` pin.
+4. Upload the program.
 
 Heat or cool down the thermometer. Use the new button to turn the alarm off until the new trigger event is encountered.
 

@@ -1,6 +1,6 @@
 ---
 title: Matching Ranges
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -38,15 +38,15 @@ The `servo` node can work only with values ranging from 0 to 1. You can match th
 
 Make a device which shows the temperature with an arrow glued to the servo shaft.
 
-1.  Connect a TMP36 thermometer to the board as shown on the [scheme](https://xod.io/docs/tutorial/201-matching-ranges/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial#circuit).
+1. Connect a TMP36 thermometer to the board as shown on the [scheme](https://xod.io/docs/tutorial/201-matching-ranges/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial#circuit).
 
-2.  Link the `Tc` pin to the `X` pin on the `map` node.
+2. Link the `Tc` pin to the `X` pin on the `map` node.
 
-3.  Define the input range: open the Inspector for `map`, and then set `Smin` to 20 and `Smax` to 50.
+3. Define the input range: open the Inspector for `map`, and then set `Smin` to 20 and `Smax` to 50.
 
-4.  Define the output range: set the `Tmin` to 0 and `Tmax` to 0.5 (which corresponds to ~90°).
+4. Define the output range: set the `Tmin` to 0 and `Tmax` to 0.5 (which corresponds to ~90°).
 
-5.  Link the `Xm` output to the `VAL` servo input.
+5. Link the `Xm` output to the `VAL` servo input.
 
 Try to heat the thermometer with a hot object (e.g., a paper knife heated with a lighter). At the temperature of 35 °C (half the input range), the servo should rotate to 45°, which is the midpoint of the output range.
 

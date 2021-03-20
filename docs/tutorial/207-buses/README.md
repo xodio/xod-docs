@@ -1,6 +1,6 @@
 ---
 title: Buses
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -44,12 +44,12 @@ Bus nodes with the same label are considered to be implicitly interconnected by 
 
 Link the `IVAL` pin with the counter output using bus nodes.
 
-1.  First of all, we'll make a loop. So place a `defer` node.
-2.  Place `to-bus`.
-3.  Label it "IVAL".
-4.  Link these nodes.
-5.  Click on the `IVAL` pin of the `clock` node and the press the "B" key on your keyboard. The label automatically sets from the linking pin label.
-6.  Upload the program.
+1. First of all, we'll make a loop. So place a `defer` node.
+2. Place `to-bus`.
+3. Label it "IVAL".
+4. Link these nodes.
+5. Click on the `IVAL` pin of the `clock` node and the press the "B" key on your keyboard. The label automatically sets from the linking pin label.
+6. Upload the program.
 
 ## 👆 Shortcut
 

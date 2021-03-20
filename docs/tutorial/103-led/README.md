@@ -1,6 +1,6 @@
 ---
 title: LED Node
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -42,15 +42,15 @@ You can also set an intermediate brightness level by setting values _between_ 0 
 
 Let’s fine-tune LED brightness.
 
-1.  Assemble a circuit according to the [scheme](https://xod.io/docs/tutorial/103-led/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial#circuit), and connect the board to your computer.
+1. Assemble a circuit according to the [scheme](https://xod.io/docs/tutorial/103-led/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial#circuit), and connect the board to your computer.
 
-2.  Set the value of the `PORT` pin to `D11`. Leading "D" means that it's a digital port.
+2. Set the value of the `PORT` pin to `D11`. Leading "D" means that it's a digital port.
 
-3.  Replace the `tweak-boolean` node with `tweak-number`.
+3. Replace the `tweak-boolean` node with `tweak-number`.
 
-4.  Upload the program with the interactive session enabled.
+4. Upload the program with the interactive session enabled.
 
-5.  Change the value of `tweak-number` in the range from 0 to 1 and see how the brightness of the LED changes.
+5. Change the value of `tweak-number` in the range from 0 to 1 and see how the brightness of the LED changes.
 
 ## 👆 PWM feature
 

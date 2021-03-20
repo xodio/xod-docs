@@ -1,6 +1,6 @@
 ---
 title: Flip-flops
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -36,9 +36,9 @@ The patch shown here toggles the output boolean value each second.
 
 Let’s experiment with the `flip-flop` node.
 
-1.  Replace `clock` node with `tweak-pulse` node.
-2.  Add a couple more `tweak-pulse`s and connect them to `flip-flop`'s `SET` and `RST` pins.
-3.  Run the simulation, and send pulses to each pin
+1. Replace `clock` node with `tweak-pulse` node.
+2. Add a couple more `tweak-pulse`s and connect them to `flip-flop`'s `SET` and `RST` pins.
+3. Run the simulation, and send pulses to each pin
 
 Observe how the `MEM` value changes when sending several pulses to the same pin in a row.
 

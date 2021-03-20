@@ -1,6 +1,6 @@
 ---
 title: Welcome to XOD, Maker!
-version: 2.1.1
+version: 2.2.0
 ---
 
 <!--
@@ -38,9 +38,9 @@ Several related patches form a _project_. Currently you are working on a project
 
 Let’s learn how to navigate a project.
 
-1.  On the left-hand side, you will find a list of patches grouped by a project or library name. The list is called a _Project Browser_. The first item in it is `welcome-to-xod`. Expand the project by clicking on it.
+1. On the left-hand side, you will find a list of patches grouped by a project or library name. The list is called a _Project Browser_. The first item in it is `welcome-to-xod`. Expand the project by clicking on it.
 
-2.  As you can see, the tutorial consists of many patches. Right now, you are in the patch `001-hello`. The next chapter of the tutorial is in the patch `002-simulate`. Double-click it, and let's meet there!
+2. As you can see, the tutorial consists of many patches. Right now, you are in the patch `001-hello`. The next chapter of the tutorial is in the patch `002-simulate`. Double-click it, and let's meet there!
 
 ## 👆 Web hints
 
@@ -56,7 +56,7 @@ It contains a microcontroller, sensors, actuators, and a paper guide with an exc
 
 <div class="ui grid">
   <div class="five wide column left aligned ">
-
+    
   </div>
   <div class="six wide column center aligned ">
     <a href="../">Index</a>

@@ -1,6 +1,6 @@
 ---
 title: Loops
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -40,10 +40,10 @@ Program begins with the initial `boot` pulse. Then each delay node triggers the 
 
 Let's bring the button back and make the device start with the button press.
 
-1.  Assemble a circuit according to the [scheme](https://xod.io/docs/tutorial/205-loops/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial#circuit).
-2.  Replace `boot` with the `button` node and bind the corresponding `PORT` value.
-3.  Link with a free pin of the `any` node.
-4.  Upload the program.
+1. Assemble a circuit according to the [scheme](https://xod.io/docs/tutorial/205-loops/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial#circuit).
+2. Replace `boot` with the `button` node and bind the corresponding `PORT` value.
+3. Link with a free pin of the `any` node.
+4. Upload the program.
 
 Press the button to run the chain.
 

@@ -1,6 +1,6 @@
 ---
 title: Using Your New Node
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -32,10 +32,10 @@ Now you can use the new node just like any other.
 
 ## Instructions
 
-1.  Drag’n’drop your `between` node from Project Browser to this patch and replace the `303-...` node with it.
-2.  Add a few more `between`’s: double click on empty space and type “between”. Your node is here and denoted as `@/between`.
-3.  Bind some values to the inputs of new `between` nodes, add some `tweak-number` and `watch` nodes to play.
-4.  Run simulation to check how the new node works.
+1. Drag’n’drop your `between` node from Project Browser to this patch and replace the `303-...` node with it.
+2. Add a few more `between`’s: double click on empty space and type “between”. Your node is here and denoted as `@/between`.
+3. Bind some values to the inputs of new `between` nodes, add some `tweak-number` and `watch` nodes to play.
+4. Run simulation to check how the new node works.
 
 ### Paths starting with @/
 

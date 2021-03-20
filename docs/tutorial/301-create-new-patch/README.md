@@ -1,6 +1,6 @@
 ---
 title: Creating a New Patch
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -34,10 +34,10 @@ Here is a patch that checks if a number is between `0.4` and `0.7`. Let's make i
 
 ## Instructions
 
-1.  Select `less`, `greater`, and `nor` nodes and copy them to the clipboard.
-2.  Select File -> New Patch... from the main menu.
-3.  Choose a name (`between` is a nice one).
-4.  Your new patch will open in a new tab. Paste the nodes that you copied earlier there.
+1. Select `less`, `greater`, and `nor` nodes and copy them to the clipboard.
+2. Select File -> New Patch... from the main menu.
+3. Choose a name (`between` is a nice one).
+4. Your new patch will open in a new tab. Paste the nodes that you copied earlier there.
 
 For the rest of this part of the tutorial we’ll evolve the node chapter after the chapter and effectively create many versions of it with incremental improvements. We recommend to mirror the improvements to the sole patch you created just now.
 

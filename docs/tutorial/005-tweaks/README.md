@@ -1,6 +1,6 @@
 ---
 title: Tweaks
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -36,12 +36,12 @@ On the current patch we added a `tweak-number` linked to `IVAL` already.
 
 Let’s learn how to add new tweaks to your program and control them in runtime.
 
-1.  Add `tweak-number` node to the patch.
-2.  Link `tweak-number`'s output pin to `count`'s `STEP` pin.
-3.  Start the simulation.
-4.  Double click the tweak node; the text box for tweak value will focus in Inspector.
-5.  Change the value to `2.0` and press Enter.
-6.  Adjust the value of the tweak linked to `clock`'s `IVAL` pin.
+1. Add `tweak-number` node to the patch.
+2. Link `tweak-number`'s output pin to `count`'s `STEP` pin.
+3. Start the simulation.
+4. Double click the tweak node; the text box for tweak value will focus in Inspector.
+5. Change the value to `2.0` and press Enter.
+6. Adjust the value of the tweak linked to `clock`'s `IVAL` pin.
 
 Take a note how the changes are immediately applied while you are in the simulation mode. Try some other values and see how they behave.
 

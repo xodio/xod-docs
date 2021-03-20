@@ -1,6 +1,6 @@
 ---
 title: Potentiometer
-version: 2.1.0
+version: 2.2.0
 ---
 
 <!--
@@ -42,13 +42,13 @@ It brings an easy solution to control LEDs, servos, and system coefficients.
 
 Let's control the brightness of the LED with a potentiometer.
 
-1.  Connect a potentiometer to the Arduino board according to the [scheme](https://xod.io/docs/tutorial/105-pot/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial#circuit).
+1. Connect a potentiometer to the Arduino board according to the [scheme](https://xod.io/docs/tutorial/105-pot/?utm_source=ide&utm_medium=ide_comment&utm_campaign=tutorial#circuit).
 
-2.  Set the `PORT` pin value on the `pot` node to `A0` because it’s connected to the analog board port A0.
+2. Set the `PORT` pin value on the `pot` node to `A0` because it’s connected to the analog board port A0.
 
-3.  Link the `pot` node `VAL` pin to the `LUM` pin on the `led` node.
+3. Link the `pot` node `VAL` pin to the `LUM` pin on the `led` node.
 
-4.  Upload your patch.
+4. Upload your patch.
 
 Rotate the knob and see how the LED reacts to it. Cool, eh?
 
