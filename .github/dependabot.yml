@@ -1,0 +1,34 @@
+version: 2
+registries:
+  docker-registry-gcr-io:
+    type: docker-registry
+    url: https://gcr.io
+    username: _json_key
+    password: "${{secrets.DOCKER_REGISTRY_GCR_IO_PASSWORD}}"
+  docker-registry-registry-hub-docker-com:
+    type: docker-registry
+    url: https://registry.hub.docker.com
+    username: xodbot
+    password: "${{secrets.DOCKER_REGISTRY_REGISTRY_HUB_DOCKER_COM_PASSWORD}}"
+
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: monthly
+    time: "08:00"
+  open-pull-requests-limit: 1
+- package-ecosystem: docker
+  directory: "/"
+  schedule:
+    interval: monthly
+    time: "08:00"
+  open-pull-requests-limit: 1
+  ignore:
+  - dependency-name: alpine
+    versions:
+    - 3.12.3
+    - 3.13.1
+  registries:
+  - docker-registry-gcr-io
+  - docker-registry-registry-hub-docker-com
