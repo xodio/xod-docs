@@ -1,5 +1,5 @@
 ---
-title: I²C Communication Basics
+title: I²C - Comunicación Basica
 image: ./i2c-object.patch.png
 description: |
   How to use XOD nodes from the standard i2c library
@@ -7,17 +7,17 @@ description: |
 version: 1.0.0
 ---
 
-# I²C Communication Basics
+# I²C - Comunicación basica
 
-Many sensors and modules talk to a host board using the [I²C bus](https://en.wikipedia.org/wiki/I%C2%B2C) also known as TWI (Two Wire Interface). This interface uses a single line (SDA) to transfer data serially and another line (SCL) to push clock pulses which define exchange rhythm.
+Muchos sensores y módulos se comunican con una placa de host mediante el Bus de Comunicaciones Sincrono [I²C bus](https://en.wikipedia.org/wiki/I%C2%B2C) Conocido como TWI (Two Wire Interface) en Español (interfaz de dos cables). Esta interfaz utiliza una línea (SDA) para transferir datos en serie y otra línea (SCL) para impulsar los pulsos de reloj que definen el ritmo de intercambio.
 
-XOD supports low-level I²C communication with nodes available in [`xod/i2c`](https://xod.io/libs/xod/i2c/).
+XOD admite la comunicación I²C de bajo nivel con nodos disponibles en [`xod/i2c`](https://xod.io/libs/xod/i2c/).
 
-It depends on a particular chip or module how a session of I²C communication should flow, but there are several common scenarios:
+Depende de un chip o módulo en particular cómo debe fluir una sesión de comunicación I²C, pero hay varios escenarios comunes a todos ellos:
 
-- Read several bytes (an I²C thermometer)
-- Write several bytes and forget (an I²C controlled motor)
-- Write bytes to define a data register of interest, then read bytes back (a multiaxis I²C IMU)
+- Leer uno o varios bytes (Por ej. de un Termómetro I²C)
+- Escriba varios bytes y olvídese (Por ej. un Driver de motor controlado I²C) 
+- Escriba bytes para definir un registro de datos de interno del chip de interés, luego vuelva a leer bytes (Por ej. una IMU I²C multieje)
 
 In this article let’s use a popular DS1307 real time clock module to demonstrate reading and writing. The module is already supported by [`xod-dev/ds-rtc`](https://xod.io/libs/xod-dev/ds-rtc/) but let’s consider we have no such library.
 
